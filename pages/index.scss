@@ -1,0 +1,14 @@
+@import '../components/variables.scss';
+
+img.top-image {
+  border: 8px solid white;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+@media (min-width: $screen-sm-min) {
+  img.top-image {
+    border-width: 16px;
+  }
+}
+

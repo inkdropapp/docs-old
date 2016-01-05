@@ -5,7 +5,7 @@
  */
 
 export default {
-  title: 'React Static Boilerplate',
-  description: 'Static website generator for React.js web applications.',
+  title: '踊る犬.net',
+  description: 'Created by Takuya Matsuyama',
   googleAnalyticsId: 'UA-XXXXX-X',
 };

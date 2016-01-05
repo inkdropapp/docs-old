@@ -73,10 +73,13 @@ const config = {
         test: /\.txt$/,
         loader: 'raw-loader',
       }, {
-        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
+        test: /\.css$/,
+        loader: 'style-loader!css-loader',
+      }, {
+        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'url-loader?limit=10000',
       }, {
-        test: /\.(eot|ttf|wav|mp3)$/,
+        test: /\.(eot|ttf|wav|mp3)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'file-loader',
       },
     ],
@@ -96,6 +99,8 @@ const config = {
 const appConfig = merge({}, config, {
   entry: [
     ...(WATCH ? ['webpack-hot-middleware/client'] : []),
+    'bootstrap/dist/css/bootstrap.css',
+    'font-awesome/css/font-awesome.css',
     './app.js',
   ],
   output: {

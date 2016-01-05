@@ -14,6 +14,14 @@ html, body {
   font-family: $font-family-base;
 }
 
+body {
+  padding: 12vmin 0;
+}
+
+.container {
+  max-width: 900px;
+}
+
 .Layout {
   margin: 0 auto;
 }
@@ -33,5 +41,28 @@ html, body {
 @media (min-width: $screen-lg-min) {
   .Layout {
     width: calc($screen-lg-min - 30px);
+  }
+}
+
+.Layout {
+  font-family: Lato, Noto Sans Japanese, sans-serif;
+  color: rgb(143, 143, 143);
+
+  h1.title {
+    font-weight: normal;
+    font-size: 1.3em;
+    font-family: Noto Sans Japanese;
+    color: $text-color;
+  }
+
+  h2 {
+    font-weight: lighter;
+    margin-top: 0;
+  }
+  p {
+    font-weight: lighter;
+  }
+  .header-left-side {
+    text-align: center;
   }
 }

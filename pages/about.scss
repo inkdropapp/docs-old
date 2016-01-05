@@ -1,0 +1,10 @@
+@import './index.scss';
+
+.about {
+  .section {
+    margin: 0.8em 0;
+    strong {
+      color: $text-color;
+    }
+  }
+}
