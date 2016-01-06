@@ -16,7 +16,7 @@ function Layout({ children }) {
       <Row>
         <Col sm={3} className="header-left-side">
           <a href="/" onClick={Link.handleClick}>
-            <img src="./dog-icon.png" width="120px" />
+            <img src="/dog-icon.png" width="120px" />
           </a>
           <h1 className="title">ODORUINU.NET</h1>
           <Navigation />

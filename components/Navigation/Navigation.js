@@ -15,6 +15,9 @@ function Navigation() {
         <a className="Navigation-link" href="/about" onClick={Link.handleClick}>About</a>
       </li>
       <li className="Navigation-item">
+        <a className="Navigation-link" href="/works/" onClick={Link.handleClick}>Works</a>
+      </li>
+      <li className="Navigation-item">
         <a className="Navigation-link" href="http://illust.odoruinu.net/">Illustrations</a>
       </li>
       <li className="Navigation-item">
