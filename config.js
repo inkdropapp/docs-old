@@ -7,5 +7,5 @@
 export default {
   title: '踊る犬.net',
   description: 'Created by Takuya Matsuyama',
-  googleAnalyticsId: 'UA-XXXXX-X',
+  googleAnalyticsId: 'UA-34060591-1',
 };
