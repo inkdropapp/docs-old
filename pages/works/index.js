@@ -45,6 +45,10 @@ export default class extends Component {
             </div>
           </Col>
         </Row>
+        <div>
+          <hr />
+          随時更新
+        </div>
       </div>
     );
   }

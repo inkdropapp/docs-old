@@ -9,7 +9,7 @@
 .Navigation {
   display: flex;
   flex-direction: row;
-  margin: 2em 0 2em 0;
+  margin: 2em 0 0 0;
   padding: 0;
   padding-top: 0.3em;
   list-style: none;
@@ -23,6 +23,12 @@
   padding: 0.5em 0;
   font-size: 1.25em;
   font-weight: lighter;
+}
+
+.Navigation-icon-group {
+  .Navigation-icon {
+    border-bottom: 3px solid transparent;
+  }
 }
 
 .Navigation-link {
@@ -43,17 +49,26 @@
 
   &.Navigation-icon {
     display: inline-block;
+    font-size: 1.4em;
+    padding-bottom: 0.2em;
+    margin: 0 0.3em 0.3em 0.3em;
   }
 }
 
 @media (min-width: $screen-sm-min) {
   .Navigation {
     flex-direction: column;
-    margin: 2em 0 5em 0;
+    margin-bottom: 0.4em;
     padding: 0;
     justify-content: flex-end;
     text-align: left;
     border: none;
+  }
+  .Navigation-icon-group {
+    text-align: left;
+    .Navigation-icon {
+      margin: 0 0 0.3em 0;
+    }
   }
 }
 
