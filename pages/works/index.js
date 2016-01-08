@@ -65,6 +65,20 @@ export default class extends Component {
         <h2>Old works</h2>
         <Row>
           <Col sm={6}>
+            <a href="/works/pichu2" onClick={Link.handleClick}>
+              <img src="/works/pichu2_eyecatch.png" className="image-eyecatch" />
+              <h3>pichu*pichu</h3>
+            </a>
+            <div className="work-description">
+              <div>
+              iPhone Safari用Twitterクライアント
+              </div>
+              <div>
+              Twitter client app for iPhone Safari
+              </div>
+            </div>
+          </Col>
+          <Col sm={6}>
             <a href="/works/freedbtagger" onClick={Link.handleClick}>
               <img src="/works/freedbtagger_eyecatch.png" className="image-eyecatch" />
               <h3>freeDBTagger</h3>
@@ -78,6 +92,8 @@ export default class extends Component {
               </div>
             </div>
           </Col>
+        </Row>
+        <Row>
           <Col sm={6}>
             <a href="/works/amembo" onClick={Link.handleClick}>
               <img src="/works/amembo_eyecatch.png" className="image-eyecatch" />
