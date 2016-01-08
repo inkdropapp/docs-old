@@ -7,6 +7,9 @@
     //border: 8px solid white;
     box-shadow: 0 2px 2px 0px rgba(0,0,0,0.2);
   }
+  img.image-screenshot {
+    margin-bottom: 1em;
+  }
   a > h3 {
     color: $text-color;
   }
@@ -15,8 +18,21 @@
     font-size: 1.4em;
     font-weight: lighter;
   }
+  h4 {
+    font-size: 1.0em;
+  }
   .work-description {
     margin-bottom: 1em;
+    p {
+      margin: 0.4em 0;
+    }
+    dd {
+      margin: 0.3em 0.0em 0.6em 0.3em;
+      font-weight: lighter;
+    }
+  }
+  .work-long-description {
+    font-weight: lighter;
   }
   .breadcrumb-chevron {
     color: rgba(0,0,0,0.2);

@@ -45,6 +45,54 @@ export default class extends Component {
             </div>
           </Col>
         </Row>
+        <Row>
+          <Col sm={6}>
+            <a href="/works/menkiki" onClick={Link.handleClick}>
+              <img src="/works/menkiki_eyecatch.png" className="image-eyecatch" />
+              <h3>麺利き</h3>
+            </a>
+            <div className="work-description">
+              <div>
+              らーめん写真に基づいてお店を提示する、らーめん屋推薦アプリ
+              </div>
+              <div>
+              The app which can show ramen shops based on a photo of ramen you want to eat
+              </div>
+            </div>
+          </Col>
+        </Row>
+        <hr />
+        <h2>Old works</h2>
+        <Row>
+          <Col sm={6}>
+            <a href="/works/freedbtagger" onClick={Link.handleClick}>
+              <img src="/works/freedbtagger_eyecatch.png" className="image-eyecatch" />
+              <h3>freeDBTagger</h3>
+            </a>
+            <div className="work-description">
+              <div>
+              楽曲長の組み合わせでアルバムを特定して楽曲情報を自動入力
+              </div>
+              <div>
+              Automatic Audio File Tagger using FreeDB
+              </div>
+            </div>
+          </Col>
+          <Col sm={6}>
+            <a href="/works/amembo" onClick={Link.handleClick}>
+              <img src="/works/amembo_eyecatch.png" className="image-eyecatch" />
+              <h3>amembo</h3>
+            </a>
+            <div className="work-description">
+              <div>
+              「MSN Messenger」と連係して特定ユーザーとP2Pフォルダ共有できる「Amembo」
+              </div>
+              <div>
+              P2P private file sharing tool supporting MSN Messenger
+              </div>
+            </div>
+          </Col>
+        </Row>
         <div>
           <hr />
           随時更新
