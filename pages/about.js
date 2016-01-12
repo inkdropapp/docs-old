@@ -5,7 +5,6 @@
  */
 
 import React, { Component } from 'react';
-import { Grid, Col, Row } from 'react-bootstrap';
 import './about.scss';
 
 export default class extends Component {
@@ -14,7 +13,7 @@ export default class extends Component {
     return (
       <div className="about">
         <h2>Takuya Matsuyama</h2>
-        <p>Artist / Developer / Designer</p>
+        <p>Digital Craftsman ( Artist / Developer / Designer )</p>
         <div>
           <img className="top-image" src="https://farm6.staticflickr.com/5688/22863546315_12dd51f402_h.jpg" width="100%" alt="L1011534" />
         </div>
@@ -38,16 +37,17 @@ export default class extends Component {
         <div className="section">
           <strong>Work: </strong>
           <div>
-            自身の欲しいと思ったサービスを制作。
+            デジタル領域を中心に、自身の欲しいと思ったサービスを制作。
             企画からデザイン・開発・運用まで全て一人で行う。
             iOSなどのスマホアプリからウェブアプリまで、技術やプラットフォームを限定せず幅広く活動。
             その傍ら、フリーランスとして様々なプロジェクトに参加。
+            枠に囚われずオーダーメイドで柔軟にモノを作る「クラフトマンシップ」を得意とする。
           </div>
           <div>
-            Creating services which I want.
-            I do planning, designing, coding and operations through my all products.
-            Not limited to certain platform and technology, having large curiosity and skills in iOS app, web app, machine learning, etc.
-            Participating many projects as a freelancer.
+            Creating digital services/stuffs which I want.
+            I'm calling myself a 'Digital Craftsman' which means I do planning, designing, coding and operations through my all products.
+            Not limited to certain platform and technology, having broad curiosity and experienced skills in iOS app, web app, machine learning, etc.
+            Participating many projects as a freelancer, making new stuff fully customized from scratch.
           </div>
         </div>
         <div className="section">
