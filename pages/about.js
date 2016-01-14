@@ -44,10 +44,10 @@ export default class extends Component {
             枠に囚われずオーダーメイドで柔軟にモノを作る「クラフトマンシップ」を得意とする。
           </div>
           <div>
-            Creating digital services/stuffs which I want.
-            I'm calling myself a 'Digital Craftsman' which means I do planning, designing, coding and operations through my all products.
-            Not limited to certain platform and technology, having broad curiosity and experienced skills in iOS app, web app, machine learning, etc.
-            Participating many projects as a freelancer, making new stuff fully customized from scratch.
+            He creates digital services/stuffs which he wants itself.
+            He is a 'Digital Craftsman', that is, he does plan, design, code and operate through all his products.
+            His interests and skills are not limited to a certain platform and a technology but including iOS app, web app, machine learning, etc.
+            He participates many projects as a freelancer who creates new stuff fully customized from scratch.
           </div>
         </div>
         <div className="section">
