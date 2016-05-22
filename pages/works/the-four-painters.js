@@ -10,6 +10,7 @@ import { Col, Row } from 'react-bootstrap';
 import './index.scss';
 
 export default class extends Component {
+  static title = 'The Four Painters';
 
   render() {
     return (

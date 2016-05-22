@@ -8,6 +8,7 @@ import React, { Component } from 'react';
 import './about.scss';
 
 export default class extends Component {
+  static title = 'About';
 
   render() {
     return (

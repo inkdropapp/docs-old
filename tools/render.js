@@ -11,6 +11,7 @@ import ReactDOM from 'react-dom/server';
 import Html from '../components/Html';
 import task from './lib/task';
 import fs from './lib/fs';
+import config from '../config';
 
 const DEBUG = !process.argv.includes('release');
 
@@ -35,9 +36,11 @@ function getPages() {
   });
 }
 
-async function renderPage(page, component) {
+async function renderPage(page, component, content) {
+  const title = content.title ? `${content.title} - ${config.title}` : null;
   const data = {
     body: ReactDOM.renderToString(component),
+    title: title,
   };
   const file = join(__dirname, '../build', page.file.substr(0, page.file.lastIndexOf('.')) + '.html');
   const html = '<!doctype html>\n' + ReactDOM.renderToStaticMarkup(<Html debug={DEBUG} {...data} />);
