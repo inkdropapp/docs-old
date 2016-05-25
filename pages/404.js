@@ -10,7 +10,7 @@ export default class extends Component {
 
   render() {
     return (
-      <div>
+      <div className="ui container main-content">
         <h1>Not Found</h1>
         <p>The page you're looking for was not found.</p>
       </div>

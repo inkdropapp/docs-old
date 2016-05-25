@@ -14,7 +14,7 @@ export default class extends Component {
 
   render() {
     return (
-      <div>
+      <div className="ui container main-content">
         <h1>Error</h1>
         <pre>{
           this.props.error ?
