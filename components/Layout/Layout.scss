@@ -9,60 +9,12 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: $body-bg;
+  background-color: white;
   color: $text-color;
   font-family: $font-family-base;
 }
 
-body {
-  padding: 12vmin 0;
-}
-
-.container {
-  max-width: 900px;
-}
-
-.Layout {
-  margin: 0 auto;
-}
-
-@media (min-width: $screen-sm-min) {
-  .Layout {
-    width: calc($screen-sm-min - 18px);
-  }
-}
-
-@media (min-width: $screen-md-min) {
-  .Layout {
-    width: calc($screen-md-min - 22px);
-  }
-}
-
-@media (min-width: $screen-lg-min) {
-  .Layout {
-    width: calc($screen-lg-min - 30px);
-  }
-}
-
-.Layout {
-  font-family: Lato, Noto Sans Japanese, sans-serif;
-  color: rgb(143, 143, 143);
-
-  h1.title {
-    font-weight: normal;
-    font-size: 1.3em;
-    font-family: Noto Sans Japanese;
-    color: $text-color;
-  }
-
-  h2 {
-    font-weight: lighter;
-    margin-top: 0;
-  }
-  p {
-    font-weight: lighter;
-  }
-  .header-left-side {
-    text-align: center;
-  }
+.main-content {
+  padding-top: 2rem;
+  margin-bottom: 50px;
 }

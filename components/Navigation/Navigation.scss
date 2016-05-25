@@ -6,69 +6,47 @@
 
 @import '../variables.scss';
 
-.Navigation {
-  display: flex;
-  flex-direction: row;
-  margin: 2em 0 0 0;
-  padding: 0;
-  padding-top: 0.3em;
-  list-style: none;
-  justify-content: center;
-  text-align: left;
-  border-top: 1px solid rgba(0,0,0,0.1);
-  flex-wrap: wrap;
-}
+.app--header {
+  background-color: #071B26;
 
-.Navigation-item {
-  padding: 0.5em 0;
-  font-size: 1.25em;
-  font-weight: lighter;
-}
-
-.Navigation-icon-group {
-  .Navigation-icon {
-    border-bottom: 3px solid transparent;
-  }
-}
-
-.Navigation-link {
-  padding: 0.5em 0.5em;
-  color: rgb(143, 143, 143);
-  text-decoration: none;
-  cursor: pointer;
-
-  &:hover {
-    text-decoration: none;
-    border-bottom: 3px solid $brand-color;
-    color: $text-color;
+  .app--logo {
+    flex: 1 auto;
+    line-height: 1;
   }
 
-  &:active, &:focus {
-    text-decoration: none;
+  .ui.grid {
+    margin: 0;
   }
 
-  &.Navigation-icon {
-    display: inline-block;
-    font-size: 1.4em;
-    padding-bottom: 0.2em;
-    margin: 0 0.3em 0.3em 0.3em;
-  }
-}
+  ul.app--navbar {
+    flex: 1 auto;
+    text-align: right;
+    height: 45px;
+    margin: 0;
 
-@media (min-width: $screen-sm-min) {
-  .Navigation {
-    flex-direction: column;
-    margin-bottom: 0.4em;
-    padding: 0;
-    justify-content: flex-end;
-    text-align: left;
-    border: none;
-  }
-  .Navigation-icon-group {
-    text-align: left;
-    .Navigation-icon {
-      margin: 0 0 0.3em 0;
+    li {
+      display: inline-block;
+      margin-right: 20px;
+      font-size: 1rem;
+
+      > a {
+        display: inline-block;
+        padding: 14px 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
+
+  a {
+    color: #bbb;
+
+    &:hover {
+      color: white;
+    }
+  }
+
 }
 

@@ -6,35 +6,27 @@
 
 import React from 'react';
 import './Navigation.scss';
-import Link from '../Link';
+// import Link from '../Link';
 
 function Navigation() {
   return (
-    <div>
-      <ul className="Navigation" role="menu">
-        <li className="Navigation-item">
-          <a className="Navigation-link" href="/about" onClick={Link.handleClick}>About</a>
-        </li>
-        <li className="Navigation-item">
-          <a className="Navigation-link" href="/works/" onClick={Link.handleClick}>Works</a>
-        </li>
-        <li className="Navigation-item">
-          <a className="Navigation-link" href="http://illust.odoruinu.net/">Illustrations</a>
-        </li>
-        <li className="Navigation-item">
-          <a className="Navigation-link" href="http://blog.odoruinu.net/">Blog</a>
-        </li>
-      </ul>
-      <div className="Navigation-icon-group">
-        <a className="Navigation-link Navigation-icon" href="https://www.instagram.com/noradaiko/">
-          <i className="fa fa-instagram" />
+    <div className="ui grid">
+      <div className="row">
+        <a href="https://inkdrop.info/" className="app--logo">
+          <img
+            src="//inkdrop-prod.s3.amazonaws.com/site/header-logo@2x.png"
+            width="196"
+            height="45"
+            alt="logo"
+          />
         </a>
-        <a className="Navigation-link Navigation-icon" href="https://github.com/noradaiko">
-          <i className="fa fa-github" />
-        </a>
-        <a className="Navigation-link Navigation-icon" href="https://twitter.com/noradaiko">
-          <i className="fa fa-twitter" />
-        </a>
+
+        <ul className="app--navbar reset-list un-select">
+          <li>
+            <a href="https://inkdrop.info/login">Login</a>
+          </li>
+        </ul>
+
       </div>
     </div>
   );

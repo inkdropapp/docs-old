@@ -10,8 +10,8 @@ import task from './lib/task';
 // TODO: Update deployment URL
 const remote = {
   name: 'github',
-  url: 'https://github.com/noradaiko/noradaiko.github.io.git',
-  branch: 'gh-pages',
+  url: 'https://github.com/inkdropapp/inkdropapp.github.io.git',
+  branch: 'master',
 };
 
 /**

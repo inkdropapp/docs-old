@@ -5,7 +5,7 @@
  */
 
 export default {
-  title: '踊る犬.net',
-  description: 'Created by Takuya Matsuyama',
-  googleAnalyticsId: 'UA-34060591-1',
+  title: 'Inkdrop',
+  description: 'The Notebook for Hackers',
+  googleAnalyticsId: 'UA-58709134-3',
 };

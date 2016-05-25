@@ -8,7 +8,7 @@ import React, { PropTypes } from 'react';
 import GoogleAnalytics from '../GoogleAnalytics';
 import config from '../../config';
 
-function Html({ title, description, body, debug }) {
+function Html({ title, description, body /* , debug */ }) {
   return (
     <html className="no-js" lang="">
       <head>
@@ -24,7 +24,7 @@ function Html({ title, description, body, debug }) {
         <script src={'/app.js?' + new Date().getTime()} />
       </head>
       <body>
-        <div id="app" className="container" dangerouslySetInnerHTML={{ __html: body }} />
+        <div id="app" dangerouslySetInnerHTML={{ __html: body }} />
         <GoogleAnalytics />
       </body>
     </html>

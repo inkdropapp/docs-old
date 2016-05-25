@@ -60,9 +60,23 @@ const config = {
       'process.env.NODE_ENV': DEBUG ? '"development"' : '"production"',
       '__DEV__': DEBUG,
     }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+    }),
   ],
   module: {
     loaders: [
+      {
+        test: require.resolve('jquery'),
+        loader: 'expose?$!expose?jQuery',
+      },
+      {
+        test: /semantic\.js$/,
+        loaders: [
+          'script-loader',
+        ],
+      },
       {
         test: /[\\\/]app\.js$/,
         loader: path.join(__dirname, './lib/routes-loader.js'),
@@ -99,8 +113,10 @@ const config = {
 const appConfig = merge({}, config, {
   entry: [
     ...(WATCH ? ['webpack-hot-middleware/client'] : []),
-    'bootstrap/dist/css/bootstrap.css',
-    'font-awesome/css/font-awesome.css',
+    './semantic/dist/semantic.css',
+    // 'font-awesome/css/font-awesome.css',
+    'jquery',
+    './semantic/dist/semantic.js',
     './app.js',
   ],
   output: {
