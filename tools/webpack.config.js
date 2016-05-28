@@ -95,6 +95,9 @@ const config = {
       }, {
         test: /\.(eot|ttf|wav|mp3)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'file-loader',
+      }, {
+        test: /\.md$/,
+        loader: 'html!markdown',
       },
     ],
   },

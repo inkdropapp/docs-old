@@ -13,6 +13,7 @@ import webpackHotMiddleware from 'webpack-hot-middleware';
 global.watch = true;
 const webpackConfig = require('./webpack.config')[0];
 const bundler = webpack(webpackConfig);
+const { PORT } = process.env;
 
 export default async () => {
   await require('./build')();
@@ -20,6 +21,7 @@ export default async () => {
   browserSync({
     server: {
       baseDir: 'build',
+      port: PORT || 3001,
 
       middleware: [
         hygienistMiddleware('build'),
@@ -47,5 +49,10 @@ export default async () => {
       'build/**/*.css',
       'build/**/*.html',
     ],
+
+    ui: {
+      port: (PORT && parseInt(PORT, 10) + 1) || 3002,
+    },
+
   });
 };

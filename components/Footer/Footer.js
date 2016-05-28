@@ -13,18 +13,32 @@ class Footer extends React.Component {
   componentDidMount() {
   }
 
+  handleOutboundLinkClick(event) {
+    const target = event.currentTarget;
+    window.ga('send', 'event', {
+      eventCategory: 'Outbound Link',
+      eventAction: 'click',
+      eventLabel: target.href,
+    });
+  }
+
   render() {
     return (
       <footer className="app--footer">
         <div className="app--footer-content ui container">
           <div className="ui stackable grid">
-            <div className="three wide column text-left">
+            <a href="http://odoruinu.net/"
+              target="_blank"
+              onClick={ this.handleOutboundLinkClick }>
               © Takuya Matsuyama
-            </div>
+            </a>
             <div className="thirteen wide column right aligned">
               <ul className="links">
                 <li>
                   <a href="/terms" onClick={Link.handleClick}>Terms of Use</a>
+                </li>
+                <li>
+                  <a href="/privacy" onClick={Link.handleClick}>Privacy Policy</a>
                 </li>
                 <li>
                   <a
@@ -59,15 +73,6 @@ class Footer extends React.Component {
                     onClick={this.handleOutboundLinkClick}
                   >
                     Blog
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://odoruinu.net/"
-                    target="_blank"
-                    onClick={this.handleOutboundLinkClick}
-                  >
-                    About Author
                   </a>
                 </li>
               </ul>
