@@ -71,5 +71,5 @@ We may collect and/or use the following personally unidentifiable information to
 
 ## Amendment
 
-We reserves the right to make amendments to this Privacy Policy.
+We reserve the right to make amendments to this Privacy Policy.
 
