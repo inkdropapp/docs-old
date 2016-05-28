@@ -27,11 +27,13 @@ class Footer extends React.Component {
       <footer className="app--footer">
         <div className="app--footer-content ui container">
           <div className="ui stackable grid">
-            <a href="http://odoruinu.net/"
-              target="_blank"
-              onClick={ this.handleOutboundLinkClick }>
-              © Takuya Matsuyama
-            </a>
+            <div className='three wide column text-left'>
+              <a href="http://odoruinu.net/"
+                target="_blank"
+                onClick={ this.handleOutboundLinkClick }>
+                © Takuya Matsuyama
+              </a>
+            </div>
             <div className="thirteen wide column right aligned">
               <ul className="links">
                 <li>
