@@ -17,7 +17,7 @@ export default class extends Component {
         <h2>Encrypted Note with Password</h2>
         <p>
         You can encrypt a note to add an extra level of protection to private information.
-        Evernote uses AES (Advanced Encryption Standard) with a 256-bit key to encrypt your note content.
+        Inkdrop uses AES (Advanced Encryption Standard) with a 256-bit key to encrypt your note content.
         </p>
         <p>
         When you encrypt note, we prompt you for a passphrase.
