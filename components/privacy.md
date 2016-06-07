@@ -62,7 +62,7 @@ We shall assume no liability whatsoever if you reveal the personal information t
 
 ## Creation and Use of Statistical Data
 
-We may crate, based on the personal information collected, statistical data processed so that no individual is identifiable.
+We may create, based on the personal information collected, statistical data processed so that no individual is identifiable.
 With regard to such creation and use of the personally unidentifiable statistical data, we may conduct without any restriction.
 
 ## Collection and Use of Attribute Information/Activity History
