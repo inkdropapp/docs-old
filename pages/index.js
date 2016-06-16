@@ -22,6 +22,7 @@ export default class extends Component {
         <p>
         Available soon
         </p>
+        <a href="https://mixpanel.com/f/partner" rel="nofollow"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" /></a>
       </div>
     );
   }
