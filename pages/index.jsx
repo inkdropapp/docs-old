@@ -7,6 +7,7 @@
 import './index.scss';
 import React, { Component } from 'react';
 import ManualMenu from '../components/manual-menu';
+import ReferenceMenu from '../components/reference-menu';
 // import { Grid, Col, Row } from 'react-bootstrap';
 
 export default class extends Component {
@@ -39,6 +40,7 @@ export default class extends Component {
                     API Reference
                   </div>
                 </h3>
+                <ReferenceMenu />
               </div>
               <div className='column'>
                 <h3 className='ui header'>
