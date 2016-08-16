@@ -1,4 +1,6 @@
-Example (not encrypted):
+The Note model represents a Note object.
+
+## Example (not encrypted)
 
 ```JSON
 {
@@ -16,7 +18,7 @@ Example (not encrypted):
 }
 ```
 
-Example (encrypted):
+## Example (encrypted)
 
 ```JSON
 {
@@ -38,3 +40,79 @@ Example (encrypted):
   }
 }
 ```
+
+## Fields
+
+### _id
+
+Type: **String**
+
+The unique document ID which should start with `note:` and the remains are randomly generated string.
+
+### _rev
+
+Type: **String**
+
+This is a CouchDB specific field.
+The current MVCC-token/revision of this document (mandatory and immutable).
+
+### title
+
+Type: **String**
+
+The title of the note.
+
+### doctype
+
+Type: **String**
+
+The format type of the body field.
+It currently can take `markdown` only, reserved for the future.
+
+### updatedAt
+
+Type: **Number**
+
+The date time when the note was last updated, represented with [Unix timestamps](http://www.unixtimestamp.com/) in milliseconds.
+
+### createdAt
+
+Type: **Number**
+
+The date time when the note was created, represented with [Unix timestamps](http://www.unixtimestamp.com/) in milliseconds.
+
+### tags
+
+Type: **Array of String**
+
+The list of tag names.
+
+### body
+
+Type: **String**, Optional
+
+The content of the note represented with Markdown.
+It's required if the note is not encrypted.
+
+### bookId
+
+The ID of the book with which the note is associated.
+
+### encrypted
+
+Type: **String**, Optional
+
+The encryption algorithm. It's required if the note is encrypted.
+Only 'aes-256-gcm' is currently supported.
+
+### encryptedBody
+
+Type: **Object**, Optional
+
+ * **content** - The encrypted data
+ * **iv** - The initial vector
+ * **tag** - The tag used for the encryption
+
+If the note is encrypted with a password, the data should be stored in this field.
+
+

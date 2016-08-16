@@ -43,13 +43,11 @@ class Footer extends React.Component {
                   <Link to='/privacy'>Privacy Policy</Link>
                 </li>
                 <li>
-                  <a
-                    href='https://github.com/inkdropapp/forum'
-                    target='_blank'
-                    onClick={this.handleOutboundLinkClick}
+                  <Link
+                    to='/faq'
                   >
-                    Forum
-                  </a>
+                    FAQ
+                  </Link>
                 </li>
                 <li>
                   <a
