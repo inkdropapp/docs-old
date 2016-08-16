@@ -20,6 +20,7 @@
     "font-awesome": "^4.5.0",
     "git-repository": "^0.1.1",
     "glob": "^5.0.15",
+    "highlight.js": "^9.6.0",
     "history": "^1.12.6",
     "html-loader": "^0.4.3",
     "hygienist-middleware": "^0.1.0",

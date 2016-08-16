@@ -7,6 +7,7 @@
 import path from 'path';
 import webpack from 'webpack';
 import merge from 'lodash.merge';
+import markdownRenderer from './markdown-renderer';
 
 const DEBUG = !process.argv.includes('release');
 const VERBOSE = process.argv.includes('verbose');
@@ -53,6 +54,9 @@ const config = {
     chunkModules: VERBOSE,
     cached: VERBOSE,
     cachedAssets: VERBOSE,
+  },
+  resolve: {
+    extensions: ['', '.js', '.json', '.jsx', '.node'],
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
@@ -109,6 +113,9 @@ const config = {
         browsers: AUTOPREFIXER_BROWSERS,
       }),
     ];
+  },
+  markdownLoader: {
+    renderer: markdownRenderer,
   },
 };
 

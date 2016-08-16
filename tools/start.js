@@ -19,9 +19,9 @@ export default async () => {
   await require('./build')();
 
   browserSync({
+    port: PORT || 3001,
     server: {
       baseDir: 'build',
-      port: PORT || 3001,
 
       middleware: [
         hygienistMiddleware('build'),

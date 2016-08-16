@@ -24,28 +24,28 @@ class Footer extends React.Component {
 
   render() {
     return (
-      <footer className="app--footer">
-        <div className="app--footer-content ui container">
-          <div className="ui stackable grid">
+      <footer className='app--footer'>
+        <div className='app--footer-content ui container'>
+          <div className='ui stackable grid'>
             <div className='three wide column text-left'>
-              <a href="http://odoruinu.net/"
-                target="_blank"
+              <a href='http://odoruinu.net/'
+                target='_blank'
                 onClick={ this.handleOutboundLinkClick }>
                 © Takuya Matsuyama
               </a>
             </div>
-            <div className="thirteen wide column right aligned">
-              <ul className="links">
+            <div className='thirteen wide column right aligned'>
+              <ul className='links'>
                 <li>
-                  <a href="/terms" onClick={Link.handleClick}>Terms of Use</a>
+                  <Link to='/terms'>Terms of Use</Link>
                 </li>
                 <li>
-                  <a href="/privacy" onClick={Link.handleClick}>Privacy Policy</a>
+                  <Link to='/privacy'>Privacy Policy</Link>
                 </li>
                 <li>
                   <a
-                    href="https://github.com/inkdropapp/forum"
-                    target="_blank"
+                    href='https://github.com/inkdropapp/forum'
+                    target='_blank'
                     onClick={this.handleOutboundLinkClick}
                   >
                     Forum
@@ -53,7 +53,7 @@ class Footer extends React.Component {
                 </li>
                 <li>
                   <a
-                    href="mailto:inkdrop@pkpk.info"
+                    href='mailto:inkdrop@pkpk.info'
                     onClick={this.handleOutboundLinkClick}
                   >
                     Contact
@@ -61,8 +61,8 @@ class Footer extends React.Component {
                 </li>
                 <li>
                   <a
-                    href="https://twitter.com/inkdrop_app"
-                    target="_blank"
+                    href='https://twitter.com/inkdrop_app'
+                    target='_blank'
                     onClick={this.handleOutboundLinkClick}
                   >
                     Twitter
@@ -70,8 +70,8 @@ class Footer extends React.Component {
                 </li>
                 <li>
                   <a
-                    href="https://medium.com/@inkdrop"
-                    target="_blank"
+                    href='https://medium.com/@inkdrop'
+                    target='_blank'
                     onClick={this.handleOutboundLinkClick}
                   >
                     Blog

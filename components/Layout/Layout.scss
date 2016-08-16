@@ -5,6 +5,7 @@
  */
 
 @import '../variables.scss';
+@import '../hljs.scss';
 
 html, body {
   margin: 0;
@@ -17,4 +18,124 @@ html, body {
 .main-content {
   padding-top: 2rem;
   margin-bottom: 50px;
+}
+
+.main-content .article-list {
+  a {
+    display: block;
+    padding: 4px;
+  }
+}
+
+.main-content .doc-content {
+
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+
+  blockquote {
+    margin: 0;
+  }
+
+  p,
+  blockquote,
+  ul,
+  ol,
+  dl,
+  table,
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  hr {
+    height: 4px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+  }
+
+  blockquote {
+    padding: 5px 15px;
+    color: #777;
+    border-left: 4px solid #ddd;
+  }
+
+  blockquote>:first-child {
+    margin-top: 0;
+  }
+
+  blockquote>:last-child {
+    margin-bottom: 0;
+  }
+
+  code {
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(0,0,0,0.04);
+    border-radius: 3px;
+  }
+
+  code:before,
+  code:after {
+    letter-spacing: -0.2em;
+    content: "\00a0";
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  .highlight {
+    margin-bottom: 16px;
+  }
+
+  .highlight pre,
+  pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+  }
+
+  .highlight pre {
+    margin-bottom: 0;
+    word-break: normal;
+  }
+
+  pre {
+    word-wrap: normal;
+  }
+
+  pre code {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code:before,
+  pre code:after {
+    content: normal;
+  }
 }
