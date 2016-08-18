@@ -37,6 +37,9 @@ export default class extends Component {
           <li>
             <MenuLink to='/manual/accessing-data-in-the-cloud'>Accessing Data in the Cloud</MenuLink>
           </li>
+          <li>
+            <MenuLink to='/manual/creating-a-theme'>Creating a Theme</MenuLink>
+          </li>
         </ul>
       </div>
     );

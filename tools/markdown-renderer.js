@@ -4,9 +4,20 @@ import hljs from 'highlight.js';
 const renderer = new marked.Renderer();
 
 renderer.image = function image(href, title, text) {
-  return `<img class="ui image" src="${href}" title="${title}" alt="${text}" />`;
+  return `<img class="ui image" src="${href}" title="${title || ''}" alt="${text || ''}" />`;
 };
 
+
+renderer.heading = function heading(text, level) {
+  const escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
+
+  return '<h' + level + '><a name="' +
+    escapedText +
+    '" class="anchor" href="#' +
+    escapedText +
+    '"><i class="linkify icon"></i></a>' +
+    text + '</h' + level + '>';
+};
 
 marked.setOptions({
   highlight(code, lang) {

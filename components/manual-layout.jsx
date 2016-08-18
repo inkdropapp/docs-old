@@ -24,7 +24,7 @@ export default class extends Component {
           </div>
           <div className='twelve wide column doc-content'>
             <div className='ui breadcrumb'>
-              <Link to='/' className='section'>Top</Link>
+              <Link to='/' className='section'>Docs</Link>
               <i className='right chevron icon divider'></i>
               <Link to='/manual/' className='section'>Inkdrop Manual</Link>
               <i className='right chevron icon divider'></i>

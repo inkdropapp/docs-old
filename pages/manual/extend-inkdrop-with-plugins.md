@@ -12,9 +12,13 @@ There are three types of the plugin:
 
 ## Using ipm (Inkdrop Plugin Manager)
 
-> Currently Inkdrop doesn't provide GUI for installing/uninstalling plugins. It's planned to support in the future.
+<div class="ui info message">
+  Currently Inkdrop doesn't provide GUI for installing/uninstalling plugins. It's planned to support in the future.
+</div>
 
-> ipm is a fork of [apm (atom package manager)](https://github.com/atom/apm), some output messages may include Atom-related though, please ignore them.
+<div class="ui message">
+  ipm is a fork of <a href="https://github.com/atom/apm">apm (atom package manager)</a>, some output messages may include Atom-related though, please ignore them. 😉
+</div>
 
 **ipm** is a command-line tool to manage plugins for Inkdrop.
 
