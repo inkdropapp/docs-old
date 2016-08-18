@@ -112,4 +112,4 @@ Check out Google's [extensive tutorial](https://developers.google.com/web/tools/
 
 Once you're happy with your theme and would like to share it with other Inkdrop users, it's time to publish it. 🎉
 
-Follow the steps in the Publishing section of the Word Count example. Publishing a theme works exactly the same.
+Follow the steps in the [Publishing](/manual/plugin-word-count#publishing) section of the Word Count example. Publishing a theme works exactly the same.

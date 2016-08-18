@@ -40,6 +40,9 @@ export default class extends Component {
           <li>
             <MenuLink to='/manual/creating-a-theme'>Creating a Theme</MenuLink>
           </li>
+          <li>
+            <MenuLink to='/manual/plugin-word-count'>Plugin: Word Count</MenuLink>
+          </li>
         </ul>
       </div>
     );
