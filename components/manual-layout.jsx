@@ -1,9 +1,3 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
-
 import React, { PropTypes, Component } from 'react';
 import ManualMenu from './manual-menu';
 import HelpUs from './helpus';

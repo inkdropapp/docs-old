@@ -21,8 +21,8 @@ export default class extends Component {
           These docs give an overview of how Inkdrop works, and are meant to be a reference for plugin developers.
         </p>
 
-        <div className='ui segment'>
-          <div className='ui grid'>
+        <div className='ui piled segment'>
+          <div className='ui stackable grid'>
             <div className='three column row'>
               <div className='column'>
                 <h3 className='ui header'>
