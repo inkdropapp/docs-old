@@ -6,6 +6,7 @@
 
 import React, { PropTypes, Component } from 'react';
 import ManualMenu from './manual-menu';
+import HelpUs from './helpus';
 import Link from './Link';
 
 export default class extends Component {
@@ -32,6 +33,8 @@ export default class extends Component {
             </div>
 
             { this.props.children }
+
+            <HelpUs />
           </div>
         </div>
       </div>
