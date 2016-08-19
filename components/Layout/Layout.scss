@@ -18,6 +18,21 @@ html, body {
 .main-content {
   padding-top: 2rem;
   margin-bottom: 50px;
+
+  h1, h2, h3, h4, h5, h6 {
+    a {
+      opacity: 0;
+      margin-left: -32px;
+      color: inherit;
+    }
+    &:hover a {
+      opacity: 1;
+      display: inline-block;
+    }
+  }
+  h3 a {
+    margin-left: -25px;
+  }
 }
 
 .main-content .article-list {
@@ -139,18 +154,4 @@ html, body {
     content: normal;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    a {
-      opacity: 0;
-      margin-left: -32px;
-      color: inherit;
-    }
-    &:hover a {
-      opacity: 1;
-      display: inline-block;
-    }
-  }
-  h3 a {
-    margin-left: -25px;
-  }
 }
