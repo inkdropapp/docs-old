@@ -43,6 +43,15 @@ export default class extends Component {
           <li>
             <MenuLink to='/manual/plugin-word-count'>Plugin: Word Count</MenuLink>
           </li>
+          <li>
+            <MenuLink to='/manual/flux-architecture'>Flux Architecture</MenuLink>
+          </li>
+          <li>
+            <MenuLink to='/manual/accessing-the-local-database'>Accessing the Local Database</MenuLink>
+          </li>
+          <li>
+            <MenuLink to='/manual/customizing-the-editor'>Customizing the Editor</MenuLink>
+          </li>
         </ul>
       </div>
     );

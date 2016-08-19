@@ -23,6 +23,18 @@ export default class extends Component {
             <MenuLink to='/reference/tag'>Tag</MenuLink>
           </li>
         </ul>
+        <h3 className='ui header'>Flux Stores</h3>
+        <ul className='article-list'>
+          <li>
+            <MenuLink to='/reference/editor-store'>Editor Store</MenuLink>
+          </li>
+        </ul>
+        <h3 className='ui header'>Flux Actions</h3>
+        <ul className='article-list'>
+          <li>
+            <MenuLink to='/reference/editor-actions'>Editor Actions</MenuLink>
+          </li>
+        </ul>
       </div>
     );
   }

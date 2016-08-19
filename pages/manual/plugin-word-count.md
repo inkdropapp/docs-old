@@ -320,8 +320,8 @@ We'll do this in a very simple way. When the dialog is toggled, we'll count the 
     console.log('WordCount was toggled!');
     const { dialog } = this.refs;
     if (!dialog.isShown) {
-      const editor = inkdrop.getActiveEditor()
-      const words = editor.getText().split(/\s+/).length;
+      const editorState = inkdrop.flux.getStore('editor').getState();
+      const words = editorState.document.body.split(/\s+/).length;
       this.setState({ words });
       dialog.showDialog();
     } else {
@@ -330,9 +330,11 @@ We'll do this in a very simple way. When the dialog is toggled, we'll count the 
   }
 ```
 
-Let's look at the 4 lines we've added. First we set a `words` to `0` by calling `setState` method. Second we get an instance of the current editor object (where our text to count is) by calling `inkdrop.getActiveTextEditor()`.
+Let's look at the 4 lines we've added.
+First we set a `words` to `0` by calling `setState` method.
+Second we get a state of the [editor store](/reference/editor-store) by calling `inkdrop.flux.getStore('editor').getState()`.
 
-Next we get the number of words by calling `getText()` on our new editor object, then splitting that text on whitespace with a regular expression and then getting the length of that array.
+Next we get the number of words by looking into `editorState.document.body`, then splitting that text on whitespace with a regular expression and then getting the length of that array.
 
 Finally, we tell our message dialog to update the word count it displays by calling the `setState()` method on our dialog and then showing the modal again. Let's add a code to display the word count through the `render` method of our `lib/wordcount-message-dialog.js` file:
 
@@ -423,5 +425,5 @@ You can also run `ipm help publish` to see all the available options and `ipm he
 
 ## Summary
 
-We've now generated, customized and published our first plugin for Inkdrop. Congratulations! Now anyone can install our masterpiece from directly within Inkdrop as we did in [Extend Inkdrop with Plugins](http://localhost:3005/manual/extend-inkdrop-with-plugins).
+We've now generated, customized and published our first plugin for Inkdrop. Congratulations! Now anyone can install our masterpiece from directly within Inkdrop as we did in [Extend Inkdrop with Plugins](/manual/extend-inkdrop-with-plugins).
 
