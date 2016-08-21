@@ -1,6 +1,6 @@
 ## What platforms does Inkdrop run on?
 
-Prebuilt versions of Inkdrop are available for OS X 10.8 or later, Windows 7 or later, and Ubuntu Linux.
+Inkdrop is available for OS X 10.8 or later, Windows 7 or later, and Ubuntu Linux.
 
 ## Can I sync my data with DropBox, GoogleDrive, etc?
 
