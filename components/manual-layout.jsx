@@ -25,6 +25,7 @@ export default class extends Component {
               <i className='right chevron icon divider'></i>
               <div className='active section'>{ this.props.currentPageTitle }</div>
             </div>
+            <div className='ui divider'></div>
 
             { this.props.children }
 

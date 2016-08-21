@@ -6,7 +6,7 @@ You can configure synchronizations in the Preferences like this:
 
 There are three sync options:
 
- * **Don't Sync** - Store Inkdrop data only in this computer
+ * **Don't Sync** - Store Inkdrop data only in your local computer
  * **Inkdrop Sync Server** - Sync with Inkdrop's own service
  * **Advanced (CouchDB)** - Sync with your own compatible server
 

@@ -12,6 +12,7 @@ export default class extends Component {
           <i className='right chevron icon divider'></i>
           <div className='active section'>Inkdrop API Reference</div>
         </div>
+        <div className='ui divider'></div>
         <h2 className='ui header'>
           <i className='setting icon'></i>
           <div className='content'>

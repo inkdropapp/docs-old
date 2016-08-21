@@ -1,10 +1,5 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
-
 import React, { Component } from 'react';
+import Link from '../components/Link';
 
 export default class extends Component {
   static title = 'FAQ';
@@ -13,7 +8,12 @@ export default class extends Component {
     const md = require('./faq.md');
     return (
       <div className='ui container main-content'>
-        <h1>FAQ</h1>
+        <div className='ui breadcrumb'>
+          <Link to='/' className='section'>Docs</Link>
+          <i className='right chevron icon divider'></i>
+          <div className='active section'>FAQ</div>
+        </div>
+        <div className='ui divider'></div>
         <div dangerouslySetInnerHTML={ { __html: md } } />
       </div>
     );
