@@ -18,29 +18,6 @@ The Note model represents a Note object.
 }
 ```
 
-## Example (encrypted)
-
-```JSON
-{
-  "_id": "note:BykcqFxK",
-  "_rev": "8-c14fcf8e3fd745ca89231a8a39487987",
-  "title": "Welcome to Inkdrop",
-  "doctype": "markdown",
-  "updatedAt": 1470303011701,
-  "createdAt": 1470302855436,
-  "tags": [
-      "Tutorial"
-  ],
-  "bookId": "book:05f32a5b-eca0-4bfa-bd9b-6e39afbd6b72:SyEczB-U",
-  "encrypted": "aes-256-gcm",
-  "encryptedBody": {
-    "content": "oZLpfVvymz4s3IffRn9okvw8CGiaYEMjoze8AwQgyrQFhJ0y0WHEfMN9ORlz3UFaRsh5BxjVq+1Lx3g6LOGBpYDBmYVTVkhC7Ah3o4+LNpFQ76y7Z+xoBkP1gNgs7pcs5OkEz4OqzmlZ225RXfmCl4kGgon8v7umZ3GYvZHch+QodLySXUtg0a5P6DB55kZ2VRqqKzneQvVJoESoIK7L95fRLtcJ0fFlUE1WX77cRtXeVYWB3vMxKfxdrILyL0oUQY8/kr5kqYM5ZFooSBcW2qsi/i71YZUf/aS3QuR7QIanbaYMMH3KGsSZ8vonqANTcQulhBcLtQMMyndzphOJ67mUZpJicuAffCIWyvipNTK8NiFVuttjKRM7iu5TpINDDd4pqXApwoHG3Ba3yJdusNX5ZQJZSsb250ex6fErCRRfaIe7JgeRanPROOKQQFC6N+7idYCCNWyeWr6tgQ==",
-    "iv": "ce6f133dbda3a3cc5bbcf8d3",
-    "tag": "635096d9a0a2a30e41c1afa6ea5765e5"
-  }
-}
-```
-
 ## Fields
 
 ### _id
@@ -89,30 +66,11 @@ The list of tag names.
 
 ### body
 
-Type: **String**, Optional
+Type: **String**
 
 The content of the note represented with Markdown.
-It's required if the note is not encrypted.
 
 ### bookId
 
 The ID of the book with which the note is associated.
-
-### encrypted
-
-Type: **String**, Optional
-
-The encryption algorithm. It's required if the note is encrypted.
-Only 'aes-256-gcm' is currently supported.
-
-### encryptedBody
-
-Type: **Object**, Optional
-
- * **content** - The encrypted data
- * **iv** - The initial vector
- * **tag** - The tag used for the encryption
-
-If the note is encrypted with a password, the data should be stored in this field.
-
 

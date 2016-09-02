@@ -16,3 +16,9 @@ See the [documentation](/manual/synchronizing-in-the-cloud) for full instruction
 You can delete your account from [here](https://www.inkdrop.info/account/delete).
 You data will be deleted immediately.
 
+## I forgot my password. How to reset my password?
+
+Inkdrop cannot reset your password for security reason.
+Please read [how to recover your password](/manual/recovering-your-password).
+
+

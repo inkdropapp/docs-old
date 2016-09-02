@@ -31,6 +31,12 @@ export default class extends Component {
           <li>
             <MenuLink to='/manual/extend-inkdrop-with-plugins'>Extend Inkdrop with plugins</MenuLink>
           </li>
+          <li>
+            <MenuLink to='/manual/recovering-your-password'>Recovering your password</MenuLink>
+          </li>
+          <li>
+            <MenuLink to='/manual/working-behind-a-corporate-web-proxy'>Working Behind Web Proxy</MenuLink>
+          </li>
         </ul>
         <h3 className='ui header'>Hacking Inkdrop</h3>
         <ul className='article-list'>
