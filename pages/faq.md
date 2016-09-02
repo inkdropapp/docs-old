@@ -21,4 +21,9 @@ You data will be deleted immediately.
 Inkdrop cannot reset your password for security reason.
 Please read [how to recover your password](/manual/recovering-your-password).
 
+## Does Inkdrop support iCloud or Dropbox?
+
+We’re delivering stable smooth experience to our users.
+That’s why we don’t want to defocus on support of different platforms.
+Inkdrop exclusively works with a server compatible with CouchDB.
 
