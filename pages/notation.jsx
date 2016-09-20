@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 export default class extends Component {
-  static title = 'Terms of Use';
+  static title = 'Notation based on the Specified Commercial Transaction Act';
 
   render() {
-    const md = require('./terms.md');
+    const md = require('./notation.md');
     return (
       <div className='ui container main-content'>
-        <h1>Terms of Service</h1>
+        <h1>Notation based on the Specified Commercial Transaction Act</h1>
         <div dangerouslySetInnerHTML={ { __html: md } } />
       </div>
     );

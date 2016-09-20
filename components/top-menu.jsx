@@ -5,6 +5,7 @@
  */
 
 import React, { Component } from 'react';
+import Link from './Link';
 import ManualMenu from './manual-menu';
 import ReferenceMenu from './reference-menu';
 
@@ -44,6 +45,19 @@ export default class extends Component {
                 The <a href='https://github.com/inkdropapp/forum/'>Inkdrop Forum</a> is the place to discuss anything and everything Inkdrop related with the entire Inkdrop community.
                 If you have problems or are looking for help, this is your place.
               </div>
+              <h3 className='ui header'>
+                <i className='info icon'></i>
+                <div className='content'>
+                  Further Informations
+                </div>
+              </h3>
+              <ul>
+                <li>
+                  <Link to='/notation'>
+                    Notation based on the Specified Commercial Transaction Act
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

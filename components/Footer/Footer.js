@@ -27,14 +27,7 @@ class Footer extends React.Component {
       <footer className='app--footer'>
         <div className='app--footer-content ui container'>
           <div className='ui stackable grid'>
-            <div className='three wide column text-left'>
-              <a href='http://odoruinu.net/'
-                target='_blank'
-                onClick={ this.handleOutboundLinkClick }>
-                © Takuya Matsuyama
-              </a>
-            </div>
-            <div className='thirteen wide column right aligned'>
+            <div className='thirteen wide column links'>
               <ul className='links'>
                 <li>
                   <Link to='/terms'>Terms of Use</Link>
@@ -43,11 +36,7 @@ class Footer extends React.Component {
                   <Link to='/privacy'>Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link
-                    to='/faq'
-                  >
-                    FAQ
-                  </Link>
+                  <Link to='/faq'>FAQ</Link>
                 </li>
                 <li>
                   <a
@@ -76,6 +65,13 @@ class Footer extends React.Component {
                   </a>
                 </li>
               </ul>
+            </div>
+            <div className='three wide column text-left'>
+              <a href='http://odoruinu.net/'
+                target='_blank'
+                onClick={ this.handleOutboundLinkClick }>
+                © Takuya Matsuyama
+              </a>
             </div>
           </div>
         </div>
