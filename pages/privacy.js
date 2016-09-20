@@ -10,9 +10,9 @@ export default class extends Component {
   static title = 'Privacy Policy';
 
   render() {
-    const md = require('../components/privacy.md');
+    const md = require('./privacy.md');
     return (
-      <div className="ui container main-content">
+      <div className='ui container main-content'>
         <h1>Privacy Policy</h1>
         <div dangerouslySetInnerHTML={ { __html: md } } />
       </div>
