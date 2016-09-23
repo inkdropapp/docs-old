@@ -9,7 +9,12 @@ Takuya Matsuyama
 ### Address
 
 5-18-11-303, Tagara, Nerima, Tokyo 179-0073, Japan
-Tel: 050-7108-6381
+
+### Contact
+
+Email: inkdrop@pkpk.info
+
+Tel: +815071086381
 
 ### Payment Methods
 

@@ -69,3 +69,11 @@ Users may access their Service data via the Application Program Interface ("**AP
 12. Questions about the Terms of Service should be sent to [inkdrop@pkpk.info](mailto:inkdrop@pkpk.info).
 
 The end.
+
+
+## Notation based on the Specified Commercial Transaction Act
+
+特定商取引法に基づく表記
+
+[See here](/notation).
+
