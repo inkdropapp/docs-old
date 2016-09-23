@@ -27,3 +27,10 @@ We will offer the Service as soon as the payment transaction becomes complete.
 ### Cancelling / Returning of Product(s)
 
 In principle, order cancelations and product returns or exchange are not accepted
+
+### Supported platforms
+
+ * macOS
+ * Windows 7+ (64bit)
+ * Linux (64bit) (Tested on Ubuntu)
+
