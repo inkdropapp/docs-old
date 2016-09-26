@@ -1,3 +1,13 @@
+The beta version of this service is free of charge to beta users during the beta stage.
+The 'beta version' or 'private beta' is the trial period of this service until its official release which may include a change in the service name and the features it includes.
+A beta user is someone who is interested in examining and evaluating the beta version of this service for personal or business reasons.
+This terms of use are subject to change with or without notice after the initial beta sign up stage.
+
+In addition, there is no guarantee that the features and functionalities of the beta version will be included in the official release - the official version may include different features and functionalities than the beta version.
+Inkdrop is not responsible for any damage, inconvenience, or loss experienced during the beta trial period, when available, by any beta user.
+
+
+
 These Terms of Service ("**Terms**") govern your access to and use of the services, including our various websites, APIs, email notifications, and applications (the "**Services**" or "**Inkdrop**"), and any information, text, graphics, photos or other materials uploaded, downloaded or appearing on the Services (collectively referred to as "**Content**"). Inkdrop is owned by Takuya Matsuyama, Tokyo - Japan. (referred to as "**I**", "**Me**", "**Our**" or "**We**"). As a customer of this service you're a "**User**" or "**You**" according to this agreement. Your access to and use of the Services are conditioned on your acceptance of and compliance with these Terms. By accessing or using the Services you agree to be bound by these Terms.
 
 We reserve the right to update and change these Terms of Service without notice. Any new features that augment or enhance the current Service, including the release of new tools and resources, shall be subject to the Terms of Service. Continued use of the Service after any such changes shall constitute your consent to such changes. You can review the most current version of the Terms of Service at any time at: http://doc.inkdrop.info/terms
