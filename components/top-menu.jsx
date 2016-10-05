@@ -53,6 +53,11 @@ export default class extends Component {
               </h3>
               <ul>
                 <li>
+                  <Link to='/announce/'>
+                    Announcements
+                  </Link>
+                </li>
+                <li>
                   <Link to='/notation'>
                     Notation based on the Specified Commercial Transaction Act
                   </Link>
