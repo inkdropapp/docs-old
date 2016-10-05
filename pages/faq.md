@@ -6,10 +6,14 @@ Inkdrop is available for OS X 10.8 or later, Windows 7 or later, and Ubuntu Linu
 
 No. You can only sync your data with a server compatible with CouchDB.
 
+We’re delivering stable smooth experience to our users.
+That’s why we don’t want to defocus on support of different platforms.
+
 ## I don’t trust anyone with my note. Can I run Inkdrop server myself?
 
 Yes!
 See the [documentation](/manual/synchronizing-in-the-cloud) for full instructions on setting up the sync server on your local machine.
+Or you can simply use it in offline by setting from preferences.
 
 ## How can I delete my account?
 
@@ -20,10 +24,4 @@ You data will be deleted immediately.
 
 Inkdrop cannot reset your password for security reason.
 Please read [how to recover your password](/manual/recovering-your-password).
-
-## Does Inkdrop support iCloud or Dropbox?
-
-We’re delivering stable smooth experience to our users.
-That’s why we don’t want to defocus on support of different platforms.
-Inkdrop exclusively works with a server compatible with CouchDB.
 
