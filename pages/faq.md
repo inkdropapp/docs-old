@@ -5,6 +5,7 @@ Inkdrop is available for OS X 10.8 or later, Windows 7 or later, and Ubuntu Linu
 ## Can I sync my data with DropBox, GoogleDrive, etc?
 
 No. You can only sync your data with a server compatible with CouchDB.
+Read the [documentation](/manual/synchronizing-in-the-cloud#how-to-set-up-your-own-sync-server) to learn how to set up your own sync server.
 
 We’re delivering stable smooth experience to our users.
 That’s why we don’t want to defocus on support of different platforms.
