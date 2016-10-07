@@ -13,13 +13,11 @@ const editorActions = inkdrop.flux.getActions('editor')
 
 Create new note and open it in the editor.
 
-### `open ({ noteId, passphrase, rememberPassphrase, viewMode, isNew, force })`
+### `open ({ noteId, viewMode, isNew, force })`
 
 Open a note in the editor.
 
  * `noteId`: A String containing a note ID to open
- * `passphrase`: A String containing a password to decrypt the note. Required if the note is encrypted.
- * `rememberPassphrase`: A Boolean indicating whether the encryption password is remembered in the memory. Required if the note is encrypted.
  * `viewMode`: A String which can be `preview`, `sideBySide` or `edit`. Default: `preview`.
  * `isNew`: A Boolean indicating whether opening note is new. Default: `false`.
  * `force`: A Boolean, `true` to force open a note again even if it's already opened. Default: `false`.
@@ -46,11 +44,9 @@ Change the editor view mode.
     - `edit`
 
 
-### `save ({ document, passphrase, rememberPassphrase })`
+### `save ({ document })`
 
 Save current note to the local database.
 
  * `document`: A [Note](/reference/note) Object representing the current note to save.
- * `passphrase`: A String containing an encryption password. Required if the note is encrypted.
- * `rememberPassphrase`: A Boolean indicating whether the encryption password is remembered in the memory. Required if the note is encrypted.
 

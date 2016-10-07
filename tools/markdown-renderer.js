@@ -19,6 +19,13 @@ renderer.heading = function heading(text, level) {
     text + '</h' + level + '>';
 };
 
+renderer.table = function table(header, body) {
+  return '<table class="ui table">' +
+    '<thead>' + header + '</thead>' +
+    '<tbody>' + body + '</tbody>' +
+    '</table>';
+};
+
 marked.setOptions({
   highlight(code, lang) {
     try {

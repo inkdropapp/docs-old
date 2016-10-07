@@ -35,6 +35,15 @@ export default class extends Component {
             <MenuLink to='/reference/editor-actions'>Editor Actions</MenuLink>
           </li>
         </ul>
+        <h3 className='ui header'>Essential Classes</h3>
+        <ul className='article-list'>
+          <li>
+            <MenuLink to='/reference/environment'>Environment</MenuLink>
+          </li>
+          <li>
+            <MenuLink to='/reference/command-registry'>CommandRegistry</MenuLink>
+          </li>
+        </ul>
       </div>
     );
   }
