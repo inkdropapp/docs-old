@@ -13,7 +13,7 @@ The Note model represents a Note object.
    "tags": [
        "Tutorial"
    ],
-   "body": "![logo](/Users/nora/Documents/pkpk/products/inkdrop/images/banner_sm.png)\n\nFor help, please visit:\n\n * The [Inkdrop docs](http://doc.inkdrop.info/) for Guides and the API reference.\n * The Inkdrop forum at [github](https://github.com/inkdropapp/forum). Please report issue or suggest feedback here.\n * The [Inkdropapp org](https://github.com/inkdropapp/). This is where all Inkdrop-created packages can be found.\n\n* * *\n\n### Get to know Inkdrop 🚀\n\n * [👀 Check a note example](inkdrop://note:HyxgYO15t)\n * [📓 Create a notebook]()\n * [✍️ Create a note]()\n * [🖌 Choose a Theme]()\n * [⚙ Customize the Editor]()\n * [⌨️ Learn some Shortcuts]()\n",
+   "body": "The [Inkdrop docs](http://doc.inkdrop.info/) for Guides and the API reference.\n * The Inkdrop forum at [github](https://github.com/inkdropapp/forum). Please report issue or suggest feedback here.\n * The [Inkdropapp org](https://github.com/inkdropapp/). This is where all Inkdrop-created packages can be found.\n\n* * *\n\n### Get to know Inkdrop 🚀\n\n * [👀 Check a note example](inkdrop://note:HyxgYO15t)\n * [📓 Create a notebook]()\n * [✍️ Create a note]()\n * [🖌 Choose a Theme]()\n * [⚙ Customize the Editor]()\n * [⌨️ Learn some Shortcuts]()\n",
    "bookId": "book:rylKOycF"
 }
 ```
