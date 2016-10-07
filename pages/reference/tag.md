@@ -9,3 +9,30 @@ Example:
 }
 ```
 
+## Fields
+
+### _id
+
+Type: **String**
+
+The unique tag ID which should start with `tag:` and the remains are randomly generated string.
+
+### _rev
+
+Type: **String**
+
+This is a CouchDB specific field.
+The current MVCC-token/revision of this document (mandatory and immutable).
+
+### name
+
+Type: **String**
+
+The name of the tag.
+
+### count
+
+Type: **Number**
+
+It indicates the number of notes with the tag.
+
