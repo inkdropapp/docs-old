@@ -592,9 +592,14 @@ This line is only separated by a single newline, so it's a separate line in the 
             </div>
 
           </div>
+          <div className='ui divider'></div>
+          <section>
+            <p>
+              This cheatsheet is written based on <a href='_blank' href='https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet'>markdown-here's documentation</a>.
+            </p>
+          </section>
         </div>
       </div>
     );
   }
-
 }
