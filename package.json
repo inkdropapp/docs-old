@@ -38,6 +38,7 @@
     "raw-loader": "^0.5.1",
     "react": "^0.14.0",
     "react-bootstrap": "^0.28.1",
+    "react-disqus-thread": "^0.4.0",
     "react-dom": "^0.14.0",
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.1",

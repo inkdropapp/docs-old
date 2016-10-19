@@ -8,6 +8,7 @@ import React, { Component } from 'react';
 import './markdown-cheatsheet.scss';
 import Link from '../../components/Link';
 import hljs from 'highlight.js';
+import ReactDisqusThread from 'react-disqus-thread';
 
 export default class ManualPage extends Component {
   static title = 'Markdown Cheatsheet';
@@ -597,7 +598,16 @@ This line is only separated by a single newline, so it's a separate line in the 
             <p>
               This cheatsheet is written based on <a href='_blank' href='https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet'>markdown-here's documentation</a>.
             </p>
+            <p>
+              License: <a href='https://creativecommons.org/licenses/by/3.0/' target='_blank'>CC-BY</a>
+            </p>
           </section>
+
+          <ReactDisqusThread
+            shortname='inkdrop-documentation'
+            identifier='inkdrop-markdown-cheatsheet'
+            title={ ManualPage.title }
+          />
         </div>
       </div>
     );
