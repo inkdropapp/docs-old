@@ -278,21 +278,21 @@ Some text to show that the reference links can follow later.
               <div className='column'>
                 <pre><code className='lang-markdown'>{`Here's our logo (hover to see the title text):
 
-Inline-style: ![alt text](http://doc.inkdrop.info/icon-w64.png "Logo Title Text 1")
+Inline-style: ![alt text](http://doc.inkdrop.info/icon_w64.png "Logo Title Text 1")
 
 Reference-style: ![alt text][logo]
 
-[logo]: http://doc.inkdrop.info/icon-w64.png "Logo Title Text 2"`}</code></pre>
+[logo]: http://doc.inkdrop.info/icon_w64.png "Logo Title Text 2"`}</code></pre>
               </div>
               <div className='column'>
                 <p>Here's our logo (hover to see the title text):</p>
 
                 <p>
-                  Inline-style: <img src='/icon-w64.png' alt='alt text' title='Logo Title Text 1' />
+                  Inline-style: <img src='/icon_w64.png' alt='alt text' title='Logo Title Text 1' />
                 </p>
 
                 <p>
-                  Reference-style: <img src='/icon-w64.png' alt='alt text' title='Logo Title Text 2' />
+                  Reference-style: <img src='/icon_w64.png' alt='alt text' title='Logo Title Text 2' />
                 </p>
 
                 <p><a name='user-content-code'></a></p>
