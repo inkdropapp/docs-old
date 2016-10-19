@@ -59,6 +59,12 @@ export default class extends Component {
             <MenuLink to='/manual/customizing-the-editor'>Customizing the Editor</MenuLink>
           </li>
         </ul>
+        <h3 className='ui header'>Appendix</h3>
+        <ul className='article-list'>
+          <li>
+            <MenuLink to='/manual/markdown-cheatsheet'>Markdown Cheatsheet</MenuLink>
+          </li>
+        </ul>
       </div>
     );
   }
