@@ -62,7 +62,7 @@ The date time when the note was created, represented with [Unix timestamps](http
 
 Type: **Array of String**
 
-The list of tag names.
+The list of tag IDs.
 
 ### body
 
