@@ -12,7 +12,7 @@ To create new note, you can either push a button on the right top of the note li
 
 ![AddNote](/manual/02-basic-usage_addnote.png)
 
-To create new notebook, click a menu item labeled 'New notebook..' in the middle of sidebar:
+To create new notebook, click 'Add' button on the right of 'Notebooks' section:
 
 ![AddBook](/manual/02-basic-usage_addbook.png)
 

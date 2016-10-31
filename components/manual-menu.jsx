@@ -26,6 +26,9 @@ export default class extends Component {
             <MenuLink to='/manual/searching-notes'>Searching notes</MenuLink>
           </li>
           <li>
+            <MenuLink to='/manual/managing-tasks-with-status'>Managing tasks with status</MenuLink>
+          </li>
+          <li>
             <MenuLink to='/manual/synchronizing-in-the-cloud'>Synchronizing in the cloud</MenuLink>
           </li>
           <li>
