@@ -15,5 +15,3 @@ export default class ManualPage extends Component {
   }
 
 }
-
-

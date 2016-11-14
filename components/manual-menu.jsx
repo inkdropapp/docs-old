@@ -38,7 +38,10 @@ export default class extends Component {
             <MenuLink to='/manual/recovering-your-password'>Recovering your password</MenuLink>
           </li>
           <li>
-            <MenuLink to='/manual/working-behind-a-corporate-web-proxy'>Working Behind Web Proxy</MenuLink>
+            <MenuLink to='/manual/working-behind-a-corporate-web-proxy'>Working behind web proxy</MenuLink>
+          </li>
+          <li>
+            <MenuLink to='/manual/backing-up-your-data'>Backing up your data</MenuLink>
           </li>
         </ul>
         <h3 className='ui header'>Hacking Inkdrop</h3>
