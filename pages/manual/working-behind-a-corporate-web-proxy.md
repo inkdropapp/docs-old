@@ -13,17 +13,22 @@ Quit Inkdrop before you edit it.
 "*":
   core:
     network:
-      http_proxy: "http://username:password@localhost:8080/"
-      https_proxy: "http://username:password@localhost:8080/"
+      http_proxy: "http://webproxy:8080/"
+      https_proxy: "http://webproxy:8080/"
 ```
 
 Now open Inkdrop and you will be able to get synced!
+If the web proxy requires BASIC auth, you can just specify a URL with username and password like so:
+
+```
+http://username:password@webproxy:8080/
+```
 
 ## Configuring ipm
 
 `ipm` is also necessary to be configured for working behind a web proxy.
 
 ```bash
-ipm config set proxy "http://localhost:3128"
-ipm config set https_proxy proxy "http://localhost:3128"
+ipm config set proxy "http://webproxy:8080"
+ipm config set https_proxy proxy "http://webproxy:8080"
 ```
