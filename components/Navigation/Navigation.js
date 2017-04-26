@@ -12,7 +12,7 @@ function Navigation() {
   return (
     <div className='ui grid'>
       <div className='row'>
-        <a href='https://inkdrop.info/' className='app--logo'>
+        <a href='https://www.inkdrop.info/' className='app--logo'>
           <img
             src='//inkdrop-prod.s3.amazonaws.com/site/header-logo@2x.png'
             width='196'
@@ -26,7 +26,7 @@ function Navigation() {
             <Link to='/'>Docs</Link>
           </li>
           <li>
-            <a href='https://inkdrop.info/login'>Login</a>
+            <a href='https://www.inkdrop.info/login'>Login</a>
           </li>
         </ul>
 
