@@ -92,6 +92,6 @@ http://anna:secret@127.0.0.1:5984/my-inkdrop-notes
 ```
 
 <div class="ui warning message">
-  <strong>WARNING</strong>: You can neither create design documents nor add attachments on the Inkdrop database.
+  <strong>NOTE</strong>: You can neither create design documents nor add attachments on the Inkdrop-hosted database.
 </div>
 
