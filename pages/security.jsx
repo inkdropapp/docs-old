@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Link from '../components/Link';
 
 export default class extends Component {
   static title = 'How secure is Inkdrop?';
@@ -26,7 +25,7 @@ export default class extends Component {
         <h2>Data at Rest Encryption</h2>
         <p>
           Having data encrypted will make it almost impossible for someone to access or steal a hard disk and get access to the original data.
-          Your whole notes stored on disk in Inkdrop database will be encrypted with a common key which is a 256-bit AES key generated when you signed up to Inkdrop.
+          All your notes stored on disk in the Inkdrop database will be encrypted with a common key which is a 256-bit AES key generated when you sign up to Inkdrop.
           We use this key, along with an initialization vector, to encrypt your data in GCM (Galois/Counter Mode).
           The key is also encrypted while stored on disk, with a 256-bit AES key derived with PBKDF2 from your login password.
         </p>
