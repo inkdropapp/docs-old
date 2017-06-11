@@ -17,7 +17,7 @@ export default class extends Link {
     const isActive = pathname === to ? 'current-active' : '';
     const className = (props.className || '') + ' ' + isActive;
     return (
-      <a href={to} className={className} {...props} onClick={Link.handleClick.bind(this)}>
+      <a href={to} className={`menu-link ${className}`} {...props} onClick={Link.handleClick.bind(this)}>
         {children}
       </a>
     );

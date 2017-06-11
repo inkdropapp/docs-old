@@ -1,4 +1,8 @@
+@import './variables.scss';
+a.menu-link {
+  color: $text-color;
+}
+
 a.current-active {
-  font-weight: bold;
-  background-color: lightblue;
+  color: $active-color;
 }

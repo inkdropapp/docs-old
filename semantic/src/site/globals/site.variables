@@ -1,5 +1,7 @@
 /*******************************
      User Global Variables
 *******************************/
+@linkColor        : #0099e5;
 @blue             : #3D7AED;
-@textColor        : rgba(0, 0, 0, 0.7);
+@textColor        : #373e42;
+@headerFontWeight : 400;

@@ -1,9 +1,8 @@
 /*!
- * # Semantic UI 2.1.8 - Checkbox
+ * # Semantic UI 2.2.10 - Checkbox
  * http://github.com/semantic-org/semantic-ui/
  *
  *
- * Copyright 2015 Contributors
  * Released under the MIT license
  * http://opensource.org/licenses/MIT
  *
@@ -91,7 +90,7 @@
   height: 17px;
   text-align: center;
   opacity: 0;
-  color: rgba(0, 0, 0, 0.7);
+  color: #373e42;
   -webkit-transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
   transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
   transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
@@ -106,7 +105,7 @@
 /* Inside */
 .ui.checkbox label,
 .ui.checkbox + label {
-  color: rgba(0, 0, 0, 0.7);
+  color: #373e42;
   -webkit-transition: color 0.1s ease;
   transition: color 0.1s ease;
 }
@@ -189,13 +188,13 @@
   Indeterminate
 ---------------*/
 
-.ui.checkbox input:indeterminate ~ .box:before,
-.ui.checkbox input:indeterminate ~ label:before {
+.ui.checkbox input:not([type=radio]):indeterminate ~ .box:before,
+.ui.checkbox input:not([type=radio]):indeterminate ~ label:before {
   background: #FFFFFF;
   border-color: rgba(34, 36, 38, 0.35);
 }
-.ui.checkbox input:indeterminate ~ .box:after,
-.ui.checkbox input:indeterminate ~ label:after {
+.ui.checkbox input:not([type=radio]):indeterminate ~ .box:after,
+.ui.checkbox input:not([type=radio]):indeterminate ~ label:after {
   opacity: 1;
   color: rgba(0, 0, 0, 0.95);
 }
@@ -204,15 +203,15 @@
   Active Focus
 ---------------*/
 
-.ui.checkbox input:indeterminate:focus ~ .box:before,
-.ui.checkbox input:indeterminate:focus ~ label:before,
+.ui.checkbox input:not([type=radio]):indeterminate:focus ~ .box:before,
+.ui.checkbox input:not([type=radio]):indeterminate:focus ~ label:before,
 .ui.checkbox input:checked:focus ~ .box:before,
 .ui.checkbox input:checked:focus ~ label:before {
   background: #FFFFFF;
   border-color: #96C8DA;
 }
-.ui.checkbox input:indeterminate:focus ~ .box:after,
-.ui.checkbox input:indeterminate:focus ~ label:after,
+.ui.checkbox input:not([type=radio]):indeterminate:focus ~ .box:after,
+.ui.checkbox input:not([type=radio]):indeterminate:focus ~ label:after,
 .ui.checkbox input:checked:focus ~ .box:after,
 .ui.checkbox input:checked:focus ~ label:after {
   color: rgba(0, 0, 0, 0.95);
@@ -235,7 +234,7 @@
 .ui.disabled.checkbox label,
 .ui.checkbox input[disabled] ~ .box:after,
 .ui.checkbox input[disabled] ~ label {
-  cursor: default;
+  cursor: default !important;
   opacity: 0.5;
   color: #000000;
 }
@@ -311,7 +310,7 @@
   border-radius: 500rem;
   -webkit-transform: scale(0.46666667);
           transform: scale(0.46666667);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #373e42;
 }
 
 /* Focus */
@@ -474,7 +473,7 @@
 .ui.toggle.checkbox label {
   min-height: 1.5rem;
   padding-left: 4.5rem;
-  color: rgba(0, 0, 0, 0.7);
+  color: #373e42;
 }
 .ui.toggle.checkbox label {
   padding-top: 0.15em;
@@ -492,6 +491,7 @@
   border: none;
   top: 0rem;
   background: rgba(0, 0, 0, 0.05);
+  box-shadow: none;
   width: 3.5rem;
   height: 1.5rem;
   border-radius: 500rem;
@@ -519,6 +519,7 @@
 .ui.toggle.checkbox input ~ .box:after,
 .ui.toggle.checkbox input ~ label:after {
   left: -0.05rem;
+  box-shadow: none;
 }
 
 /* Focus */
@@ -547,6 +548,7 @@
 .ui.toggle.checkbox input:checked ~ .box:after,
 .ui.toggle.checkbox input:checked ~ label:after {
   left: 2.15rem;
+  box-shadow: none;
 }
 
 /* Active Focus */

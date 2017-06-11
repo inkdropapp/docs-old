@@ -3,15 +3,21 @@
  * http://github.com/semantic-org/semantic-ui/
  *
  *
- * Copyright 2015 Contributors
  * Released under the MIT license
  * http://opensource.org/licenses/MIT
  *
  */
 
-;(function ( $, window, document, undefined ) {
+;(function ($, window, document, undefined) {
 
 "use strict";
+
+window = (typeof window != 'undefined' && window.Math == Math)
+  ? window
+  : (typeof self != 'undefined' && self.Math == Math)
+    ? self
+    : Function('return this')()
+;
 
 $.fn.form = function(parameters) {
   var
@@ -51,6 +57,7 @@ $.fn.form = function(parameters) {
         metadata,
         selector,
         className,
+        regExp,
         error,
 
         namespace,
@@ -74,6 +81,9 @@ $.fn.form = function(parameters) {
             module.invoke(query);
           }
           else {
+            if(instance !== undefined) {
+              instance.invoke('destroy');
+            }
             module.verbose('Initializing form validation', $module, settings);
             module.bindEvents();
             module.set.defaults();
@@ -224,21 +234,55 @@ $.fn.form = function(parameters) {
           ;
         },
 
-        is: {
-          bracketedRule: function(rule) {
-            return (rule.type && rule.type.match(settings.regExp.bracket));
-          },
-          valid: function() {
+        determine: {
+          isValid: function() {
             var
               allValid = true
             ;
-            module.verbose('Checking if form is valid');
             $.each(validation, function(fieldName, field) {
-              if( !( module.validate.field(field, fieldName) ) ) {
+              if( !( module.validate.field(field, fieldName, true) ) ) {
                 allValid = false;
               }
             });
             return allValid;
+          }
+        },
+
+        is: {
+          bracketedRule: function(rule) {
+            return (rule.type && rule.type.match(settings.regExp.bracket));
+          },
+          empty: function($field) {
+            if(!$field || $field.length === 0) {
+              return true;
+            }
+            else if($field.is('input[type="checkbox"]')) {
+              return !$field.is(':checked');
+            }
+            else {
+              return module.is.blank($field);
+            }
+          },
+          blank: function($field) {
+            return $.trim($field.val()) === '';
+          },
+          valid: function(field) {
+            var
+              allValid = true
+            ;
+            if(field) {
+              module.verbose('Checking if field is valid', field);
+              return module.validate.field(validation[field], field, false);
+            }
+            else {
+              module.verbose('Checking if form is valid');
+              $.each(validation, function(fieldName, field) {
+                if( !module.is.valid(fieldName) ) {
+                  allValid = false;
+                }
+              });
+              return allValid;
+            }
           }
         },
 
@@ -261,9 +305,12 @@ $.fn.form = function(parameters) {
           field: {
             keydown: function(event) {
               var
-                $field  = $(this),
-                key     = event.which,
-                keyCode = {
+                $field       = $(this),
+                key          = event.which,
+                isInput      = $field.is(selector.input),
+                isCheckbox   = $field.is(selector.checkbox),
+                isInDropdown = ($field.closest(selector.uiDropdown).length > 0),
+                keyCode      = {
                   enter  : 13,
                   escape : 27
                 }
@@ -274,7 +321,7 @@ $.fn.form = function(parameters) {
                   .blur()
                 ;
               }
-              if(!event.ctrlKey && key == keyCode.enter && $field.is(selector.input) && $field.not(selector.checkbox).length > 0 ) {
+              if(!event.ctrlKey && key == keyCode.enter && isInput && !isInDropdown && !isCheckbox) {
                 if(!keyHeldDown) {
                   $field
                     .one('keyup' + eventNamespace, module.event.field.keyup)
@@ -296,7 +343,9 @@ $.fn.form = function(parameters) {
               ;
               if( $fieldGroup.hasClass(className.error) ) {
                 module.debug('Revalidating field', $field, validationRules);
-                module.validate.form.call(module, event, true);
+                if(validationRules) {
+                  module.validate.field( validationRules );
+                }
               }
               else if(settings.on == 'blur' || settings.on == 'change') {
                 if(validationRules) {
@@ -307,13 +356,14 @@ $.fn.form = function(parameters) {
             change: function(event) {
               var
                 $field      = $(this),
-                $fieldGroup = $field.closest($group)
+                $fieldGroup = $field.closest($group),
+                validationRules = module.get.validation($field)
               ;
-              if(settings.on == 'change' || ( $fieldGroup.hasClass(className.error) && settings.revalidate) ) {
+              if(validationRules && (settings.on == 'change' || ( $fieldGroup.hasClass(className.error) && settings.revalidate) )) {
                 clearTimeout(module.timer);
                 module.timer = setTimeout(function() {
                   module.debug('Revalidating field', $field,  module.get.validation($field));
-                  module.validate.form.call(module, event, true);
+                  module.validate.field( validationRules );
                 }, settings.delay);
               }
             }
@@ -323,10 +373,13 @@ $.fn.form = function(parameters) {
 
         get: {
           ancillaryValue: function(rule) {
-            if(!rule.type || !module.is.bracketedRule(rule)) {
+            if(!rule.type || (!rule.value && !module.is.bracketedRule(rule))) {
               return false;
             }
-            return rule.type.match(settings.regExp.bracket)[1] + '';
+            return (rule.value !== undefined)
+              ? rule.value
+              : rule.type.match(settings.regExp.bracket)[1] + ''
+            ;
           },
           ruleName: function(rule) {
             if( module.is.bracketedRule(rule) ) {
@@ -369,7 +422,7 @@ $.fn.form = function(parameters) {
             }
             if(requiresName) {
               $label = $field.closest(selector.group).find('label').eq(0);
-              name = ($label.size() == 1)
+              name = ($label.length == 1)
                 ? $label.text()
                 : $field.prop('placeholder') || settings.text.unspecifiedField
               ;
@@ -433,6 +486,7 @@ $.fn.form = function(parameters) {
             metadata        = settings.metadata;
             selector        = settings.selector;
             className       = settings.className;
+            regExp          = settings.regExp;
             error           = settings.error;
             moduleNamespace = 'module-' + namespace;
             eventNamespace  = '.' + namespace;
@@ -445,7 +499,8 @@ $.fn.form = function(parameters) {
           },
           field: function(identifier) {
             module.verbose('Finding field with identifier', identifier);
-            if( $field.filter('#' + identifier).length > 0 ) {
+            identifier = module.escape.string(identifier);
+            if($field.filter('#' + identifier).length > 0 ) {
               return $field.filter('#' + identifier);
             }
             else if( $field.filter('[name="' + identifier +'"]').length > 0 ) {
@@ -560,10 +615,11 @@ $.fn.form = function(parameters) {
 
           field: function(identifier) {
             module.verbose('Checking for existence of a field with identifier', identifier);
+            identifier = module.escape.string(identifier);
             if(typeof identifier !== 'string') {
               module.error(error.identifier, identifier);
             }
-            if( $field.filter('#' + identifier).length > 0 ) {
+            if($field.filter('#' + identifier).length > 0 ) {
               return true;
             }
             else if( $field.filter('[name="' + identifier +'"]').length > 0 ) {
@@ -575,6 +631,13 @@ $.fn.form = function(parameters) {
             return false;
           }
 
+        },
+
+        escape: {
+          string: function(text) {
+            text =  String(text);
+            return text.replace(regExp.escape, '\\$&');
+          }
         },
 
         add: {
@@ -762,7 +825,7 @@ $.fn.form = function(parameters) {
 
             // reset errors
             formErrors = [];
-            if( module.is.valid() ) {
+            if( module.determine.isValid() ) {
               module.debug('Form has no validation errors, submitting');
               module.set.success();
               if(ignoreCallbacks !== true) {
@@ -786,10 +849,22 @@ $.fn.form = function(parameters) {
           },
 
           // takes a validation object and returns whether field passes validation
-          field: function(field, fieldName) {
+          field: function(field, fieldName, showErrors) {
+            showErrors = (showErrors !== undefined)
+              ? showErrors
+              : true
+            ;
+            if(typeof field == 'string') {
+              module.verbose('Validating field', field);
+              fieldName = field;
+              field = validation[field];
+            }
             var
-              identifier  = field.identifier || fieldName,
-              $field      = module.get.field(identifier),
+              identifier    = field.identifier || fieldName,
+              $field        = module.get.field(identifier),
+              $dependsField = (field.depends)
+                ? module.get.field(field.depends)
+                : false,
               fieldValid  = true,
               fieldErrors = []
             ;
@@ -801,8 +876,12 @@ $.fn.form = function(parameters) {
               module.debug('Field is disabled. Skipping', identifier);
               fieldValid = true;
             }
-            else if(field.optional && $.trim($field.val()) === ''){
-              module.debug('Field is optional and empty. Skipping', identifier);
+            else if(field.optional && module.is.blank($field)){
+              module.debug('Field is optional and blank. Skipping', identifier);
+              fieldValid = true;
+            }
+            else if(field.depends && module.is.empty($dependsField)) {
+              module.debug('Field depends on another value that is not present or empty. Skipping', $dependsField);
               fieldValid = true;
             }
             else if(field.rules !== undefined) {
@@ -815,13 +894,17 @@ $.fn.form = function(parameters) {
               });
             }
             if(fieldValid) {
-              module.remove.prompt(identifier, fieldErrors);
-              settings.onValid.call($field);
+              if(showErrors) {
+                module.remove.prompt(identifier, fieldErrors);
+                settings.onValid.call($field);
+              }
             }
             else {
-              formErrors = formErrors.concat(fieldErrors);
-              module.add.prompt(identifier, fieldErrors);
-              settings.onInvalid.call($field, fieldErrors);
+              if(showErrors) {
+                formErrors = formErrors.concat(fieldErrors);
+                module.add.prompt(identifier, fieldErrors);
+                settings.onInvalid.call($field, fieldErrors);
+              }
               return false;
             }
             return true;
@@ -874,7 +957,7 @@ $.fn.form = function(parameters) {
           }
         },
         debug: function() {
-          if(settings.debug) {
+          if(!settings.silent && settings.debug) {
             if(settings.performance) {
               module.performance.log(arguments);
             }
@@ -885,7 +968,7 @@ $.fn.form = function(parameters) {
           }
         },
         verbose: function() {
-          if(settings.verbose && settings.debug) {
+          if(!settings.silent && settings.verbose && settings.debug) {
             if(settings.performance) {
               module.performance.log(arguments);
             }
@@ -896,8 +979,10 @@ $.fn.form = function(parameters) {
           }
         },
         error: function() {
-          module.error = Function.prototype.bind.call(console.error, console, settings.name + ':');
-          module.error.apply(console, arguments);
+          if(!settings.silent) {
+            module.error = Function.prototype.bind.call(console.error, console, settings.name + ':');
+            module.error.apply(console, arguments);
+          }
         },
         performance: {
           log: function(message) {
@@ -1049,9 +1134,10 @@ $.fn.form.settings = {
   },
 
   regExp: {
+    htmlID  : /^[a-zA-Z][\w:.-]*$/g,
     bracket : /\[(.*)\]/i,
-    decimal : /^\d*(\.)\d+/,
-    email   : "[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?",
+    decimal : /^\d+\.?\d*$/,
+    email   : /^[a-z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)*$/i,
     escape  : /[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g,
     flags   : /^\/(.*)\/(.*)?/,
     integer : /^\-?\d+$/,
@@ -1159,10 +1245,7 @@ $.fn.form.settings = {
 
     // is most likely an email
     email: function(value){
-      var
-        emailRegExp = new RegExp($.fn.form.settings.regExp.email, 'i')
-      ;
-      return emailRegExp.test(value);
+      return $.fn.form.settings.regExp.email.test(value);
     },
 
     // value is most likely url
@@ -1172,6 +1255,9 @@ $.fn.form.settings = {
 
     // matches specified regExp
     regExp: function(value, regExp) {
+      if(regExp instanceof RegExp) {
+        return value.match(regExp);
+      }
       var
         regExpParts = regExp.match($.fn.form.settings.regExp.flags),
         flags
@@ -1433,6 +1519,9 @@ $.fn.form.settings = {
       if(typeof cardNumber !== 'string' || cardNumber.length === 0) {
         return;
       }
+
+      // allow dashes in card
+      cardNumber = cardNumber.replace(/[\-]/g, '');
 
       // verify card types
       if(requiredTypes) {

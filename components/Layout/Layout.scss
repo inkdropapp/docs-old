@@ -22,8 +22,11 @@ html, body {
   h1, h2, h3, h4, h5, h6 {
     a {
       opacity: 0;
-      margin-left: -32px;
+      margin-left: -20px;
       color: inherit;
+      transition: all 0.4s;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.4);
     }
     &:hover a {
       opacity: 1;
@@ -37,6 +40,11 @@ html, body {
   h3 a {
     margin-left: -25px;
   }
+
+}
+
+.main-content .side-bar {
+  background-color: #f5f7f9;
 }
 
 .main-content .article-list {
@@ -47,12 +55,12 @@ html, body {
 }
 
 .main-content .doc-content {
-
+  padding-left: 2em !important;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 26px;
   word-wrap: break-word;
 
   blockquote {

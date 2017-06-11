@@ -1,9 +1,8 @@
 /*!
- * # Semantic UI 2.1.8 - Search
+ * # Semantic UI 2.2.10 - Search
  * http://github.com/semantic-org/semantic-ui/
  *
  *
- * Copyright 2015 Contributors
  * Released under the MIT license
  * http://opensource.org/licenses/MIT
  *
@@ -25,12 +24,12 @@
   text-shadow: none;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.2142em;
-  padding: 0.67861429em 1em;
+  line-height: 1.21428571em;
+  padding: 0.67857143em 1em;
   font-size: 1em;
   background: #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
-  color: rgba(0, 0, 0, 0.7);
+  color: #373e42;
   box-shadow: 0em 0em 0em 0em transparent inset;
   -webkit-transition: background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, border-color 0.1s ease;
   transition: background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, border-color 0.1s ease;
@@ -58,11 +57,12 @@
   left: 0%;
   -webkit-transform-origin: center top;
           transform-origin: center top;
+  white-space: normal;
   background: #FFFFFF;
   margin-top: 0.5em;
   width: 18em;
   border-radius: 0.28571429rem;
-  box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.08);
+  box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15);
   border: 1px solid #D4D4D5;
   z-index: 998;
 }
@@ -83,7 +83,7 @@
   overflow: hidden;
   font-size: 1em;
   padding: 0.85714286em 1.14285714em;
-  color: rgba(0, 0, 0, 0.7);
+  color: #373e42;
   line-height: 1.33;
   border-bottom: 1px solid rgba(34, 36, 38, 0.1);
 }
@@ -114,7 +114,7 @@
   margin: 0em 6em 0em 0em;
 }
 .ui.search > .results .result .title {
-  margin: -0.14285em 0em 0em;
+  margin: -0.14285714em 0em 0em;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1em;
@@ -141,12 +141,12 @@
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.7);
+  color: #373e42;
 }
 .ui.search > .results > .message .description {
   margin-top: 0.25rem;
   font-size: 1em;
-  color: rgba(0, 0, 0, 0.7);
+  color: #373e42;
 }
 
 /* View All Results */
@@ -155,7 +155,7 @@
   border-top: none;
   background: #F3F4F5;
   padding: 0.92857143em 1em;
-  color: rgba(0, 0, 0, 0.7);
+  color: #373e42;
   font-weight: bold;
   text-align: center;
 }
@@ -230,7 +230,7 @@
   background: #F3F4F5;
 }
 .ui.category.search > .results .category.active > .name {
-  color: rgba(0, 0, 0, 0.7);
+  color: #373e42;
 }
 .ui.search > .results .result.active,
 .ui.category.search > .results .category .result.active {
@@ -374,7 +374,7 @@
 ---------------*/
 
 .ui.mini.search {
-  font-size: 0.71428571em;
+  font-size: 0.78571429em;
 }
 .ui.small.search {
   font-size: 0.92857143em;

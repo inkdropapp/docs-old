@@ -6,12 +6,18 @@
 
 import React, { Component } from 'react';
 import MenuLink from './menu-link';
+import './manual-menu.scss';
 
 export default class extends Component {
   render() {
     return (
-      <div>
-        <h3 className='ui header'>Using Inkdrop</h3>
+      <div className='manual-menu'>
+        <h3 className='ui header'>
+          <i className='write icon' />
+          <div className='content'>
+            Using Inkdrop
+          </div>
+        </h3>
         <ul className='article-list'>
           <li>
             <MenuLink to='/manual/quick-start-guide'>Quick start guide</MenuLink>
@@ -44,7 +50,12 @@ export default class extends Component {
             <MenuLink to='/manual/backing-up-your-data'>Backing up your data</MenuLink>
           </li>
         </ul>
-        <h3 className='ui header'>Hacking Inkdrop</h3>
+        <h3 className='ui header'>
+          <i className='configure icon' />
+          <div className='content'>
+            Hacking Inkdrop
+          </div>
+        </h3>
         <ul className='article-list'>
           <li>
             <MenuLink to='/manual/accessing-data-in-the-cloud'>Accessing Data in the Cloud</MenuLink>
@@ -65,7 +76,12 @@ export default class extends Component {
             <MenuLink to='/manual/customizing-the-editor'>Customizing the Editor</MenuLink>
           </li>
         </ul>
-        <h3 className='ui header'>Appendix</h3>
+        <h3 className='ui header'>
+          <i className='info icon' />
+          <div className='content'>
+            Appendix
+          </div>
+        </h3>
         <ul className='article-list'>
           <li>
             <MenuLink to='/manual/markdown-cheatsheet'>Markdown Cheatsheet</MenuLink>

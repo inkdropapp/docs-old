@@ -1,9 +1,8 @@
 /*!
- * # Semantic UI 2.1.8 - Comment
+ * # Semantic UI 2.2.10 - Comment
  * http://github.com/semantic-org/semantic-ui/
  *
  *
- * Copyright 2015 Contributors
  * Released under the MIT license
  * http://opensource.org/licenses/MIT
  *
@@ -106,14 +105,14 @@
 
 .ui.comments .comment .author {
   font-size: 1em;
-  color: rgba(0, 0, 0, 0.7);
+  color: #373e42;
   font-weight: bold;
 }
 .ui.comments .comment a.author {
   cursor: pointer;
 }
 .ui.comments .comment a.author:hover {
-  color: #1e70bf;
+  color: #0082c3;
 }
 
 /*--------------
@@ -142,7 +141,7 @@
   margin: 0.25em 0em 0.5em;
   font-size: 1em;
   word-wrap: break-word;
-  color: rgba(0, 0, 0, 0.7);
+  color: #373e42;
   line-height: 1.3;
 }
 
@@ -229,21 +228,33 @@
   opacity: 1;
 }
 
-/*--------------------
-       Sizes
----------------------*/
+/*-------------------
+        Sizes
+--------------------*/
 
+.ui.mini.comments {
+  font-size: 0.78571429rem;
+}
+.ui.tiny.comments {
+  font-size: 0.85714286rem;
+}
 .ui.small.comments {
-  font-size: 0.9em;
+  font-size: 0.92857143rem;
 }
 .ui.comments {
-  font-size: 1em;
+  font-size: 1rem;
 }
 .ui.large.comments {
-  font-size: 1.1em;
+  font-size: 1.14285714rem;
+}
+.ui.big.comments {
+  font-size: 1.28571429rem;
 }
 .ui.huge.comments {
-  font-size: 1.2em;
+  font-size: 1.42857143rem;
+}
+.ui.massive.comments {
+  font-size: 1.71428571rem;
 }
 
 

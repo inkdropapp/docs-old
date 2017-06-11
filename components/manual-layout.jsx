@@ -14,10 +14,10 @@ export default class extends Component {
     return (
       <div className='ui container main-content'>
         <div className='ui stackable grid'>
-          <div className='four wide column'>
+          <div className='five wide column side-bar'>
             <ManualMenu />
           </div>
-          <div className='twelve wide column doc-content'>
+          <div className='eleven wide column doc-content'>
             <div className='ui breadcrumb'>
               <Link to='/' className='section'>Docs</Link>
               <i className='right chevron icon divider'></i>
