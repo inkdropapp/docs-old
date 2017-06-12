@@ -4,11 +4,12 @@
  * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
  */
 
-import React, { PropTypes } from 'react';
-import GoogleAnalytics from '../GoogleAnalytics';
-import config from '../../config';
+import React from 'react'
+import PropTypes from 'prop-types'
+import GoogleAnalytics from '../GoogleAnalytics'
+import config from '../../config'
 
-function Html({ title, description, body /* , debug */ }) {
+function Html ({ title, description, body }) {
   return (
     <html className='no-js' lang=''>
       <head>
@@ -29,14 +30,14 @@ function Html({ title, description, body /* , debug */ }) {
         <GoogleAnalytics />
       </body>
     </html>
-  );
+  )
 }
 
 Html.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   body: PropTypes.string.isRequired,
-  debug: PropTypes.bool.isRequired,
-};
+  debug: PropTypes.bool.isRequired
+}
 
-export default Html;
+export default Html

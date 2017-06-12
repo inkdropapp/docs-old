@@ -1,15 +1,15 @@
-import React, { PropTypes, Component } from 'react';
-import InfopageMenu from './infopage-menu';
-import Link from './Link';
+import React, { Component } from 'react'
+import InfopageMenu from './infopage-menu'
+import Link from './Link'
+import PropTypes from 'prop-types'
 
-export default class extends Component {
-
+export default class AnnounceLayout extends Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
-    currentPageTitle: PropTypes.string.isRequired,
+    currentPageTitle: PropTypes.string.isRequired
   };
 
-  render() {
+  render () {
     return (
       <div className='ui container main-content'>
         <div className='ui stackable grid'>
@@ -30,7 +30,6 @@ export default class extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
-
 }

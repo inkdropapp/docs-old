@@ -1,12 +1,13 @@
-import React, { PropTypes, Component } from 'react';
-import Link from './Link';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import Link from './Link'
 
-export default class extends Component {
+export default class Masthead extends Component {
   static propTypes = {
-    children: PropTypes.node,
+    children: PropTypes.node
   };
 
-  render() {
+  render () {
     return (
       <div className='ui inverted vertical masthead segment'>
         <div className='ui text container'>
@@ -35,6 +36,6 @@ export default class extends Component {
           {this.props.children}
         </div>
       </div>
-    );
+    )
   }
 }

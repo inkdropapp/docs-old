@@ -4,14 +4,15 @@
  * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
  */
 
-import React, { PropTypes } from 'react';
-import './Layout.scss';
-import Navigation from '../Navigation';
-import Footer from '../Footer';
-import Masthead from '../masthead';
+import React from 'react'
+import PropTypes from 'prop-types'
+import './Layout.scss'
+import Navigation from '../Navigation'
+import Footer from '../Footer'
+import Masthead from '../masthead'
 // import Link from '../Link';
 
-function Layout({ children }) {
+function Layout ({ children }) {
   return (
     <div>
       <header className='app--header'>
@@ -25,11 +26,11 @@ function Layout({ children }) {
       </div>
       <Footer />
     </div>
-  );
+  )
 }
 
 Layout.propTypes = {
-  children: PropTypes.element.isRequired,
-};
+  children: PropTypes.element.isRequired
+}
 
-export default Layout;
+export default Layout

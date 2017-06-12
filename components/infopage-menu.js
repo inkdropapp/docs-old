@@ -4,16 +4,17 @@
  * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
  */
 
-import React, { Component, PropTypes } from 'react';
-import MenuLink from './menu-link';
-import SupportMenu from './support-menu';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import MenuLink from './menu-link'
+import SupportMenu from './support-menu'
 
-export default class extends Component {
+export default class InfopageMenu extends Component {
   static propTypes = {
-    sideMenu: PropTypes.bool,
+    sideMenu: PropTypes.bool
   }
 
-  renderOtherMenu() {
+  renderOtherMenu () {
     return [
       <h3 className='ui header' key={1}>
         <i className='help circle outline icon' />
@@ -33,11 +34,11 @@ export default class extends Component {
         </div>
         <i className='angle right icon' />
       </h3>,
-      <SupportMenu key={3} />,
-    ];
+      <SupportMenu key={3} />
+    ]
   }
 
-  render() {
+  render () {
     return (
       <div className='menu manual-menu'>
         <h3 className='ui header'>
@@ -62,6 +63,6 @@ export default class extends Component {
         </ul>
         { this.props.sideMenu ? this.renderOtherMenu() : null }
       </div>
-    );
+    )
   }
 }

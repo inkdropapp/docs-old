@@ -4,8 +4,8 @@
  * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
  */
 
-import React from 'react';
-import { googleAnalyticsId } from '../../config';
+import React from 'react'
+import { googleAnalyticsId } from '../../config'
 
 const trackingCode = { __html:
   `(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=` +
@@ -13,11 +13,11 @@ const trackingCode = { __html:
   `e=o.createElement(i);r=o.getElementsByTagName(i)[0];` +
   `e.src='https://www.google-analytics.com/analytics.js';` +
   `r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));` +
-  `ga('create','${googleAnalyticsId}','auto');`,
-};
-
-function GoogleAnalytics() {
-  return <script dangerouslySetInnerHTML={trackingCode} />;
+  `ga('create','${googleAnalyticsId}','auto');`
 }
 
-export default GoogleAnalytics;
+function GoogleAnalytics () {
+  return <script dangerouslySetInnerHTML={trackingCode} />
+}
+
+export default GoogleAnalytics

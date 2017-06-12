@@ -4,11 +4,11 @@
  * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
  */
 
-import React from 'react';
-import './Navigation.scss';
-import Link from '../Link';
+import React from 'react'
+import './Navigation.scss'
+import Link from '../Link'
 
-function Navigation() {
+function Navigation () {
   return (
     <div className='ui grid'>
       <div className='row'>
@@ -32,7 +32,7 @@ function Navigation() {
 
       </div>
     </div>
-  );
+  )
 }
 
-export default Navigation;
+export default Navigation

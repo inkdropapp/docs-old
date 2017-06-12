@@ -1,22 +1,16 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import ReferenceMenu from './reference-menu'
+import HelpUs from './helpus'
+import Link from './Link'
 
-import React, { PropTypes, Component } from 'react';
-import ReferenceMenu from './reference-menu';
-import HelpUs from './helpus';
-import Link from './Link';
-
-export default class extends Component {
-
+export default class ReferenceLayout extends Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
-    currentPageTitle: PropTypes.string.isRequired,
+    currentPageTitle: PropTypes.string.isRequired
   };
 
-  render() {
+  render () {
     return (
       <div className='ui container main-content'>
         <div className='ui stackable grid'>
@@ -42,9 +36,6 @@ export default class extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
-
 }
-
-

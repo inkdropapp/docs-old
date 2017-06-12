@@ -1,17 +1,10 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
+import React, { Component } from 'react'
+import Link from './Link'
+import ManualMenu from './manual-menu'
+import ReferenceMenu from './reference-menu'
 
-import React, { Component } from 'react';
-import Link from './Link';
-import ManualMenu from './manual-menu';
-import ReferenceMenu from './reference-menu';
-
-export default class extends Component {
-
-  render() {
+export default class TopMenu extends Component {
+  render () {
     return (
       <div className='top-menu'>
         <div className='ui stackable grid'>
@@ -58,8 +51,6 @@ export default class extends Component {
         </div>
 
       </div>
-    );
+    )
   }
-
 }
-

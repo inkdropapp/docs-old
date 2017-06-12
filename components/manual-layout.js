@@ -1,16 +1,16 @@
-import React, { PropTypes, Component } from 'react';
-import ManualMenu from './manual-menu';
-import HelpUs from './helpus';
-import Link from './Link';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import ManualMenu from './manual-menu'
+import HelpUs from './helpus'
+import Link from './Link'
 
-export default class extends Component {
-
+export default class ManualLayout extends Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
-    currentPageTitle: PropTypes.string.isRequired,
+    currentPageTitle: PropTypes.string.isRequired
   };
 
-  render() {
+  render () {
     return (
       <div className='ui container main-content'>
         <div className='ui stackable grid'>
@@ -36,8 +36,6 @@ export default class extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
-
 }
-

@@ -1,19 +1,14 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import MenuLink from './menu-link'
+import SupportMenu from './support-menu'
 
-import React, { Component, PropTypes } from 'react';
-import MenuLink from './menu-link';
-import SupportMenu from './support-menu';
-
-export default class extends Component {
+export default class RefereneMenu extends Component {
   static propTypes = {
-    sideMenu: PropTypes.bool,
+    sideMenu: PropTypes.bool
   }
 
-  renderManualMenu() {
+  renderManualMenu () {
     return [
       <h3 className='ui header' key={1}>
         <i className='help circle outline icon' />
@@ -24,11 +19,11 @@ export default class extends Component {
         </div>
         <i className='angle right icon' />
       </h3>,
-      <SupportMenu key={2} />,
-    ];
+      <SupportMenu key={2} />
+    ]
   }
 
-  render() {
+  render () {
     return (
       <div className='menu reference-menu'>
         <h3 className='ui header'>
@@ -89,7 +84,6 @@ export default class extends Component {
         </ul>
         { this.props.sideMenu ? this.renderManualMenu() : null }
       </div>
-    );
+    )
   }
 }
-

@@ -4,25 +4,24 @@
  * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
  */
 
-import React from 'react';
-import './Footer.scss';
-import Link from '../Link';
+import React from 'react'
+import './Footer.scss'
+import Link from '../Link'
 
 class Footer extends React.Component {
-
-  componentDidMount() {
+  componentDidMount () {
   }
 
-  handleOutboundLinkClick(event) {
-    const target = event.currentTarget;
+  handleOutboundLinkClick (event) {
+    const target = event.currentTarget
     window.ga('send', 'event', {
       eventCategory: 'Outbound Link',
       eventAction: 'click',
-      eventLabel: target.href,
-    });
+      eventLabel: target.href
+    })
   }
 
-  render() {
+  render () {
     return (
       <footer className='app--footer'>
         <div className='app--footer-content ui container'>
@@ -50,6 +49,7 @@ class Footer extends React.Component {
                   <a
                     href='https://twitter.com/inkdrop_app'
                     target='_blank'
+                    rel='noopener noreferrer'
                     onClick={this.handleOutboundLinkClick}
                   >
                     Twitter
@@ -59,6 +59,7 @@ class Footer extends React.Component {
                   <a
                     href='https://medium.com/@inkdrop'
                     target='_blank'
+                    rel='noopener noreferrer'
                     onClick={this.handleOutboundLinkClick}
                   >
                     Blog
@@ -69,6 +70,7 @@ class Footer extends React.Component {
             <div className='three wide column text-left'>
               <a href='https://www.inkdrop.info/'
                 target='_blank'
+                rel='noopener noreferrer'
                 onClick={ this.handleOutboundLinkClick }>
                 © Inkdrop
               </a>
@@ -76,8 +78,8 @@ class Footer extends React.Component {
           </div>
         </div>
       </footer>
-    );
+    )
   }
 }
 
-export default Footer;
+export default Footer

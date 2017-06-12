@@ -1,13 +1,7 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
+import React, { Component } from 'react'
 
-import React, { Component } from 'react';
-
-export default class extends Component {
-  render() {
+export default class SupportMenu extends Component {
+  render () {
     return (
       <div className='support-menu'>
         <h3 className='ui header' style={{ marginTop: 'calc(2rem -  0.14285714em )' }}>
@@ -25,6 +19,6 @@ export default class extends Component {
           </li>
         </ul>
       </div>
-    );
+    )
   }
 }
