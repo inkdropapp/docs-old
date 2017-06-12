@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import Link from '../components/Link';
+import React, { Component } from 'react'
+import Link from '../components/Link'
 
-export default class extends Component {
-  static title = 'Notation based on the Specified Commercial Transaction Act';
+export default class InfoPage extends Component {
+  static title = 'Notation based on the Specified Commercial Transaction Act'
 
-  render() {
-    const md = require('./notation.md');
+  render () {
+    const md = require('./notation.md')
     return (
       <div className='ui container main-content'>
         <div className='doc-content'>
@@ -19,7 +19,6 @@ export default class extends Component {
           <div dangerouslySetInnerHTML={ { __html: md } } />
         </div>
       </div>
-    );
+    )
   }
-
 }

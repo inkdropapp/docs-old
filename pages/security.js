@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import InfopageLayout from '../components/infopage-layout';
+import React, { Component } from 'react'
+import InfopageLayout from '../components/infopage-layout'
 
 export default class InfoPage extends Component {
-  static title = 'How secure is Inkdrop?';
+  static title = 'How secure is Inkdrop?'
 
-  render() {
+  render () {
     return (
       <InfopageLayout currentPageTitle={ InfoPage.title }>
         <h1 className='ui header'>
@@ -33,13 +33,11 @@ export default class InfoPage extends Component {
 
         <div className='ui warning message'>
           <p>
-            We never store a copy of this common key without encryption and don’t use any escrow mechanism to recover your encrypted data.
-            This means that if you forget your login password, we cannot recover your data and we can't even reset your password.
+            We never store a copy of this common key without encryption and don&apos;t use any escrow mechanism to recover your encrypted data.
+            This means that if you forget your login password, we cannot recover your data and we can&apos;t even reset your password.
           </p>
         </div>
       </InfopageLayout>
-    );
+    )
   }
-
 }
-

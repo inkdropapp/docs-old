@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import Link from '../components/Link';
-import InfopageLayout from '../components/infopage-layout';
+import React, { Component } from 'react'
+import Link from '../components/Link'
+import InfopageLayout from '../components/infopage-layout'
 
 export default class InfoPage extends Component {
-  static title = 'Terms of Use';
+  static title = 'Terms of Use'
 
-  render() {
-    const md = require('./terms.md');
+  render () {
+    const md = require('./terms.md')
     return (
       <InfopageLayout currentPageTitle={ InfoPage.title }>
         <h1>Terms of Service</h1>
@@ -20,7 +20,6 @@ export default class InfoPage extends Component {
           </p>
         </section>
       </InfopageLayout>
-    );
+    )
   }
-
 }
