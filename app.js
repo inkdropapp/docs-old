@@ -32,16 +32,19 @@ const route = async (path, callback) => {
   await callback(rootNode, component)
 }
 
-function run () {
+function render (location) {
   const container = document.getElementById('app')
-  Location.listen(location => {
-    route(location.pathname, async (component) => {
-      ReactDOM.render(component, container, () => {
-        // Track the page view event via Google Analytics
-        window.ga('send', 'pageview', location.pathname)
-      })
+  route(location.pathname, async (component) => {
+    ReactDOM.render(component, container, () => {
+      // Track the page view event via Google Analytics
+      window.ga('send', 'pageview', location.pathname)
     })
   })
+}
+
+function run () {
+  Location.listen(render)
+  render(Location.location)
 }
 
 if (canUseDOM) {

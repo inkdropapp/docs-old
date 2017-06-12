@@ -5,10 +5,9 @@
  */
 
 import { canUseDOM } from 'fbjs/lib/ExecutionEnvironment'
-import createHistory from 'history/lib/createBrowserHistory'
-import createMemoryHistory from 'history/lib/createMemoryHistory'
-import useQueries from 'history/lib/useQueries'
+import createHistory from 'history/createBrowserHistory'
+import createMemoryHistory from 'history/createMemoryHistory'
 
-const location = useQueries(canUseDOM ? createHistory : createMemoryHistory)()
+const location = (canUseDOM ? createHistory : createMemoryHistory)()
 
 export default location
