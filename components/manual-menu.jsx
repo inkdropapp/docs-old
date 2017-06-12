@@ -4,14 +4,33 @@
  * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
  */
 
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import MenuLink from './menu-link';
-import './manual-menu.scss';
+import SupportMenu from './support-menu';
 
 export default class extends Component {
+  static propTypes = {
+    sideMenu: PropTypes.bool,
+  }
+
+  renderRefereneMenu() {
+    return [
+      <h3 className='ui header' key={1}>
+        <i className='columns icon' />
+        <div className='content'>
+          <MenuLink to='/reference/'>
+            API Reference
+          </MenuLink>
+        </div>
+        <i className='angle right icon' />
+      </h3>,
+      <SupportMenu key={2} />,
+    ];
+  }
+
   render() {
     return (
-      <div className='manual-menu'>
+      <div className='menu manual-menu'>
         <h3 className='ui header'>
           <i className='write icon' />
           <div className='content'>
@@ -20,7 +39,7 @@ export default class extends Component {
         </h3>
         <ul className='article-list'>
           <li>
-            <MenuLink to='/manual/quick-start-guide'>Quick start guide</MenuLink>
+            <MenuLink to='/manual/'>Quick start guide</MenuLink>
           </li>
           <li>
             <MenuLink to='/manual/basic-usage'>Basic usage</MenuLink>
@@ -77,7 +96,7 @@ export default class extends Component {
           </li>
         </ul>
         <h3 className='ui header'>
-          <i className='info icon' />
+          <i className='sticky note outline icon' />
           <div className='content'>
             Appendix
           </div>
@@ -87,9 +106,8 @@ export default class extends Component {
             <MenuLink to='/manual/markdown-cheatsheet'>Markdown Cheatsheet</MenuLink>
           </li>
         </ul>
+        { this.props.sideMenu ? this.renderRefereneMenu() : null }
       </div>
     );
   }
-
 }
-

@@ -16,11 +16,11 @@
 .ui.segment {
   position: relative;
   background: #FFFFFF;
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
-  margin: 1rem 0em;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 7px 17px 0 rgba(0, 0, 0, 0.1);
+  margin: 1em 0em 2em 0em;
   padding: 1em 1em;
   border-radius: 0.28571429rem;
-  border: 1px solid rgba(34, 36, 38, 0.15);
+  border: none;
 }
 .ui.segment:first-child {
   margin-top: 0em;
@@ -80,15 +80,15 @@
   padding-bottom: 2em;
 }
 .ui.grid.segment {
-  margin: 1rem 0em;
+  margin: 1em 0em 2em 0em;
   border-radius: 0.28571429rem;
 }
 
 /* Table */
 .ui.basic.table.segment {
   background: #FFFFFF;
-  border: 1px solid rgba(34, 36, 38, 0.15);
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border: none;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 7px 17px 0 rgba(0, 0, 0, 0.1);
 }
 .ui[class*="very basic"].table.segment {
   padding: 1em 1em;
@@ -128,7 +128,7 @@
   left: 0px;
   position: absolute;
   width: 100%;
-  border: 1px solid rgba(34, 36, 38, 0.15);
+  border: none;
   box-shadow: '';
 }
 .ui.piled.segments:before,
@@ -278,9 +278,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  margin: 1rem 0em;
-  border: 1px solid rgba(34, 36, 38, 0.15);
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+  margin: 1em 0em 2em 0em;
+  border: none;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 7px 17px 0 rgba(0, 0, 0, 0.1);
   border-radius: 0.28571429rem;
 }
 .ui.segments:first-child {
@@ -299,7 +299,7 @@
   width: auto;
   box-shadow: none;
   border: none;
-  border-top: 1px solid rgba(34, 36, 38, 0.15);
+  border-top: none;
 }
 .ui.segments:not(.horizontal) > .segment:first-child {
   border-top: none;
@@ -316,7 +316,7 @@
   bottom: 0px;
   margin-top: 0em;
   margin-bottom: 0em;
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15), none;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 7px 17px 0 rgba(0, 0, 0, 0.1), none;
   border-radius: 0em 0em 0.28571429rem 0.28571429rem;
 }
 
@@ -327,7 +327,7 @@
 
 /* Nested Group */
 .ui.segments > .ui.segments {
-  border-top: 1px solid rgba(34, 36, 38, 0.15);
+  border-top: none;
   margin: 1rem 1rem;
 }
 .ui.segments > .segments:first-child {
@@ -350,10 +350,10 @@
   border-radius: 0px;
   padding: 0em;
   background-color: #FFFFFF;
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
-  margin: 1rem 0em;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 7px 17px 0 rgba(0, 0, 0, 0.1);
+  margin: 1em 0em 2em 0em;
   border-radius: 0.28571429rem;
-  border: 1px solid rgba(34, 36, 38, 0.15);
+  border: none;
 }
 
 /* Nested Horizontal Group */
@@ -363,7 +363,7 @@
   border-radius: 0px;
   border: none;
   box-shadow: none;
-  border-top: 1px solid rgba(34, 36, 38, 0.15);
+  border-top: none;
 }
 
 /* Horizontal Segment */
@@ -741,7 +741,7 @@
   margin-top: 0em;
   top: 0px;
   margin-bottom: 1rem;
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15), none;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 7px 17px 0 rgba(0, 0, 0, 0.1), none;
   border-radius: 0em 0em 0.28571429rem 0.28571429rem;
 }
 .ui.segment[class*="bottom attached"]:last-child {

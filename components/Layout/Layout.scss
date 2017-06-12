@@ -10,9 +10,29 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: white;
-  color: $text-color;
   font-family: $font-family-base;
+}
+
+.ui.inverted.vertical.masthead.segment {
+  background-color: #072B3F;
+  background: linear-gradient(#071B26, #072B3F, #072B3F);
+  padding: 3rem 0;
+  border-bottom: 6px solid #38799C;
+
+  h1, h2, h3 {
+    font-weight: lighter;
+    color: white;
+  }
+
+  h1 {
+    font-size: 40px;
+    a {
+      color: white;
+    }
+  }
+  p {
+    font-weight: lighter;
+  }
 }
 
 .main-content {
@@ -20,7 +40,7 @@ html, body {
   margin-bottom: 50px;
 
   h1, h2, h3, h4, h5, h6 {
-    a {
+    a.anchor {
       opacity: 0;
       margin-left: -20px;
       color: inherit;
@@ -28,16 +48,18 @@ html, body {
       font-size: 14px;
       color: rgba(0, 0, 0, 0.4);
     }
-    &:hover a {
+    &:hover a.anchor {
       opacity: 1;
       display: inline-block;
     }
   }
   h2 {
+    margin-top: 1.5em;
     padding-bottom: 4px;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-top: 1em;
+    border-top: 2px solid #f4f6f7;
   }
-  h3 a {
+  h3 a.anchor {
     margin-left: -25px;
   }
 
@@ -55,16 +77,34 @@ html, body {
 }
 
 .main-content .doc-content {
-  padding-left: 2em !important;
+  background: white;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 15px;
   line-height: 26px;
   word-wrap: break-word;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2em !important;
+  padding-right: 1rem;
+
+  @media only screen and (max-width: 767px) {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  h1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
 
   blockquote {
     margin: 0;
+  }
+
+  p {
+    text-align: justify;
   }
 
   p,
@@ -165,5 +205,26 @@ html, body {
   pre code:after {
     content: normal;
   }
-
 }
+
+.ui.main-content .ui.grid .column.doc-content {
+  @media only screen and (max-width: 767px) {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+.menu {
+  h3.ui.header {
+    font-size: 15px;
+    > i {
+      font-size: 1em;
+    }
+  }
+  ul.article-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 1.7em;
+  }
+}
+

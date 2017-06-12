@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import InfopageLayout from '../components/infopage-layout';
 
-export default class extends Component {
+export default class InfoPage extends Component {
   static title = 'How secure is Inkdrop?';
 
   render() {
     return (
-      <div className='ui container main-content'>
+      <InfopageLayout currentPageTitle={ InfoPage.title }>
         <h1 className='ui header'>
           <i className='lock icon'></i>
           <div className='content'>
@@ -36,8 +37,7 @@ export default class extends Component {
             This means that if you forget your login password, we cannot recover your data and we can't even reset your password.
           </p>
         </div>
-
-      </div>
+      </InfopageLayout>
     );
   }
 

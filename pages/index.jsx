@@ -13,14 +13,10 @@ export default class extends Component {
   render() {
     return (
       <div className='ui container main-content'>
-        <h1>Inkdrop Documentation</h1>
-        <p>
-          Welcome to Inkdrop!
-          These docs give an overview of how Inkdrop works, and are meant to be a reference for plugin developers.
-        </p>
-
         <Menu />
-        <a href='https://mixpanel.com/f/partner' rel='nofollow'><img src='//cdn.mxpnl.com/site_media/images/partner/badge_light.png' alt='Mobile Analytics' /></a>
+        <div>
+          <a href='https://mixpanel.com/f/partner' rel='nofollow'><img src='//cdn.mxpnl.com/site_media/images/partner/badge_light.png' alt='Mobile Analytics' /></a>
+        </div>
       </div>
     );
   }

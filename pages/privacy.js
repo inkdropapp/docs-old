@@ -1,21 +1,16 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
-
 import React, { Component } from 'react';
+import InfopageLayout from '../components/infopage-layout';
 
-export default class extends Component {
+export default class InfoPage extends Component {
   static title = 'Privacy Policy';
 
   render() {
     const md = require('./privacy.md');
     return (
-      <div className='ui container main-content'>
+      <InfopageLayout currentPageTitle={ InfoPage.title }>
         <h1>Privacy Policy</h1>
         <div dangerouslySetInnerHTML={ { __html: md } } />
-      </div>
+      </InfopageLayout>
     );
   }
 

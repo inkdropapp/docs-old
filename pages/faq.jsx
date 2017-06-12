@@ -1,21 +1,16 @@
 import React, { Component } from 'react';
-import Link from '../components/Link';
+import InfopageLayout from '../components/infopage-layout';
 
-export default class extends Component {
+export default class InfoPage extends Component {
   static title = 'FAQ';
 
   render() {
     const md = require('./faq.md');
     return (
-      <div className='ui container main-content'>
-        <div className='ui breadcrumb'>
-          <Link to='/' className='section'>Docs</Link>
-          <i className='right chevron icon divider'></i>
-          <div className='active section'>FAQ</div>
-        </div>
-        <div className='ui divider'></div>
+      <InfopageLayout currentPageTitle={ InfoPage.title }>
+        <h1>Frequently Asked Questions</h1>
         <div dangerouslySetInnerHTML={ { __html: md } } />
-      </div>
+      </InfopageLayout>
     );
   }
 

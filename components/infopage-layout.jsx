@@ -1,12 +1,5 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
-
 import React, { PropTypes, Component } from 'react';
-import ReferenceMenu from './reference-menu';
-import HelpUs from './helpus';
+import InfopageMenu from './infopage-menu';
 import Link from './Link';
 
 export default class extends Component {
@@ -21,7 +14,7 @@ export default class extends Component {
       <div className='ui container main-content'>
         <div className='ui stackable grid'>
           <div className='five wide column side-bar'>
-            <ReferenceMenu sideMenu />
+            <InfopageMenu sideMenu />
           </div>
           <div className='eleven wide column doc-content'>
             <div className='ui breadcrumb'>
@@ -30,15 +23,11 @@ export default class extends Component {
                 Docs
               </Link>
               <i className='right chevron icon divider'></i>
-              <Link to='/reference/' className='section'>API Reference</Link>
-              <i className='right chevron icon divider'></i>
               <div className='active section'>{ this.props.currentPageTitle }</div>
             </div>
             <div className='ui divider'></div>
 
             { this.props.children }
-
-            <HelpUs />
           </div>
         </div>
       </div>
@@ -46,5 +35,4 @@ export default class extends Component {
   }
 
 }
-
 

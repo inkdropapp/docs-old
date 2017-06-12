@@ -15,13 +15,16 @@ export default class extends Component {
       <div className='ui container main-content'>
         <div className='ui stackable grid'>
           <div className='five wide column side-bar'>
-            <ManualMenu />
+            <ManualMenu sideMenu />
           </div>
           <div className='eleven wide column doc-content'>
             <div className='ui breadcrumb'>
-              <Link to='/' className='section'>Docs</Link>
+              <Link to='/' className='section'>
+                <i className='home icon' />
+                Docs
+              </Link>
               <i className='right chevron icon divider'></i>
-              <Link to='/manual/' className='section'>Inkdrop Manual</Link>
+              <Link to='/manual/' className='section'>User Manual</Link>
               <i className='right chevron icon divider'></i>
               <div className='active section'>{ this.props.currentPageTitle }</div>
             </div>

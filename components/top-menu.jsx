@@ -13,59 +13,51 @@ export default class extends Component {
 
   render() {
     return (
-      <div className='ui piled segment'>
+      <div>
         <div className='ui stackable grid'>
-          <div className='three column row'>
+          <div className='two column row'>
+
             <div className='column'>
-              <h3 className='ui header'>
-                <i className='book icon'></i>
-                <div className='content'>
-                  Inkdrop Manual
-                </div>
-              </h3>
-              <ManualMenu />
-            </div>
-            <div className='column'>
-              <h3 className='ui header'>
-                <i className='setting icon'></i>
-                <div className='content'>
-                  API Reference
-                </div>
-              </h3>
-              <ReferenceMenu />
-            </div>
-            <div className='column'>
-              <h3 className='ui header'>
-                <i className='comments icon'></i>
-                <div className='content'>
-                  Inkdrop Forum
-                </div>
-              </h3>
-              <div>
-                The <a href='https://github.com/inkdropapp/forum/'>Inkdrop Forum</a> is the place to discuss anything and everything Inkdrop related with the entire Inkdrop community.
-                If you have problems or are looking for help, this is your place.
+              <div className='ui segment'>
+                <h3 className='ui header'>
+                  <div className='content'>
+                    User Manual
+                  </div>
+                </h3>
+                <ManualMenu />
               </div>
-              <h3 className='ui header'>
-                <i className='info icon'></i>
-                <div className='content'>
-                  Further Informations
-                </div>
-              </h3>
-              <ul>
-                <li>
-                  <Link to='/announce/'>
-                    Announcements
-                  </Link>
-                </li>
-                <li>
-                  <Link to='/notation'>
-                    Notation based on the Specified Commercial Transaction Act
-                  </Link>
-                </li>
-              </ul>
             </div>
+
+            <div className='column'>
+              <div className='ui segment'>
+                <h3 className='ui header'>
+                  <div className='content'>
+                    API Reference
+                  </div>
+                </h3>
+                <ReferenceMenu />
+              </div>
+            </div>
+
           </div>
         </div>
+
+        <div className='ui segment'>
+          <h3 className='ui header'>
+            <i className='info icon'></i>
+            <div className='content'>
+              Further Informations
+            </div>
+          </h3>
+          <ul>
+            <li>
+              <Link to='/announce/'>
+                Announcements
+              </Link>
+            </li>
+          </ul>
+        </div>
+
       </div>
     );
   }

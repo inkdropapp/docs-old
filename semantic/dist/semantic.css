@@ -523,7 +523,7 @@ body {
   padding: 0px;
   overflow-x: hidden;
   min-width: 320px;
-  background: #FFFFFF;
+  background: #f5f7f9;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.4285em;
@@ -4816,7 +4816,7 @@ h5 {
 ---------------*/
 
 .ui.divider:not(.vertical):not(.horizontal) {
-  border-top: 1px solid rgba(34, 36, 38, 0.15);
+  border-top: 1px solid #f4f6f7;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -4887,7 +4887,7 @@ h5 {
   left: 50%;
   content: '';
   z-index: 3;
-  border-left: 1px solid rgba(34, 36, 38, 0.15);
+  border-left: 1px solid #f4f6f7;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   width: 0%;
   height: calc(100% -  1rem );
@@ -15635,11 +15635,11 @@ ol.ui.horizontal.list li:before,
 .ui.segment {
   position: relative;
   background: #FFFFFF;
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
-  margin: 1rem 0em;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 7px 17px 0 rgba(0, 0, 0, 0.1);
+  margin: 1em 0em 2em 0em;
   padding: 1em 1em;
   border-radius: 0.28571429rem;
-  border: 1px solid rgba(34, 36, 38, 0.15);
+  border: none;
 }
 
 .ui.segment:first-child {
@@ -15709,7 +15709,7 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui.grid.segment {
-  margin: 1rem 0em;
+  margin: 1em 0em 2em 0em;
   border-radius: 0.28571429rem;
 }
 
@@ -15717,8 +15717,8 @@ ol.ui.horizontal.list li:before,
 
 .ui.basic.table.segment {
   background: #FFFFFF;
-  border: 1px solid rgba(34, 36, 38, 0.15);
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border: none;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 7px 17px 0 rgba(0, 0, 0, 0.1);
 }
 
 .ui[class*="very basic"].table.segment {
@@ -15760,7 +15760,7 @@ ol.ui.horizontal.list li:before,
   left: 0px;
   position: absolute;
   width: 100%;
-  border: 1px solid rgba(34, 36, 38, 0.15);
+  border: none;
   box-shadow: '';
 }
 
@@ -15923,9 +15923,9 @@ ol.ui.horizontal.list li:before,
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
-  margin: 1rem 0em;
-  border: 1px solid rgba(34, 36, 38, 0.15);
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+  margin: 1em 0em 2em 0em;
+  border: none;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 7px 17px 0 rgba(0, 0, 0, 0.1);
   border-radius: 0.28571429rem;
 }
 
@@ -15947,7 +15947,7 @@ ol.ui.horizontal.list li:before,
   width: auto;
   box-shadow: none;
   border: none;
-  border-top: 1px solid rgba(34, 36, 38, 0.15);
+  border-top: none;
 }
 
 .ui.segments:not(.horizontal) > .segment:first-child {
@@ -15966,7 +15966,7 @@ ol.ui.horizontal.list li:before,
   bottom: 0px;
   margin-top: 0em;
   margin-bottom: 0em;
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15), none;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 7px 17px 0 rgba(0, 0, 0, 0.1), none;
   border-radius: 0em 0em 0.28571429rem 0.28571429rem;
 }
 
@@ -15979,7 +15979,7 @@ ol.ui.horizontal.list li:before,
 /* Nested Group */
 
 .ui.segments > .ui.segments {
-  border-top: 1px solid rgba(34, 36, 38, 0.15);
+  border-top: none;
   margin: 1rem 1rem;
 }
 
@@ -16005,10 +16005,10 @@ ol.ui.horizontal.list li:before,
   border-radius: 0px;
   padding: 0em;
   background-color: #FFFFFF;
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
-  margin: 1rem 0em;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 7px 17px 0 rgba(0, 0, 0, 0.1);
+  margin: 1em 0em 2em 0em;
   border-radius: 0.28571429rem;
-  border: 1px solid rgba(34, 36, 38, 0.15);
+  border: none;
 }
 
 /* Nested Horizontal Group */
@@ -16019,7 +16019,7 @@ ol.ui.horizontal.list li:before,
   border-radius: 0px;
   border: none;
   box-shadow: none;
-  border-top: 1px solid rgba(34, 36, 38, 0.15);
+  border-top: none;
 }
 
 /* Horizontal Segment */
@@ -16440,7 +16440,7 @@ ol.ui.horizontal.list li:before,
   margin-top: 0em;
   top: 0px;
   margin-bottom: 1rem;
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15), none;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 7px 17px 0 rgba(0, 0, 0, 0.1), none;
   border-radius: 0em 0em 0.28571429rem 0.28571429rem;
 }
 
@@ -33884,7 +33884,7 @@ body.pushable {
 }
 
 body.pushable > .pusher {
-  background: #FFFFFF;
+  background: #f5f7f9;
 }
 
 /* Pusher should inherit background from context */

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Link from '../components/Link';
 
 export default class extends Component {
   static title = 'Notation based on the Specified Commercial Transaction Act';
@@ -7,8 +8,16 @@ export default class extends Component {
     const md = require('./notation.md');
     return (
       <div className='ui container main-content'>
-        <h1>Notation based on the Specified Commercial Transaction Act</h1>
-        <div dangerouslySetInnerHTML={ { __html: md } } />
+        <div className='doc-content'>
+          <div className='ui breadcrumb'>
+            <Link to='/' className='section'>Docs</Link>
+            <i className='right chevron icon divider'></i>
+            <div className='active section'>Notation based on the Specified Commercial Transaction Act</div>
+          </div>
+
+          <h1>Notation based on the Specified Commercial Transaction Act</h1>
+          <div dangerouslySetInnerHTML={ { __html: md } } />
+        </div>
       </div>
     );
   }

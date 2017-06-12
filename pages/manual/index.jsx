@@ -1,28 +1,29 @@
-import React, { Component } from 'react';
-import ManualMenu from '../../components/manual-menu';
-import Link from '../../components/Link';
+/**
+ * React Static Boilerplate
+ * https://github.com/koistya/react-static-boilerplate
+ * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
+ */
 
-export default class extends Component {
+import React, { Component } from 'react';
+import ManualLayout from '../../components/manual-layout';
+import ReactDisqusThread from 'react-disqus-thread';
+
+export default class ManualPage extends Component {
+  static title = 'Quick Start Guide';
 
   render() {
+    const md = require('./index.md');
     return (
-      <div className='ui container main-content'>
-        <div className='ui breadcrumb'>
-          <Link to='/' className='section'>Docs</Link>
-          <i className='right chevron icon divider'></i>
-          <div className='active section'>Inkdrop Manual</div>
-        </div>
-        <div className='ui divider'></div>
-        <h2 className='ui header'>
-          <i className='book icon'></i>
-          <div className='content'>
-            Inkdrop Manual
-          </div>
-        </h2>
-        <div className='ui piled segment'>
-          <ManualMenu />
-        </div>
-      </div>
+      <ManualLayout currentPageTitle={ ManualPage.title }>
+        <h1>{ ManualPage.title }</h1>
+        <div dangerouslySetInnerHTML={ { __html: md } } />
+
+        <ReactDisqusThread
+          shortname='inkdrop-documentation'
+          identifier='inkdrop-quick-start-guide'
+          title={ ManualPage.title }
+        />
+      </ManualLayout>
     );
   }
 

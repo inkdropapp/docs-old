@@ -1,36 +1,38 @@
-### Seller
+## Seller
 
 Takuya Matsuyama
 
-### Operating Officer
+## Operating Officer
 
 Takuya Matsuyama
 
-### Address
+## Address
 
 5-18-11-303, Tagara, Nerima, Tokyo 179-0073, Japan
 
-### Contact
+## Contact
 
-Email: inkdrop@pkpk.info
+Email: contact@inkdrop.info
 
 Tel: +815071086381
 
-### Payment Methods
+## Payment Methods
 
 Credit Card
 
-### Delivery Time
+## Delivery Time
 
 We will offer the Service as soon as the payment transaction becomes complete.
 
-### Cancelling / Returning of Product(s)
+## Cancelling / Returning of Product(s)
 
 In principle, order cancelations and product returns or exchange are not accepted
 
-### Supported platforms
+## Supported platforms
 
  * macOS
- * Windows 7+ (64bit)
- * Linux (64bit) (Tested on Ubuntu)
+ * Windows
+ * Linux
+ * iOS
+ * Android
 
