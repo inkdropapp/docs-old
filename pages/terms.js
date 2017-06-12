@@ -13,11 +13,12 @@ export default class InfoPage extends Component {
         <div dangerouslySetInnerHTML={ { __html: md } } />
         <section>
           <h2>Notation based on the Specified Commercial Transaction Act</h2>
-          <p>
+          <div>
             <div>特定商取引法に基づく表記</div>
-            <br />
-            <Link to='/notation'>See here</Link>.
-          </p>
+            <div>
+              <Link to='/notation'>See here</Link>.
+            </div>
+          </div>
         </section>
       </InfopageLayout>
     )
