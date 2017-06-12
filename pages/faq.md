@@ -1,6 +1,7 @@
 ## What platforms does Inkdrop run on?
 
-Inkdrop is available for OS X 10.8 or later, Windows 7 or later, and Ubuntu Linux.
+Inkdrop is available for macOS 10.8 or later, Windows 7 or later, and Ubuntu Linux.
+Mobile app is also available for iOS 10+ and Android 4.1+.
 
 ## Can I sync my data with DropBox, GoogleDrive, etc?
 
