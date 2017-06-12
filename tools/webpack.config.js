@@ -135,10 +135,10 @@ const appConfig = {
   ...config,
   entry: [
     ...(WATCH ? ['webpack-hot-middleware/client', 'react-hot-loader/patch'] : []),
-    './semantic/dist/semantic.css',
+    (WATCH ? './semantic/dist/semantic.css' : './semantic/dist/semantic.min.css'),
     // 'font-awesome/css/font-awesome.css',
     'jquery',
-    './semantic/dist/semantic.js',
+    (WATCH ? './semantic/dist/semantic.js' : './semantic/dist/semantic.min.js'),
     './app.js'
   ],
   output: {
@@ -151,11 +151,7 @@ const appConfig = {
     ...config.plugins,
     ...(DEBUG ? [] : [
       new webpack.optimize.DedupePlugin(),
-      new webpack.optimize.UglifyJsPlugin({
-        compress: {
-          warnings: false
-        }
-      }),
+      new webpack.optimize.UglifyJsPlugin(),
       new webpack.optimize.AggressiveMergingPlugin()
     ]),
     ...(WATCH ? [
