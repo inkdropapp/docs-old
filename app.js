@@ -33,7 +33,6 @@ const route = async (path, callback) => {
 }
 
 function render (location, action) {
-  console.log('action:', action)
   const container = document.getElementById('app')
   route(location.pathname, async (component) => {
     ReactDOM.render(component, container, () => {
