@@ -4,58 +4,57 @@
  * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
  */
 
-import React, { Component, PropTypes } from 'react';
-import './Link.scss';
-import Location from '../../core/Location';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import './Link.scss'
+import Location from '../../core/Location'
 
-function isLeftClickEvent(event) {
-  return event.button === 0;
+function isLeftClickEvent (event) {
+  return event.button === 0
 }
 
-function isModifiedEvent(event) {
-  return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
+function isModifiedEvent (event) {
+  return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey)
 }
 
 class Link extends Component {
-
   static propTypes = {
     to: PropTypes.string.isRequired,
     children: PropTypes.node.isRequired,
     state: PropTypes.object,
-    onClick: PropTypes.func,
-  };
+    onClick: PropTypes.func
+  }
 
-  static handleClick = event => {
-    let allowTransition = true;
-    let clickResult;
+  static handleClick = function (event) {
+    let allowTransition = true
+    let clickResult
 
     if (this.props && this.props.onClick) {
-      clickResult = this.props.onClick(event);
+      clickResult = this.props.onClick(event)
     }
 
     if (isModifiedEvent(event) || !isLeftClickEvent(event)) {
-      return;
+      return
     }
 
     if (clickResult === false || event.defaultPrevented === true) {
-      allowTransition = false;
+      allowTransition = false
     }
 
-    event.preventDefault();
+    event.preventDefault()
 
     if (allowTransition) {
-      const link = event.currentTarget;
+      const link = event.currentTarget
       Location.pushState(
-        this.props && this.props.state || null,
-        this.props && this.props.to || (link.pathname + link.search));
+        (this.props && this.props.state) || null,
+        (this.props && this.props.to) || (link.pathname + link.search))
     }
-  };
-
-  render() {
-    const { to, children, ...props } = this.props;
-    return <a href={to} {...props} onClick={Link.handleClick.bind(this)}>{children}</a>;
   }
 
+  render () {
+    const { to, children, ...props } = this.props
+    return <a href={to} {...props} onClick={Link.handleClick.bind(this)}>{children}</a>
+  }
 }
 
-export default Link;
+export default Link

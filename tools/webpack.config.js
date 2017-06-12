@@ -22,6 +22,29 @@ const JS_LOADER = {
   ],
   loader: 'babel-loader'
 }
+const POSTCSS_LOADER = {
+  loader: 'postcss-loader',
+  options: {
+    plugins: (loader) => {
+      return [
+        require('postcss-import')({ addDependencyTo: loader }),
+        require('precss')(),
+        require('autoprefixer')({
+          browsers: [
+            'Android 2.3',
+            'Android >= 4',
+            'Chrome >= 35',
+            'Firefox >= 31',
+            'Explorer >= 9',
+            'iOS >= 7',
+            'Opera >= 12',
+            'Safari >= 7.1'
+          ]
+        })
+      ]
+    }
+  }
+}
 
 // Base configuration
 const config = {
@@ -146,12 +169,7 @@ const appConfig = {
         use: [
           'style-loader',
           'css-loader',
-          {
-            loader: 'postcss-loader',
-            options: {
-              path: path.join(__dirname, 'postcss.config.js')
-            }
-          }
+          POSTCSS_LOADER
         ]
       }
     ]
@@ -189,12 +207,7 @@ const pagesConfig = {
         test: /\.scss$/,
         use: [
           'css-loader',
-          {
-            loader: 'postcss-loader',
-            options: {
-              path: path.join(__dirname, 'postcss.config.js')
-            }
-          }
+          POSTCSS_LOADER
         ]
       }
     ]
