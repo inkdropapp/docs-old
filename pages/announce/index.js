@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import MenuLink from '../../components/menu-link';
-import AnnounceLayout from '../../components/announce-layout';
+import React, { Component } from 'react'
+import MenuLink from '../../components/menu-link'
+import AnnounceLayout from '../../components/announce-layout'
 
 export default class AnnouncementPage extends Component {
   static title = 'Announcement';
 
-  render() {
+  render () {
     return (
       <AnnounceLayout currentPageTitle={ AnnouncementPage.title }>
         <h1 className='ui header'>
@@ -26,7 +26,6 @@ export default class AnnouncementPage extends Component {
           </li>
         </ul>
       </AnnounceLayout>
-    );
+    )
   }
-
 }

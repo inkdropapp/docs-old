@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
-import ReferenceMenu from '../../components/reference-menu';
-import Link from '../../components/Link';
+import React, { Component } from 'react'
+import ReferenceMenu from '../../components/reference-menu'
+import Link from '../../components/Link'
 
-export default class extends Component {
-
-  render() {
+export default class ReferencePage extends Component {
+  render () {
     return (
       <div className='ui container main-content'>
         <div className='ui breadcrumb'>
@@ -23,8 +22,6 @@ export default class extends Component {
           <ReferenceMenu />
         </div>
       </div>
-    );
+    )
   }
-
 }
-

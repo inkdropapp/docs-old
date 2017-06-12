@@ -4,16 +4,16 @@
  * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
  */
 
-import React, { Component } from 'react';
-import './markdown-cheatsheet.scss';
-import Link from '../../components/Link';
-import hljs from 'highlight.js';
-import ReactDisqusThread from 'react-disqus-thread';
+import React, { Component } from 'react'
+import './markdown-cheatsheet.scss'
+import Link from '../../components/Link'
+import hljs from 'highlight.js'
+import ReactDisqusThread from 'react-disqus-thread'
 
 export default class ManualPage extends Component {
   static title = 'Markdown Cheatsheet';
 
-  render() {
+  render () {
     // const md = require('./accessing-data-in-the-cloud.md');
     return (
       <div className='ui container main-content'>
@@ -32,7 +32,7 @@ export default class ManualPage extends Component {
             <div className='row'>
               <div className='sixteen wide column'>
                 This is intended as a quick reference and showcase.
-                For more complete info, see <a href='http://daringfireball.net/projects/markdown/' target='_blank'>John Gruber's original spec</a> and the <a href='https://help.github.com/categories/writing-on-github/' target='_blank'>Github-flavored Markdown info page</a>.
+                For more complete info, see <a href='http://daringfireball.net/projects/markdown/' target='_blank' rel='noopener noreferrer'>John Gruber&apos;s original spec</a> and the <a href='https://help.github.com/categories/writing-on-github/' target='_blank' rel='noopener noreferrer'>Github-flavored Markdown info page</a>.
 
                 <h3>Table of Contents</h3>
                 <ul>
@@ -181,40 +181,40 @@ Strikethrough uses two tildes. ~~Scratch this.~~
                     </ul>
                   </li>
                   <li>
-                    Actual numbers don't matter, just that it's a number
+                    Actual numbers don&apos;t matter, just that it&apos;s a number
                     <ol>
                       <li>Ordered sub-list</li>
                     </ol>
                   </li>
                   <li>
                     <p>And another item.</p>
-                    <p>You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).</p>
+                    <p>You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we&apos;ll use three here to also align the raw Markdown).</p>
                     <p>
                       To have a line break without a paragraph, you will need to use two trailing spaces.<br />
                       Note that this line is separate, but within the same paragraph.<br />
                       (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
                     </p>
                   </li>
-                  </ol>
-                  <ul>
-                    <li>Unordered list can use asterisks</li>
-                    <li>Or minuses</li>
-                    <li>Or pluses</li>
-                  </ul>
-                  <ul>
-                    <li>
-                      <div className='ui checkbox'>
-                        <input type='checkbox' className='hidden' />
-                        <label>Checkbox</label>
-                      </div>
-                    </li>
-                    <li>
-                      <div className='ui checkbox'>
-                        <input type='checkbox' className='hidden' defaultChecked />
-                        <label>Task</label>
-                      </div>
-                    </li>
-                  </ul>
+                </ol>
+                <ul>
+                  <li>Unordered list can use asterisks</li>
+                  <li>Or minuses</li>
+                  <li>Or pluses</li>
+                </ul>
+                <ul>
+                  <li>
+                    <div className='ui checkbox'>
+                      <input type='checkbox' className='hidden' />
+                      <label>Checkbox</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='ui checkbox'>
+                      <input type='checkbox' className='hidden' defaultChecked />
+                      <label>Task</label>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
 
@@ -252,10 +252,10 @@ Some text to show that the reference links can follow later.
 [link text itself]: http://www.reddit.com`}</code></pre>
               </div>
               <div className='column'>
-                <p><a href='https://www.google.com'>I'm an inline-style link</a></p>
-                <p><a href='https://www.google.com' title='Google&apos;s Homepage'>I'm an inline-style link with title</a></p>
-                <p><a href='https://www.mozilla.org'>I'm a reference-style link</a></p>
-                <p><a href='../blob/master/LICENSE'>I'm a relative reference to a repository file</a></p>
+                <p><a href='https://www.google.com'>I&apos;m an inline-style link</a></p>
+                <p><a href='https://www.google.com' title='Google&apos;s Homepage'>I&apos;m an inline-style link with title</a></p>
+                <p><a href='https://www.mozilla.org'>I&apos;m a reference-style link</a></p>
+                <p><a href='../blob/master/LICENSE'>I&apos;m a relative reference to a repository file</a></p>
                 <p><a href='http://slashdot.org'>You can use numbers for reference-style link definitions</a></p>
                 <p>Or leave it empty and use the <a href='http://www.reddit.com'>link text itself</a>.</p>
                 <p>
@@ -286,7 +286,7 @@ Reference-style: ![alt text][logo]
 [logo]: http://doc.inkdrop.info/icon_w64.png "Logo Title Text 2"`}</code></pre>
               </div>
               <div className='column'>
-                <p>Here's our logo (hover to see the title text):</p>
+                <p>Here&apos;s our logo (hover to see the title text):</p>
 
                 <p>
                   Inline-style: <img src='/icon_w64.png' alt='alt text' title='Logo Title Text 1' />
@@ -307,10 +307,10 @@ Reference-style: ![alt text][logo]
                   Code and Syntax Highlighting
                 </h2>
                 <p>
-                  Code blocks are part of the Markdown spec, but syntax highlighting isn't.
-                  However, many renderers -- like Github's and <strong>Inkdrop</strong> -- support syntax highlighting.
+                  Code blocks are part of the Markdown spec, but syntax highlighting isn&apos;t.
+                  However, many renderers -- like Github&apos;s and <strong>Inkdrop</strong> -- support syntax highlighting.
                   Which languages are supported and how those language names should be written will vary from renderer to renderer.
-                  Inkdrop supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the <a href='http://softwaremaniacs.org/media/soft/highlight/test.html' target='_blank'>highlight.js demo page</a>.
+                  Inkdrop supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the <a href='http://softwaremaniacs.org/media/soft/highlight/test.html' target='_blank' rel='noopener noreferrer'>highlight.js demo page</a>.
                 </p>
               </div>
             </div>
@@ -325,7 +325,7 @@ Reference-style: ![alt text][logo]
             <div className='row'>
               <div className='sixteen wide column'>
                 <p>
-                  Blocks of code are either fenced by lines with three back-ticks ```, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
+                  Blocks of code are either fenced by lines with three back-ticks ```, or are indented with four spaces. I recommend only using the fenced code blocks -- they&apos;re easier and only they support syntax highlighting.
                 </p>
               </div>
             </div>
@@ -363,7 +363,7 @@ But let's throw in a <b>tag</b>.`}</code></pre>
                   Tables
                 </h2>
                 <p>
-                  Tables aren't part of the core Markdown spec, but they are part of GFM and <strong>Inkdrop</strong> supports them.
+                  Tables aren&apos;t part of the core Markdown spec, but they are part of GFM and <strong>Inkdrop</strong> supports them.
                 </p>
               </div>
             </div>
@@ -416,7 +416,7 @@ Markdown | Less | Pretty
                   </tbody>
                 </table>
 
-                <p>There must be at least 3 dashes separating each header cell. The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.</p>
+                <p>There must be at least 3 dashes separating each header cell. The outer pipes (|) are optional, and you don&apos;t need to make the raw Markdown line up prettily. You can also use inline Markdown.</p>
 
                 <table className='ui celled table'>
                   <thead>
@@ -472,7 +472,7 @@ Quote break.
                 <p>Quote break.</p>
 
                 <blockquote>
-                  <p>This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p>
+                  <p>This is a very long line that will still be quoted properly when it wraps. Oh boy let&apos;s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p>
                   <blockquote>
                     <p>Nested quote</p>
                   </blockquote>
@@ -488,7 +488,7 @@ Quote break.
                   Inline HTML
                 </h2>
                 <p>
-                  You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
+                  You can also use raw HTML in your Markdown, and it&apos;ll mostly work pretty well.
                 </p>
               </div>
             </div>
@@ -573,10 +573,10 @@ This line is also a separate paragraph, but...
 This line is only separated by a single newline, so it's a separate line in the *same paragraph*.`}</code></pre>
               </div>
               <div className='column'>
-                <p>Here's a line for us to start with.</p>
+                <p>Here&apos;s a line for us to start with.</p>
                 <p>This line is separated from the one above by two newlines, so it will be a <em>separate paragraph</em>.</p>
                 <p>This line is also begins a separate paragraph, but...<br />
-                  This line is only separated by a single newline, so it's a separate line in the <em>same paragraph</em>.</p>
+                  This line is only separated by a single newline, so it&apos;s a separate line in the <em>same paragraph</em>.</p>
               </div>
             </div>
             <div className='row'>
@@ -586,7 +586,7 @@ This line is only separated by a single newline, so it's a separate line in the 
                     Technical note
                   </div>
                   <p>
-                    <em>Inkdrop</em> uses GFM line breaks, so there's no need to use MD's two-space line breaks.
+                    <em>Inkdrop</em> uses GFM line breaks, so there&apos;s no need to use MD&apos;s two-space line breaks.
                   </p>
                 </div>
               </div>
@@ -596,10 +596,10 @@ This line is only separated by a single newline, so it's a separate line in the 
           <div className='ui divider'></div>
           <section>
             <p>
-              This cheatsheet is written based on <a href='_blank' href='https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet'>markdown-here's documentation</a>.
+              This cheatsheet is written based on <a target='_blank' rel='noopener noreferrer' href='https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet'>markdown-here&apos;s documentation</a>.
             </p>
             <p>
-              License: <a href='https://creativecommons.org/licenses/by/3.0/' target='_blank'>CC-BY</a>
+              License: <a href='https://creativecommons.org/licenses/by/3.0/' target='_blank' rel='noopener noreferrer'>CC-BY</a>
             </p>
           </section>
 
@@ -610,6 +610,6 @@ This line is only separated by a single newline, so it's a separate line in the 
           />
         </div>
       </div>
-    );
+    )
   }
 }
