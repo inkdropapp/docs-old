@@ -4,19 +4,20 @@
  * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
  */
 
-import browserSync from 'browser-sync';
-import webpack from 'webpack';
-import hygienistMiddleware from 'hygienist-middleware';
-import webpackDevMiddleware from 'webpack-dev-middleware';
-import webpackHotMiddleware from 'webpack-hot-middleware';
+import browserSync from 'browser-sync'
+import webpack from 'webpack'
+import hygienistMiddleware from 'hygienist-middleware'
+import webpackDevMiddleware from 'webpack-dev-middleware'
+import webpackHotMiddleware from 'webpack-hot-middleware'
 
-global.watch = true;
-const webpackConfig = require('./webpack.config')[0];
-const bundler = webpack(webpackConfig);
-const { PORT } = process.env;
+global.watch = true
+const webpackConfig = require('./webpack.config')[0]
+
+const bundler = webpack(webpackConfig)
+const { PORT } = process.env
 
 export default async () => {
-  await require('./build')();
+  await require('./build')()
 
   browserSync({
     port: PORT || 3001,
@@ -32,27 +33,26 @@ export default async () => {
           publicPath: webpackConfig.output.publicPath,
 
           // pretty colored output
-          stats: webpackConfig.stats,
+          stats: webpackConfig.stats
 
           // for other settings see
           // http://webpack.github.io/docs/webpack-dev-middleware.html
         }),
 
         // bundler should be the same as above
-        webpackHotMiddleware(bundler),
-      ],
+        webpackHotMiddleware(bundler)
+      ]
     },
 
     // no need to watch '*.js' here, webpack will take care of it for us,
     // including full page reloads if HMR won't work
     files: [
       'build/**/*.css',
-      'build/**/*.html',
+      'build/**/*.html'
     ],
 
     ui: {
-      port: (PORT && parseInt(PORT, 10) + 1) || 3002,
-    },
-
-  });
-};
+      port: (PORT && parseInt(PORT, 10) + 1) || 3002
+    }
+  })
+}
