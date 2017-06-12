@@ -7,8 +7,14 @@
 import React, { Component } from 'react'
 import './markdown-cheatsheet.scss'
 import Link from '../../components/Link'
-import hljs from 'highlight.js'
 import ReactDisqusThread from 'react-disqus-thread'
+
+import hljs from 'highlight.js/lib/highlight'
+import javascript from 'highlight.js/lib/languages/javascript'
+import python from 'highlight.js/lib/languages/python'
+
+hljs.registerLanguage('javascript', javascript)
+hljs.registerLanguage('python', python)
 
 export default class ManualPage extends Component {
   static title = 'Markdown Cheatsheet';

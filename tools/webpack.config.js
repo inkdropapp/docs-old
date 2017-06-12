@@ -153,7 +153,7 @@ const appConfig = {
       new webpack.optimize.DedupePlugin(),
       new webpack.optimize.UglifyJsPlugin({
         compress: {
-          warnings: VERBOSE
+          warnings: false
         }
       }),
       new webpack.optimize.AggressiveMergingPlugin()
