@@ -14,7 +14,7 @@ export default class extends Component {
     return (
       <div className='ui container main-content'>
         <Menu />
-        <div>
+        <div style={{ paddingTop: '2em' }}>
           <a href='https://mixpanel.com/f/partner' rel='nofollow'><img src='//cdn.mxpnl.com/site_media/images/partner/badge_light.png' alt='Mobile Analytics' /></a>
         </div>
       </div>

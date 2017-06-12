@@ -13,7 +13,7 @@ export default class extends Component {
 
   render() {
     return (
-      <div>
+      <div className='top-menu'>
         <div className='ui stackable grid'>
           <div className='two column row'>
 
@@ -44,7 +44,6 @@ export default class extends Component {
 
         <div className='ui segment'>
           <h3 className='ui header'>
-            <i className='info icon'></i>
             <div className='content'>
               Further Informations
             </div>

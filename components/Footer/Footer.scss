@@ -1,7 +1,8 @@
+@import '../variables.scss';
+
 .app--footer {
   padding: 3rem 0;
-  border-top: 1px solid rgba(34, 36, 38, 0.15);
-  background: rgba(34, 36, 38, 0.02);
+  background: rgba(34, 36, 38, 0.05);
   font-size: 1.1rem;
 
   iframe:first-child {
@@ -26,5 +27,9 @@
         margin: 0 1em;
       }
     }
+  }
+
+  a {
+    color: $text-color;
   }
 }

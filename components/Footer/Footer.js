@@ -67,10 +67,10 @@ class Footer extends React.Component {
               </ul>
             </div>
             <div className='three wide column text-left'>
-              <a href='https://www.craftz.dog/'
+              <a href='https://www.inkdrop.info/'
                 target='_blank'
                 onClick={ this.handleOutboundLinkClick }>
-                © Takuya Matsuyama
+                © Inkdrop
               </a>
             </div>
           </div>
