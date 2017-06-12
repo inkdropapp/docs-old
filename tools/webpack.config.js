@@ -5,6 +5,7 @@
  */
 
 import path from 'path'
+import fs from 'fs'
 import webpack from 'webpack'
 import markdownRenderer from './markdown-renderer'
 
@@ -45,6 +46,12 @@ const POSTCSS_LOADER = {
     }
   }
 }
+const babelConfig = JSON.parse(fs.readFileSync(path.join(__dirname, '../.babelrc'), 'utf8'))
+Object.assign(babelConfig, {
+  babelrc: false,
+  presets: babelConfig.presets.map(x => x === 'es2015' ? ['latest', { es2015: { modules: false } }] : x),
+  plugins: babelConfig.plugins.filter(p => p !== 'add-module-exports')
+})
 
 // Base configuration
 const config = {
@@ -127,7 +134,7 @@ const config = {
 const appConfig = {
   ...config,
   entry: [
-    ...(WATCH ? ['webpack-hot-middleware/client'] : []),
+    ...(WATCH ? ['webpack-hot-middleware/client', 'react-hot-loader/patch'] : []),
     './semantic/dist/semantic.css',
     // 'font-awesome/css/font-awesome.css',
     'jquery',
@@ -139,7 +146,7 @@ const appConfig = {
     filename: 'app.js'
   },
   // http://webpack.github.io/docs/configuration.html#devtool
-  devtool: DEBUG ? 'cheap-module-eval-source-map' : false,
+  devtool: DEBUG ? 'cheap-source-map' : false,
   plugins: [
     ...config.plugins,
     ...(DEBUG ? [] : [
@@ -160,7 +167,11 @@ const appConfig = {
     rules: [
       WATCH ? Object.assign({}, JS_LOADER, {
         options: {
-          plugins: []
+          ...babelConfig,
+          plugins: [
+            'react-hot-loader/babel',
+            ...babelConfig.plugins
+          ]
         }
       }) : JS_LOADER,
       ...config.module.rules,

@@ -9,22 +9,38 @@ import ReactDOM from 'react-dom'
 import { canUseDOM } from 'fbjs/lib/ExecutionEnvironment'
 import Location from './core/Location'
 import Layout from './components/Layout'
+import { AppContainer } from 'react-hot-loader'
 
 const routes = {} // Auto-generated on build. See tools/lib/routes-loader.js
 
 const route = async (path, callback) => {
   const handler = routes[path] || routes['/404']
-  const component = await handler()
-  await callback(<Layout>{React.createElement(component)}</Layout>, component)
+  let component = await handler()
+  if (component.default) {
+    component = component.default
+  }
+  let rootNode = process.env.NODE_ENV === 'production' ? (
+    <Layout>{React.createElement(component)}</Layout>
+  ) : (
+    <AppContainer>
+      <Layout>{React.createElement(component)}</Layout>
+    </AppContainer>
+  )
+  if (module.hot && process.env.NODE_ENV !== 'production') {
+    module.hot.accept()
+  }
+  await callback(rootNode, component)
 }
 
 function run () {
   const container = document.getElementById('app')
   Location.listen(location => {
-    route(location.pathname, async (component) => ReactDOM.render(component, container, () => {
-      // Track the page view event via Google Analytics
-      window.ga('send', 'pageview', location.pathname)
-    }))
+    route(location.pathname, async (component) => {
+      ReactDOM.render(component, container, () => {
+        // Track the page view event via Google Analytics
+        window.ga('send', 'pageview', location.pathname)
+      })
+    })
   })
 }
 
