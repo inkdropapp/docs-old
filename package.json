@@ -61,5 +61,10 @@
     "build": "babel-node --eval \"require('./tools/build')().catch(err => console.log(err.stack))\"",
     "start": "babel-node --eval \"require('./tools/start')().catch(err => console.log(err.stack))\"",
     "deploy": "babel-node --eval \"require('./tools/deploy')().catch(err => console.log(err.stack))\""
+  },
+  "engines": {
+    "node": "^7.10.0",
+    "npm": "^4.6.1",
+    "yarn": "^0.24.5"
   }
 }
