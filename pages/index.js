@@ -9,6 +9,8 @@ import React, { Component } from 'react'
 import Menu from '../components/top-menu'
 
 export default class IndexPage extends Component {
+  static title = 'Documentation'
+
   render () {
     return (
       <div className='ui container main-content'>
