@@ -18,8 +18,8 @@ function Html ({ title, description, body }) {
         <title>{title || config.title}</title>
         <meta name='description' content={description || config.description} />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='shortcut icon' href='//inkdrop-prod.s3.amazonaws.com/site/favicon@2x.png' />
-        <link rel='mask-icon' href='//inkdrop-prod.s3.amazonaws.com/site/favicon.svg' color='rgb(17, 20, 24)' />
+        <link rel='shortcut icon' href='/favicon@2x.png' />
+        <link rel='mask-icon' href='/favicon.svg' color='rgb(17, 20, 24)' />
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto' />
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Lato:300,400' />
         <link rel='stylesheet' href='//fonts.googleapis.com/earlyaccess/notosansjapanese.css' />

@@ -14,7 +14,8 @@ function Navigation () {
       <div className='row'>
         <a href='https://www.inkdrop.info/' className='app--logo'>
           <img
-            src='//inkdrop-prod.s3.amazonaws.com/site/header-logo@2x.png'
+            src='/navbar-logo.png'
+            srcSet='/navbar-logo.png 1x, /navbar-logo@2x.png 2x'
             width='186'
             height='45'
             alt='logo'
