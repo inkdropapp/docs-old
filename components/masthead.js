@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Link from './Link'
+import './masthead.scss'
 
 export default class Masthead extends Component {
   static propTypes = {

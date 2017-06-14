@@ -1,9 +1,3 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
-
 import path from 'path'
 import fs from 'fs'
 import webpack from 'webpack'
