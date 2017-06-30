@@ -45,7 +45,7 @@ function Navigation () {
             </div>
           </li>
           <li>
-            <a href='https://www.inkdrop.info/login' className='login'>
+            <a href='https://app.inkdrop.info/' className='login'>
               <i className='sign in icon' />
               Log in
             </a>
