@@ -23,14 +23,14 @@ You should see your specific URL on the bottom of pane like this:
 
 ![Sync Preferences](/manual/2-1-data-access-api_url.png)
 
-The URL is something like this: `https://black.inkdrop.info/user-<user_id>`
+The URL is something like this: `https://db.inkdrop.info/user-<user_id>`
 
 ## Accessing your database
 
 Now you can send a request to the URL via HTTPS, but you will get an error as following:
 
 ```bash
-$ curl https://black.inkdrop.info/user-<user_id>/
+$ curl https://db.inkdrop.info/user-<user_id>/
 {"error":"unauthorized","reason":"_reader access is required for this request"}
 ```
 
@@ -38,7 +38,7 @@ Because it's protected and you can't access without any credentials.
 You need to append your API keys as the credentials with HTTP Basic authentication in the request:
 
 ```
-$ curl https://<access_key_id>:<secret_access_key>@black.inkdrop.info/<database_name>/
+$ curl https://<access_key_id>:<secret_access_key>@db.inkdrop.info/<database_name>/
 ```
 
 and you will get a response represented with JSON like following:
