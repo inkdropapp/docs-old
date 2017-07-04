@@ -19,7 +19,7 @@ Or you can simply use it in offline by setting from preferences.
 
 ## How can I delete my account?
 
-You can delete your account from [here](https://www.inkdrop.info/account/delete).
+You can delete your account from [here](https://app.inkdrop.info/account/delete).
 You data will be deleted immediately.
 
 ## I forgot my password. How to reset my password?

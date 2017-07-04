@@ -10,7 +10,7 @@ By using this API, you can make your own notebook client app with sync feature o
 ## Creating API Keys
 
 The API key is necessary for both publishing your plugins and accessing your data stored in the cloud.
-To create new API key, go to [API Keys](https://www.inkdrop.info/account/api-keys) page and push "Create new API key" button.
+To create new API key, go to [API Keys](https://app.inkdrop.info/api-keys) page and push "Create new API key" button.
 Generated API key is not stored in the database, so be carefully and don't lose it.
 
 ## Getting your database URL
