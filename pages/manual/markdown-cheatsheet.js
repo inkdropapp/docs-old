@@ -487,6 +487,7 @@ Quote break.
               </div>
             </div>
 
+            {/*
             <div className='row'>
               <div className='sixteen wide column'>
                 <h2>
@@ -518,6 +519,7 @@ Quote break.
                 </dl>
               </div>
             </div>
+            */}
 
             <div className='row'>
               <div className='sixteen wide column'>
