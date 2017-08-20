@@ -63,6 +63,9 @@ export default class ManualMenu extends Component {
           <li>
             <MenuLink to='/manual/backing-up-your-data'>Backing up your data</MenuLink>
           </li>
+          <li>
+            <MenuLink to='/manual/sharing-your-notes-on-the-web'>Sharing your notes on the web</MenuLink>
+          </li>
         </ul>
         <h3 className='ui header'>
           <i className='configure icon' />
