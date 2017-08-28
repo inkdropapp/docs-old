@@ -27,3 +27,6 @@ You data will be deleted immediately.
 Inkdrop cannot reset your password for security reason.
 Please read [how to recover your password](/manual/recovering-your-password).
 
+## Do you offer student discounts?
+
+Yes. See [this page](/student-discount) for requesting your discount.
