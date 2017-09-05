@@ -30,3 +30,36 @@ Please read [how to recover your password](/manual/recovering-your-password).
 ## Do you offer student discounts?
 
 Yes. See [this page](/student-discount) for requesting your discount.
+
+## Billing
+
+### How do I cancel my plan?
+
+You can cancel your subscription by deleting your account through the Account page. Please keep in mind that all created notes and uploaded images will be deleted forever.
+
+### What happens if I change my plan before my next billing date?
+
+If you switch from a monthly plan to a yearly plan, the billing date becomes the date of the switch. By default, Inkdrop prorates subscription costs. Please read the [Stripe's documentation](https://stripe.com/docs/subscriptions/upgrading-downgrading) for more detail.
+
+### What payment methods are available?
+
+Currently, we can only accept credit card payment with Visa, MasterCard, and American Express.
+
+### Is it secure to send my credit card information?
+
+We uses [Stripe.com](https://stripe.com/) for online payments. Stripe provides security and compliance without the headaches. We never send and store your credit card information to Inkdrop server.
+
+Learn more: [Security at Stripe](https://stripe.com/docs/security/stripe)
+
+### What happens if the free trial expired without adding my credit card?
+
+Your account will be deleted and you can no longer access to your account. But you can still access your data stored in local with the app in read-only mode.
+
+### What happens if the payment failed?
+
+The payment fails if you have canceled your card, the card may have expired, or the payment might be declined by the bank for some other reason. Then we will send you an email notification. Inkdrop will retry failed payments up to three times:
+
+*   1st failed attempt: Retry 3 days after the previous attempt
+*   2nd failed attempt: Retry 5 days after the previous attempt
+*   3rd failed attempt: Retry 7 days after the previous attempt
+*   Then finally: Cancel your subscription and delete your account
