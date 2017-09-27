@@ -17,7 +17,7 @@ CouchDB is just another open-source NoSQL database so you can deploy it on your 
 Using DBaaS instead of operating database by yourself is good choice. For instance, [Cloudant](https://cloudant.com/) is one of fully-managed DBaaS providers.
 
 <div class="ui warning message">
-  <strong>WARNING</strong>: Use this feature at your own risk. Inkdrop itself doesn't protect data from other people on your server. To protect your data, read <a href='#optional-security'>Security</a> section at the bottom of this page.
+  <strong>WARNING</strong>: Use this feature at your own risk. Inkdrop itself doesn't protect data from other people on your server. To protect your data, read <a href='#configure-security'>Security</a> section at the bottom of this page.
 </div>
 
 ### Create a database
