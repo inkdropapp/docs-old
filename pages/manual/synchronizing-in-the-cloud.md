@@ -50,10 +50,10 @@ Then, push the **Apply** button.
 
 Please read [CouchDB's tutorial](http://guide.couchdb.org/draft/tour.html) for more information.
 
-### Optional: Security
+### Configure security
 
 As you may know, CouchDB is running with the Admin Party by default. It means Everybody has privileges to do anything.
-Please read the [documentation](http://guide.couchdb.org/draft/security.html).
+Please read the CouchDB's [documentation](http://guide.couchdb.org/draft/security.html).
 To keep your notes secure, we recommend that you create an admin user with a username and password as your credentials.
 
 Now let’s create an admin user. We’ll call her `anna`, and her password is `secret`:
@@ -89,6 +89,50 @@ Return to the Inkdrop sync preferences, you can input the URL to your database t
 
 ```
 http://anna:secret@127.0.0.1:5984/my-inkdrop-notes
+```
+
+Please don't omit the port number.
+
+### Enable SSL
+
+If you would like to make your database accessible to the public, we encourage you to configure SSL.
+[CouchDB provides SSL](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=48203146) by default but it's not recommended since there's a problem with the replication with clients.
+We recommend nginx as a reverse-proxy server. Your configuration will look like:
+
+```nginx
+server {
+  listen 6984;
+  ssl on;
+  ssl_certificate /path/to/fullchain.pem;
+  ssl_certificate_key /path/to/privkey.pem;
+  ssl_protocols TLSv1.1 TLSv1.2 SSLv3;
+  ssl_session_cache shared:SSL:1m;
+
+  server_name ***;
+
+  location / {
+    proxy_pass http://localhost:5984;
+    proxy_redirect off;
+    proxy_set_header Host $host;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Ssl on;
+  }
+
+  location ~ ^/(.*)/_changes {
+    proxy_pass http://localhost:5984;
+    proxy_redirect off;
+    proxy_buffering off;
+    proxy_set_header Host $host;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Ssl on;
+  }
+}
+```
+
+Your server URL would be like so:
+
+```
+https://anna:secret@your-server.com:6984/my-inkdrop-notes
 ```
 
 <div class="ui warning message">
