@@ -87,7 +87,7 @@ To create a preview theme, do the following:
 
 Now you are ready to make changes!
 
-Highlighting code blocks is built with [highlight.js](https://highlightjs.org/), and CSS selectors for styling code blocks are compatible with it.
+Highlighting code blocks is built with [CodeMirror](https://codemirror.net/demo/theme.html), and CSS selectors for styling code blocks are compatible with it.
 
 After making changes, reload the app to reflected changes.
 
