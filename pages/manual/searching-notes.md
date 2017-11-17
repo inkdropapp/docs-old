@@ -26,6 +26,16 @@ tag:JavaScript
 tag:WIP
 ```
 
+With `status:<status_name>` qualifier, you can search notes with specified status.
+For example:
+
+```
+status:active
+status:onHold
+status:completed
+status:dropped
+```
+
 ## Search with a phrase
 
 By enclosing keywords in double quotes (`"`), you can search notes by a phrase including spaces.
@@ -42,6 +52,7 @@ To search notes NOT matched with specified keyword and condition, add `-` modifi
 ```
 -book:Blog
 -tag:JavaScript
+-status:completed
 -foo
 -"foo bar"
 ```

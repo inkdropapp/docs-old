@@ -9,11 +9,4 @@ To set the status to a note, click the status dropdown list on the left of the t
 
 You can choose one of the status from **None**(default), **Active**, **On Hold**, **Completed** and **Dropped**.
 The notes with a status of **Completed** or **Dropped** will be hidden in the note list by default.
-If you want to see notes with hidden status, add following condition to the search bar:
-
-```
-status:*
-```
-
-or, simply select a status from the side bar.
 
