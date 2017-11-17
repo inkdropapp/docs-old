@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.10 - Item
+ * # Semantic UI 2.2.13 - Item
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -29,9 +29,12 @@
   padding: 0em;
   border: none;
   border-radius: 0rem;
-  box-shadow: none;
-  -webkit-transition: box-shadow 0.1s ease;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: -webkit-box-shadow 0.1s ease;
+  transition: -webkit-box-shadow 0.1s ease;
   transition: box-shadow 0.1s ease;
+  transition: box-shadow 0.1s ease, -webkit-box-shadow 0.1s ease;
   z-index: '';
 }
 .ui.items > .item a {
@@ -111,7 +114,8 @@
   background: none;
   margin: 0em;
   padding: 0em;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   font-size: 1em;
   border: none;
   border-radius: 0em;
@@ -303,7 +307,8 @@
   top: 0em;
   left: 0em;
   color: rgba(0, 0, 0, 0.4);
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   -webkit-transition: color 0.1s ease;
   transition: color 0.1s ease;
   border-top: none;

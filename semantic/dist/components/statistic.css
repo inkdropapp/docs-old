@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.10 - Statistic
+ * # Semantic UI 2.2.13 - Statistic
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -272,7 +272,6 @@
           flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
 }
 .ui.horizontal.statistics {
@@ -290,7 +289,6 @@
           flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
   max-width: none;
   margin: 1em 0em;
