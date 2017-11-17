@@ -1,12 +1,12 @@
 Notes are only useful if you can find them quickly. Inkdrop's full-text search also supports filtering notebooks and tags with search qualifiers.
 
-To search all the notes, either click the search bar on the top of the note list or press `Cmd+F` / `Ctrl+F` keybind to set focus to it.
+To search all the notes, either click the search bar on the top of the note list or press `Cmd+Shift+F` / `Ctrl+Shift+F` keybind to set focus to it.
 
 ![SideBySide](/manual/04-searching_searchbar.png)
 
 Now you can search by keyword.
 
-## Search notes within a notebook and with tags
+## Search notes within a notebook, with tags and with status
 
 With `book:<book_name>` qualifier, you can search notes within specified notebook.
 For example:
