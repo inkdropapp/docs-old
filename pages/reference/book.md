@@ -7,7 +7,8 @@ Example:
    "updatedAt": 1470970961407,
    "createdAt": 1470916727554,
    "count": 0,
-   "name": "First Notebook"
+   "name": "First Notebook",
+   "parentBookId": "book:0Kf32a5b"
 }
 ```
 
@@ -17,18 +18,7 @@ Example:
 
 Type: **String**
 
-The unique book ID which should start with `book:` and the remains are randomly generated string.
-If the book is a sub-notebook, the `_id` should contain its parent book ID like following:
-
-```
-book:parent-book-id:book-id
-```
-
-For example, if the parent book ID is `book:foo`, then the book ID is:
-
-```
-book:foo:bar
-```
+The unique notebook ID which should start with `book:` and the remains are randomly generated string.
 
 ### _rev
 
@@ -61,3 +51,8 @@ Type: **String**
 
 The name of the notebook.
 
+### parentBookId
+
+Type: **String**
+
+The ID of the parent notebook.
