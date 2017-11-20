@@ -1,6 +1,6 @@
 The Note model represents a Note object.
 
-## Example (not encrypted)
+## Example
 
 ```JSON
 {
