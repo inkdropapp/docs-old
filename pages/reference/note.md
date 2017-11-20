@@ -14,19 +14,20 @@ The Note model represents a Note object.
        "tag:498c7139-a2c1-49a8-a6b8-8bd6496ead65"
    ],
    "body": "The [Inkdrop docs](http://doc.inkdrop.info/) for Guides and the API reference.\n * The Inkdrop forum at [github](https://github.com/inkdropapp/forum). Please report issue or suggest feedback here.\n * The [Inkdropapp org](https://github.com/inkdropapp/). This is where all Inkdrop-created packages can be found.\n\n* * *\n\n### Get to know Inkdrop 🚀\n\n * [👀 Check a note example](inkdrop://note:HyxgYO15t)\n * [📓 Create a notebook]()\n * [✍️ Create a note]()\n * [🖌 Choose a Theme]()\n * [⚙ Customize the Editor]()\n * [⌨️ Learn some Shortcuts]()\n",
-   "bookId": "book:rylKOycF"
+   "bookId": "book:rylKOycF",
+   "status": "none"
 }
 ```
 
 ## Fields
 
-### _id
+### \_id
 
 Type: **String**
 
 The unique document ID which should start with `note:` and the remains are randomly generated string.
 
-### _rev
+### \_rev
 
 Type: **String**
 
@@ -73,4 +74,16 @@ The content of the note represented with Markdown.
 ### bookId
 
 The ID of the book with which the note is associated.
+
+### status
+
+Type: **String**
+
+The status of the note with one of following values:
+
+ * `none`: No status
+ * `active`: Active
+ * `onHold`: On Hold
+ * `completed`: Completed
+ * `dropped`: Dropped
 
