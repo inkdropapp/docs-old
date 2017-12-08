@@ -62,4 +62,11 @@ The payment fails if you have canceled your card, the card may have expired, or 
 *   1st failed attempt: Retry 3 days after the previous attempt
 *   2nd failed attempt: Retry 5 days after the previous attempt
 *   3rd failed attempt: Retry 7 days after the previous attempt
-*   Then finally: Cancel your subscription and delete your account
+*   Then finally: Cancel your subscription and deactivate your account
+
+### What happens if my account has been deactivated?
+
+Your data is kept stored on the Inkdrop server.
+You can't create new notes while deactivated.
+You can re-activate your account anytime.
+
