@@ -67,6 +67,6 @@ The payment fails if you have canceled your card, the card may have expired, or 
 ### What happens if my account has been deactivated?
 
 Your data is kept stored on the Inkdrop server.
-You can't create new notes while deactivated.
+You can't access your notes while deactivated.
 You can re-activate your account anytime.
 
