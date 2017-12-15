@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ManualLayout from '../../components/manual-layout'
 
 export default class ManualPage extends Component {
-  static title = 'Trouble Shooting';
+  static title = 'Troubleshooting';
 
   render () {
     const md = require('./troubleshooting.md')
