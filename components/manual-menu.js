@@ -69,6 +69,9 @@ export default class ManualMenu extends Component {
           <li>
             <MenuLink to='/manual/how-to-import-notes-from-evernote'>How to import notes from Evernote</MenuLink>
           </li>
+          <li>
+            <MenuLink to='/manual/troubleshooting'>Troubleshooting</MenuLink>
+          </li>
         </ul>
         <h3 className='ui header'>
           <i className='configure icon' />
