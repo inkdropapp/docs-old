@@ -7,7 +7,6 @@
 import React, { Component } from 'react'
 import './markdown-cheatsheet.scss'
 import Link from '../../components/Link'
-import ReactDisqusThread from 'react-disqus-thread'
 
 import hljs from 'highlight.js/lib/highlight'
 import javascript from 'highlight.js/lib/languages/javascript'
@@ -610,12 +609,6 @@ This line is only separated by a single newline, so it's a separate line in the 
               License: <a href='https://creativecommons.org/licenses/by/3.0/' target='_blank' rel='noopener noreferrer'>CC-BY</a>
             </p>
           </section>
-
-          <ReactDisqusThread
-            shortname='inkdrop-documentation'
-            identifier='inkdrop-markdown-cheatsheet'
-            title={ ManualPage.title }
-          />
         </div>
       </div>
     )

@@ -30,24 +30,31 @@ export default class TopMenu extends Component {
                 </h3>
                 <ReferenceMenu />
               </div>
+
+              <div className='ui segment'>
+                <h3 className='ui header'>
+                  <div className='content'>
+                    Further Informations
+                  </div>
+                </h3>
+                <div className='menu'>
+                  <ul className='article-list'>
+                    <li>
+                      <Link to='/releases' className='menu-link'>
+                        Release Notes
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to='/announce/' className='menu-link'>
+                        Announcements
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
           </div>
-        </div>
-
-        <div className='ui segment'>
-          <h3 className='ui header'>
-            <div className='content'>
-              Further Informations
-            </div>
-          </h3>
-          <ul>
-            <li>
-              <Link to='/announce/'>
-                Announcements
-              </Link>
-            </li>
-          </ul>
         </div>
 
       </div>
