@@ -46,6 +46,9 @@ export default class InfopageMenu extends Component {
             <MenuLink to="/faq">FAQ</MenuLink>
           </li>
           <li>
+            <MenuLink to="/releases">Release Notes</MenuLink>
+          </li>
+          <li>
             <MenuLink to="/student-discount">Student Discount</MenuLink>
           </li>
           <li>
