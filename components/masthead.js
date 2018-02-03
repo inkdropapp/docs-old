@@ -26,11 +26,10 @@ export default class Masthead extends Component {
               <div className="content">Inkdrop Forum</div>
             </h3>
             <p>
-              The{' '}
-              <a href="https://github.com/inkdropapp/forum/">Inkdrop Forum</a>{' '}
-              is the place to discuss anything and everything Inkdrop related
-              with the entire Inkdrop community. If you have problems or are
-              looking for help, this is your place.
+              The <a href="https://forum.inkdrop.info/">Inkdrop Forum</a> is the
+              place to discuss anything and everything Inkdrop related with the
+              entire Inkdrop community. If you have problems or are looking for
+              help, this is your place.
             </p>
           </div>
           {this.props.children}
