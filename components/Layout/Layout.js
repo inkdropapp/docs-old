@@ -12,11 +12,11 @@ import Footer from '../Footer'
 import Masthead from '../masthead'
 // import Link from '../Link';
 
-function Layout ({ children }) {
+function Layout({ children }) {
   return (
     <div>
-      <header className='app--header'>
-        <div className='ui container'>
+      <header className="app--header">
+        <div className="ui container">
           <Navigation />
         </div>
       </header>

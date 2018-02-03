@@ -3,24 +3,22 @@ import MenuLink from '../../components/menu-link'
 import AnnounceLayout from '../../components/announce-layout'
 
 export default class AnnouncementPage extends Component {
-  static title = 'Announcement';
+  static title = 'Announcement'
 
-  render () {
+  render() {
     return (
-      <AnnounceLayout currentPageTitle={ AnnouncementPage.title }>
-        <h1 className='ui header'>
-          <div className='content'>
-            Announcements
-          </div>
+      <AnnounceLayout currentPageTitle={AnnouncementPage.title}>
+        <h1 className="ui header">
+          <div className="content">Announcements</div>
         </h1>
-        <ul className='article-list'>
+        <ul className="article-list">
           <li>
-            <MenuLink to='/announce/usd-currency-is-now-supported'>
+            <MenuLink to="/announce/usd-currency-is-now-supported">
               USD currency is now supported
             </MenuLink>
           </li>
           <li>
-            <MenuLink to='/announce/data-at-rest-encryption-is-now-supported'>
+            <MenuLink to="/announce/data-at-rest-encryption-is-now-supported">
               Data at rest encryption is now supported
             </MenuLink>
           </li>

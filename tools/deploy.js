@@ -17,14 +17,14 @@ const remote = {
 /**
  * Deploy the contents of the `/build` folder to GitHub Pages.
  */
-export default task(async function deploy () {
+export default task(async function deploy() {
   // Initialize a new Git repository inside the `/build` folder
   // if it doesn't exist yet
   const repo = await GitRepo.open('build', { init: true })
   await repo.setRemote(remote.name, remote.url)
 
   // Fetch the remote repository if it exists
-  if ((await repo.hasRef(remote.url, remote.branch))) {
+  if (await repo.hasRef(remote.url, remote.branch)) {
     await repo.fetch(remote.name)
     await repo.reset(`${remote.name}/${remote.branch}`, { hard: true })
     await repo.clean({ force: true })

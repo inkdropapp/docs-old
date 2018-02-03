@@ -10,12 +10,12 @@ import ManualLayout from '../../components/manual-layout'
 export default class ManualPage extends Component {
   static title = 'Quick Start Guide'
 
-  render () {
+  render() {
     const md = require('./index.md')
     return (
-      <ManualLayout currentPageTitle={ ManualPage.title }>
-        <h1>{ ManualPage.title }</h1>
-        <div dangerouslySetInnerHTML={ { __html: md } } />
+      <ManualLayout currentPageTitle={ManualPage.title}>
+        <h1>{ManualPage.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: md }} />
       </ManualLayout>
     )
   }

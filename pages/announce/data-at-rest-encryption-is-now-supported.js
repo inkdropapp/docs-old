@@ -10,12 +10,12 @@ import AnnounceLayout from '../../components/announce-layout'
 export default class AnnouncementPage extends Component {
   static title = 'Data at rest encryption is now supported'
 
-  render () {
+  render() {
     const md = require('./data-at-rest-encryption-is-now-supported.md')
     return (
-      <AnnounceLayout currentPageTitle={ AnnouncementPage.title }>
-        <h1>{ AnnouncementPage.title }</h1>
-        <div dangerouslySetInnerHTML={ { __html: md } } />
+      <AnnounceLayout currentPageTitle={AnnouncementPage.title}>
+        <h1>{AnnouncementPage.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: md }} />
       </AnnounceLayout>
     )
   }

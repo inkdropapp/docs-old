@@ -8,14 +8,14 @@ import React, { Component } from 'react'
 import ManualLayout from '../../components/manual-layout'
 
 export default class ManualPage extends Component {
-  static title = 'Sharing Your Notes on the Web';
+  static title = 'Sharing Your Notes on the Web'
 
-  render () {
+  render() {
     const md = require('./sharing-your-notes-on-the-web.md')
     return (
-      <ManualLayout currentPageTitle={ ManualPage.title }>
-        <h1>{ ManualPage.title }</h1>
-        <div dangerouslySetInnerHTML={ { __html: md } } />
+      <ManualLayout currentPageTitle={ManualPage.title}>
+        <h1>{ManualPage.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: md }} />
       </ManualLayout>
     )
   }

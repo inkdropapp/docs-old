@@ -11,7 +11,10 @@ import cp from './lib/copy'
  * Copies static files such as robots.txt, favicon.ico to the
  * output (build) folder.
  */
-export default task(async function copy () {
+export default task(async function copy() {
   await cp('static', 'build')
-  await cp('node_modules/inkdrop-version-history/README.md', 'pages/releases.md')
+  await cp(
+    'node_modules/inkdrop-version-history/README.md',
+    'pages/releases.md'
+  )
 })
