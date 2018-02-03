@@ -43,7 +43,7 @@ const POSTCSS_LOADER = {
 const babelConfig = JSON.parse(fs.readFileSync(path.join(__dirname, '../.babelrc'), 'utf8'))
 Object.assign(babelConfig, {
   babelrc: false,
-  presets: babelConfig.presets.map(x => x === 'es2015' ? ['latest', { es2015: { modules: false } }] : x),
+  presets: babelConfig.presets.map(x => x === 'es2015' ? ['env'] : x),
   plugins: babelConfig.plugins.filter(p => p !== 'add-module-exports')
 })
 
