@@ -18,10 +18,7 @@ export default class SupportMenu extends Component {
             </a>
           </li>
           <li>
-            <a
-              href="https://github.com/inkdropapp/forum/"
-              className="menu-link"
-            >
+            <a href="https://forum.inkdrop.info/" className="menu-link">
               Post your idea to our forum
             </a>
           </li>
