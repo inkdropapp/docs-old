@@ -382,17 +382,17 @@ There are a few things you should double check before publishing:
 
 ### Publish Your Package
 
-Before you publish a plugin it is a good idea to check ahead of time if a plugin with the same name has already been published to the [Inkdrop package registry](https://www.inkdrop.info/plugins).
-You can do that by visiting https://www.inkdrop.info/plugin/wordcount to see if the plugin already exists. 
+Before you publish a plugin it is a good idea to check ahead of time if a plugin with the same name has already been published to the [Inkdrop package registry](https://app.inkdrop.info/plugins).
+You can do that by visiting https://app.inkdrop.info/plugins/wordcount to see if the plugin already exists. 
 If it does, update your plugin's name to something that is available before proceeding.
 
 Now let's review what the `ipm publish` command does:
 
-1. Registers the plugin name on www.inkdrop.info if it is being published for the first time.
+1. Registers the plugin name on app.inkdrop.info if it is being published for the first time.
 2. Updates the `version` field in the `package.json` file and commits it.
 3. Creates a new [Git tag](http://git-scm.com/book/en/Git-Basics-Tagging) for the version being published.
 4. Pushes the tag and current branch up to GitHub.
-5. Updates www.inkdrop.info with the new version being published.
+5. Updates app.inkdrop.info with the new version being published.
 
 Now run the following commands to publish your package:
 
@@ -401,9 +401,9 @@ cd ~/github/my-package
 ipm publish minor
 ```
 
-If this is the first package you are publishing, the `ipm publish` command may prompt you for your Inkdrop API Keys which can be created [here](https://www.inkdrop.info/account/api-keys) on the Inkdrop website. This is required to publish and you only need to enter this information the first time you publish. The credentials are stored securely in your [keychain](https://en.wikipedia.org/wiki/Keychain_(Apple)) once you login.
+If this is the first package you are publishing, the `ipm publish` command may prompt you for your Inkdrop API Keys which can be created [here](https://app.inkdrop.info/api-keys) on the Inkdrop website. This is required to publish and you only need to enter this information the first time you publish. The credentials are stored securely in your [keychain](https://en.wikipedia.org/wiki/Keychain_(Apple)) once you login.
 
-Your package is now published and available on www.inkdrop.info. Head on over to https://www.inkdrop.info/plugins/wordcount to see your plugin's page.
+Your package is now published and available on app.inkdrop.info. Head on over to https://app.inkdrop.info/plugins/wordcount to see your plugin's page.
 
 With `ipm publish`, you can bump the version and publish by using
 
