@@ -52,6 +52,11 @@ export default class ManualMenu extends Component {
             </MenuLink>
           </li>
           <li>
+            <MenuLink to="/manual/customizing-keybindings">
+              Customizing keybindings
+            </MenuLink>
+          </li>
+          <li>
             <MenuLink to="/manual/extend-inkdrop-with-plugins">
               Extend Inkdrop with plugins
             </MenuLink>
