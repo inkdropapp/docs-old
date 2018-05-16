@@ -9,11 +9,11 @@ import PropTypes from 'prop-types'
 import './Link.scss'
 import Location from '../../core/Location'
 
-function isLeftClickEvent (event) {
+function isLeftClickEvent(event) {
   return event.button === 0
 }
 
-function isModifiedEvent (event) {
+function isModifiedEvent(event) {
   return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey)
 }
 
@@ -25,7 +25,7 @@ class Link extends Component {
     onClick: PropTypes.func
   }
 
-  static handleClick = function (event) {
+  static handleClick = function(event) {
     let allowTransition = true
     let clickResult
 
@@ -46,15 +46,19 @@ class Link extends Component {
     if (allowTransition) {
       const link = event.currentTarget
       Location.push(
-        (this.props && this.props.to) || (link.pathname + link.search),
+        (this.props && this.props.to) || link.pathname + link.search,
         (this.props && this.props.state) || null
       )
     }
   }
 
-  render () {
+  render() {
     const { to, children, ...props } = this.props
-    return <a href={to} {...props} onClick={Link.handleClick.bind(this)}>{children}</a>
+    return (
+      <a href={to} {...props} onClick={Link.handleClick.bind(this)}>
+        {children}
+      </a>
+    )
   }
 }
 

@@ -19,22 +19,23 @@ const route = async (path, callback) => {
   if (component.default) {
     component = component.default
   }
-  let rootNode = process.env.NODE_ENV === 'production' ? (
-    <Layout>{React.createElement(component)}</Layout>
-  ) : (
-    <AppContainer>
+  const rootNode =
+    process.env.NODE_ENV === 'production' ? (
       <Layout>{React.createElement(component)}</Layout>
-    </AppContainer>
-  )
+    ) : (
+      <AppContainer>
+        <Layout>{React.createElement(component)}</Layout>
+      </AppContainer>
+    )
   if (module.hot && process.env.NODE_ENV !== 'production') {
     module.hot.accept()
   }
   await callback(rootNode, component)
 }
 
-function render (location, action) {
+function render(location, action) {
   const container = document.getElementById('app')
-  route(location.pathname, async (component) => {
+  route(location.pathname, async component => {
     ReactDOM.render(component, container, () => {
       // Track the page view event via Google Analytics
       window.ga('send', 'pageview', location.pathname)
@@ -45,14 +46,17 @@ function render (location, action) {
   })
 }
 
-function run () {
+function run() {
   Location.listen(render)
   render(Location.location, Location.action)
 }
 
 if (canUseDOM) {
   // Run the application when both DOM is ready and page content is loaded
-  if (['complete', 'loaded', 'interactive'].includes(document.readyState) && document.body) {
+  if (
+    ['complete', 'loaded', 'interactive'].includes(document.readyState) &&
+    document.body
+  ) {
     run()
   } else {
     document.addEventListener('DOMContentLoaded', run, false)

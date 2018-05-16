@@ -11,17 +11,19 @@ import Navigation from '../Navigation'
 import Footer from '../Footer'
 import Masthead from '../masthead'
 // import Link from '../Link';
+import SearchBar from '../search-bar'
 
-function Layout ({ children }) {
+function Layout({ children }) {
   return (
     <div>
-      <header className='app--header'>
-        <div className='ui container'>
+      <header className="app--header">
+        <div className="ui container">
           <Navigation />
         </div>
       </header>
       <div>
         <Masthead />
+    <SearchBar />
         {children}
       </div>
       <Footer />

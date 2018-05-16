@@ -8,14 +8,14 @@ import React, { Component } from 'react'
 import ManualLayout from '../../components/manual-layout'
 
 export default class ManualPage extends Component {
-  static title = 'Synchronizing in the Cloud';
+  static title = 'Synchronizing in the Cloud'
 
-  render () {
+  render() {
     const md = require('./synchronizing-in-the-cloud.md')
     return (
-      <ManualLayout currentPageTitle={ ManualPage.title }>
-        <h1>{ ManualPage.title }</h1>
-        <div dangerouslySetInnerHTML={ { __html: md } } />
+      <ManualLayout currentPageTitle={ManualPage.title}>
+        <h1>{ManualPage.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: md }} />
       </ManualLayout>
     )
   }

@@ -4,12 +4,12 @@ import InfopageLayout from '../components/infopage-layout'
 export default class InfoPage extends Component {
   static title = 'Student Discount'
 
-  render () {
+  render() {
     const md = require('./student-discount.md')
     return (
-      <InfopageLayout currentPageTitle={ InfoPage.title }>
+      <InfopageLayout currentPageTitle={InfoPage.title}>
         <h1>Student Discount</h1>
-        <div dangerouslySetInnerHTML={ { __html: md } } />
+        <div dangerouslySetInnerHTML={{ __html: md }} />
       </InfopageLayout>
     )
   }

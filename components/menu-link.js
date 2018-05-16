@@ -9,15 +9,20 @@ export default class MenuLink extends Link {
     children: PropTypes.node.isRequired,
     state: PropTypes.object,
     onClick: PropTypes.func
-  };
+  }
 
-  render () {
+  render() {
     const { to, children, ...props } = this.props
     const { pathname } = (global.window && global.window.location) || {}
     const isActive = pathname === to ? 'current-active' : ''
     const className = (props.className || '') + ' ' + isActive
     return (
-      <a href={to} className={`menu-link ${className}`} {...props} onClick={Link.handleClick.bind(this)}>
+      <a
+        href={to}
+        className={`menu-link ${className}`}
+        {...props}
+        onClick={Link.handleClick.bind(this)}
+      >
         {children}
       </a>
     )

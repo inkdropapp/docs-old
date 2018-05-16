@@ -15,40 +15,50 @@ import config from '../config'
 
 const DEBUG = !process.argv.includes('release')
 
-function getPages () {
+function getPages() {
   return new Promise((resolve, reject) => {
-    glob('**/*.{js,jsx}', { cwd: join(__dirname, '../pages') }, (err, files) => {
-      if (err) {
-        reject(err)
-      } else {
-        const result = files.map(file => {
-          let path = '/' + file.substr(0, file.lastIndexOf('.'))
-          if (path === '/index') {
-            path = '/'
-          } else if (path.endsWith('/index')) {
-            path = path.substr(0, path.lastIndexOf('/index'))
-          }
-          return { path, file }
-        })
-        resolve(result)
+    glob(
+      '**/*.{js,jsx}',
+      { cwd: join(__dirname, '../pages') },
+      (err, files) => {
+        if (err) {
+          reject(err)
+        } else {
+          const result = files.map(file => {
+            let path = '/' + file.substr(0, file.lastIndexOf('.'))
+            if (path === '/index') {
+              path = '/'
+            } else if (path.endsWith('/index')) {
+              path = path.substr(0, path.lastIndexOf('/index'))
+            }
+            return { path, file }
+          })
+          resolve(result)
+        }
       }
-    })
+    )
   })
 }
 
-async function renderPage (page, component, content) {
+async function renderPage(page, component, content) {
   const title = content.title ? `${content.title} - ${config.title}` : null
   const data = {
     body: ReactDOM.renderToString(component),
     title: title
   }
-  const file = join(__dirname, '../build', page.file.substr(0, page.file.lastIndexOf('.')) + '.html')
-  const html = '<!doctype html>\n' + ReactDOM.renderToStaticMarkup(<Html debug={DEBUG} {...data} />)
+  const file = join(
+    __dirname,
+    '../build',
+    page.file.substr(0, page.file.lastIndexOf('.')) + '.html'
+  )
+  const html =
+    '<!doctype html>\n' +
+    ReactDOM.renderToStaticMarkup(<Html debug={DEBUG} {...data} />)
   await fs.mkdir(dirname(file))
   await fs.writeFile(file, html)
 }
 
-export default task(async function render () {
+export default task(async function render() {
   const pages = await getPages()
   const { route } = require('../build/app.node')
   for (const page of pages) {

@@ -7,5 +7,5 @@
 export default {
   title: 'Inkdrop',
   description: 'The Notebook for Hackers',
-  googleAnalyticsId: 'UA-58709134-3',
-};
+  googleAnalyticsId: 'UA-58709134-3'
+}

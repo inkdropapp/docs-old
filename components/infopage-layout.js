@@ -7,27 +7,29 @@ export default class InfopageLayout extends Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
     currentPageTitle: PropTypes.string.isRequired
-  };
+  }
 
-  render () {
+  render() {
     return (
-      <div className='ui container main-content'>
-        <div className='ui stackable grid'>
-          <div className='five wide column side-bar'>
+      <div className="ui container main-content">
+        <div className="ui stackable grid">
+          <div className="five wide column side-bar">
             <InfopageMenu sideMenu />
           </div>
-          <div className='eleven wide column doc-content'>
-            <div className='ui breadcrumb'>
-              <Link to='/' className='section'>
-                <i className='home icon' />
+          <div className="eleven wide column doc-content">
+            <div className="ui breadcrumb">
+              <Link to="/" className="section">
+                <i className="home icon" />
                 Docs
               </Link>
-              <i className='right chevron icon divider'></i>
-              <div className='active section'>{ this.props.currentPageTitle }</div>
+              <i className="right chevron icon divider" />
+              <div className="active section">
+                {this.props.currentPageTitle}
+              </div>
             </div>
-            <div className='ui divider'></div>
+            <div className="ui divider" />
 
-            { this.props.children }
+            {this.props.children}
           </div>
         </div>
       </div>
