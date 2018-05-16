@@ -8,3 +8,9 @@ Specify the file path for the backup and then click the *'Apply'* button.
 You can also input the file path easily by clicking *'...'* button which opens an dialog to select the directory.
 
 To restore your backup, click the *'Restore...'* button which opens a dialog to select your backup location and then the data restore will start.
+
+## Exporting Data as Markdown
+
+Since the backup data is in JSON format, it is not useful in some cases.
+You can export all note data in Markdown format from the application menu *File* -> *Export* -> *All Notes..*.
+
