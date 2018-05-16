@@ -11,6 +11,7 @@ import Navigation from '../Navigation'
 import Footer from '../Footer'
 import Masthead from '../masthead'
 // import Link from '../Link';
+import SearchBar from '../search-bar'
 
 function Layout({ children }) {
   return (
@@ -22,6 +23,7 @@ function Layout({ children }) {
       </header>
       <div>
         <Masthead />
+    <SearchBar />
         {children}
       </div>
       <Footer />
