@@ -105,7 +105,7 @@ You don't have to give Inkdrop a personal name or any social media names, and yo
 Inkdrop uses your email to:
 
 * confirm if your email address is correct to sign you up
-* notify you about your free trial expires in 30 days
+* notify you about your free trial expires in 3 days
 * notify you about your free trial has been expired
 * notify you about your payment failure
 * notify you about your account has been deactivated because of payment failure
