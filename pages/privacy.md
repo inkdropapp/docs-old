@@ -27,6 +27,7 @@ Inkdrop collects data about you:
  * when you send support, privacy, legal, and other requests to us
  * when working with and researching current and potential customers
  * when you use [`ipm` command](https://doc.inkdrop.info/manual/extend-inkdrop-with-plugins) to publish plugins for Inkdrop
+ * when you post topics or comments on [the Inkdrop forum](https://forum.inkdrop.info/)
 
 When researching potential customers, we sometimes search the public World Wide Web or paid business databases. Otherwise, we don't buy or receive data about you from data brokers or other private services.
 
@@ -36,14 +37,6 @@ When researching potential customers, we sometimes search the public World Wide 
 
 When you add notes, notebooks, tags and attachment files on the Inkdrop client apps, Inkdrop stores them in your local devices and the Inkdrop servers. The data is associated with your Inkdrop account. When the data is stored in the Inkdrop server, [Inkdrop encrypts it in transit and at rest](https://doc.inkdrop.info/security) so that other people including the server administrators can not see the contents of the data. The Inkdrop server uses the data to provide data synchronization functionality across your devices. You can disable this functionality from [Preferences](https://doc.inkdrop.info/manual/synchronizing-in-the-cloud).
 The client apps keep the data in your local storage in order to provide quick offline access to the data. The client apps don't encrypt the data at rest in local to provide quick search functionality.
-
-When you deleted your Inkdrop account, all the data stored in the Inkdrop servers is completely erased immediately.
-When you uninstalled our iOS app or Android app, the data stored in your device is completely erased.
-When you uninstalled our desktop app for macOS, Windows or Linux, the data is not completely erased from your device. You can find the data which the app stores in following directory and you can erase them:
-
-* on macOS: `~/Library/Application Support/inkdrop/`
-* on Windows: `%APPDATA%/inkdrop/`
-* on Linux: `~/.config/inkdrop/`
 
 ### Inkdrop collects data about how you use Inkdrop service.
 
@@ -68,7 +61,7 @@ Inkdrop usually deletes log entries with identifiable information within a few w
 
 ### Inkdrop collects data about how you use the website.
 
-When you visit [www.inkdrop.info](https://www.inkdrop.info/), [app.inkdrop.info](https://app.inkdrop.info/), [doc.inkdrop.info](https://doc.inkdrop.info/), and other Inkdrop websites, Inkdrop uses cookies, server logs, and other methods to collect data about what pages you visit, and when. Inkdrop also collects technical information about the software and computer you use, such as:
+When you visit [www.inkdrop.info](https://www.inkdrop.info/), [app.inkdrop.info](https://app.inkdrop.info/), [doc.inkdrop.info](https://doc.inkdrop.info/), [forum.inkdrop.info](https://forum.inkdrop.info/), and other Inkdrop websites, Inkdrop uses cookies, server logs, and other methods to collect data about what pages you visit, and when. Inkdrop also collects technical information about the software and computer you use, such as:
 
 * your IP address
 * your preferred language
@@ -184,7 +177,19 @@ You can [export all your note data](https://doc.inkdrop.info/manual/backing-up-y
 You can change your account data and payment card data at any time by visiting your account settings page on [app.inkdrop.info](https://app.inkdrop.info).
 
 You can close your Inkdrop account at any time through [app.inkdrop.info](https://app.inkdrop.info).
-Closing your account starts a process of erasing Inkdrop's records of your account data. Closing your account does not automatically erase plugins published under your account. You can unpublish plugins before closing your account with `ipm unpublish` command.
+Closing your account starts a process of erasing Inkdrop's records of your account data including notes, shared notes, notebooks, tags and attachment files.
+Closing your account does not automatically erase plugins published under your account.
+You can unpublish plugins before closing your account with `ipm unpublish` command.
+When you uninstalled our iOS app or Android app, the data stored in your device is completely erased.
+When you uninstalled our desktop app for macOS, Windows or Linux, the data is not completely erased from your device. You can find the data which the app stores in following directory and you can erase them:
+
+* on macOS: `~/Library/Application Support/inkdrop/`
+* on Windows: `%APPDATA%/inkdrop/`
+* on Linux: `~/.config/inkdrop/`
+
+Closing your account anonymizes your topics and comments posted on [forum.inkdrop.info](https://forum.inkdrop.info/).
+Your profile and IP address on the forum will be erased but your posts will be remained because they would be helpful for other users.
+If you wish to delete them completely, email [contact@inkdrop.info](mailto:contact@inkdrop.info) and let us know which user needs to be erased.
 
 If you have questions or problems using the website or `ipm` command to change or delete data about you, email [contact@inkdrop.info](mailto:contact@inkdrop.info).
 
