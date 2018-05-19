@@ -211,6 +211,8 @@ Inkdrop uses [Amazon Web Services](https://aws.amazon.com/) servers and services
 
 Inkdrop uses [Heroku](https://www.heroku.com/) servers and services, in service region in the United States of America, to power the Inkdrop services. You can read [the privacy policy for Heroku online](https://www.salesforce.com/company/privacy/).
 
+Inkdrop uses [DigitalOcean](https://www.digitalocean.com/) servers and services, in service region in the United States of America, to provide [the Inkdrop forum](https://forum.inkdrop.info/). You can read [the privacy policy for DigitalOcean online](https://www.digitalocean.com/legal/privacy/).
+
 ### Inkdrop uses Papertrail.
 
 Inkdrop uses [Papertrail](https://papertrailapp.com/) to collect logs from its servers. You can read [the privacy policy for Papertrail online](https://papertrailapp.com/info/privacy).
