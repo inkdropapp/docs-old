@@ -11,6 +11,7 @@ Skip to:
  * [How can I change or erase data about me?](#how-can-i-change-or-erase-data-about-me-)
  * [Does Inkdrop share data about me with others?](#does-inkdrop-share-data-about-me-with-others-)
  * [Who can I contact about Inkdrop and my privacy?](#who-can-i-contact-about-inkdrop-and-my-privacy-)
+ * [Does Inkdrop make automated decisions based on data about me?](#does-inkdrop-make-automated-decisions-based-on-data-about-me-)
  * [How can I find out about changes?](#how-can-i-find-out-about-changes-)
 
 ## Definitions
@@ -152,17 +153,17 @@ Inkdrop stores correspondence as long as it may be useful for these purposes.
 ## Where does Inkdrop keep data about me?
 
 Inkdrop stores account data, note data, data about website use, and plugins on servers in the United States of America.
-I sometimes retrieve those data to my personal computers in Japan. I use the data to develop, debug and maintain service.
+I sometimes retrieve those data to my personal computers in Japan. I use the data to develop, debug and maintain the service.
 The data is erased from my computers when no longer needed.
 
 ## Does Inkdrop comply with the EU General Data Protection Regulation?
 
-[Regulation (EU) 2016/679](http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2016.119.01.0001.01.ENG), the European Union's General Data Protection Regulation (GDPR), does not apply to Inkdrop because:
+Inkdrop respects privacy rights under [Regulation (EU) 2016/679](http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2016.119.01.0001.01.ENG), the European Union's General Data Protection Regulation (GDPR).
+Information that GDPR requires Inkdrop to give can be found throughout these privacy questions and answers.
+So can information about specific rights, like [access](#how-can-i-access-data-about-me-), [rectification](#how-can-i-change-or-erase-data-about-me-), [erasure](#how-can-i-change-or-erase-data-about-me-), [data portability](#how-can-i-access-data-about-me-), and [objection to automated decision-making](#does-inkdrop-make-automated-decisions-based-on-data-about-me-).
 
- 1. Inkdrop offers its service only in English and in USD currency.
- 2. Inkdrop does not collect or track the European Union (EU) citizens' behaviour for personalization or retargeting purposes.
-
-If you are a citizen or resident of EU, you still have a choice to use Inkdrop but we assume that you understand you can't claim your privacy rights based on GDPR.
+GDPR does not apply to everyone worldwide.
+But Inkdrop's policy is to do its best to offer all users the same privacy information, control, and protections, whether GDPR applies to them or not.
 
 ## How can I access data about me?
 
@@ -171,6 +172,8 @@ You can access your account data at any time by visiting your account page on [a
 You can access your note data from the client apps available on macOS, Windows, Linux, iOS and Android which you can get at [app.inkdrop.info](https://app.inkdrop.info/download).
 
 You can [export all your note data](https://doc.inkdrop.info/manual/backing-up-your-data) in [JSON](https://www.json.org/) or Markdown format from our desktop client apps.
+
+You can also access to the Inkdrop database directly via [the Data Access API](/manual/accessing-data-in-the-cloud) which is compatible with [CouchDB](http://couchdb.apache.org/).
 
 ## How can I change or erase data about me?
 
@@ -223,7 +226,10 @@ Inkdrop uses [Stripe](https://www.stripe.com/) to collect and use payment card p
 
 ### Inkdrop uses Mixpanel.
 
-Inkdrop uses [Mixpanel](https://mixpanel.com/) to collect and analyze data about visitors to its websites and how you use our apps. You can read [the privacy policy for Mixpanel online](https://mixpanel.com/legal/privacy-policy/). You can opt out of Mixpanel by visiting this page: [www.mixpanel.com/optout](https://www.mixpanel.com/optout). Those tracking data are not associated with your Inkdrop account.
+Inkdrop uses [Mixpanel](https://mixpanel.com/) to collect and analyze data about visitors to its websites and how you use our apps.
+You can read [the privacy policy for Mixpanel online](https://mixpanel.com/legal/privacy-policy/).
+You can opt out of Mixpanel by visiting this page: [www.mixpanel.com/optout](https://www.mixpanel.com/optout) and [app.inkdrop.info/account/privacy](https://app.inkdrop.info/account/privacy).
+Those tracking data are not associated with your Inkdrop account.
 
 ### Inkdrop uses Rollbar.
 
@@ -234,6 +240,10 @@ For more information on what type of information Rollbar collects, please visit 
 
 Inkdrop uses [Bugsnag](https://www.bugsnag.com/) to collect crash reports and error logs from our mobile apps. Those crash reports include your technical information for simpler identification and incident management. Those data are not associated with your Inkdrop account.
 For more information on what type of information Bugsnag collects, please visit [the Privacy Policy page of Rollbar](https://docs.bugsnag.com/legal/privacy-policy/).
+
+## Does Inkdrop make automated decisions based on data about me?
+
+No. Inkdrop does not use your data for personalization or retargeting purposes.
 
 ## Who can I contact about Inkdrop and my privacy?
 
