@@ -35,10 +35,11 @@ Users may access their Service data via the Application Program Interface ("**AP
 
 ## Cancellation and Termination
 
-1. You are solely responsible for properly canceling your account. An email or phone request to cancel your account is not considered cancellation. You can cancel your account at any time by clicking on the Delete Account link in the account menu at the left of the screen which is shown after logging in.
+1. You are solely responsible for properly canceling your account. An email or phone request to cancel your account is not considered cancellation. You can cancel your account at any time by visiting your account page on [app.inkdrop.info](https://app.inkdrop.info/account/delete).
 2. All of your content will be immediately be inaccessible from the Service upon cancellation. This information can not be recovered once it has been permanently deleted.
 3. If you cancel the Service before the end of your current paid up month, your cancellation will take effect immediately, and you will not be charged again.
 4. We, in its sole discretion, have the right to suspend or terminate your account and refuse any and all current or future use of the Service for any reason at any time. Such termination of the Service will result in the deactivation or deletion of your Account or your access to your Account, and the forfeiture and relinquishment of all content in your account. We reserve the right to refuse service to anyone for any reason at any time.
+5. We will terminate your account after 6 months since it has been deactivated due to no successful payments to the Service.
 
 ## Modifications to the Service and Prices
 
