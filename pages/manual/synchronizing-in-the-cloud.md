@@ -44,7 +44,7 @@ Return to the Inkdrop sync preferences, you can input the URL to your database t
 http://localhost:5984/my-inkdrop-notes
 ```
 
-![Sync with custom server](/manual/05-sync-custom-server.png)
+![Sync with custom server on the desktop app](/manual/05-sync-custom-server.png)
 
 Then, push the **Apply** button.
 
@@ -138,4 +138,28 @@ https://anna:secret@your-server.com:6984/my-inkdrop-notes
 <div class="ui warning message">
   <strong>NOTE</strong>: You can neither create design documents nor add attachments on the Inkdrop-hosted database.
 </div>
+
+### Support mobile sync
+
+If you would like to sync your custom database with the mobile app, please create a `design` document on your database:
+
+```
+{
+  "_id": "_design/mobile",
+  "filters": {
+    "sync": "function (doc) { return doc._id.indexOf('file:') === -1 }"
+  }
+}
+```
+
+Also, please don't forget your server to enable SSL because iOS requires it for App Transport Security.
+
+To configure the mobile app to sync with your database:
+
+1. Go to Preferences → Synchronization
+2. Select *Advanced (CouchDB)*
+3. Input your database URL to the input field at the *ADDRESS* section.
+4. Press *Apply* button
+
+![Sync with custom server on the mobile app](/manual/05-sync-with-mobile@2x.jpg)
 

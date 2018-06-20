@@ -4,8 +4,13 @@ import hljs from 'highlight.js'
 const renderer = new marked.Renderer()
 
 renderer.image = function image(href, title, text) {
-  return `<img class="ui image" src="${href}" title="${title ||
-    ''}" alt="${text || ''}" />`
+  if (href.indexOf('@2x.') >= 0) {
+    return `<img class="ui image" src="${href}" srcset="${href} 2x" title="${title ||
+      ''}" alt="${text || ''}" />`
+  } else {
+    return `<img class="ui image" src="${href}" title="${title ||
+      ''}" alt="${text || ''}" />`
+  }
 }
 
 renderer.heading = function heading(text, level) {
