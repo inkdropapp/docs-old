@@ -665,6 +665,24 @@ Quote break.
               </div>
             </div>
 
+            <div className="row">
+              <div className="sixteen wide column">
+                <h2>
+                  <a name="inline" className="anchor">
+                    <i className="linkify icon" />
+                  </a>
+                  Inline HTML
+                </h2>
+                <div className="ui warning message">
+                  <div className="header">Note</div>
+                  <p>
+                    Currently Inkdrop does not support inline HTML for its
+                    technical reason.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             {/*
             <div className='row'>
               <div className='sixteen wide column'>
@@ -778,17 +796,6 @@ This line is only separated by a single newline, so it's a separate line in the 
                   This line is only separated by a single newline, so it&apos;s
                   a separate line in the <em>same paragraph</em>.
                 </p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="sixteen wide column">
-                <div className="ui message">
-                  <div className="header">Technical note</div>
-                  <p>
-                    <em>Inkdrop</em> uses GFM line breaks, so there&apos;s no
-                    need to use MD&apos;s two-space line breaks.
-                  </p>
-                </div>
               </div>
             </div>
           </div>
