@@ -1,6 +1,6 @@
 Plugins add new functionality or provide new look to Inkdrop. You can activate or deactivate them at any time.
 Go to `Preferences > Plugins` on macOS or `File > Settings` on Windows and Linux to see a list of what’s installed.
-To find new plugins to install, please access to [Inkdrop plugin registry](https://www.inkdrop.info/plugins).
+To find new plugins to install, please access to [Inkdrop plugin registry](https://app.inkdrop.info/plugins).
 
 Developers can clone or download additional Inkdrop plugins via [GitHub](https://github.com/inkdropapp/). Installation instructions are here. Many of these are community-contributed, and the selection will continue to grow over time.
 
@@ -61,7 +61,7 @@ Once you found new plugins to install, you can install them by using the `ipm in
  * `ipm install <package_name>` to install the latest version.
  * `ipm install <package_name>@<package_version>` to install a specific version.
 
-For example `ipm install markdown-emoji@0.1.0` installs the 0.1.0 release of the [markdown-emoji](https://www.inkdrop.info/plugins/markdown-emoji) package.
+For example `ipm install markdown-emoji@0.1.0` installs the 0.1.0 release of the [markdown-emoji](https://app.inkdrop.info/plugins/markdown-emoji) package.
 
 ## Activating plugins
 
