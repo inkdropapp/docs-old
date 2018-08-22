@@ -19,3 +19,12 @@ Please ask your network administrator to allow the app to access `*.inkdrop.info
 
 Inkdrop stores your credentials in your Keyring.
 If you are not on Gnome, such as KDE, you need to install `gnome-keyring`.
+
+### Install Missing Packages on Linux
+
+In some environment you need some additional packages installed. Please try installing following packages:
+
+```
+sudo apt-get install libgconf2-4 libcanberra-gtk-module libgnome-keyring0 gnome-keyring
+```
+
