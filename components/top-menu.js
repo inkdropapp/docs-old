@@ -34,7 +34,12 @@ export default class TopMenu extends Component {
                   <ul className="article-list">
                     <li>
                       <Link to="/releases" className="menu-link">
-                        Release Notes
+                        Release Notes (Desktop)
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/releases-mobile" className="menu-link">
+                        Release Notes (Mobile)
                       </Link>
                     </li>
                     <li>

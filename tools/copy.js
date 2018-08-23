@@ -17,4 +17,8 @@ export default task(async function copy() {
     'node_modules/inkdrop-version-history/README.md',
     'pages/releases.md'
   )
+  await cp(
+    'node_modules/inkdrop-version-history-mobile/README.md',
+    'pages/releases-mobile.md'
+  )
 })
