@@ -676,39 +676,44 @@ Quote break.
               </div>
             </div>
 
-            {/*
-            <div className='row'>
-              <div className='sixteen wide column'>
+            <div className="row">
+              <div className="sixteen wide column">
                 <h2>
-                  <a name='blockquotes' className='anchor'><i className='linkify icon'></i></a>
+                  <a name="blockquotes" className="anchor">
+                    <i className="linkify icon" />
+                  </a>
                   Inline HTML
                 </h2>
                 <p>
-                  You can also use raw HTML in your Markdown, and it&apos;ll mostly work pretty well.
+                  You can also use raw HTML in your Markdown, and it&apos;ll
+                  mostly work pretty well.
                 </p>
               </div>
             </div>
-            <div className='row'>
-              <div className='column'>
-                <pre><code className='lang-markdown'>{`<dl>
+            <div className="row">
+              <div className="column">
+                <pre>
+                  <code className="lang-markdown">{`<dl>
   <dt>Definition list</dt>
   <dd>Is something people use sometimes.</dd>
 
   <dt>Markdown in HTML</dt>
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>`}</code></pre>
+</dl>`}</code>
+                </pre>
               </div>
-              <div className='column'>
+              <div className="column">
                 <dl>
                   <dt>Definition list</dt>
                   <dd>Is something people use sometimes.</dd>
 
                   <dt>Markdown in HTML</dt>
-                  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+                  <dd>
+                    Does *not* work **very** well. Use HTML <em>tags</em>.
+                  </dd>
                 </dl>
               </div>
             </div>
-            */}
 
             <div className="row">
               <div className="sixteen wide column">
