@@ -668,17 +668,6 @@ Quote break.
             <div className="row">
               <div className="sixteen wide column">
                 <h2>
-                  <a name="inline" className="anchor">
-                    <i className="linkify icon" />
-                  </a>
-                  Inline HTML
-                </h2>
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="sixteen wide column">
-                <h2>
                   <a name="blockquotes" className="anchor">
                     <i className="linkify icon" />
                   </a>
