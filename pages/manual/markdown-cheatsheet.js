@@ -673,13 +673,6 @@ Quote break.
                   </a>
                   Inline HTML
                 </h2>
-                <div className="ui warning message">
-                  <div className="header">Note</div>
-                  <p>
-                    Currently Inkdrop does not support inline HTML for its
-                    technical reason.
-                  </p>
-                </div>
               </div>
             </div>
 
