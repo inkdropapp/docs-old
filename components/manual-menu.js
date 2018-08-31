@@ -87,6 +87,11 @@ export default class ManualMenu extends Component {
             </MenuLink>
           </li>
           <li>
+            <MenuLink to="/manual/revision-history">
+              Restore old revisions
+            </MenuLink>
+          </li>
+          <li>
             <MenuLink to="/manual/troubleshooting">Troubleshooting</MenuLink>
           </li>
         </ul>
