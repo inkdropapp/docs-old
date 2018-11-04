@@ -29,9 +29,16 @@ If you wish to delete your account but you forgot your password, please contact 
 Inkdrop cannot reset your password for security reason.
 Please read [how to recover your password](/manual/recovering-your-password).
 
-## Do you offer student discounts?
+## Do you offer student/teacher discounts?
 
 Yes. See [this page](/student-discount) for requesting your discount.
+
+## Any chance to get a lifetime license?
+
+No. Because lifetime pricing is not sustainable.
+We know there are similar apps with lifetime pricing out there, but it doesn't work for long-running business.
+The sustainability is crucial especially for note-taking apps because you will store a lot of notes in them day by day.
+
 
 ## Billing
 
