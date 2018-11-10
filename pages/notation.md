@@ -8,7 +8,7 @@ Takuya Matsuyama
 
 ## Address
 
-5-18-11-303, Tagara, Nerima, Tokyo 179-0073, Japan
+2-25-6, Minami-shojaku, Suita, Osaka 564-0012, Japan
 
 ## Contact
 
