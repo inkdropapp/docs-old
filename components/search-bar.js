@@ -24,7 +24,7 @@ export default class Masthead extends Component {
   }
 
   handleSubmit = e => {
-    const keyword = `site:doc.inkdrop.info ${this.input.value}`
+    const keyword = `site:docs.inkdrop.app ${this.input.value}`
     window.location.href = `https://www.google.com/search?hl=en&q=${encodeURIComponent(
       keyword
     )}`

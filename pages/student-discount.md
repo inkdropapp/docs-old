@@ -13,7 +13,7 @@ To be approved for an educational discount, please provide proof of eligibility 
 
 ## Request your discount
 
-Please email us to [contact@inkdrop.info](mailto:contact@inkdrop.info) with below informations to apply it.
+Please email us to [contact@inkdrop.app](mailto:contact@inkdrop.app) with below informations to apply it.
 
 * Your full name
 * Your registered account's email address

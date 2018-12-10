@@ -13,12 +13,12 @@ export default class SupportMenu extends Component {
         </h3>
         <ul className="article-list">
           <li>
-            <a href="mailto:contact@inkdrop.info" className="menu-link">
+            <a href="mailto:contact@inkdrop.app" className="menu-link">
               Contact us via Email
             </a>
           </li>
           <li>
-            <a href="https://forum.inkdrop.info/" className="menu-link">
+            <a href="https://forum.inkdrop.app/" className="menu-link">
               Post your idea to our forum
             </a>
           </li>

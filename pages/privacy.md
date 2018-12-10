@@ -22,13 +22,13 @@ Inkdrop is owned by Takuya Matsuyama, based in Tokyo - Japan. (referred to as "I
 
 Inkdrop collects data about you:
 
- * when you browse the Inkdrop website, [inkdrop.info](https://www.inkdrop.info)
+ * when you browse the Inkdrop website, [inkdrop.app](https://inkdrop.app)
  * when you create an Inkdrop account or update your account
  * when you use the Inkdrop client app for macOS, Windows, Linux, iOS or Android
  * when you send support, privacy, legal, and other requests to us
  * when working with and researching current and potential customers
- * when you use [`ipm` command](https://doc.inkdrop.info/manual/extend-inkdrop-with-plugins) to publish plugins for Inkdrop
- * when you post topics or comments on [the Inkdrop forum](https://forum.inkdrop.info/)
+ * when you use [`ipm` command](https://docs.inkdrop.app/manual/extend-inkdrop-with-plugins) to publish plugins for Inkdrop
+ * when you post topics or comments on [the Inkdrop forum](https://forum.inkdrop.app/)
 
 When researching potential customers, we sometimes search the public World Wide Web or paid business databases. Otherwise, we don't buy or receive data about you from data brokers or other private services.
 
@@ -36,7 +36,7 @@ When researching potential customers, we sometimes search the public World Wide 
 
 ### Inkdrop collects note data.
 
-When you add notes, notebooks, tags and attachment files on the Inkdrop client apps, Inkdrop stores them in your local devices and the Inkdrop servers. The data is associated with your Inkdrop account. When the data is stored in the Inkdrop server, [Inkdrop encrypts it in transit and at rest](https://doc.inkdrop.info/security) so that other people including the server administrators can not see the contents of the data. The Inkdrop server uses the data to provide data synchronization functionality across your devices. You can disable this functionality from [Preferences](https://doc.inkdrop.info/manual/synchronizing-in-the-cloud).
+When you add notes, notebooks, tags and attachment files on the Inkdrop client apps, Inkdrop stores them in your local devices and the Inkdrop servers. The data is associated with your Inkdrop account. When the data is stored in the Inkdrop server, [Inkdrop encrypts it in transit and at rest](https://docs.inkdrop.app/security) so that other people including the server administrators can not see the contents of the data. The Inkdrop server uses the data to provide data synchronization functionality across your devices. You can disable this functionality from [Preferences](https://docs.inkdrop.app/manual/synchronizing-in-the-cloud).
 The client apps keep the data in your local storage in order to provide quick offline access to the data. The client apps don't encrypt the data at rest in local to provide quick search functionality.
 
 ### Inkdrop collects data about how you use Inkdrop service.
@@ -62,7 +62,7 @@ Inkdrop usually deletes log entries with identifiable information within a few w
 
 ### Inkdrop collects data about how you use the website.
 
-When you visit [www.inkdrop.info](https://www.inkdrop.info/), [app.inkdrop.info](https://app.inkdrop.info/), [doc.inkdrop.info](https://doc.inkdrop.info/), [forum.inkdrop.info](https://forum.inkdrop.info/), and other Inkdrop websites, Inkdrop uses cookies, server logs, and other methods to collect data about what pages you visit, and when. Inkdrop also collects technical information about the software and computer you use, such as:
+When you visit [inkdrop.app](https://inkdrop.app/), [my.inkdrop.app](https://my.inkdrop.app/), [docs.inkdrop.app](https://docs.inkdrop.app/), [forum.inkdrop.app](https://forum.inkdrop.app/), and other Inkdrop websites, Inkdrop uses cookies, server logs, and other methods to collect data about what pages you visit, and when. Inkdrop also collects technical information about the software and computer you use, such as:
 
 * your IP address
 * your preferred language
@@ -92,7 +92,7 @@ To create an Inkdrop account, Inkdrop requires a working email address. Inkdrop 
 
 You do not have to give your personal or legal name to create an Inkdrop account. You can use a pseudonym instead. You can also open more than one account.
 
-Inkdrop publishes account data for the whole world to see on user shared notes like [this one](https://community.inkdrop.info/note/d975606d93c067c5ef8d6adfb5db83b5/note:r1xTyulORf). Inkdrop also publishes account data through [the Inkdrop plugin registry](https://app.inkdrop.info/plugins) if you have published plugins.
+Inkdrop publishes account data for the whole world to see on user shared notes like [this one](https://community.inkdrop.app/note/d975606d93c067c5ef8d6adfb5db83b5/note:r1xTyulORf). Inkdrop also publishes account data through [the Inkdrop plugin registry](https://my.inkdrop.app/plugins) if you have published plugins.
 
 You don't have to give Inkdrop a personal name or any social media names, and you can erase this data at any time.
 
@@ -114,13 +114,13 @@ Inkdrop stores account data as long as the account stays open. When account data
 
 ### Inkdrop collects shared note data.
 
-When you [shared notes](https://doc.inkdrop.info/manual/sharing-your-notes-on-the-web) to the World Wide Web, Inkdrop collects the contents of the note without encryption, plus metadata, including your account data in order to make the note available to everyone, online.
+When you [shared notes](https://docs.inkdrop.app/manual/sharing-your-notes-on-the-web) to the World Wide Web, Inkdrop collects the contents of the note without encryption, plus metadata, including your account data in order to make the note available to everyone, online.
 
 You can unpublish your shared notes, erasing them from Inkdrop's storage, when you no longer need them to share with others.
 
 ### Inkdrop collects plugin data.
 
-When you use [`ipm publish`](https://doc.inkdrop.info/manual/plugin-word-count#publishing) to publish plugins to the Inkdrop plugin registry, Inkdrop collects the contents of the plugin, plus metadata, including your account data.
+When you use [`ipm publish`](https://docs.inkdrop.app/manual/plugin-word-count#publishing) to publish plugins to the Inkdrop plugin registry, Inkdrop collects the contents of the plugin, plus metadata, including your account data.
 
 Inkdrop uses data in plugins to provide those plugins to you and others who request them: when you publish a plugin to the Inkdrop plugin registry, Inkdrop makes the plugin and metadata available to everyone, online.
 
@@ -167,19 +167,19 @@ But Inkdrop's policy is to do its best to offer all users the same privacy infor
 
 ## How can I access data about me?
 
-You can access your account data at any time by visiting your account page on [app.inkdrop.info](https://app.inkdrop.info).
+You can access your account data at any time by visiting your account page on [my.inkdrop.app](https://my.inkdrop.app).
 
-You can access your note data from the client apps available on macOS, Windows, Linux, iOS and Android which you can get at [app.inkdrop.info](https://app.inkdrop.info/download).
+You can access your note data from the client apps available on macOS, Windows, Linux, iOS and Android which you can get at [my.inkdrop.app](https://my.inkdrop.app/download).
 
-You can [export all your note data](https://doc.inkdrop.info/manual/backing-up-your-data) in [JSON](https://www.json.org/) or Markdown format from our desktop client apps.
+You can [export all your note data](https://docs.inkdrop.app/manual/backing-up-your-data) in [JSON](https://www.json.org/) or Markdown format from our desktop client apps.
 
 You can also access to the Inkdrop database directly via [the Data Access API](/manual/accessing-data-in-the-cloud) which is compatible with [CouchDB](http://couchdb.apache.org/).
 
 ## How can I change or erase data about me?
 
-You can change your account data and payment card data at any time by visiting your account settings page on [app.inkdrop.info](https://app.inkdrop.info).
+You can change your account data and payment card data at any time by visiting your account settings page on [my.inkdrop.app](https://my.inkdrop.app).
 
-You can close your Inkdrop account at any time through [app.inkdrop.info](https://app.inkdrop.info).
+You can close your Inkdrop account at any time through [my.inkdrop.app](https://my.inkdrop.app).
 Closing your account starts a process of erasing Inkdrop's records of your account data including notes, shared notes, notebooks, tags and attachment files.
 Closing your account does not automatically erase plugins published under your account.
 You can unpublish plugins before closing your account with `ipm unpublish` command.
@@ -190,11 +190,11 @@ When you uninstalled our desktop app for macOS, Windows or Linux, the data is no
 * on Windows: `%APPDATA%/inkdrop/`
 * on Linux: `~/.config/inkdrop/`
 
-Closing your account anonymizes your topics and comments posted on [forum.inkdrop.info](https://forum.inkdrop.info/).
+Closing your account anonymizes your topics and comments posted on [forum.inkdrop.app](https://forum.inkdrop.app/).
 Your profile and IP address on the forum will be erased but your posts will be remained because they would be helpful for other users.
-If you wish to delete them completely, email [contact@inkdrop.info](mailto:contact@inkdrop.info) and let us know which user needs to be erased.
+If you wish to delete them completely, email [contact@inkdrop.app](mailto:contact@inkdrop.app) and let us know which user needs to be erased.
 
-If you have questions or problems using the website or `ipm` command to change or delete data about you, email [contact@inkdrop.info](mailto:contact@inkdrop.info).
+If you have questions or problems using the website or `ipm` command to change or delete data about you, email [contact@inkdrop.app](mailto:contact@inkdrop.app).
 
 ## Does Inkdrop share data about me with others?
 
@@ -214,7 +214,7 @@ Inkdrop uses [Amazon Web Services](https://aws.amazon.com/) servers and services
 
 Inkdrop uses [Heroku](https://www.heroku.com/) servers and services, in service region in the United States of America, to power the Inkdrop services. You can read [the privacy policy for Heroku online](https://www.salesforce.com/company/privacy/).
 
-Inkdrop uses [DigitalOcean](https://www.digitalocean.com/) servers and services, in service region in the United States of America, to provide [the Inkdrop forum](https://forum.inkdrop.info/). You can read [the privacy policy for DigitalOcean online](https://www.digitalocean.com/legal/privacy/).
+Inkdrop uses [DigitalOcean](https://www.digitalocean.com/) servers and services, in service region in the United States of America, to provide [the Inkdrop forum](https://forum.inkdrop.app/). You can read [the privacy policy for DigitalOcean online](https://www.digitalocean.com/legal/privacy/).
 
 ### Inkdrop uses Papertrail.
 
@@ -228,7 +228,7 @@ Inkdrop uses [Stripe](https://www.stripe.com/) to collect and use payment card p
 
 Inkdrop uses [Mixpanel](https://mixpanel.com/) to collect and analyze data about visitors to its websites and how you use our apps.
 You can read [the privacy policy for Mixpanel online](https://mixpanel.com/legal/privacy-policy/).
-You can opt out of Mixpanel by visiting this page: [www.mixpanel.com/optout](https://www.mixpanel.com/optout) and [app.inkdrop.info/account/privacy](https://app.inkdrop.info/account/privacy).
+You can opt out of Mixpanel by visiting this page: [www.mixpanel.com/optout](https://www.mixpanel.com/optout) and [my.inkdrop.app/account/privacy](https://my.inkdrop.app/account/privacy).
 Those tracking data are not associated with your Inkdrop account.
 
 ### Inkdrop uses Rollbar.
@@ -250,7 +250,7 @@ No. Inkdrop does not use your data for personalization or retargeting purposes.
 You can send questions or complaints to:
 
  * Takuya Matsuyama
- * [contact@inkdrop.info](mailto:contact@inkdrop.info)
+ * [contact@inkdrop.app](mailto:contact@inkdrop.app)
  * 5-18-11-303
  * Tagara, Nerima, Tokyo
  * 179-0073
@@ -258,6 +258,6 @@ You can send questions or complaints to:
 
 ## How can I find out about changes?
 
-Inkdrop will announce the next version on [the Inkdrop blog](https://blog.inkdrop.info/). In the meantime, Inkdrop may update its contact information and minor changes by updating the page at [Privacy Policy](https://doc.inkdrop.info/privacy), without an announcement. Inkdrop may change how it announces changes in future privacy versions.
+Inkdrop will announce the next version on [the Inkdrop blog](https://blog.inkdrop.info/). In the meantime, Inkdrop may update its contact information and minor changes by updating the page at [Privacy Policy](https://docs.inkdrop.app/privacy), without an announcement. Inkdrop may change how it announces changes in future privacy versions.
 
 You can review the history of changes in [the Git repository for Inkdrop's documentations](https://github.com/inkdropapp/docs).

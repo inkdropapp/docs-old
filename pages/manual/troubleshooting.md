@@ -13,7 +13,7 @@ Please read [this documentation](/manual/working-behind-a-corporate-web-proxy) t
 ### Investigate Firewalls
 
 If you are inside a corporate network, it may interrupt the request.
-Please ask your network administrator to allow the app to access `*.inkdrop.info`.
+Please ask your network administrator to allow the app to access `*.inkdrop.app`.
 
 ### Investigate Gnome Keyring on Linux
 

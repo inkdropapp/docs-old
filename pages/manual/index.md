@@ -3,7 +3,7 @@ To get started with Inkdrop, we'll need to get it on your system.
 
 ## Creating your Inkdrop account
 
-First, go to [Inkdrop website](https://www.inkdrop.info/) and sign up.
+First, go to [Inkdrop website](https://inkdrop.app/) and sign up.
 Inkdrop will prepare new database for storing your note data.
 Also your account can be used for publishing your plugins and so on.
 

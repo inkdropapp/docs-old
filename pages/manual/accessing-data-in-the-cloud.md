@@ -10,7 +10,7 @@ By using this API, you can make your own notebook client app with sync feature o
 ## Creating API Keys
 
 The API key is necessary for both publishing your plugins and accessing your data stored in the cloud.
-To create new API key, go to [API Keys](https://app.inkdrop.info/api-keys) page and push "Create new API key" button.
+To create new API key, go to [API Keys](https://my.inkdrop.app/api-keys) page and push "Create new API key" button.
 Generated API key is not stored in the database, so be careful and don't lose it.
 
 ## Getting your database URL
@@ -23,14 +23,14 @@ You should see your specific URL on the bottom of the pane like this:
 
 ![Sync Preferences](/manual/2-1-data-access-api_url.png)
 
-The URL is something like this: `https://db.inkdrop.info/user-<user_id>`
+The URL is something like this: `https://db.inkdrop.app/user-<user_id>`
 
 ## Accessing your database
 
 Now you can send a request to the URL via HTTPS, but you will get an error as following:
 
 ```bash
-$ curl https://db.inkdrop.info/user-<user_id>/
+$ curl https://db.inkdrop.app/user-<user_id>/
 {"error":"unauthorized","reason":"_reader access is required for this request"}
 ```
 
@@ -38,7 +38,7 @@ Because it's protected and you can't access without any credentials.
 You need to append your API keys as the credentials with HTTP Basic authentication in the request:
 
 ```
-$ curl https://<access_key_id>:<secret_access_key>@db.inkdrop.info/<database_name>/
+$ curl https://<access_key_id>:<secret_access_key>@db.inkdrop.app/<database_name>/
 ```
 
 and you will get a response represented with JSON like following:

@@ -380,11 +380,11 @@ Some text to show that the reference links can follow later.
                 <pre>
                   <code className="lang-markdown">{`Here's our logo (hover to see the title text):
 
-Inline-style: ![alt text](http://doc.inkdrop.info/icon_w64.png "Logo Title Text 1")
+Inline-style: ![alt text](http://docs.inkdrop.app/icon_w64.png "Logo Title Text 1")
 
 Reference-style: ![alt text][logo]
 
-[logo]: http://doc.inkdrop.info/icon_w64.png "Logo Title Text 2"`}</code>
+[logo]: http://docs.inkdrop.app/icon_w64.png "Logo Title Text 2"`}</code>
                 </pre>
               </div>
               <div className="column">

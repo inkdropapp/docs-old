@@ -12,7 +12,7 @@ Takuya Matsuyama
 
 ## Contact
 
-Email: contact@inkdrop.info
+Email: contact@inkdrop.app
 
 Tel: +815071086381
 

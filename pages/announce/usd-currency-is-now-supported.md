@@ -3,7 +3,7 @@
 You may not familiar with JPY, right? It'd be great if users could purchase Inkdrop with USD.
 Yesterday, [Stripe](https://stripe.com) has [publicly launched in Japan](https://stripe.com/blog/stripe-in-japan). It finally supports for multiple currencies.
 I'm happy to announce that Inkdrop pricing is now in USD.
-Please check out new pricing [here](https://www.inkdrop.info/pricing).
+Please check out new pricing [here](https://inkdrop.app/pricing).
 
 ## What happens to users who registered before the change
 

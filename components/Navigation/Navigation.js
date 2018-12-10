@@ -6,7 +6,7 @@ function Navigation() {
   return (
     <nav className="ui grid">
       <div className="row">
-        <a href="https://www.inkdrop.info/" className="app--logo">
+        <a href="https://inkdrop.app/" className="app--logo">
           <img
             src="/navbar-logo.png"
             srcSet="/navbar-logo.png 1x, /navbar-logo@2x.png 2x"
@@ -18,22 +18,22 @@ function Navigation() {
 
         <ul className="app--navbar reset-list un-select">
           <li>
-            <a href="https://www.inkdrop.info/features">Features</a>
+            <a href="https://inkdrop.app/features">Features</a>
           </li>
           <li>
             <Link to="/">Docs</Link>
           </li>
           <li>
-            <a href="https://www.inkdrop.info/plugins">Plugins</a>
+            <a href="https://inkdrop.app/plugins">Plugins</a>
           </li>
           <li className="ui simple dropdown item">
             More
             <i className="dropdown icon" />
             <div className="menu">
-              <a className="item" href="https://www.inkdrop.info/demo">
+              <a className="item" href="https://inkdrop.app/demo">
                 Demo
               </a>
-              <a className="item" href="https://www.inkdrop.info/pricing">
+              <a className="item" href="https://inkdrop.app/pricing">
                 Pricing
               </a>
               <Link className="item" to="/faq">
@@ -49,7 +49,7 @@ function Navigation() {
             </div>
           </li>
           <li>
-            <a href="https://app.inkdrop.info/" className="login">
+            <a href="https://my.inkdrop.app/" className="login">
               <i className="sign in icon" />
               Log in
             </a>

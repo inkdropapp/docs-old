@@ -38,7 +38,7 @@ class Footer extends React.Component {
                 </li>
                 <li>
                   <a
-                    href="mailto:contact@inkdrop.info"
+                    href="mailto:contact@inkdrop.app"
                     onClick={this.handleOutboundLinkClick}
                   >
                     Contact
@@ -68,7 +68,7 @@ class Footer extends React.Component {
             </div>
             <div className="three wide column text-left">
               <a
-                href="https://www.inkdrop.info/"
+                href="https://inkdrop.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={this.handleOutboundLinkClick}
