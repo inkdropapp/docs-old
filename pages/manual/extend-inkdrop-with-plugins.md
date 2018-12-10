@@ -40,7 +40,7 @@ The setup program will install `ipm`, and add it to your `PATH`.
 
 ### Linux
 
-`ipm` is not installed automatically. The command is available in the path of `<path-to-inkdrop>/resources/app/ipm/bin/ipm`.
+`ipm` is not installed automatically. The command is available in the path of `<path-to-inkdrop>/resources/app/ipm/bin/ipm`. For example, on Ubuntu the path to ipm is `/usr/lib/inkdrop/resources/app/ipm`.
 
 ## Finding new plugins
 
