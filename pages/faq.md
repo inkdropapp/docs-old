@@ -39,6 +39,12 @@ No. Because lifetime pricing is not sustainable.
 We know there are similar apps with lifetime pricing out there, but it doesn't work for long-running business.
 The sustainability is crucial especially for note-taking apps because you will store a lot of notes in them day by day.
 
+## `Setup.exe` gets quarantined as a virus threat by Windows Defender
+
+It is false positive.
+Our `Setup.exe` is generated with [Squirrel](https://github.com/Squirrel/Squirrel.Windows) and apps built with it sometimes get quarantined as a virus threat which is false positive.
+You’ll either have to add a policy exclusion for the `Setup.exe` runs from or whitelist the process itself.
+[Lean more about this issue on our forum](https://forum.inkdrop.app/t/download-failed-setup-exe-contained-a-virus-and-was-deleted/961).
 
 ## Billing
 
