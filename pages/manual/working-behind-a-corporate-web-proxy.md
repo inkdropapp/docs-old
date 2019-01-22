@@ -24,6 +24,7 @@ If the web proxy requires BASIC auth, you can just specify a URL with username a
 http://username:password@webproxy:8080/
 ```
 
+
 ## Configuring ipm
 
 `ipm` is also necessary to be configured for working behind a web proxy.
@@ -32,3 +33,29 @@ http://username:password@webproxy:8080/
 ipm config set proxy "http://webproxy:8080"
 ipm config set https_proxy proxy "http://webproxy:8080"
 ```
+
+## Allow Self-signed Certificates
+
+You have to disable SSL certificate validation if your proxy server is SSL-enabled but with a self-signed certificate.
+You can disable it by adding `strict_ssl: 0` in your `config.cson` like so:
+
+```yaml
+"*":
+  core:
+    network:
+      strict_ssl: 0
+```
+
+For `ipm`, run below command:
+
+```sh
+ipm config set strict-ssl false
+```
+
+## Troubleshooting
+
+### Client network socket disconnected before secure TLS connection was established
+
+If you got an error like that, your proxy server may be using TLSv1.0 which is obsolete.
+You have to update your proxy server to support newer protocols like TLSv1.2 since Inkdrop does not support TLSv1.0.
+
