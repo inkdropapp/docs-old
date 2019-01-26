@@ -6,7 +6,7 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { canUseDOM } from 'fbjs/lib/ExecutionEnvironment'
+import canUseDOM from 'can-use-dom'
 import Location from './core/Location'
 import Layout from './components/Layout'
 import { AppContainer } from 'react-hot-loader'

@@ -45,12 +45,12 @@ const babelConfig = JSON.parse(
 )
 Object.assign(babelConfig, {
   babelrc: false,
-  presets: babelConfig.presets.map(x => (x === 'es2015' ? ['env'] : x)),
   plugins: babelConfig.plugins.filter(p => p !== 'add-module-exports')
 })
 
 // Base configuration
 const config = {
+  mode: DEBUG ? 'development' : 'production',
   output: {
     path: path.join(__dirname, '../build'),
     publicPath: '/',
@@ -163,7 +163,10 @@ const appConfig = {
           new webpack.optimize.AggressiveMergingPlugin()
         ]),
     ...(WATCH
-      ? [new webpack.HotModuleReplacementPlugin(), new webpack.NoErrorsPlugin()]
+      ? [
+          new webpack.HotModuleReplacementPlugin(),
+          new webpack.NoEmitOnErrorsPlugin()
+        ]
       : [])
   ],
   module: {

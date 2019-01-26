@@ -1,21 +1,13 @@
 {
   "presets": [
-    "env",
-    "stage-0",
-    "react"
+    "@babel/preset-react",
+    "@babel/preset-env"
   ],
   "plugins": [
     "add-module-exports",
-    ["transform-runtime", {
-      "polyfill": true,
+    ["@babel/plugin-transform-runtime", {
       "regenerator": true
-    }]
-  ],
-  "env": {
-    "browser": {
-    },
-    "production": {
-      "plugins": []
-    }
-  }
+    }],
+    "@babel/plugin-proposal-class-properties"
+  ]
 }

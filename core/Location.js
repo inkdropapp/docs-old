@@ -1,4 +1,4 @@
-import { canUseDOM } from 'fbjs/lib/ExecutionEnvironment'
+import canUseDOM from 'can-use-dom'
 import createHistory from 'history/createBrowserHistory'
 import createMemoryHistory from 'history/createMemoryHistory'
 

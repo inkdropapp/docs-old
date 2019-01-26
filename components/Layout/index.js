@@ -23,7 +23,7 @@ function Layout({ children }) {
       </header>
       <div>
         <Masthead />
-    <SearchBar />
+        <SearchBar />
         {children}
       </div>
       <Footer />
