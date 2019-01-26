@@ -158,7 +158,6 @@ const appConfig = {
     ...(DEBUG
       ? []
       : [
-          new webpack.optimize.DedupePlugin(),
           new webpack.optimize.UglifyJsPlugin(),
           new webpack.optimize.AggressiveMergingPlugin()
         ]),
