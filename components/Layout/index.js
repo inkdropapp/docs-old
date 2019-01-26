@@ -13,26 +13,29 @@ import Masthead from '../masthead'
 // import Link from '../Link';
 import SearchBar from '../search-bar'
 
-function Layout({ children }) {
-  return (
-    <div>
-      <header className="app--header">
-        <div className="ui container">
-          <Navigation />
-        </div>
-      </header>
-      <div>
-        <Masthead />
-        <SearchBar />
-        {children}
-      </div>
-      <Footer />
-    </div>
-  )
-}
+class Layout extends React.Component {
+  static propTypes = {
+    children: PropTypes.element.isRequired
+  }
 
-Layout.propTypes = {
-  children: PropTypes.element.isRequired
+  render() {
+    const { children } = this.props
+    return (
+      <div>
+        <header className="app--header">
+          <div className="ui container">
+            <Navigation />
+          </div>
+        </header>
+        <div>
+          <Masthead />
+          <SearchBar />
+          {children}
+        </div>
+        <Footer />
+      </div>
+    )
+  }
 }
 
 export default Layout

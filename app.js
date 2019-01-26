@@ -61,6 +61,18 @@ if (canUseDOM) {
   } else {
     document.addEventListener('DOMContentLoaded', run, false)
   }
+
+  window.addEventListener('load', function(_event) {
+    // scroll to the anchor position
+    const { hash } = location
+    if (hash) {
+      const anchor = hash.substr(1)
+      const elem = document.querySelector(`a[name=${anchor}]`)
+      if (elem) {
+        setTimeout(() => elem.scrollIntoView(), 100)
+      }
+    }
+  })
 }
 
 export default { route, routes }
