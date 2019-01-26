@@ -45,11 +45,13 @@ sudo snap install inkdrop
 sudo snap connect inkdrop:password-manager-service
 ```
 
-You can easily update the app by running below command:
+You can easily update the app manually by running below command:
 
 ```bash
 sudo snap refresh inkdrop
 ```
+
+But basically you don't have to do it because the `snapd` daemon automatically checks for updates 4 times each day.
 
 ### via Package
 
