@@ -39,12 +39,28 @@ No. Because lifetime pricing is not sustainable.
 We know there are similar apps with lifetime pricing out there, but it doesn't work for long-running business.
 The sustainability is crucial especially for note-taking apps because you will store a lot of notes in them day by day.
 
+## Where are my local data and config files?
+
+You have a local data stored in here:
+
+ * on macOS: `~/Library/Application Support/inkdrop`
+ * on Windows: `%APPDATA%/inkdrop`
+ * on Linux: `~/.config/inkdrop`
+
+The config file is `config.cson` in that directory.
+
 ## `Setup.exe` gets quarantined as a virus threat by Windows Defender
 
 It is false positive.
 Our `Setup.exe` is generated with [Squirrel](https://github.com/Squirrel/Squirrel.Windows) and apps built with it sometimes get quarantined as a virus threat which is false positive.
 You’ll either have to add a policy exclusion for the `Setup.exe` runs from or whitelist the process itself.
 [Lean more about this issue on our forum](https://forum.inkdrop.app/t/download-failed-setup-exe-contained-a-virus-and-was-deleted/961).
+
+## Desktop app won't launch because it fails to load database
+
+If you are getting an error saying `Failed to load database`, please make sure that other Inkdrop instance is not running.
+If you still get the error, your local data might be corrupt or missing.
+Please try moving [your local data](#where-are-my-local-data-and-config-files-) to other place and launch it again.
 
 ## Billing
 
