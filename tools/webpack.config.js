@@ -155,12 +155,7 @@ const appConfig = {
   devtool: DEBUG ? 'cheap-source-map' : false,
   plugins: [
     ...config.plugins,
-    ...(DEBUG
-      ? []
-      : [
-          new webpack.optimize.UglifyJsPlugin(),
-          new webpack.optimize.AggressiveMergingPlugin()
-        ]),
+    ...(DEBUG ? [] : [new webpack.optimize.AggressiveMergingPlugin()]),
     ...(WATCH
       ? [
           new webpack.HotModuleReplacementPlugin(),
@@ -184,6 +179,9 @@ const appConfig = {
         use: ['style-loader', 'css-loader', POSTCSS_LOADER]
       }
     ]
+  },
+  optimization: {
+    minimize: !DEBUG
   }
 }
 
