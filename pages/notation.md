@@ -8,7 +8,7 @@ Takuya Matsuyama
 
 ## Address
 
-2-25-6, Minami-shojaku, Suita, Osaka 564-0012, Japan
+502, 2-5-12, Shinsenri-higashimachi, Toyonaka, Osaka, Japan
 
 ## Contact
 
