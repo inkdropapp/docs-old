@@ -45,6 +45,12 @@ sudo snap install inkdrop
 sudo snap connect inkdrop:password-manager-service
 ```
 
+You may have to install some packages for keyring:
+
+```bash
+sudo apt install libgnome-keyring0 libgnome-keyring-common
+```
+
 You can easily update the app manually by running below command:
 
 ```bash
