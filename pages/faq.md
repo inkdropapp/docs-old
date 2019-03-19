@@ -74,15 +74,15 @@ If you switch from a monthly plan to a yearly plan, the billing date becomes the
 
 ### What payment methods are available?
 
-Currently, we can only accept credit card payment with Visa, MasterCard, and American Express.
+Currently, we can accept credit and debit card payment with Visa, MasterCard, and American Express.
 
-### Is it secure to send my credit card information?
+### Is it secure to send my card information?
 
-We uses [Stripe.com](https://stripe.com/) for online payments. Stripe provides security and compliance without the headaches. We never send and store your credit card information to Inkdrop server.
+We uses [Stripe.com](https://stripe.com/) for online payments. Stripe has been audited by a PCI-certified auditor and is certified to [PCI Service Provider Level 1](http://www.visa.com/splisting/searchGrsp.do?companyNameCriteria=stripe). This is the most stringent level of certification available in the payments industry. We never send and store your credit/debit card information to Inkdrop server.
 
 Learn more: [Security at Stripe](https://stripe.com/docs/security/stripe)
 
-### What happens if the free trial expired without adding my credit card?
+### What happens if the free trial expired without adding my payment information?
 
 Your account will be deleted and you can no longer access to your account. But you can still access your data stored in local with the app in read-only mode.
 
