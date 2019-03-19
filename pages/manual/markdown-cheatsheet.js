@@ -56,8 +56,8 @@ export default class ManualPage extends Component {
                   rel="noopener noreferrer"
                 >
                   Github-flavored Markdown info page
-                </a>.
-                <h3>Table of Contents</h3>
+                </a>
+                .<h3>Table of Contents</h3>
                 <ul>
                   <li>
                     <a href="#headers">Headers</a>
@@ -175,7 +175,8 @@ Strikethrough uses two tildes. ~~Scratch this.~~
                   Combined emphasis with{' '}
                   <strong>
                     asterisks or <i>underscores</i>
-                  </strong>.
+                  </strong>
+                  .
                 </p>
                 <p>
                   Strikethrough uses two tildes. <del>Scratch this</del>.
@@ -200,9 +201,9 @@ Strikethrough uses two tildes. ~~Scratch this.~~
                 <pre>
                   <code className="lang-markdown">{`1. First ordered list item
 2. Another item
-⋅⋅* Unordered sub-list.
+⋅⋅⋅* Unordered sub-list.
 1. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
+⋅⋅⋅1. Ordered sub-list
 4. And another item.
 
 ⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
@@ -246,9 +247,11 @@ Strikethrough uses two tildes. ~~Scratch this.~~
                     </p>
                     <p>
                       To have a line break without a paragraph, you will need to
-                      use two trailing spaces.<br />
+                      use two trailing spaces.
+                      <br />
                       Note that this line is separate, but within the same
-                      paragraph.<br />
+                      paragraph.
+                      <br />
                       (This is contrary to the typical GFM line break behaviour,
                       where trailing spaces are not required.)
                     </p>
@@ -324,10 +327,7 @@ Some text to show that the reference links can follow later.
                   </a>
                 </p>
                 <p>
-                  <a
-                    href="https://www.google.com"
-                    title="Google&apos;s Homepage"
-                  >
+                  <a href="https://www.google.com" title="Google's Homepage">
                     I&apos;m an inline-style link with title
                   </a>
                 </p>
@@ -352,7 +352,8 @@ Some text to show that the reference links can follow later.
                 </p>
                 <p>
                   URLs and URLs in angle brackets will automatically get turned
-                  into links.<br />
+                  into links.
+                  <br />
                   <a href="http://www.example.com">
                     http://www.example.com
                   </a> or{' '}
@@ -438,7 +439,8 @@ Reference-style: ![alt text][logo]
                     rel="noopener noreferrer"
                   >
                     highlight.js demo page
-                  </a>.
+                  </a>
+                  .
                 </p>
               </div>
             </div>
@@ -779,7 +781,8 @@ This line is only separated by a single newline, so it's a separate line in the 
                   it will be a <em>separate paragraph</em>.
                 </p>
                 <p>
-                  This line is also begins a separate paragraph, but...<br />
+                  This line is also begins a separate paragraph, but...
+                  <br />
                   This line is only separated by a single newline, so it&apos;s
                   a separate line in the <em>same paragraph</em>.
                 </p>
@@ -796,7 +799,8 @@ This line is only separated by a single newline, so it's a separate line in the 
                 href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"
               >
                 markdown-here&apos;s documentation
-              </a>.
+              </a>
+              .
             </p>
             <p>
               License:{' '}
