@@ -20,6 +20,10 @@ There are three types of the plugin:
   ipm is a fork of <a href="https://github.com/atom/apm">apm (atom package manager)</a>, some output messages may include Atom-related though, please ignore them. 😉
 </div>
 
+<div class="ui warning message">
+  If you are using beta version of the app, please note that the command name is <b>ipm-beta</b>.
+</div>
+
 **ipm** is a command-line tool to manage plugins for Inkdrop.
 
 ### macOS

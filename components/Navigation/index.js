@@ -14,6 +14,7 @@ function Navigation() {
             height="45"
             alt="logo"
           />
+          BETA
         </a>
 
         <ul className="app--navbar reset-list un-select">

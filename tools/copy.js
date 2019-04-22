@@ -14,7 +14,7 @@ import cp from './lib/copy'
 export default task(async function copy() {
   await cp('static', 'build')
   await cp(
-    'node_modules/inkdrop-version-history/README.md',
+    'node_modules/inkdrop-version-history-beta/README.md',
     'pages/releases.md'
   )
   await cp(
