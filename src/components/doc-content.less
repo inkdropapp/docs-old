@@ -1,0 +1,144 @@
+@import "../variables.less";
+
+.main-content .doc-content {
+  background: white;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 26px;
+  word-wrap: break-word;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2em !important;
+  padding-right: 1rem;
+
+  @media only screen and (max-width: 767px) {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  h1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  h3, h4 {
+    font-weight: bold;
+  }
+
+  blockquote {
+    margin: 0;
+  }
+
+  p {
+    text-align: justify;
+    text-indent: 1em;
+  }
+
+  p,
+  blockquote,
+  ul,
+  ol,
+  dl,
+  table,
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  hr {
+    height: 4px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+  }
+
+  blockquote {
+    padding: 5px 15px;
+    color: #777;
+    border-left: 4px solid #ddd;
+  }
+
+  blockquote>:first-child {
+    margin-top: 0;
+  }
+
+  blockquote>:last-child {
+    margin-bottom: 0;
+  }
+
+  code {
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(0,0,0,0.04);
+    border-radius: 3px;
+  }
+
+  code:before,
+  code:after {
+    letter-spacing: -0.2em;
+    content: "\00a0";
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  .highlight {
+    margin-bottom: 16px;
+  }
+
+  .highlight pre,
+  pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 3px;
+  }
+
+  .highlight pre {
+    margin-bottom: 0;
+    word-break: normal;
+  }
+
+  pre {
+    word-wrap: normal;
+  }
+
+  pre code {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code:before,
+  pre code:after {
+    content: normal;
+  }
+}
+
+.ui.container.main-content .ui.grid .column.doc-content {
+  @media only screen and (max-width: @tabletBreakpoint - 1) {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}

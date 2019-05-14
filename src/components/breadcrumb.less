@@ -1,0 +1,29 @@
+.app--breadcrumb {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  border: none;
+  border-top-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 100%) 5%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #151617;
+
+  .ui.breadcrumb {
+    a {
+      color: rgba(255,255,255,0.7);
+      &:hover, &:focus {
+        color: rgba(257,255,255,0.9);
+      }
+    }
+    .divider {
+      color: rgba(255,255,255,0.2);
+    }
+    .active.section {
+      color: rgba(255,255,255,0.4);
+      font-weight: normal;
+    }
+  }
+}

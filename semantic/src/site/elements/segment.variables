@@ -1,6 +1,0 @@
-/*******************************
-    User Variable Overrides
-*******************************/
-@margin: 1em 0em 2em 0em;
-@boxShadow: 0 1px 5px 0 rgba(0,0,0,.07), 0 7px 17px 0 rgba(0,0,0,.1);
-@border: none;

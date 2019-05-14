@@ -1,0 +1,26 @@
+@import "../variables.less";
+
+.ui.main-content .sidebar .menu-for-larger-screen {
+  display: none;
+
+  @media (min-width: @tabletBreakpoint) {
+    display: block;
+    position: sticky;
+    top: 76px;
+    z-index: 100;
+  }
+}
+
+.ui.main-content .sidebar .menu-for-smaller-screen {
+  display: block;
+
+  .title {
+    font-size: 19px;
+    font-weight: bold;
+    color: #7685bd;
+  }
+
+  @media (min-width: @tabletBreakpoint) {
+    display: none;
+  }
+}

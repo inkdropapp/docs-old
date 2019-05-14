@@ -1,0 +1,20 @@
+a.menu-link {
+  color: #373e42;
+}
+
+.main-content a.current-active {
+  position: relative;
+  color: #ff63c3;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 3px;
+    height: 27px;
+    background: red;
+    background: linear-gradient(90deg,#ff8fbe 0,#ffb2c4);
+    box-shadow: 0 10px 30px 2px rgba(255,162,219,.4);
+    border-radius: 1.5px;
+  }
+}

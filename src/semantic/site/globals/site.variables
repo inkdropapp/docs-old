@@ -1,0 +1,13 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+@headerFont: 'M PLUS Rounded 1c', 'SF UI Text', 'Helvetica Neue', 'Helvetica', 'Roboto', sans-serif;
+@pageFont: 'SF UI Text', 'Helvetica Neue', 'Helvetica', 'Roboto', sans-serif;
+
+@fontSize         : 14px;
+@pageBackground   : #f6f9fe;
+@linkColor        : #ff63c3;
+@blue             : #3D7AED;
+@textColor        : #373e42;
+@headerFontWeight : 400;

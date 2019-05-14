@@ -1,0 +1,54 @@
+.app--navigation {
+  .app--logo {
+    flex: 1 auto;
+    line-height: 1;
+
+    > span.beta-label {
+      color: #ff63c3;
+    }
+  }
+
+  .ui.grid {
+    margin: 0;
+  }
+
+  ul.app--navbar {
+    flex: 1 auto;
+    text-align: right;
+    height: 45px;
+    margin: 0;
+    color: #bbb;
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 18px;
+      font-size: 1rem;
+
+      > a {
+        display: inline-block;
+        padding: 14px 0;
+
+        &.login {
+          border: 1px solid rgba(255, 255, 255, 0.4);
+          border-radius: 20px;
+          padding: 4px 10px;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  a {
+    color: #bbb;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+}
+

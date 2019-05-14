@@ -1,2 +1,0 @@
-# Redirect domain aliases to primary domain
-https://doc.inkdrop.info/* https://docs.inkdrop.app/:splat 301!

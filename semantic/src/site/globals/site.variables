@@ -1,8 +1,0 @@
-/*******************************
-     User Global Variables
-*******************************/
-@pageBackground   : #f5f7f9;
-@linkColor        : #0099e5;
-@blue             : #3D7AED;
-@textColor        : #373e42;
-@headerFontWeight : 400;

@@ -1,0 +1,44 @@
+@font-family-base: 'SF UI Text', 'Helvetica Neue', 'Helvetica', 'Roboto', sans-serif;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: @font-family-base;
+}
+
+.main-content {
+  padding-top: 2rem;
+  margin-bottom: 50px;
+
+  h1, h2, h3, h4, h5, h6 {
+    a.anchor {
+      opacity: 0;
+      margin-left: -20px;
+      color: inherit;
+      transition: all 0.4s;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.4);
+    }
+    &:hover a.anchor {
+      opacity: 1;
+      display: inline-block;
+    }
+  }
+  h2 {
+    margin-top: 1.5em;
+    padding-bottom: 4px;
+    padding-top: 1em;
+    border-top: 2px solid #f4f6f7;
+  }
+  h3 a.anchor {
+    margin-left: -25px;
+  }
+
+}
+
+.main-content .article-list {
+  a {
+    display: block;
+    padding: 4px;
+  }
+}
