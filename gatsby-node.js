@@ -71,7 +71,8 @@ exports.createPages = async ({ actions, graphql }) => {
     switch (category) {
       case 'info':
         return infoTemplate
-      case 'reference':
+      case 'data':
+      case 'classes':
         return referenceTemplate
       default:
         return manualTemplate
