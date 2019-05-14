@@ -49,6 +49,16 @@ exports.onPreBootstrap = async () => {
       title: 'Release Notes (Mobile)'
     }
   )
+  await createPageFromRemoteMd(
+    `https://raw.githubusercontent.com/inkdropapp/inkdrop-model/master/docs/schema.md`,
+    `src/pages/reference/data-model.md`,
+    {
+      index: 20,
+      category: 'reference',
+      path: '/reference/data-model',
+      title: 'Data Model'
+    }
+  )
 }
 
 exports.createPages = async ({ actions, graphql }) => {

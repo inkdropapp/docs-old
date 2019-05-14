@@ -5,6 +5,7 @@ import { Container } from 'semantic-ui-react'
 
 import Layout from '../components/layout'
 import ManualMenu from '../components/manual-menu'
+import ReferenceMenu from '../components/reference-menu'
 import Masthead from '../components/masthead'
 
 const IndexPage = () => (
@@ -28,8 +29,7 @@ const IndexPage = () => (
                 <div className="content">API Reference</div>
               </h2>
               <div className="ui segment">
-                Blah, blah, blah
-                {/* <ReferenceMenu /> */}
+                <ReferenceMenu />
               </div>
 
               <h2 className="ui header">

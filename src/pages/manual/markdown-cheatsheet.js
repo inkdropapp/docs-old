@@ -3,8 +3,6 @@ import ManualLayout from '../../components/manual-layout'
 import Prism from 'prismjs'
 import 'prismjs/components/prism-python.js'
 
-console.log('Prism:', Prism)
-
 const MarkdownCheatsheetPage = () => (
   <ManualLayout currentPageTitle="Markdown Cheatsheet">
     <h1>Markdown Cheatsheet</h1>
@@ -69,8 +67,8 @@ const MarkdownCheatsheetPage = () => (
 
       <div className="row">
         <div className="sixteen wide column">
-          <h2>
-            <a name="headers" className="anchor">
+          <h2 id="headers">
+            <a href="#headers" className="anchor">
               <i className="linkify icon" />
             </a>
             Headers

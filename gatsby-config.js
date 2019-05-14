@@ -61,6 +61,12 @@ module.exports = {
             }
           },
           {
+            resolve: `gatsby-remark-default-html-attrs`,
+            options: {
+              table: 'ui celled small table'
+            }
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               // It's important to specify the maxWidth (in pixels) of
