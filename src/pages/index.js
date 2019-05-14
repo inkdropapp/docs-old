@@ -8,7 +8,7 @@ import ManualMenu from '../components/manual-menu'
 import Masthead from '../components/masthead'
 
 const IndexPage = () => (
-  <Layout>
+  <Layout pageTitle="Table of Contents">
     <Masthead />
     <Container className="main-content">
       <div className="top-menu">
