@@ -35,13 +35,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `manual-pages`,
-        path: `${__dirname}/src/pages/manual`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `release-pages`,
         path: `${__dirname}/src/pages`
       }

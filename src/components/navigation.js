@@ -8,7 +8,7 @@ const Navigation = () => (
   <Container className="app--navigation">
     <nav className="ui grid">
       <div className="row">
-        <a href="https://inkdrop.app/" className="app--logo">
+        <Link to="/" className="app--logo">
           <StaticQuery
             query={graphql`
               query {
@@ -28,14 +28,11 @@ const Navigation = () => (
             )}
           />
           <span className="beta-label">BETA</span>
-        </a>
+        </Link>
 
         <ul className="app--navbar reset-list un-select">
           <li>
-            <a href="https://inkdrop.app/features">Features</a>
-          </li>
-          <li>
-            <Link to="/">Docs</Link>
+            <a href="https://inkdrop.app/">Home</a>
           </li>
           <li>
             <a href="https://my.inkdrop.app/plugins">Plugins</a>

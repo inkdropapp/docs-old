@@ -2,6 +2,7 @@ import './index.less'
 import React from 'react'
 import { Container } from 'semantic-ui-react'
 
+import SearchBar from '../components/search-bar'
 import Layout from '../components/layout'
 import ManualMenu from '../components/manual-menu'
 import ReferenceMenu from '../components/reference-menu'
@@ -11,6 +12,7 @@ import Masthead from '../components/masthead'
 const IndexPage = () => (
   <Layout pageTitle="Table of Contents">
     <Masthead />
+    <SearchBar />
     <Container className="main-content">
       <div className="top-menu">
         <div className="ui stackable grid">
