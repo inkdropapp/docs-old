@@ -51,12 +51,12 @@ exports.onPreBootstrap = async () => {
   )
   await createPageFromRemoteMd(
     `https://raw.githubusercontent.com/inkdropapp/inkdrop-model/master/docs/schema.md`,
-    `src/pages/reference/data-model.md`,
+    `src/pages/reference/data-models.md`,
     {
       index: 20,
-      category: 'reference',
-      path: '/reference/data-model',
-      title: 'Data Model'
+      category: 'data',
+      path: '/reference/data-models',
+      title: 'Data Models'
     }
   )
 }
@@ -64,12 +64,15 @@ exports.onPreBootstrap = async () => {
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
   const manualTemplate = path.resolve(`src/templates/manual-template.js`)
+  const referenceTemplate = path.resolve(`src/templates/reference-template.js`)
   const infoTemplate = path.resolve(`src/templates/info-template.js`)
 
   function getTemplateForCategory(category) {
     switch (category) {
       case 'info':
         return infoTemplate
+      case 'reference':
+        return referenceTemplate
       default:
         return manualTemplate
     }

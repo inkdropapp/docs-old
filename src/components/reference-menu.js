@@ -16,11 +16,25 @@ export default class RefereneMenu extends Component {
         render={data => (
           <Menu className="manual-menu">
             <h3 className="ui header">
-              <i className="book icon" />
+              <i className="cube icon" />
               <div className="content">Data</div>
             </h3>
             <ul className="article-list">
-              {data.allMarkdownRemark.edges.map(edge => {
+              {data.data.edges.map(edge => {
+                const { path, title } = edge.node.frontmatter
+                return (
+                  <li key={path}>
+                    <MenuLink to={path}>{title}</MenuLink>
+                  </li>
+                )
+              })}
+            </ul>
+            <h3 className="ui header">
+              <i className="dot circle outline icon" />
+              <div className="content">Essential Classes</div>
+            </h3>
+            <ul className="article-list">
+              {data.classes.edges.map(edge => {
                 const { path, title } = edge.node.frontmatter
                 return (
                   <li key={path}>
@@ -38,10 +52,24 @@ export default class RefereneMenu extends Component {
 
 const menuQuery = graphql`
   query {
-    allMarkdownRemark(
+    data: allMarkdownRemark(
       sort: { order: ASC, fields: [frontmatter___index] }
       limit: 1000
-      filter: { frontmatter: { category: { eq: "reference" } } }
+      filter: { frontmatter: { category: { eq: "data" } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            path
+            title
+          }
+        }
+      }
+    }
+    classes: allMarkdownRemark(
+      sort: { order: ASC, fields: [frontmatter___index] }
+      limit: 1000
+      filter: { frontmatter: { category: { eq: "classes" } } }
     ) {
       edges {
         node {

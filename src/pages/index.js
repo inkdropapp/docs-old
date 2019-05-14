@@ -1,11 +1,11 @@
 import './index.less'
 import React from 'react'
-import { Link } from 'gatsby'
 import { Container } from 'semantic-ui-react'
 
 import Layout from '../components/layout'
 import ManualMenu from '../components/manual-menu'
 import ReferenceMenu from '../components/reference-menu'
+import InfoMenu from '../components/info-menu'
 import Masthead from '../components/masthead'
 
 const IndexPage = () => (
@@ -36,25 +36,7 @@ const IndexPage = () => (
                 <div className="content">Further Informations</div>
               </h2>
               <div className="ui segment">
-                <div className="menu">
-                  <ul className="article-list">
-                    <li>
-                      <Link to="/releases" className="menu-link">
-                        Release Notes (Desktop)
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/releases-mobile" className="menu-link">
-                        Release Notes (Mobile)
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/announce/" className="menu-link">
-                        Announcements
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+                <InfoMenu />
               </div>
             </div>
           </div>

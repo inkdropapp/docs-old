@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import ManualLayout from '../components/manual-layout'
+import ReferenceLayout from '../components/reference-layout'
 
 export default function Template({
   data // this prop will be injected by the GraphQL query below.
@@ -9,10 +9,10 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (
-    <ManualLayout currentPageTitle={frontmatter.title}>
+    <ReferenceLayout currentPageTitle={frontmatter.title}>
       <h1>{frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: html }} />
-    </ManualLayout>
+    </ReferenceLayout>
   )
 }
 

@@ -1,6 +1,6 @@
 ---
 index: 10
-category: reference
+category: data
 path: /reference/json-schema
 title: JSON Schema
 ---
