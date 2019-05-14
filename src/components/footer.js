@@ -32,7 +32,7 @@ const Footer = () => (
             </li>
             <li>
               <a
-                href="https://medium.com/@inkdrop"
+                href="https://blog.inkdrop.info"
                 target="_blank"
                 rel="noopener noreferrer"
               >
