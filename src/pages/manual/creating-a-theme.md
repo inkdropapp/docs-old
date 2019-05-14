@@ -59,7 +59,7 @@ After making changes, reload the app to reflected changes.
 
 To create a UI theme, do the following:
 
-1. fork the [Inkdrop's sample repository on GitHub](https://github.com/inkdropapp/inkdrop-ui-theme-template)
+1. fork the [Inkdrop's default UI theme repository on GitHub](https://github.com/inkdropapp/inkdrop-default-light-ui-theme)
 2. Clone the forked repository to the local filesystem
 3. Open a terminal in the forked theme's directory
 4. Let Inkdrop run in **Development Mode** by selecting the *Inkdrop > Preferences* menu, clicking the *General* tab on the left hand navigation, and check the "*Development Mode*", then reload the app by pressing `Alt+Cmd+Ctrl+L` / `Alt+Ctrl+L`

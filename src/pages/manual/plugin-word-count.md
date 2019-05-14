@@ -41,7 +41,7 @@ Similar to [Node modules](https://docs.npmjs.com/getting-started/what-is-npm), I
 
 In addition to some of the regular [Node `package.json` keys](https://docs.npmjs.com/files/package.json) available, Inkdrop `package.json` files have their own additions.
 
- * `main`: the path to the JavaScript file that's the entry point to your package. If this is missing, Inkdrop will default to looking for an `index.js` or `index.coffee`.
+ * `main`: the path to the JavaScript file that's the entry point to your package. If this is missing, Inkdrop will default to looking for an `index.js`.
  * `styles`: an Array of Strings identifying the order of the style sheets your plugin needs to load. If not specified, style sheets in the `styles` directory are added alphabetically.
  * `keymaps`: an Array of Strings identifying the order of the key mappings your plugin needs to load. If not specified, mappings in the `keymaps` directory are added alphabetically.
  * `menus`: an Array of Strings identifying the order of the menu mappings your plugin needs to load. If not specified, mappings in the `menus` directory are added alphabetically.
@@ -74,7 +74,7 @@ One of the first things you should do is ensure that this information is filled 
 
 ### Source Code
 
-If you want to extend Inkdrop's behavior, your plugin should contain a single top-level module, which you export from whichever file is indicated by the `main` key in your `package.json` file. In the plugin we just generated, the main package file is `lib/wordcount.js`. The remainder of your code should be placed in the lib directory, and required from your top-level file. If the `main` key is not in your `package.json` file, it will look for `index.coffee` or `index.js` as the main entry point.
+If you want to extend Inkdrop's behavior, your plugin should contain a single top-level module, which you export from whichever file is indicated by the `main` key in your `package.json` file. In the plugin we just generated, the main package file is `lib/wordcount.js`. The remainder of your code should be placed in the lib directory, and required from your top-level file. If the `main` key is not in your `package.json` file, it will look for `index.js` as the main entry point.
 
 Your plugin's top-level module is a singleton object that manages the lifecycle of your extensions to Inkdrop. Even if your plugin creates ten different components and appends them to different parts of the DOM, it's all managed from your top-level object.
 
@@ -150,7 +150,7 @@ It's recommended that you create an application menu item under the *Plugins* me
 
 This section puts a "Toggle" menu item under a menu group named "Your Name Word Count" in the "Plugins" menu.
 
-![Application Menu](/manual/2-3-plugin-word-count-application-menu.png)
+![Application Menu](./plugin-word-count_application-menu.png)
 
 When you select that menu item, it will run the `wordcount:toggle` command, which we'll look at in a bit.
 
@@ -175,7 +175,7 @@ It's recommended to specify a context menu item for commands that are linked to 
 
 This adds a "Toggle Word Count" menu option to the menu that pops up when you right-click in an Inkdrop text editor pane.
 
-![Context Menu](/manual/2-3-plugin-word-count-context-menu.png)
+![Context Menu](./plugin-word-count_context-menu.png)
 
 When you click that it will again run the `wordcount:toggle` method in your code.
 
@@ -358,7 +358,7 @@ Finally, we tell our message dialog to update the word count it displays by call
 
 Pretty simple! We take the count number that was passed in and place it into a string that we then stick into the element that our component is controlling.
 
-![Word count](/manual/2-3-plugin-word-count-display-count.png)
+![Word count](./plugin-word-count_display-count.png)
 
 ## Basic Debugging
 
@@ -366,7 +366,7 @@ You'll notice a few `console.log` statements in the code. One of the cool things
 
 To open up the Developer Console, press `Alt+Cmd+I`, or choose the menu option *Developer > Toggle Developer Tools*.
 
-![Application Menu](/manual/2-2-create-new-theme-devtools.png)
+![DevTools](./plugin-word-count_devtools.png)
 
 From here you can inspect objects, run code and view console output just as though you were debugging a web site.
 
@@ -407,8 +407,6 @@ Now run the following commands to publish your package:
 cd ~/github/my-package
 ipm publish minor
 ```
-
-If this is the first package you are publishing, the `ipm publish` command may prompt you for your Inkdrop API Keys which can be created [here](https://my.inkdrop.app/api-keys) on the Inkdrop website. This is required to publish and you only need to enter this information the first time you publish. The credentials are stored securely in your [keychain](https://en.wikipedia.org/wiki/Keychain_(Apple)) once you login.
 
 Your package is now published and available on my.inkdrop.app. Head on over to https://my.inkdrop.app/plugins/wordcount to see your plugin's page.
 

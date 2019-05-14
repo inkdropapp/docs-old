@@ -10,7 +10,7 @@ Inkdrop's text editor is built on top of [CodeMirror](https://codemirror.net/) w
 You can access the instance of CodeMirror like this:
 
 ```js
-inkdrop.getActiveEditor().codeMirror
+inkdrop.getActiveEditor().cm
 ```
 
 You can also get a CodeMirror class object by doing `require('codemirror')`.
