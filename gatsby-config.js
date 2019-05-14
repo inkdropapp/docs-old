@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Inkdrop Documentations`,
     description: `The Note-Taking App with Robust Markdown Editor`,
-    author: `Takuya Matsuyama<t@inkdrop.app>`
+    author: `@inkdrop_app`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
