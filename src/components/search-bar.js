@@ -24,7 +24,8 @@ export default class SearchBar extends Component {
   }
 
   handleSubmit = e => {
-    const keyword = `site:docs.inkdrop.app ${this.input.value}`
+    const domain = location.hostname
+    const keyword = `site:${domain} ${this.input.value}`
     window.location.href = `https://www.google.com/search?hl=en&q=${encodeURIComponent(
       keyword
     )}`
