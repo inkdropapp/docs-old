@@ -68,6 +68,10 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: `summary_large_image`
         },
         {
+          name: `twitter:site`,
+          content: site.siteMetadata.author
+        },
+        {
           name: `twitter:creator`,
           content: site.siteMetadata.author
         },
@@ -81,7 +85,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:image`,
-          content: `/og-cover-image.jpg`
+          content: `https://beta.docs.inkdrop.app/og-cover-image.jpg`
         }
       ]
         .concat(
