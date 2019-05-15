@@ -22,3 +22,7 @@ A common key is generated when you sign up to Inkdrop.
 This key, along with an initialization vector, is used to encrypt your data in GCM (Galois/Counter Mode).
 The key is also encrypted while stored on disk, with a 256-bit AES key derived with PBKDF2 from your login password.
 
+## Don't Forget Your Password
+
+We never store a copy of this common key without encryption and don't use any escrow mechanism to recover your encrypted data. This means that if you forget your login password, we cannot recover your data and we can't even reset your password.
+So we strongly recommend you to use a password manager to store your password of Inkdrop.
