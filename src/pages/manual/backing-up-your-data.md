@@ -14,7 +14,7 @@ You can configure where to store from the preferences:
 Specify the file path for the backup and then click the *'Apply'* button.
 You can also input the file path easily by clicking *'...'* button which opens an dialog to select the directory.
 
-Now your backup folder contains directories and files as following:
+Now your backup folder contains three directories as following:
 
  * **state**: The state information of backup for each client
  * **data**: Documents of your notes, notebooks, tags and attachments
