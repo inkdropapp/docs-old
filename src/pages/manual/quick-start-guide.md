@@ -34,10 +34,6 @@ Inkdrop is both available with a Windows installer and zip archive. The installe
 
 ## Installing Inkdrop on Linux
 
-You have two options to install it.
-
-### via Package
-
 To install Inkdrop on Linux, you can download a Debian package, a RPM package or a zip archive.
 The packages do not have auto-update features.
 So when you would like to upgrade to a new release of Inkdrop, you will have to repeat this installation process.
