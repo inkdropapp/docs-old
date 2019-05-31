@@ -33,12 +33,12 @@ An attachment file
 
 | Name | Type | Description | Example |
 | ------- | ------- | ------- | ------- |
-| **_attachments:index:content_type** | *string* | The content type of the file<br/> **one of:**`"image/png"` or `"image/jpeg"` or `"image/jpg"` or `"image/svg"` or `"image/gif"` or `"image/heic"` or `"image/heif"` | `"image/png"` |
+| **_attachments:index:content_type** | *string* | The content type of the file<br/> **one of:**`"image/png"` or `"image/jpeg"` or `"image/jpg"` or `"image/svg+xml"` or `"image/gif"` or `"image/heic"` or `"image/heif"` | `"image/png"` |
 | **_attachments:index:data** | *string* | The file data | `"example"` |
 | **_id** | *string* | The unique document ID which should start with `file:` and the remains are randomly generated string<br/> **pattern:** `^file:`<br/> **Length:** `6..128` | `"file:By8_nQtce"` |
 | **_rev** | *string* | This is a CouchDB specific field. The current MVCC-token/revision of this document (mandatory and immutable). | `"14-813af5085bb6a2648c3f0aca37fc821f"` |
 | **contentLength** | *number* | The content length of the file | `42.0` |
-| **contentType** | *string* | The MIME type of the content<br/> **one of:**`"image/png"` or `"image/jpeg"` or `"image/jpg"` or `"image/svg"` or `"image/gif"` or `"image/heic"` or `"image/heif"`<br/> **Length:** `0..128` | `"image/png"` |
+| **contentType** | *string* | The MIME type of the content<br/> **one of:**`"image/png"` or `"image/jpeg"` or `"image/jpg"` or `"image/svg+xml"` or `"image/gif"` or `"image/heic"` or `"image/heif"`<br/> **Length:** `0..128` | `"image/png"` |
 | **createdAt** | *number* | The date time when the note was created, represented with Unix timestamps in milliseconds | `42.0` |
 | **name** | *string* | The file name<br/> **Length:** `1..128` | `"example"` |
 | **publicIn** | *array* | An array of the note IDs where the file is included | `[null]` |
