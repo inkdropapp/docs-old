@@ -2,7 +2,7 @@ Plugins add new functionality or provide new look to Inkdrop. You can activate o
 Go to `Preferences > Plugins` on macOS or `File > Settings` on Windows and Linux to see a list of what’s installed.
 To find new plugins to install, please access to [Inkdrop plugin registry](https://my.inkdrop.app/plugins).
 
-Developers can clone or download additional Inkdrop plugins via [GitHub](https://github.com/inkdropapp/). Installation instructions are here. Many of these are community-contributed, and the selection will continue to grow over time.
+Developers can clone or download additional Inkdrop plugins via [GitHub](https://github.com/inkdropapp/). Installation instructions are [here](/manual/extend-inkdrop-with-plugins#installing-plugins). Many of these are community-contributed, and the selection will continue to grow over time.
 
 There are three types of the plugin:
 
