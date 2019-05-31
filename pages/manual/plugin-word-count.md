@@ -353,6 +353,18 @@ Pretty simple! We take the count number that was passed in and place it into a s
 
 ![Word count](/manual/2-3-plugin-word-count-display-count.png)
 
+## Running your Plugin
+
+Before we can run our plugin, we must first tell Inkdrop how to find it. You can do this by running the following command:
+
+```bash
+$ ipm link
+```
+
+<div class="ui info message">
+<strong>Note:</strong> in order for changes in your code to take effect in Inkdrop you must trigger a Reload by pressing <code>Alt+Ctrl+R</code>, or by choosing the menu option <em>Developer &gt; Reload</em>
+</div>
+
 ## Basic Debugging
 
 You'll notice a few `console.log` statements in the code. One of the cool things about Inkdrop being built on Chromium is that you can use some of the same debugging tools available to you that you have when doing web development.
