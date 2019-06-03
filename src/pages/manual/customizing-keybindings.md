@@ -30,3 +30,14 @@ You can see all the keybindings that are currently configured in your installati
 
 By clicking **your keymap file** on the top of this section, you can open up the file.
 
+## Global keybindings
+
+There is a special selector called `global` which lets you configure global keybindings.
+You can run a command when the app does not have keyboard focus.
+
+### Show and focus Inkdrop main window
+
+```coffeescript
+'global':
+  'cmd-shift-x': 'application:show-and-focus-main-window'
+```
