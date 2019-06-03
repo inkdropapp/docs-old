@@ -53,6 +53,14 @@ export default class ManualMenu extends Component {
                   Markdown Cheatsheet
                 </MenuLink>
               </li>
+              {data.appendix.edges.map(edge => {
+                const { path, title } = edge.node.frontmatter
+                return (
+                  <li key={path}>
+                    <MenuLink to={path}>{title}</MenuLink>
+                  </li>
+                )
+              })}
             </ul>
           </Menu>
         )}
@@ -81,6 +89,20 @@ const menuQuery = graphql`
       sort: { order: ASC, fields: [frontmatter___index] }
       limit: 1000
       filter: { frontmatter: { category: { eq: "hacking" } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            path
+            title
+          }
+        }
+      }
+    }
+    appendix: allMarkdownRemark(
+      sort: { order: ASC, fields: [frontmatter___index] }
+      limit: 1000
+      filter: { frontmatter: { category: { eq: "appendix" } } }
     ) {
       edges {
         node {
