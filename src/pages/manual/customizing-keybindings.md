@@ -37,6 +37,8 @@ You can run a command when the app does not have keyboard focus.
 
 ### Show and focus Inkdrop main window
 
+![Bring window into focus](/customizing-keybindings_globalshortcuts.gif)
+
 ```coffeescript
 'global':
   'cmd-shift-x': 'application:show-and-focus-main-window'
