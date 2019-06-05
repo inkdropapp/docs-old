@@ -27,7 +27,6 @@ const Navigation = () => (
               <Img fixed={data.placeholderImage.childImageSharp.fixed} />
             )}
           />
-          <span className="beta-label">BETA</span>
         </Link>
 
         <ul className="app--navbar reset-list un-select">

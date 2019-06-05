@@ -70,5 +70,6 @@ yarn-error.log
 
 # Dynamically generated pages
 src/pages/releases.md
+src/pages/releases-beta.md
 src/pages/releases-mobile.md
 src/pages/reference/data-model.md

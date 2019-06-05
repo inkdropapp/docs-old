@@ -30,13 +30,23 @@ exports.onPreBootstrap = async () => {
    * Generate release notes
    */
   await createPageFromRemoteMd(
-    `https://raw.githubusercontent.com/inkdropapp/version-history-beta/master/README.md`,
+    `https://raw.githubusercontent.com/inkdropapp/version-history/master/README.md`,
     `src/pages/releases.md`,
     {
       index: 20,
       category: 'info',
       path: '/releases',
       title: 'Release Notes'
+    }
+  )
+  await createPageFromRemoteMd(
+    `https://raw.githubusercontent.com/inkdropapp/version-history-beta/master/README.md`,
+    `src/pages/releases-beta.md`,
+    {
+      index: 21,
+      category: 'info',
+      path: '/releases-beta',
+      title: 'Release Notes (Beta)'
     }
   )
   await createPageFromRemoteMd(
