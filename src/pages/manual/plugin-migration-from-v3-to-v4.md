@@ -78,6 +78,15 @@ I admit this breaking change does not make sense but please do so 😂:
 + const { cm } = editor
 ```
 
+## Call `onEditorLoad`
+
+`global.inkdrop` provides a method called `onEditorLoad` to let you watch the editor load.
+
+```diff
+- global.inkdrop.on('editor:init', this.handleEditorInit.bind(this));
++ global.inkdrop.onEditorLoad(this.handleEditorInit.bind(this));
+```
+
 ## Still not working?
 
 Please feel free to report issues on [our forum](https://forum.inkdrop.app/)!
