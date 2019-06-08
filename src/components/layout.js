@@ -30,7 +30,7 @@ const Layout = ({ children, pageTitle }) => (
       <>
         <SEO
           title={pageTitle}
-          keywords={[`inkdrop`, `markdown`, `documentations`]}
+          keywords={[`inkdrop`, `markdown`, `documentation`]}
         />
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
