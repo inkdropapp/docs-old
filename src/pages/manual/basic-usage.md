@@ -25,7 +25,7 @@ To create new notebook, click 'Add' button on the right of 'Notebooks' section:
 
 To create a sub notebook, right click on the notebook item which would be parent and choose "New Sub Notebook.." menu.
 
-## Settings and Preferences
+## Settings and preferences
 
 Inkdrop has a number of settings and preferences you can modify in the Preferences View.
 
@@ -41,3 +41,18 @@ To open the Settings View, you can:
 And you should see the window like this:
 
 ![Preferences](./basic-usage_preferences.png)
+
+## User data directory
+
+Inkdrop stores your data and config in local at following path:
+
+* on macOS: `~/Library/Application Support/inkdrop/`
+* on Windows: `%APPDATA%/inkdrop/`
+* on Linux: `~/.config/inkdrop/`
+
+This directory has following files and folders:
+
+* `config.cson`: The app config file in [CSON format](https://github.com/bevry/cson#what-is-cson)
+* `keymap.cson`: The keybindings config file in [CSON format](https://github.com/bevry/cson#what-is-cson)
+* `packages/`: Installed plugins
+* `db/`: The local database
