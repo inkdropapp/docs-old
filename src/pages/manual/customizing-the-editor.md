@@ -29,3 +29,13 @@ require(modulePath + 'codemirror/addon/fold/foldgutter.js');
 require(modulePath + 'codemirror/addon/fold/markdown-fold.js');
 ```
 
+## When to customize the editor
+
+If you are building a plugin which changes CodeMirror's behaviors, you have to subscribe events to know when the editor is ready.
+`global.inkdrop` provides two methods to subscribe events on the editor. You can use them like so:
+
+```js
+global.inkdrop.onEditorLoad(() => console.log('Editor loaded'));
+global.inkdrop.onEditorUnload(() => console.log('Editor unloaded'));
+```
+
