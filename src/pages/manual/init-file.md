@@ -1,5 +1,5 @@
 ---
-index: 50
+index: 10
 category: "hacking"
 path: "/manual/the-init-file"
 title: "The Init File"
