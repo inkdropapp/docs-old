@@ -7,7 +7,7 @@ title: "Resizing Images"
 
 Inkdrop basically follows GitHub-flavored Markdown which does not support specifying image size.
 To change image sizes in your notes, you have to define [custom stylesheet](/manual/style-tweaks).
-Add a following rules to your `styles.less`:
+Add following rules to your `styles.less`:
 
 ```less
 .editor {
