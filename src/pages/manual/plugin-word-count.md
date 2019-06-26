@@ -20,7 +20,7 @@ You can see that `ipm` has created about a dozen files that make up the plugin. 
 The basic plugin layout is as follows:
 
 ```
-word-counter/
+wordcount/
 ├── keymaps
 │   └── wordcount.json
 ├── lib
