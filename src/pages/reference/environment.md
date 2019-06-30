@@ -17,23 +17,27 @@ A [CommandRegistry](/reference/command-registry) instance
 
 ### config
 
-A Config instance
+A [Config](/reference/config) instance
 
 ### contextMenu
 
-A ContextMenuManager instance
+A [ContextMenuManager](/reference/context-menu-manager) instance
 
 ### menu
 
-A MenuManager instance
+A [MenuManager](/reference/menu-manager) instance
 
 ### keymaps
 
-A KeymapManager instance
+A [KeymapManager](/reference/keymap-manager) instance
+
+### layouts
+
+A LayoutManager instance
 
 ### notifications
 
-A NotificationManager instance
+A [NotificationManager](/reference/notification-manager) instance
 
 ### packages
 
