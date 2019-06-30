@@ -41,15 +41,15 @@ A [NotificationManager](/reference/notification-manager) instance
 
 ### packages
 
-A PackageManager instance
+A [PackageManager](/reference/package-manager) instance
 
 ### themes
 
-A ThemeManager instance
+A [ThemeManager](/reference/theme-manager) instance
 
 ### styles
 
-A StyleManager instance
+A [StyleManager](/reference/style-manager) instance
 
 ### store
 
