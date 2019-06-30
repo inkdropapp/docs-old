@@ -20,11 +20,15 @@ exports.onCreateWebpackConfig = ({ stage: _stage, actions }) => {
 }
 
 exports.onPreBootstrap = async () => {
-  async function createPageFromRemoteMd(url, pagePath, frontmatter) {
+  async function createPageFromRemoteMd(url, pagePath, frontmatter, options) {
     const res = await fetch(url)
     const md = await res.text()
     const fm = yaml.safeDump(frontmatter)
-    fs.writeFileSync(path.resolve(pagePath), `---\n${fm}---\n\n${md}`)
+    const { header } = options || {}
+    fs.writeFileSync(
+      path.resolve(pagePath),
+      `---\n${fm}---\n\n${header || ''}\n${md}`
+    )
   }
   /*
    * Generate release notes
@@ -47,6 +51,9 @@ exports.onPreBootstrap = async () => {
       category: 'info',
       path: '/releases-beta',
       title: 'Release Notes (Beta)'
+    },
+    {
+      header: `You can download [the beta version here](http://my.inkdrop.app/download/beta). It is only available for paid users.`
     }
   )
   await createPageFromRemoteMd(
