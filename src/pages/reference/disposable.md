@@ -1,12 +1,16 @@
 ---
-index: 200
+index: 201
 category: classes
 path: /reference/disposable
 title: Disposable
 ---
 
 A handle to a resource that can be disposed.
-You can use it by requiring `event-kit` module.
+You can use it by requiring [event-kit](https://github.com/atom/event-kit) module.
+
+```js
+import { Disposable } from 'event-kit'
+```
 
 ## Methods
 

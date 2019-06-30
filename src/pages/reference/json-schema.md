@@ -8,25 +8,17 @@ title: JSON Schema
 We provide Inkdrop data model definitions in json-schema and flowtype.
 The source code is hosted on [GitHub](https://github.com/inkdropapp/inkdrop-model).
 
-## Install
-
-```sh
-npm install inkdrop-model
-```
-
 ## Usage
 
-### Flowtype
-
-```javascript
-import type { Note, Book, Tag, File } from 'inkdrop-model'
-```
-
 ### Json Schema
+
+You can use schemas by importing `inkdrop-model` module like so:
 
 ```javascript
 import { NoteSchema, BookSchema, TagSchema, FileSchema } from 'inkdrop-model'
 ```
+
+### Validating data
 
 You can validate data with json schemas.
 Below example uses [ajv](https://github.com/epoberezkin/ajv) as a validator:
