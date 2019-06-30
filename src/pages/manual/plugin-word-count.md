@@ -206,7 +206,7 @@ You can also add separators and submenus to your context menus. To add a submenu
 
 Currently with the generated package we have, if we run that `wordcount:toggle` command through the menu or the command palette, we'll get a dialog that says "Word Count was toggled!".
 
-![Dialog](/manual/2-3-plugin-word-count-dialog.png)
+![Dialog](plugin-word-count_dialog.png)
 
 ### Understanding the Generated Code
 
