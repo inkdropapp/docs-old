@@ -15,6 +15,10 @@ An instance of this class is always available as the `inkdrop` global.
 
 A [CommandRegistry](/reference/command-registry) instance
 
+### components
+
+A [ComponentManager](/reference/component-manager) instance
+
 ### config
 
 A [Config](/reference/config) instance
