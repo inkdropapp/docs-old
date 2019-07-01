@@ -69,7 +69,7 @@ A [StyleManager](/reference/style-manager) instance
 
 ### store
 
-A Redux store
+A [Redux store](https://redux.js.org/api/store)
 
 ### window
 

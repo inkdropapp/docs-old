@@ -43,6 +43,20 @@ export default class RefereneMenu extends Component {
                 )
               })}
             </ul>
+            <h3 className="ui header">
+              <i className="dot warehouse icon" />
+              <div className="content">Store</div>
+            </h3>
+            <ul className="article-list">
+              {data.store.edges.map(edge => {
+                const { path, title } = edge.node.frontmatter
+                return (
+                  <li key={path}>
+                    <MenuLink to={path}>{title}</MenuLink>
+                  </li>
+                )
+              })}
+            </ul>
           </Menu>
         )}
       />
@@ -70,6 +84,20 @@ const menuQuery = graphql`
       sort: { order: ASC, fields: [frontmatter___index] }
       limit: 1000
       filter: { frontmatter: { category: { eq: "classes" } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            path
+            title
+          }
+        }
+      }
+    }
+    store: allMarkdownRemark(
+      sort: { order: ASC, fields: [frontmatter___index] }
+      limit: 1000
+      filter: { frontmatter: { category: { eq: "redux-store" } } }
     ) {
       edges {
         node {
