@@ -1,5 +1,5 @@
 ---
-index: 1900
+index: 1200
 category: flux-state
 path: /reference/state-notes
 title: notes
