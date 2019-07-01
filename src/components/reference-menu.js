@@ -44,11 +44,11 @@ export default class RefereneMenu extends Component {
               })}
             </ul>
             <h3 className="ui header">
-              <i className="dot warehouse icon" />
-              <div className="content">Store</div>
+              <i className="dot recycle icon" />
+              <div className="content">State</div>
             </h3>
             <ul className="article-list">
-              {data.store.edges.map(edge => {
+              {data.state.edges.map(edge => {
                 const { path, title } = edge.node.frontmatter
                 return (
                   <li key={path}>
@@ -94,10 +94,10 @@ const menuQuery = graphql`
         }
       }
     }
-    store: allMarkdownRemark(
+    state: allMarkdownRemark(
       sort: { order: ASC, fields: [frontmatter___index] }
       limit: 1000
-      filter: { frontmatter: { category: { eq: "redux-store" } } }
+      filter: { frontmatter: { category: { eq: "flux-state" } } }
     ) {
       edges {
         node {

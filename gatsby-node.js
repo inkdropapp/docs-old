@@ -90,7 +90,7 @@ exports.createPages = async ({ actions, graphql }) => {
         return infoTemplate
       case 'data':
       case 'classes':
-      case 'redux-store':
+      case 'flux-state':
         return referenceTemplate
       default:
         return manualTemplate

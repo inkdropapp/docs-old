@@ -1,12 +1,12 @@
 ---
-index: 100
-category: redux-store
-path: /reference/store-notes
+index: 1900
+category: flux-state
+path: /reference/state-notes
 title: notes
 ---
 
 An app state of notes currently loaded for the note list bar.
-To get the notes state:
+To get the `notes` state:
 
 ```js
 const { notes } = inkdrop.store.getState()
@@ -27,23 +27,21 @@ const MyComponent = connector(props => {
 })
 ```
 
-## Properties
+## Data Structure
 
 ### items: `Note[]`
 
-An array of [Note][Note]
+An array of [Note][Note]s.
 
 ### hashedItems: `{ [noteId]: Note }`
 
 A map which keys are noteId and values are [Note][Note].
 
-[Note]: /reference/data-models#a-nameresource-notenotea
-
-### lastQuery?: `NoteQuery`
+### lastQuery: `?NoteQuery`
 
 The last note query to show the list of notes
 
-### cursor?: `NoteQueryCursor | null`
+### cursor: `NoteQueryCursor | null`
 
 The current cursor to list the notes
 
@@ -55,10 +53,12 @@ Number of items
 
 Last datetime when the state was changed
 
-### viewOptions?: `NotesViewOptions`
+### viewOptions: `?NotesViewOptions`
 
 The note list view options
 
 ### loading: `boolean`
 
 true while notes are being loaded
+
+[Note]: /reference/data-models#a-nameresource-notenotea
