@@ -41,7 +41,7 @@ A [KeymapManager](/reference/keymap-manager) instance
 
 ### layouts
 
-A LayoutManager instance
+A [LayoutManager](/reference/layout-manager) instance
 
 ### main
 

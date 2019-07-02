@@ -11,7 +11,6 @@ You can access a global instance of this class via `inkdrop.commands`.
 The global command registry facilitates a style of event handling known as event delegation. Inkdrop commands are expressed as custom DOM events that can be invoked on the currently focused element via a key binding.
 Rather than binding listeners for command events directly to DOM nodes, you instead register command event listeners globally on `inkdrop.commands` and constrain them to specific kinds of elements with DOM nodes.
 
-
 Command names must follow the `namespace:action` pattern, where `namespace` will typically be the name of your package, and `action` describes the behavior of your command.
 If either part consists of multiple words, these must be separated by hyphens. E.g. `awesome-package:turn-it-up-to-eleven`.
 All words should be lowercased.
