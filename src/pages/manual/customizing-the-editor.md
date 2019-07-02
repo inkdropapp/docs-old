@@ -7,7 +7,7 @@ title: "Customizing the Editor"
 
 Inkdrop's text editor is built on top of [CodeMirror](https://codemirror.net/) which is specialized for editing code, and comes with a number of [language modes](https://codemirror.net/mode/index.html) and [addons](https://codemirror.net/doc/manual.html#addons) that implement more advanced editing functionality.
 
-You can access the instance of CodeMirror like this:
+You can access the instance of CodeMirror via [MDE](/reference/mde) like this:
 
 ```js
 inkdrop.getActiveEditor().cm
@@ -35,7 +35,8 @@ If you are building a plugin which changes CodeMirror's behaviors, you have to s
 `global.inkdrop` provides two methods to subscribe events on the editor. You can use them like so:
 
 ```js
-global.inkdrop.onEditorLoad(() => console.log('Editor loaded'));
+global.inkdrop.onEditorLoad((editor) => console.log('Editor loaded'));
 global.inkdrop.onEditorUnload(() => console.log('Editor unloaded'));
 ```
 
+See also [this page](/reference/environment#event-subscription) for more detail about the event subscription.
