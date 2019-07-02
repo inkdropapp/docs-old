@@ -123,10 +123,12 @@ exports.createPages = async ({ actions, graphql }) => {
   }
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     const { path, category } = node.frontmatter
-    createPage({
-      path,
-      component: getTemplateForCategory(category),
-      context: {} // additional data can be passed via context
-    })
+    if (path && category) {
+      createPage({
+        path,
+        component: getTemplateForCategory(category),
+        context: {} // additional data can be passed via context
+      })
+    }
   })
 }

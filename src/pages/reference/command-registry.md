@@ -62,7 +62,7 @@ Add multiple command listeners associated with a DOM node.
 | `target`  | A DOM node.  |
 | `commands` | An Object mapping command names like `user:insert-date` to listener Functions. |
 
-### dispatch(target, commandName)
+### dispatch(target, commandName, detail)
 
 Simulate the dispatch of a command on a DOM node.
 
@@ -73,4 +73,5 @@ Otherwise, the DOM node in question needs to be attached to the document so the 
 |:----------|:-------------|
 | `target`  | The DOM node at which to start bubbling the command event. |
 | `commandName` | String indicating the name of the command to dispatch. |
+| `detail` | Object of parametrs to be passed |
 
