@@ -6,7 +6,7 @@ title: "List of Commands"
 ---
 
 Inkdrop provides a bunch of commands to allow you to associate arbitrary interactions with the features.
-You can bind them with [keystrokes](/reference/keymap-manager), [menu](/reference/menu-manager) and [context menu](/reference/context-menu-manager) from [plugins](/manual/plugin-word-count), [the init file](/reference/the-init-file) or [keymap config file](/manual/customizing-keybindings).
+You can bind them with [keystrokes](/reference/keymap-manager), [menu](/reference/menu-manager) and [context menu](/reference/context-menu-manager) from [plugins](/manual/plugin-word-count), [the init file](/manual/the-init-file) or [keymap config file](/manual/customizing-keybindings).
 Note that some commands like `core:open-note` require parameters so you have to invoke them programmatically with [CommandRegistry](/reference/command-registry) like so:
 
 ```js
