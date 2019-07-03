@@ -24,7 +24,8 @@ But if the same keystroke occurs outside the editor, it instead triggers the nat
 By default, `keymap.cson` is loaded when Inkdrop is started.
 It will always be loaded last, giving you the chance to override bindings that are defined by Inkdrop's core keymaps or third-party packages.
 
-You can see all the keybindings that are currently configured in your installation of Inkdrop in *Keybindings* section on *Preferences* window:
+Available commands can be found [here](/manual/list-of-commands).
+You can also see all the keybindings that are currently configured in your installation of Inkdrop in *Keybindings* section on *Preferences* window:
 
 ![Preferences](./customizing-keybindings_preferences.png)
 
