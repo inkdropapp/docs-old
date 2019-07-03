@@ -393,97 +393,434 @@ Unindents the current lines
 ## Editor commands
 
 ### editor:clear-find
+
+Clears the text in the editor search bar
+
 ### editor:delete-char-after
+
+Deletes the char after the cursor
+
 ### editor:delete-char-before
+
+Deletes the char before the cursor
+
 ### editor:delete-group-after
+
+Deletes the text group after the cursor
+
 ### editor:delete-group-before
+
+Deletes the text group before the cursor
+
 ### editor:delete-line
+
+Deletes the line
+
 ### editor:delete-word-after
+
+Deletes the word after the cursor
+
 ### editor:delete-word-before
+
+Deletes the word before the cursor
+
 ### editor:delete-wrapped-line-left
+
+Deletes the wrapped line left
+
 ### editor:delete-wrapped-line-right
+
+Deletes the wrapped line right
+
 ### editor:find
+
+Toggles the editor search bar
+
 ### editor:find-next
+
+Locates the next item in the editor that matches criteria
+
 ### editor:find-prev
+
+Locates the previous item in the editor that matches criteria
+
 ### editor:find-text
+
+Finds given text in the editor
+
+| Argument | Description |
+| -------- | ----------- |
+| `text` | String, the text to find. |
+
 ### editor:focus
+
+If the editor mode is `'edit'` or `'side-by-side'`, it focuses to the MDE.
+If the editor mode is `'preview'`, it focuses to the preview pane.
+
 ### editor:focus-mde
+
+Moves focus to the MDE.
+
 ### editor:focus-preview
+
+Moves focus to the preview pane.
+
 ### editor:go-char-left
+
+* Selector: `.mde-cm-wrapper`
+
+Moves the cursor to one character left
+
 ### editor:go-char-right
+
+* Selector: `.mde-cm-wrapper`
+
+Moves the cursor to one character right
+
 ### editor:go-doc-end
+
+* Selector: `.mde-cm-wrapper`
+
+Moves the cursor to the end of the document
+
 ### editor:go-doc-start
+
+* Selector: `.mde-cm-wrapper`
+
+Moves the cursor to the start of the document
+
 ### editor:go-group-left
+
+* Selector: `.mde-cm-wrapper`
+
+Moves the cursor to one group left
+
 ### editor:go-group-right
+
+* Selector: `.mde-cm-wrapper`
+
+Moves the cursor to one group right
+
 ### editor:go-line-down
+
+* Selector: `.mde-cm-wrapper`
+
+Moves the cursor to one line down
+
 ### editor:go-line-end
+
+* Selector: `.mde-cm-wrapper`
+
+Moves the cursor to the line end
+
 ### editor:go-line-left
+
+* Selector: `.mde-cm-wrapper`
+
+Moves the cursor to the line left
+
 ### editor:go-line-right
+
+* Selector: `.mde-cm-wrapper`
+
+Moves the cursor to the line right
+
 ### editor:go-line-start
+
+* Selector: `.mde-cm-wrapper`
+
+Moves the cursor to the line start
+
 ### editor:go-line-up
+
+* Selector: `.mde-cm-wrapper`
+
+Moves the cursor to one line up
+
 ### editor:go-page-down
+
+* Selector: `.mde-cm-wrapper`
+
+Moves the cursor to one page down
+
 ### editor:go-page-up
+
+* Selector: `.mde-cm-wrapper`
+
+Moves the cursor to one page up
+
 ### editor:go-word-left
+
+* Selector: `.mde-cm-wrapper`
+
+Moves the cursor to one word left
+
 ### editor:go-word-right
+
+* Selector: `.mde-cm-wrapper`
+
+Moves the cursor to one word right
+
 ### editor:indent
+
+* Selector: `.mde-cm-wrapper`
+
+Indents the currently selected line(s)
+
 ### editor:indent-less
+
+* Selector: `.mde-cm-wrapper`
+
+Unindents the currently selected line(s)
+
 ### editor:indent-more
+
+* Selector: `.mde-cm-wrapper`
+
+Indents one more the currently selected line(s)
+
 ### editor:insert-images
+
+Inserts image files at the cursor to the editing note
+
+| Argument | Description |
+| -------- | ----------- |
+| `pos` | Position to insert with the following keys: |
+| &emsp;`ch` | Number, character position |
+| &emsp;`line` | Number, line position |
+| `files` | [FIleList](https://developer.mozilla.org/en-US/docs/Web/API/FileList), or an Array of [File](https://developer.mozilla.org/en-US/docs/Web/API/File) or [NativeImage](https://electronjs.org/docs/api/native-image) to insert. |
+
 ### editor:jump-to-line
+
+* Selector: `.mde-cm-wrapper`
+
+Toggles a dialog which allows you to jump to the line at the specified number
+
 ### editor:kill-line
+
+* Selector: `.mde-cm-wrapper`
+
+Deletes the line at the cursor
+
 ### editor:new-line
+
+* Selector: `.mde-cm-wrapper`
+
+Insert a new line below the cursor
+
 ### editor:open-line
+
+* Selector: `.mde-cm-wrapper`
+
+Insert a new line above the cursor
+
 ### editor:redo-selection
+
+* Selector: `.mde-cm-wrapper`
+
+Redoes the last selection.
+
 ### editor:replace
+
+Initiates the replace sequence in the editor
+
 ### editor:replace-selection
+
+* Selector: `.mde-cm-wrapper`
+
+Replaces selected text with the given text
+
+| Argument | Description |
+| -------- | ----------- |
+| `text` | String, the text to replace. |
+
 ### editor:save-editor-scroll
+
+<div class="ui warning message">It's a private command</div>
+
 ### editor:save-preview-scroll
+
+<div class="ui warning message">It's a private command</div>
+
 ### editor:scroll-editor-to-line
+
+Scrolls the editor to the given line
+
+| Argument | Description |
+| -------- | ----------- |
+| `line` | Number, the destination line number. |
+
 ### editor:scroll-preview-to-line
+
+Scrolls the preview to the given line
+
+| Argument | Description |
+| -------- | ----------- |
+| `line` | Number, the destination line number. |
+
 ### editor:select-all
+
+* Selector: `.mde-cm-wrapper`
+
+Selects all text in the editor
+
 ### editor:select-lines-downward
+
+* Selector: `.mde-cm-wrapper`
+
+Adds a cursor downward
+
 ### editor:select-lines-upward
+
+* Selector: `.mde-cm-wrapper`
+
+Adds a cursor upward
+
 ### editor:single-selection
+
+* Selector: `.mde-cm-wrapper`
+
+Removes all cursors except the primary one
+
 ### editor:sync-editor-scroll
+
+Syncs the scroll position of the editor with the same position of the preview pane
+
 ### editor:sync-preview-scroll
+
+Syncs the scroll position of the preview pane with the same position of the editor
+
 ### editor:title:focus
+
+Moves focus to the title input bar of the editor
+
 ### editor:toggle-overwrite
+
+* Selector: `.mde-cm-wrapper`
+
+Toggles overwrite mode
+
 ### editor:toggle-task-list
+
+* Selector: `.mde-cm-wrapper`
+
+Toggles task list to the current selections
+
 ### editor:transpose-chars
+
+* Selector: `.mde-cm-wrapper`
+
+Transposes characters at the cursor
+
 ### editor:undo-selection
+
+* Selector: `.mde-cm-wrapper`
+
+Undoes the last selection
+
 ### editor:unindent
+
+* Selector: `.mde-cm-wrapper`
+
+Unindents the current lines
 
 ## Export commands
 
 ### export-as-html:export
+
+Exports selected notes on the note list bar as HTML to disk
+
 ### export-as-markdown:all
+
+Exports all notes as Markdown to disk
+
 ### export-as-markdown:single
+
+Exports the editing note as Markdown to disk
+
 ### export-print:export-as-pdf
+
+Exports the editing note as PDF to disk
+
 ### export-print:print
+
+Prints the editing note
 
 ## Import commands
 
 ### import-html:import-from-file
 
+Imports a note from a HTML file
+
 ## View commands
 
 ### view:sort-by-date-created
+
+Sorts the note list by date created
+
 ### view:sort-by-date-updated
+
+Sorts the note list by date updated
+
 ### view:sort-by-title
+
+Sorts the note list by title
+
 ### view:sort-in-ascending
+
+Sorts the note list in ascending
+
 ### view:sort-in-descending
+
+Sorts the note list in descending
+
 ### view:toggle-distraction-free
+
+Toggles distraction free mode.
+
 ### view:toggle-preview
+
+Toggles the preview pane.
+
 ### view:toggle-side-by-side
+
+Toggles the side-by-side mode.
+
 ### view:toggle-sidebar
+
+Toggles the side bar.
 
 ## Window commands
 
 ### window:close
+
+Closes the window
+
 ### window:decrease-font-size
+
+Decreases the font size in the editor
+
 ### window:increase-font-size
+
+Increases the font size in the editor
+
 ### window:install-shell-commands
+
+Installs `ipm` command to your system
+
 ### window:new-inkdrop-window
+
+Opens up a new window
+
 ### window:reload
+
+Reloads the window
+
 ### window:toggle-dev-tools
+
+Toggles the Developer Tools window
+
 ### window:toggle-full-screen
+
+Toggles full screen mode
+
