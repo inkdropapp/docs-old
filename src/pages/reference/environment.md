@@ -45,7 +45,7 @@ A [LayoutManager](/reference/layout-manager) instance
 
 ### main
 
-A reference to an InkdropApplication instance in the main process
+A reference to an [InkdropApplication](/reference/inkdrop-application) instance in the main process
 
 ### menu
 
