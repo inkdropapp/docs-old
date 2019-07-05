@@ -33,3 +33,7 @@ const MyComponent = connector(props => {
 
 An array of note ID of selected notes on the note list bar.
 
+### actionTargetNoteIds: `string[]`
+
+An array of note ID of target notes for context menu on the note list bar.
+

@@ -65,6 +65,26 @@ Adds a component to specified layout
 | `layoutName` | String, a layout name |
 | `componentClassName` | A React class name which is registered in the [component registry](/reference/component-manager). |
 
+### insertComponentToLayoutBefore(layoutName, referenceComponentClassName, componentClassNameToInsert)
+
+Inserts a component before the reference component to specified layout
+
+| Argument | Description |
+| -------- | ----------- |
+| `layoutName` | String, a layout name |
+| `referenceComponentClassName` | A React class name before which `componentClassName` is inserted. |
+| `componentClassName` | A React class name which is registered in the [component registry](/reference/component-manager). |
+
+### insertComponentToLayoutAfter(layoutName, referenceComponentClassName, componentClassNameToInsert)
+
+Inserts a component after the reference component to specified layout
+
+| Argument | Description |
+| -------- | ----------- |
+| `layoutName` | String, a layout name |
+| `referenceComponentClassName` | A React class name after which `componentClassName` is inserted. |
+| `componentClassName` | A React class name which is registered in the [component registry](/reference/component-manager). |
+
 ### getLayout(name)
 
 Returns a set of components of the specified layout
