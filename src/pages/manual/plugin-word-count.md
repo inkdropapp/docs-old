@@ -327,9 +327,14 @@ We'll do this in a very simple way. When the dialog is toggled, we'll count the 
     console.log('WordCount was toggled!');
     const { dialog } = this.refs;
     if (!dialog.isShown) {
-      const documentBody = inkdrop.activeEditor.cm.doc.getValue();
-      const words = documentBody.split(/\s+/).length;
-      this.setState({ words });
+      const { editingNote } = inkdrop.store.getState();
+      
+      if(editingNote) {
+        const { body } = editingNote;
+        const words = body.split(/\s+/).length;
+        this.setState({ words });        
+      }
+
       dialog.showDialog();
     } else {
       dialog.dismissDialog();
@@ -338,10 +343,10 @@ We'll do this in a very simple way. When the dialog is toggled, we'll count the 
 ```
 
 Let's look at the 4 lines we've added.
-First we set a `words` to `0` by calling `setState` method.
-Second we get the contents of the current note by calling `inkdrop.activeEditor.cm.doc.getValue()`.
+First we set `words` to `0` by calling `setState` method.
+Secondly we get the [state of the current note](/reference/state-editing-note).
 
-Next we get the number of words by splitting the contents of the current note on whitespace with a regular expression and then getting the length of that array.
+Provided a note is opened, we get its `body` and the number of words by splitting the `body` on whitespace with a regular expression and then getting the length of that array.
 
 Finally, we tell our message dialog to update the word count it displays by calling the `setState()` method on our dialog and then showing the modal again. Let's add a code to display the word count through the `render` method of our `lib/wordcount-message-dialog.js` file:
 
