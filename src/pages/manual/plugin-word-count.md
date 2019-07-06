@@ -328,21 +328,19 @@ We'll do this in a very simple way. When the dialog is toggled, we'll count the 
     const { dialog } = this.refs;
     if (!dialog.isShown) {
       const { editingNote } = inkdrop.store.getState();
-      
       if(editingNote) {
         const { body } = editingNote;
         const words = body.split(/\s+/).length;
         this.setState({ words });        
+        dialog.showDialog();
       }
-
-      dialog.showDialog();
     } else {
       dialog.dismissDialog();
     }
   }
 ```
 
-Let's look at the 4 lines we've added.
+Let's look at the lines we've added.
 First we set `words` to `0` by calling `setState` method.
 Secondly we get the [state of the current note](/reference/state-editing-note).
 
