@@ -109,6 +109,19 @@ Returns a set of React component classes of the specified layout
 
 An array of React component classes
 
+### indexOfComponentInLayout(layoutName, componentClassName)
+
+Returns the first index at which a given component can be found in the specified layout, or `-1` if cannot found.
+
+| Argument | Description |
+| -------- | ----------- |
+| `layoutName` | String, a layout name |
+| `componentClassName` | A React class name to search. |
+
+#### Return values
+
+Number
+
 ### removeComponentFromLayout(layoutName, componentClassName)
 
 Removes a component from specified layout
