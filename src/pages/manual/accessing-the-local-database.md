@@ -11,7 +11,7 @@ Data is written to the local database first, then synced with the remote databas
 
 ![Data flow](./accessing-the-local-database_data-flow.png)
 
-## Accessing the data from plugins
+## Accessing the data from plugins (Recommended)
 
 There is a class called [InkdropDatabase](/reference/inkdrop-database) which wraps PouchDB and provides a bunch of useful methods that help you access the local database for managing notes, notebooks, tags and images.
 
@@ -22,7 +22,7 @@ const db = inkdrop.main.dataStore.getLocalDB()
 const note = await db.notes.get('note:F8xUp-23G')
 ```
 
-## Accessing the PouchDB instance
+## Accessing the PouchDB instance (Advanced)
 
 There is a global variables named [`inkdrop`](/reference/environment) which allows you to access the internal objects of Inkdrop.
 It has [`main`](/reference/inkdrop-application) property, which is a reference to the inkdrop instance in the main process.
