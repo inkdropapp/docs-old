@@ -117,11 +117,15 @@ Keymaps are placed in the `keymaps` subdirectory. By default, all keymaps are lo
 
 Keybindings are executed by determining which element the keypress occurred on. In the example above, the `wordcount:toggle` command is executed when pressing `Alt+Ctrl+O` on the `body` element. This means the key combination will work anywhere in the application.
 
+See also: [Keymap Manager](/reference/keymap-manager)
+
 ### Menus
 
 Menus are placed in the `menus` subdirectory. This defines menu elements like what pops up when you right click a context-menu or would go in the application menu to trigger functionality in your plugin.
 
 By default, all menus are loaded in alphabetical order. An optional `menus` array in your `package.json` can specify which menus to load and in what order.
+
+See also: [Menu Manager](/reference/menu-manager)
 
 ### Application Menu
 
@@ -268,7 +272,7 @@ This component implements following four methods:
  * `render` - invoked when React renders your component. See [here](https://facebook.github.io/react/docs/tutorial.html) for more information.
  * `toggle` - invoked when `wordcount:toggle` is dispatched.
 
-In the `componentWillMount` method, it creates an instance of the `CompositeDisposable` class so it can register all the commands that can be called from the plugin so other plugins could subscribe to these events.
+In the `componentWillMount` method, it creates an instance of the [CompositeDisposable](/reference/composite-disposable) class so it can register all the commands that can be called from the plugin so other plugins could subscribe to these events.
 
 The second file we have is the main entry point to the plugin. Again, because it's referenced in the `package.json` file. Let's take a look at that file, it's pretty simple:
 
@@ -292,7 +296,9 @@ module.exports = {
 };
 ```
 
-In the `activate` method called on activation of the plugin, it registers the `WordcountMessageDialog` class to a Inkdrop component registry and adds it to a hidden modal collection.
+In the `activate` method called on activation of the plugin, it registers the `WordcountMessageDialog` class to a [Inkdrop component registry](/reference/component-manager) and adds it to a hidden modal layout.
+
+See also: [Component Manager](/reference/component-manager) and [Layout Manager](/reference/layout-manager)
 
 ### The Flow
 
