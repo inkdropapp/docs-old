@@ -229,3 +229,13 @@ The toolbar layout of the editor
 []
 ```
 
+### editor-status-bar
+
+The status bar layout of the editor
+
+### Default value
+
+```js
+[]
+```
+
