@@ -74,6 +74,9 @@ exports.onPreBootstrap = async () => {
       category: 'data',
       path: '/reference/data-models',
       title: 'Data Models'
+    },
+    {
+      header: `* [Book](#a-nameresource-bookbooka)\n* [File](#a-nameresource-filefilea)\n* [Note](#a-nameresource-notenotea)\n* [Tag](#a-nameresource-tagtaga)\n`
     }
   )
 }

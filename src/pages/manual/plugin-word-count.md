@@ -219,6 +219,9 @@ You can install the plugin locally for development.
 
 Run `ipm link --dev` to symlink your repository to `/dev/packages` in [the user data directory](/manual/basic-usage#user-data-directory).
 
+Then, reload Inkdrop using `Alt+Cmd+Ctrl+L` / `Alt+Ctrl+L`.
+
+
 ### Understanding the Generated Code
 
 Let's take a look at the code in our `lib` directory and see what is happening.
