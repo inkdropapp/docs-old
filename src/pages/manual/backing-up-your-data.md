@@ -1,6 +1,7 @@
 ---
 index: 100
 category: "usage"
+toc: false
 path: "/manual/backing-up-your-data"
 title: "Backing Up Your Data"
 ---

@@ -1,6 +1,7 @@
 ---
 index: 110
 category: "usage"
+toc: false
 path: "/manual/sharing-your-notes-on-the-web"
 title: "Sharing Your Notes on the Web"
 ---

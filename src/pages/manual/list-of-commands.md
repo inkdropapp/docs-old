@@ -1,6 +1,7 @@
 ---
 index: 70
 category: "hacking"
+toc: false
 path: "/manual/list-of-commands"
 title: "List of Commands"
 ---

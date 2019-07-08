@@ -1,6 +1,7 @@
 ---
 index: 50
 category: "usage"
+toc: false
 path: "/manual/synchronizing-in-the-cloud"
 title: "Synchronizing in the Cloud"
 ---

@@ -1,6 +1,7 @@
 ---
 index: 80
 category: "usage"
+toc: false
 path: "/manual/recovering-your-password"
 title: "Recovering Your Password"
 ---

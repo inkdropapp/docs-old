@@ -1,6 +1,7 @@
 ---
 index: 90
 category: "usage"
+toc: false
 path: "/manual/working-behind-a-corporate-web-proxy"
 title: "Working Behind Web Proxy"
 ---

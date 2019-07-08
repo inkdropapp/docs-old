@@ -1,6 +1,7 @@
 ---
 index: 140
 category: "usage"
+toc: false
 path: "/manual/resizing-images"
 title: "Resizing Images"
 ---

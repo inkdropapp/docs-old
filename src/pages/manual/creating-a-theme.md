@@ -1,6 +1,7 @@
 ---
 index: 20
 category: "hacking"
+toc: true
 path: "/manual/creating-a-theme"
 title: "Creating a Theme"
 ---

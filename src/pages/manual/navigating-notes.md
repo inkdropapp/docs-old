@@ -1,6 +1,7 @@
 ---
 index: 20
 category: "usage"
+toc: false
 path: "/manual/navigating-notes"
 title: "Navigating Notes"
 ---

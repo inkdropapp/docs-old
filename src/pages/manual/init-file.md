@@ -1,6 +1,7 @@
 ---
 index: 10
 category: "hacking"
+toc: false
 path: "/manual/the-init-file"
 title: "The Init File"
 ---

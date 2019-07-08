@@ -1,6 +1,7 @@
 ---
 index: 2
 category: "usage"
+toc: false
 path: "/manual/basic-usage"
 title: "Basic Usage"
 ---

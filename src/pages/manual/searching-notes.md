@@ -1,6 +1,7 @@
 ---
 index: 40
 category: "usage"
+toc: false
 path: "/manual/searching-notes"
 title: "Searching Notes"
 ---

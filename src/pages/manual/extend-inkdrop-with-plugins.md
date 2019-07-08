@@ -1,6 +1,7 @@
 ---
 index: 70
 category: "usage"
+toc: false
 path: "/manual/extend-inkdrop-with-plugins"
 title: "Extend Inkdrop with Plugins"
 ---

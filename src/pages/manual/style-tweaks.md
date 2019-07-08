@@ -1,6 +1,7 @@
 ---
 index: 11
 category: "hacking"
+toc: false
 path: "/manual/style-tweaks"
 title: "Style Tweaks"
 ---

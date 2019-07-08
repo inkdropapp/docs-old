@@ -1,6 +1,7 @@
 ---
 index: 40
 category: "hacking"
+toc: false
 path: "/manual/flux-architecture"
 title: "Getting & Modifying the App State"
 ---

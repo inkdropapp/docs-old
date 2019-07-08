@@ -1,6 +1,7 @@
 ---
 index: 60
 category: "usage"
+toc: false
 path: "/manual/customizing-keybindings"
 title: "Customizing Keybindings"
 ---

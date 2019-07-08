@@ -1,6 +1,7 @@
 ---
 index: 130
 category: "usage"
+toc: false
 path: "/manual/revision-history"
 title: "Restore Old Revisions"
 ---

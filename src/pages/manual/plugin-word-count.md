@@ -1,13 +1,14 @@
 ---
 index: 30
 category: "hacking"
+toc: true
 path: "/manual/plugin-word-count"
 title: "Plugin: Word Count"
 ---
 
 Let's get started by writing a very simple plugin and looking at some of the tools needed to develop one effectively. We'll start by writing a plugin that tells you how many words are in the current editor and display it in a small modal window.
 
-## Scaffolding your plugin
+## Scaffolding Your Plugin
 
 You can generate code scaffolding by running following command:
 
@@ -206,11 +207,17 @@ You can also add separators and submenus to your context menus. To add a submenu
 }
 ```
 
-## Developing Our Plugin
+## Developing Your Plugin
 
 Currently with the generated package we have, if we run that `wordcount:toggle` command through the menu or the command palette, we'll get a dialog that says "Word Count was toggled!".
 
 ![Dialog](plugin-word-count_dialog.png)
+
+### Linking to the App Locally
+
+You can install the plugin locally for development.
+
+Run `ipm link --dev` to symlink your repository to `/dev/packages` in [the user data directory](/manual/basic-usage#user-data-directory).
 
 ### Understanding the Generated Code
 

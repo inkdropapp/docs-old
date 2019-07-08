@@ -1,6 +1,7 @@
 ---
 index: 10
 category: "usage"
+toc: false
 path: "/manual/writing-note"
 title: "Writing Note"
 ---

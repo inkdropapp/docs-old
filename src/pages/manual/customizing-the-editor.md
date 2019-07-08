@@ -1,6 +1,7 @@
 ---
 index: 60
 category: "hacking"
+toc: false
 path: "/manual/customizing-the-editor"
 title: "Customizing the Editor"
 ---

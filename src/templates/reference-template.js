@@ -28,6 +28,7 @@ export const pageQuery = graphql`
         path
         title
       }
+      tableOfContents
     }
   }
 `

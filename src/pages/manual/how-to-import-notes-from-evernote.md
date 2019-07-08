@@ -1,6 +1,7 @@
 ---
 index: 120
 category: "usage"
+toc: false
 path: "/manual/how-to-import-notes-from-evernote"
 title: "How to Import Your Notes from Evernote"
 ---

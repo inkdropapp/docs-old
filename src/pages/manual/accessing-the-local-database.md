@@ -1,6 +1,7 @@
 ---
 index: 50
 category: "hacking"
+toc: false
 path: "/manual/accessing-the-local-database"
 title: "Accessing the Local Database"
 ---
