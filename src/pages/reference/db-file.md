@@ -90,3 +90,44 @@ A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Gl
 ```
 
 Or it will reject with an error if it failed to delete.
+
+### countAll()
+
+Counts a number of files
+
+#### Return values
+
+A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that will resolve with the number of files.
+
+### all()
+
+Retrieves all files
+
+#### Return values
+
+A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that will resolve with an array of [File](/reference/data-models#a-nameresource-filefilea).
+
+Example response:
+
+```js
+[
+  {
+    createdAt: 1537774057842,
+    name: 'IMG_1004 copy.JPG',
+    contentType: 'image/jpeg',
+    contentLength: 40020,
+    md5digest: '9e00f2a9242499ccd3c47dbfa802d548',
+    revpos: 1,
+    _attachments: {
+      index: {
+        digest: 'md5-ngDyqSQkmczTxH2/qALVSA==',
+        content_type: 'image/jpeg',
+        revpos: 1,
+        data: '...(base64)...'
+      }
+    }
+  },
+  ...
+]
+```
+

@@ -88,3 +88,58 @@ A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Gl
 ```
 
 Or it will reject with an error if it failed to delete.
+
+### countAll()
+
+Counts a number of notebooks
+
+#### Return values
+
+A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that will resolve with the number of notebooks.
+
+### all()
+
+Retrieves all notebooks
+
+#### Return values
+
+A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that will resolve with an array of [Book](/reference/data-models#a-nameresource-bookbooka).
+
+Example response:
+
+```js
+[
+  {
+    updatedAt: 1475549348850,
+    createdAt: 1475549348850,
+    count: 0,
+    name: 'Inbox',
+    parentBookId: null,
+    migratedBy: 'migrateAddingParentBookId',
+    _id: 'book:SkTsOceR',
+    _rev: '2-aa25f8bfe83cfcd6910fbb78c8e45eeb'
+  },
+  ...
+]
+```
+
+### allIds()
+
+Retrieves all notebook IDs.
+
+#### Return values
+
+A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that will resolve with an array of notebook IDs.
+
+### findWithName(name)
+
+Retrieves a notebook with the given name
+
+| Argument | Description |
+| -------- | ----------- |
+| `name` | String, a notebook name to find. |
+
+#### Return values
+
+A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that will resolve with a [Book](/reference/data-models#a-nameresource-bookbooka) data if found or undefined if not found, or will reject if failed to get.
+

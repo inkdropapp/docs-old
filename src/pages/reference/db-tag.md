@@ -88,3 +88,49 @@ A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Gl
 ```
 
 Or it will reject with an error if it failed to delete.
+
+### countAll()
+
+Counts a number of tags
+
+#### Return values
+
+A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that will resolve with the number of tags.
+
+### all()
+
+Retrieves all tags
+
+#### Return values
+
+A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that will resolve with an array of [Tag](/reference/data-models#a-nameresource-tagtaga).
+
+Example response:
+
+```js
+[
+  {
+    color: 'teal',
+    updatedAt: 1558591583616,
+    createdAt: 1558591574807,
+    count: 0,
+    name: 'Web',
+    _id: 'tag:utZx58AKj',
+    _rev: '2-f329584c979e7ccce05da55bc24859ac'
+  },
+  ...
+]
+```
+
+### findWithName(name)
+
+Retrieves a tag with the given name
+
+| Argument | Description |
+| -------- | ----------- |
+| `name` | String, a tag name to find. |
+
+#### Return values
+
+A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that will resolve with a [Tag](/reference/data-models#a-nameresource-tagtaga) data if found or undefined if not found, or will reject if failed to get.
+
