@@ -1,5 +1,5 @@
 ---
-index: 70
+index: 80
 category: "hacking"
 toc: false
 path: "/manual/list-of-commands"
