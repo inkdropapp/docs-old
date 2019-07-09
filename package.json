@@ -1,7 +1,7 @@
 {
   "name": "inkdrop-docs",
   "private": true,
-  "description": "Inkdrop documentations",
+  "description": "Inkdrop documentation",
   "version": "0.1.0",
   "author": "Takuya Matsuyama <t@inkdrop.app>",
   "dependencies": {

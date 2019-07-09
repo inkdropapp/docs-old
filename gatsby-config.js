@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Inkdrop Documentations`,
+    title: `Inkdrop Documentation`,
     description: `The Note-Taking App with Robust Markdown Editor`,
     author: `@inkdrop_app`
   },
