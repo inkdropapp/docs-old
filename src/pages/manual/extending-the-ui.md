@@ -69,6 +69,8 @@ render() {
 
 * [Example: LayoutExampleLeftMostBar](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-left-most-bar.js)
 
+It inserts a component into ['main:full'](/reference/state-layouts#mainfull) layout.
+
 ### Adding a sidebar menu item
 
 * [Example: LayoutExampleSidebarMenuItem](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-sidebar-menu-item.js)
