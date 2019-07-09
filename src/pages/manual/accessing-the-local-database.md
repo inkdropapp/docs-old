@@ -16,7 +16,7 @@ Data is written to the local database first, then synced with the remote databas
 
 There is a class called [InkdropDatabase](/reference/inkdrop-database) which wraps PouchDB and provides a bunch of useful methods that help you access the local database for managing notes, notebooks, tags and images.
 
-For example, below code gets a note data directly from the local database:
+For example, below code gets data directly from the local database:
 
 ```js
 const db = inkdrop.main.dataStore.getLocalDB()
@@ -29,7 +29,16 @@ const books = await db.books.all()
 
 // Get notes in a notebook
 const notesInBook = await db.notes.findInBook(books[0]._id)
+
+// Search notes with keywords
+const result = await db.utils.search('Foobar')
+const { docs } = result
+console.log('Search result:', docs)
 ```
+
+<div class="ui info message">
+<strong>NOTE</strong>: Returned objects from the database represent <a href="https://github.com/electron/electron/blob/master/docs/api/remote.md#remote-objects">Remote Objects</a>.
+</div>
 
 ## Accessing the PouchDB instance (Advanced)
 

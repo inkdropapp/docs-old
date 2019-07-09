@@ -17,6 +17,12 @@ inkdrop.commands.dispatch(document.body, 'core:open-note', { noteId: 'note:uugSv
 ## Application commands
 
 Special commands that run in the main process to control the Inkdrop app.
+To invoke them, do like so:
+
+```js
+import { ipcRenderer } from 'electron'
+ipcRenderer.send('command', 'application:about', {})
+```
 
 ### application:about
 
