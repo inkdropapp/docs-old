@@ -1,6 +1,6 @@
 ---
 index: 1101
-category: classes
+category: data-access
 path: /reference/db-book
 title: DBBook
 ---

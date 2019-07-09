@@ -1,6 +1,6 @@
 ---
 index: 1102
-category: classes
+category: data-access
 path: /reference/db-tag
 title: DBTag
 ---

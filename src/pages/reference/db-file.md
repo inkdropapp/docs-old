@@ -1,6 +1,6 @@
 ---
 index: 1103
-category: classes
+category: data-access
 path: /reference/db-file
 title: DBFile
 ---

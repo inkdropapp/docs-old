@@ -20,7 +20,15 @@ For example, below code gets a note data directly from the local database:
 
 ```js
 const db = inkdrop.main.dataStore.getLocalDB()
+
+// Get a note data by note ID
 const note = await db.notes.get('note:F8xUp-23G')
+
+// Get all notebooks
+const books = await db.books.all()
+
+// Get notes in a notebook
+const notesInBook = await db.notes.findInBook(books[0]._id)
 ```
 
 ## Accessing the PouchDB instance (Advanced)

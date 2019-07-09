@@ -46,11 +46,18 @@ export default class RefereneMenu extends Component {
               {data.states.edges.map(this.renderMenuItem)}
             </ul>
             <h3 className="ui header">
-              <i className="dot bolt icon" />
+              <i className="bolt icon" />
               <div className="content">Actions</div>
             </h3>
             <ul className="article-list">
               {data.actions.edges.map(this.renderMenuItem)}
+            </ul>
+            <h3 className="ui header">
+              <i className="database icon" />
+              <div className="content">Data Access</div>
+            </h3>
+            <ul className="article-list">
+              {data.db.edges.map(this.renderMenuItem)}
             </ul>
           </Menu>
         )}
@@ -76,7 +83,7 @@ const menuQuery = graphql`
       }
     }
     classes: allMarkdownRemark(
-      sort: { order: ASC, fields: [frontmatter___index] }
+      sort: { order: ASC, fields: [frontmatter___title] }
       limit: 1000
       filter: { frontmatter: { category: { eq: "classes" } } }
     ) {
@@ -107,6 +114,20 @@ const menuQuery = graphql`
       sort: { order: ASC, fields: [frontmatter___index] }
       limit: 1000
       filter: { frontmatter: { category: { eq: "flux-action" } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            path
+            title
+          }
+        }
+      }
+    }
+    db: allMarkdownRemark(
+      sort: { order: ASC, fields: [frontmatter___index] }
+      limit: 1000
+      filter: { frontmatter: { category: { eq: "data-access" } } }
     ) {
       edges {
         node {

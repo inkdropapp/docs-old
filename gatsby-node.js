@@ -95,6 +95,7 @@ exports.createPages = async ({ actions, graphql }) => {
       case 'classes':
       case 'flux-state':
       case 'flux-action':
+      case 'data-access':
         return referenceTemplate
       default:
         return manualTemplate

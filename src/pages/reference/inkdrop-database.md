@@ -1,6 +1,6 @@
 ---
 index: 1010
-category: classes
+category: data-access
 path: /reference/inkdrop-database
 title: Inkdrop Database
 ---

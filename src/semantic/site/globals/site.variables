@@ -4,6 +4,7 @@
 
 @headerFont: 'M PLUS Rounded 1c', 'SF UI Text', 'Helvetica Neue', 'Helvetica', 'Roboto', sans-serif;
 @pageFont: 'SF UI Text', 'Helvetica Neue', 'Helvetica', 'Roboto', sans-serif;
+@useCustomScrollbars: false;
 
 @fontSize         : 14px;
 @pageBackground   : #f6f9fe;

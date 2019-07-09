@@ -1,6 +1,6 @@
 ---
 index: 1100
-category: classes
+category: data-access
 path: /reference/db-note
 title: DBNote
 ---
