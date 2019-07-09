@@ -141,6 +141,14 @@ Emphersize currently selected text
 
 Empties trash
 
+### core:filter-notes
+
+Filters current note list items with given keywords
+
+| Argument | Description |
+| -------- | ----------- |
+| `keyword` | The keywords to filter. |
+
 ### core:filter-by-tag
 
 Adds a filter condition with specified tag
@@ -284,6 +292,14 @@ Saves the currently editing note to the local database
 ### core:select-all
 
 Select all text
+
+### core:search-notes
+
+Search notes globally with given keywords
+
+| Argument | Description |
+| -------- | ----------- |
+| `keyword` | The keywords to search. |
 
 ### core:share-note
 
