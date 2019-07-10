@@ -57,7 +57,7 @@ exports.onPreBootstrap = async () => {
     }
   )
   await createPageFromRemoteMd(
-    `https://unpkg.com/inkdrop-version-history-mobile@latest/README.md`,
+    `https://raw.githubusercontent.com/inkdropapp/version-history-mobile/master/README.md`,
     `src/pages/releases-mobile.md`,
     {
       index: 30,
