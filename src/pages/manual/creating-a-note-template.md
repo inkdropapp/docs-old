@@ -8,7 +8,7 @@ title: "Creating a Note Template"
 
 Once Inkdrop got become a part of your daily workflow, you may want to save time and effort with note templates.
 Inkdrop provides powerful APIs to let you do that.
-Here is a workthrough to make a note template for journaling.
+Here is a walkthrough to make a note template for journaling.
 
 ## Create a note for template
 
