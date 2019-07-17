@@ -14,6 +14,16 @@ Note that some commands like `core:open-note` require parameters so you have to 
 inkdrop.commands.dispatch(document.body, 'core:open-note', { noteId: 'note:uugSvPq5r' })
 ```
 
+## Table of Contents
+
+* [Application commands](#application-commands)
+* [Core commands](#core-commands)
+* [Editor commands](#editor-commands)
+* [Export commands](#export-commands)
+* [Import commands](#import-commands)
+* [View commands](#view-commands)
+* [Window commands](#window-commands)
+
 ## Application commands
 
 Special commands that run in the main process to control the Inkdrop app.
