@@ -55,6 +55,7 @@ inkdrop.commands.add(document.body, 'custom:new-journal', async () => {
   try {
     await db.notes.put(note)
     inkdrop.commands.dispatch(document.body, 'core:open-note', { noteId: note._id })
+    inkdrop.commands.dispatch(document.body, 'editor:focus-mde')
   } catch (e) {
     console.error(e)
   }
@@ -103,6 +104,12 @@ It saves the manipulated note to the local database by calling [DBNote's `put` m
 ```
 
 It invokes `core:open-note` to open the new note.
+
+```js
+    inkdrop.commands.dispatch(document.body, 'editor:focus-mde')
+```
+
+It invokes `editor:focus-mde` to move focus to the editor.
 
 ## Add a menu to invoke the command
 
