@@ -9,7 +9,7 @@ title: "The Init File"
 When Inkdrop finishes loading, it will evaluate `init.js` in [your data directory](/manual/basic-usage#user-data-directory), giving you a chance to run JavaScript code to make customizations.
 Code in this file has full access to Inkdrop's API. If customizations become extensive, consider creating a plugin, which we will cover in [Package: Word Count](/manual/plugin-word-count).
 
-For example, you could add the following code to yout `init.js` file to have Inkdrop show an alert every time it loads:
+For example, you could add the following code to your `init.js` file to have Inkdrop show an alert every time it loads:
 
 ```js
 alert('Hello')
