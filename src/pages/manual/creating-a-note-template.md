@@ -103,13 +103,13 @@ It saves the manipulated note to the local database by calling [DBNote's `put` m
     inkdrop.commands.dispatch(document.body, 'core:open-note', { noteId: note._id })
 ```
 
-Finally, it invokes `core:open-note` to open the new note.
+It invokes `core:open-note` to open the new note.
 
 ```js
     inkdrop.commands.dispatch(document.body, 'editor:focus-mde')
 ```
 
-It invokes `editor:focus-mde` to move focus to the editor.
+Finally, it invokes `editor:focus-mde` to move focus to the editor.
 
 ## Add a menu to invoke the command
 
