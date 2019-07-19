@@ -6,7 +6,7 @@ path: "/manual/creating-a-note-template"
 title: "Creating a Note Template"
 ---
 
-Once Inkdrop got become a part of your daily workflow, you may want to save time and effort with note templates.
+Once Inkdrop becomes a part of your daily workflow, you may want to save time and effort with note templates.
 Inkdrop provides powerful APIs to let you do that.
 Here is a walkthrough to make a note template for journaling.
 
@@ -16,7 +16,7 @@ Let's create a note something like this. Nothing special.
 
 ![Create a note for template](creating-a-note-template_create-note.png)
 
-You will need a note ID of the note template.
+You will need the note ID of the note template.
 Right-click the note and click *Copy Note Link* menu.
 
 ![Get note ID](creating-a-note-template_get-note-id.png)
@@ -31,13 +31,13 @@ Now you've got a string in clipboard like so:
 
 ## Create a command that duplicates the template
 
-Inkdrop's most operations are executed by [commands](/manual/list-of-commands).
+Most of Inkdrop's operations are executed by [commands](/manual/list-of-commands).
 For example, when you open a note, Inkdrop runs `core:open-note` command internally.
 You can define a [custom command](/reference/command-registry) via [the init file](/manual/the-init-file).
 Let's make a command that creates new note based on your template.
 
 In this example, you define a command named `custom:new-journal`.
-Create `init.js` in [your data directory](/manual/basic-usage#user-data-directory) and write some scripts like so:
+Create `init.js` in [your data directory](/manual/basic-usage#user-data-directory) and write some JavaScript like the following:
 
 
 ```js
@@ -88,7 +88,7 @@ It returns an object that represents [Note](/reference/data-models#a-nameresourc
   }
 ```
 
-It manipulates new note from the template data.
+It builds a new note from the template data.
 The new note should have a unique ID, so it sets new one generated with [DBNote's `createId` method](/reference/db-note#createid) to `_id` field.
 The `_rev` is a special field to handle revisions, which should be `undefined`.
 It sets a new title based on date time by calling [Date::toLocaleDateString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString).
@@ -103,7 +103,7 @@ It saves the manipulated note to the local database by calling [DBNote's `put` m
     inkdrop.commands.dispatch(document.body, 'core:open-note', { noteId: note._id })
 ```
 
-It invokes `core:open-note` to open the new note.
+Finally, it invokes `core:open-note` to open the new note.
 
 ```js
     inkdrop.commands.dispatch(document.body, 'editor:focus-mde')
@@ -114,7 +114,7 @@ It invokes `editor:focus-mde` to move focus to the editor.
 ## Add a menu to invoke the command
 
 Next, we need a way to invoke the command we've made.
-Inkdrop allows you to add custom [menus](/reference/menu-manager) and to run arbitrary commands.
+Inkdrop allows you to add custom [menus](/reference/menu-manager) to run arbitrary commands.
 The below code adds a menu to *File -> Templates -> Create a journal*, which runs `custom:new-journal` command.
 
 ```js
