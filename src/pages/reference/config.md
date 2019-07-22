@@ -158,6 +158,28 @@ Values will be coerced into a Boolean.
 }
 ```
 
+### Other Supported Types
+
+### enum
+
+All types support an `enum` key, which lets you specify all the values the setting can take.
+`enum` may be an array of allowed values (of the specified type).
+
+In this example, the setting must be one of the 3 strings:
+
+```js
+{
+  config: {
+    someSetting: {
+      title: 'some string setting',
+      type: 'string',
+      default: 'foo',
+      enum: ['foo', 'bar', 'baz']
+    }
+  }
+}
+```
+
 ### title and description
 
 The settings view will use the `title` and `description` keys to display your config setting in a readable way.
