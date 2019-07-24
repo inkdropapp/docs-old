@@ -51,6 +51,8 @@ Inkdrop stores your data and config in local at following path:
 * on Windows: `%APPDATA%/inkdrop/`
 * on Linux: `~/.config/inkdrop/`
 
+You can open it up in a file manager from *Preferences -> General -> Open Config Folder*.
+
 This directory has following files and folders:
 
 * `config.cson`: The app config file in [CSON format](https://github.com/bevry/cson#what-is-cson)
