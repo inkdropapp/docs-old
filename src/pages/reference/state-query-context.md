@@ -9,7 +9,7 @@ An app state of query context which represents currenty used query for showing t
 To get the `queryContext` state:
 
 ```js
-const { books } = inkdrop.store.getState()
+const { queryContext } = inkdrop.store.getState()
 ```
 
 Or, to connect with your React component:
