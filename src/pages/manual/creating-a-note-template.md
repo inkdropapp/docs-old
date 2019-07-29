@@ -1,7 +1,7 @@
 ---
 index: 90
 category: "hacking"
-toc: false
+toc: true
 path: "/manual/creating-a-note-template"
 title: "Creating a Note Template"
 ---
@@ -162,7 +162,7 @@ Here is an example keybinding configuration:
 
 So you can quickly create notes with the template!
 
-## Override default behavior of `core:new-note`
+## Override default behavior of "core:new-note"
 
 You can create new note by pressing _Cmd-N_ on macOS and _Ctrl-N_ on Windows and Linux by default.
 That's because the keystroke invokes `core:new-note` command.
