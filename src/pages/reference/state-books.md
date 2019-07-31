@@ -5,7 +5,7 @@ path: /reference/state-books
 title: books
 ---
 
-An app state of notebooks.
+An [app state](/manual/flux-architecture) of notebooks.
 To get the `books` state:
 
 ```js

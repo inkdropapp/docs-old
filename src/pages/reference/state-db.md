@@ -5,7 +5,7 @@ path: /reference/state-db
 title: db
 ---
 
-An app state of database synchronization.
+An [app state](/manual/flux-architecture) of database synchronization.
 To get the `notes` state:
 
 ```js
@@ -15,11 +15,11 @@ const { db } = inkdrop.store.getState()
 Or, to connect with your React component:
 
 ```js
-import { connect } from 'react-redux'
+import { connect } from "react-redux"
 
 const connector = connect(
   ({ db }) => ({ db }),
-  (dispatch) => ({ dispatch })
+  dispatch => ({ dispatch })
 )
 
 const MyComponent = connector(props => {

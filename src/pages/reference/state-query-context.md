@@ -5,7 +5,7 @@ path: /reference/state-query-context
 title: queryContext
 ---
 
-An app state of query context which represents currenty used query for showing the content of note list.
+An [app state](/manual/flux-architecture) of query context which represents currenty used query for showing the content of note list.
 To get the `queryContext` state:
 
 ```js

@@ -5,7 +5,7 @@ path: /reference/state-editor
 title: editor
 ---
 
-An app state of the editor.
+An [app state](/manual/flux-architecture) of the editor.
 To get the `notes` state:
 
 ```js
@@ -15,11 +15,11 @@ const { editor } = inkdrop.store.getState()
 Or, to connect with your React component:
 
 ```js
-import { connect } from 'react-redux'
+import { connect } from "react-redux"
 
 const connector = connect(
   ({ editor }) => ({ editor }),
-  (dispatch) => ({ dispatch })
+  dispatch => ({ dispatch })
 )
 
 const MyComponent = connector(props => {
@@ -57,5 +57,3 @@ When the app is saving the note, it indicates its node ID, otherwise falsy value
 ### lastError: `?AssistiveError`
 
 A last error that was occurred.
-
-

@@ -5,7 +5,7 @@ path: /reference/state-preview
 title: preview
 ---
 
-An app state of Markdown preview pane.
+An [app state](/manual/flux-architecture) of Markdown preview pane.
 To get the `preview` state:
 
 ```js
@@ -15,11 +15,11 @@ const { preview } = inkdrop.store.getState()
 Or, to connect with your React component:
 
 ```js
-import { connect } from 'react-redux'
+import { connect } from "react-redux"
 
 const connector = connect(
   ({ preview }) => ({ preview }),
-  (dispatch) => ({ dispatch })
+  dispatch => ({ dispatch })
 )
 
 const MyComponent = connector(props => {

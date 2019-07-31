@@ -5,7 +5,7 @@ path: /reference/state-main-layout
 title: mainLayout
 ---
 
-An app state of main layout currently displayed.
+An [app state](/manual/flux-architecture) of main layout currently displayed.
 To get the `mainLayout` state:
 
 ```js
@@ -15,11 +15,11 @@ const { mainLayout } = inkdrop.store.getState()
 Or, to connect with your React component:
 
 ```js
-import { connect } from 'react-redux'
+import { connect } from "react-redux"
 
 const connector = connect(
   ({ mainLayout }) => ({ mainLayout }),
-  (dispatch) => ({ dispatch })
+  dispatch => ({ dispatch })
 )
 
 const MyComponent = connector(props => {
