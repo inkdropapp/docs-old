@@ -19,19 +19,13 @@ Below example registers `MyDialog` class to the component registry and adds it t
 module.exports = {
   activate() {
     inkdrop.components.registerClass(MyDialog)
-    inkdrop.layouts.addComponentToLayout(
-      'modal',
-      'MyDialog'
-    )
+    inkdrop.layouts.addComponentToLayout("modal", "MyDialog")
   },
 
   deactivate() {
-    inkdrop.layouts.removeComponentFromLayout(
-      'modal',
-      'MyDialog'
-    )
+    inkdrop.layouts.removeComponentFromLayout("modal", "MyDialog")
     inkdrop.components.deleteClass(MyDialog)
-  }
+  },
 }
 ```
 
@@ -50,9 +44,9 @@ We will explore along with this example to learn how to add components to each l
 
 ### Showing a custom dialog
 
-* [Example: LayoutExampleMessageDialog](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-message-dialog.js)
+- [Example: LayoutExampleMessageDialog](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-message-dialog.js)
 
-Inkdrop provides `MessageDialog` component so that you can easily create a custom dialog like so:
+Inkdrop provides [MessageDialog](/reference/message-dialog) component so that you can easily create a custom dialog like so:
 
 ```js
 render() {
@@ -67,34 +61,34 @@ render() {
 
 ### Inserting a view into the main layout
 
-* [Example: LayoutExampleLeftMostBar](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-left-most-bar.js)
+- [Example: LayoutExampleLeftMostBar](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-left-most-bar.js)
 
 It inserts a component into ['main:full'](/reference/state-layouts#mainfull) layout.
 
 ### Adding a sidebar menu item
 
-* [Example: LayoutExampleSidebarMenuItem](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-sidebar-menu-item.js)
+- [Example: LayoutExampleSidebarMenuItem](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-sidebar-menu-item.js)
 
 ### Adding a view into the editor layout
 
-* [Example: LayoutExampleEditorLeftPane](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-editor-left-pane.js)
-* [Example: LayoutExampleEditorRightPane](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-editor-right-pane.js)
+- [Example: LayoutExampleEditorLeftPane](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-editor-left-pane.js)
+- [Example: LayoutExampleEditorRightPane](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-editor-right-pane.js)
 
 ### Adding an editor header button
 
-* [Example: LayoutExampleEditorHeaderItem](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-editor-header-item.js)
+- [Example: LayoutExampleEditorHeaderItem](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-editor-header-item.js)
 
 ### Adding an editor toolbar button
 
-* [Example: LayoutExampleEditorToolbarButton](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-editor-toolbar-button.js)
+- [Example: LayoutExampleEditorToolbarButton](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-editor-toolbar-button.js)
 
 ### Adding an editor statusbar item
 
-* [Example: LayoutExampleEditorStatusBarItem](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-editor-status-bar-item.js)
+- [Example: LayoutExampleEditorStatusBarItem](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-editor-status-bar-item.js)
 
 ### Replacing the note list item view
 
-* [Example: LayoutExampleNoteListItemView](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-note-list-item-view.js)
+- [Example: LayoutExampleNoteListItemView](https://github.com/inkdropapp/layout-example-plugin/blob/master/lib/layout-example-note-list-item-view.js)
 
 Inkdrop uses a custom component registered as `'CustomNoteListItemView'` in the component registry.
 To register your component as custom note list item view:
@@ -102,7 +96,7 @@ To register your component as custom note list item view:
 ```js
 inkdrop.components.registerClass(
   LayoutExampleNoteListItemView,
-  'CustomNoteListItemView'
+  "CustomNoteListItemView"
 )
 ```
 
@@ -111,6 +105,6 @@ Don't forget to unregister it when your plugin is deactivated:
 ```js
 inkdrop.components.deleteClass(
   LayoutExampleNoteListItemView.default,
-  'CustomNoteListItemView'
+  "CustomNoteListItemView"
 )
 ```
