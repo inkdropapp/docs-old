@@ -6,8 +6,9 @@ title: Component Manager
 ---
 
 Provides a registry for React components that you'd like to display on layouts.
-
 An instance of this class is always available as the `inkdrop.components` global.
+
+Check out the list of [available built-in React components](/reference/components).
 
 ## Registering and unregistering a React component
 
@@ -19,19 +20,13 @@ Below example registers `MyDialog` class to the component registry and adds it t
 module.exports = {
   activate() {
     inkdrop.components.registerClass(MyDialog)
-    inkdrop.layouts.addComponentToLayout(
-      'modal',
-      'MyDialog'
-    )
+    inkdrop.layouts.addComponentToLayout("modal", "MyDialog")
   },
 
   deactivate() {
-    inkdrop.layouts.removeComponentFromLayout(
-      'modal',
-      'MyDialog'
-    )
+    inkdrop.layouts.removeComponentFromLayout("modal", "MyDialog")
     inkdrop.components.deleteClass(MyDialog)
-  }
+  },
 }
 ```
 
@@ -45,26 +40,26 @@ Available layouts can be found [here](/reference/state-layouts).
 
 Registers a given React component class to the component registry.
 
-| Argument | Description |
-| -------- | ----------- |
-| `klass` | A React component class to be added. |
+| Argument    | Description                                                                    |
+| ----------- | ------------------------------------------------------------------------------ |
+| `klass`     | A React component class to be added.                                           |
 | `klassName` | (optional) A custom class name. It is necessary if the given component is HOC. |
 
 ### deleteClass(klass, ?klassName)
 
 Unregisters a given React component class from the component registry.
 
-| Argument | Description |
-| -------- | ----------- |
-| `klass` | A React component class to be removed. |
+| Argument    | Description                                                                    |
+| ----------- | ------------------------------------------------------------------------------ |
+| `klass`     | A React component class to be removed.                                         |
 | `klassName` | (optional) A custom class name. It is necessary if the given component is HOC. |
 
 ### getComponentClass(klassName)
 
 Returns a React component that has a given class name.
 
-| Argument | Description |
-| -------- | ----------- |
+| Argument    | Description                    |
+| ----------- | ------------------------------ |
 | `klassName` | A component class name to get. |
 
 #### Return values
