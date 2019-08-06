@@ -9,17 +9,17 @@ This notice describes how Inkdrop collects and uses data about you.
 
 Skip to:
 
- * [Definitions](#definitions)
- * [How does Inkdrop collect data about me?](#how-does-inkdrop-collect-data-about-me-)
- * [What data does Inkdrop collect about me, and why?](#what-data-does-inkdrop-collect-about-me-and-why-)
- * [Where does Inkdrop keep data about me?](#where-does-inkdrop-keep-data-about-me-)
- * [Does Inkdrop comply with the EU General Data Protection Regulation?](#does-inkdrop-comply-with-the-eu-general-data-protection-regulation-)
- * [How can I access data about me?](#how-can-i-access-data-about-me-)
- * [How can I change or erase data about me?](#how-can-i-change-or-erase-data-about-me-)
- * [Does Inkdrop share data about me with others?](#does-inkdrop-share-data-about-me-with-others-)
- * [Who can I contact about Inkdrop and my privacy?](#who-can-i-contact-about-inkdrop-and-my-privacy-)
- * [Does Inkdrop make automated decisions based on data about me?](#does-inkdrop-make-automated-decisions-based-on-data-about-me-)
- * [How can I find out about changes?](#how-can-i-find-out-about-changes-)
+- [Definitions](#definitions)
+- [How does Inkdrop collect data about me?](#how-does-inkdrop-collect-data-about-me-)
+- [What data does Inkdrop collect about me, and why?](#what-data-does-inkdrop-collect-about-me-and-why-)
+- [Where does Inkdrop keep data about me?](#where-does-inkdrop-keep-data-about-me-)
+- [Does Inkdrop comply with the EU General Data Protection Regulation?](#does-inkdrop-comply-with-the-eu-general-data-protection-regulation-)
+- [How can I access data about me?](#how-can-i-access-data-about-me-)
+- [How can I change or erase data about me?](#how-can-i-change-or-erase-data-about-me-)
+- [Does Inkdrop share data about me with others?](#does-inkdrop-share-data-about-me-with-others-)
+- [Who can I contact about Inkdrop and my privacy?](#who-can-i-contact-about-inkdrop-and-my-privacy-)
+- [Does Inkdrop make automated decisions based on data about me?](#does-inkdrop-make-automated-decisions-based-on-data-about-me-)
+- [How can I find out about changes?](#how-can-i-find-out-about-changes-)
 
 ## Definitions
 
@@ -29,13 +29,13 @@ Inkdrop is owned by Takuya Matsuyama, based in Tokyo - Japan. (referred to as "I
 
 Inkdrop collects data about you:
 
- * when you browse the Inkdrop website, [inkdrop.app](https://inkdrop.app)
- * when you create an Inkdrop account or update your account
- * when you use the Inkdrop client app for macOS, Windows, Linux, iOS or Android
- * when you send support, privacy, legal, and other requests to us
- * when working with and researching current and potential customers
- * when you use [`ipm` command](https://docs.inkdrop.app/manual/extend-inkdrop-with-plugins) to publish plugins for Inkdrop
- * when you post topics or comments on [the Inkdrop forum](https://forum.inkdrop.app/)
+- when you browse the Inkdrop website, [inkdrop.app](https://inkdrop.app)
+- when you create an Inkdrop account or update your account
+- when you use the Inkdrop client app for macOS, Windows, Linux, iOS or Android
+- when you send support, privacy, legal, and other requests to us
+- when working with and researching current and potential customers
+- when you use [`ipm` command](https://docs.inkdrop.app/manual/extend-inkdrop-with-plugins) to publish plugins for Inkdrop
+- when you post topics or comments on [the Inkdrop forum](https://forum.inkdrop.app/)
 
 When researching potential customers, we sometimes search the public World Wide Web or paid business databases. Otherwise, we don't buy or receive data about you from data brokers or other private services.
 
@@ -50,42 +50,41 @@ The client apps keep the data in your local storage in order to provide quick of
 
 When you use the Inkdrop client apps, the Inkdrop website or the `ipm` command, Inkdrop logs data that might be identified to you:
 
-* a random, unique identifier
-* the version of the Inkdrop app, and the operating system you are using
-* network request data, such as the date and time, your IP address, and the URL
-* number of notes, notebooks, tags, files and the total data size of them
+- a random, unique identifier
+- the version of the Inkdrop app, and the operating system you are using
+- network request data, such as the date and time, your IP address, and the URL
+- number of notes, notebooks, tags, files and the total data size of them
 
 Inkdrop uses this data to:
 
-* keep our service working quickly and reliably
-* debug and develop our apps and website
-* defend Inkdrop service from abuse and technical attacks
-* compile statistics on plugin usage and popularity
-* improve search results on the website
-* improve usability of our apps
+- keep our service working quickly and reliably
+- debug and develop our apps and website
+- defend Inkdrop service from abuse and technical attacks
+- compile statistics on plugin usage and popularity
+- improve search results on the website
+- improve usability of our apps
 
 Inkdrop usually deletes log entries with identifiable information within a few weeks, but may preserve logs longer, as needed in specific cases, like investigations of specific incidents.
-
 
 ### Inkdrop collects data about how you use the website.
 
 When you visit [inkdrop.app](https://inkdrop.app/), [my.inkdrop.app](https://my.inkdrop.app/), [docs.inkdrop.app](https://docs.inkdrop.app/), [forum.inkdrop.app](https://forum.inkdrop.app/), and other Inkdrop websites, Inkdrop uses cookies, server logs, and other methods to collect data about what pages you visit, and when. Inkdrop also collects technical information about the software and computer you use, such as:
 
-* your IP address
-* your preferred language
-* the web browser software you use
-* the kind of computer you use
-* the website that referred you
+- your IP address
+- your preferred language
+- the web browser software you use
+- the kind of computer you use
+- the website that referred you
 
 Inkdrop uses data about how you use the website to:
 
-* optimize the website, so that it's quick and easy to use
-* diagnose and debug technical errors
-* defend the website from abuse and technical attacks
-* compile statistics on package popularity
-* compile statistics on the kinds of software and computers visitors use
-* compile statistics on visitor searches and needs, to guide development of new website pages and functionality
-* decide who to contact about about product announcements, service changes, and new features
+- optimize the website, so that it's quick and easy to use
+- diagnose and debug technical errors
+- defend the website from abuse and technical attacks
+- compile statistics on package popularity
+- compile statistics on the kinds of software and computers visitors use
+- compile statistics on visitor searches and needs, to guide development of new website pages and functionality
+- decide who to contact about about product announcements, service changes, and new features
 
 Inkdrop usually deletes website log entries with identifiable information within a few weeks, but keeps entries for visitors with Inkdrop accounts longer. Inkdrop reviews log entries for those users twice a year, and deletes entries when they're no longer needed.
 
@@ -105,17 +104,17 @@ You don't have to give Inkdrop a personal name or any social media names, and yo
 
 Inkdrop uses your email to:
 
-* confirm if your email address is correct to sign you up
-* notify you about your free trial expires in 3 days
-* notify you about your free trial has been expired
-* notify you about your payment failure
-* notify you about your account has been deactivated because of payment failure
-* invite you to our lounge where only paid users can access when you became a paid user
-* notify you about your annual subscription renewal 3 days before
-* contact you in special circumstances related to your account
-* contact you about support requests
-* contact you about legal requests, like DMCA takedown requests and privacy complaints
-* announce new Inkdrop product offerings, service changes, and features
+- confirm if your email address is correct to sign you up
+- notify you about your free trial expires in 3 days
+- notify you about your free trial has been expired
+- notify you about your payment failure
+- notify you about your account has been deactivated because of payment failure
+- invite you to our lounge where only paid users can access when you became a paid user
+- notify you about your annual subscription renewal 3 days before
+- contact you in special circumstances related to your account
+- contact you about support requests
+- contact you about legal requests, like DMCA takedown requests and privacy complaints
+- announce new Inkdrop product offerings, service changes, and features
 
 Inkdrop stores account data as long as the account stays open. When account data also appear in plugin data, Inkdrop stores that data as long as it stores the plugin.
 
@@ -149,11 +148,11 @@ Inkdrop collects data about you when you send Inkdrop support requests, legal co
 
 Inkdrop uses contact data to:
 
-* respond to you
-* compile aggregate statistics about correspondence
-* train support staff and other Inkdrop personnel
-* review the performance of Inkdrop personnel who respond
-* defend Inkdrop from legal claims
+- respond to you
+- compile aggregate statistics about correspondence
+- train support staff and other Inkdrop personnel
+- review the performance of Inkdrop personnel who respond
+- defend Inkdrop from legal claims
 
 Inkdrop stores correspondence as long as it may be useful for these purposes.
 
@@ -193,9 +192,9 @@ You can unpublish plugins before closing your account with `ipm unpublish` comma
 When you uninstalled our iOS app or Android app, the data stored in your device is completely erased.
 When you uninstalled our desktop app for macOS, Windows or Linux, the data is not completely erased from your device. You can find the data which the app stores in following directory and you can erase them:
 
-* on macOS: `~/Library/Application Support/inkdrop/`
-* on Windows: `%APPDATA%/inkdrop/`
-* on Linux: `~/.config/inkdrop/`
+- on macOS: `~/Library/Application Support/inkdrop/`
+- on Windows: `%APPDATA%/inkdrop/`
+- on Linux: `~/.config/inkdrop/`
 
 Closing your account anonymizes your topics and comments posted on [forum.inkdrop.app](https://forum.inkdrop.app/).
 Your profile and IP address on the forum will be erased but your posts will be remained because they would be helpful for other users.
@@ -256,12 +255,12 @@ No. Inkdrop does not use your data for personalization or retargeting purposes.
 
 You can send questions or complaints to:
 
- * Takuya Matsuyama
- * [contact@inkdrop.app](mailto:contact@inkdrop.app)
- * 5-18-11-303
- * Tagara, Nerima, Tokyo
- * 179-0073
- * Japan
+- Takuya Matsuyama
+- [contact@inkdrop.app](mailto:contact@inkdrop.app)
+- 2-5-12-502
+- Shinsenri-Higashimachi, Toyonaka, Osaka
+- 560-0082
+- Japan
 
 ## How can I find out about changes?
 
