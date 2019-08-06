@@ -5,7 +5,7 @@ path: /reference/state-notes
 title: notes
 ---
 
-An app state of notes currently loaded for the note list bar.
+An [app state](/manual/flux-architecture) of notes currently loaded for the note list bar.
 To get the `notes` state:
 
 ```js
@@ -15,11 +15,11 @@ const { notes } = inkdrop.store.getState()
 Or, to connect with your React component:
 
 ```js
-import { connect } from 'react-redux'
+import { connect } from "react-redux"
 
 const connector = connect(
   ({ notes }) => ({ notes }),
-  (dispatch) => ({ dispatch })
+  dispatch => ({ dispatch })
 )
 
 const MyComponent = connector(props => {
@@ -31,11 +31,11 @@ const MyComponent = connector(props => {
 
 ### items: `Note[]`
 
-An array of [Note][Note]s.
+An array of [Note][note]s.
 
 ### hashedItems: `{ [noteId]: Note }`
 
-A map which keys are noteId and values are [Note][Note].
+A map which keys are noteId and values are [Note][note].
 
 ### lastQuery: `?NoteQuery`
 
@@ -61,4 +61,4 @@ The note list view options
 
 true while notes are being loaded
 
-[Note]: /reference/data-models#a-nameresource-notenotea
+[note]: /reference/data-models#a-nameresource-notenotea

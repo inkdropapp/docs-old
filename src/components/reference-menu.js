@@ -59,6 +59,13 @@ export default class RefereneMenu extends Component {
             <ul className="article-list">
               {data.db.edges.map(this.renderMenuItem)}
             </ul>
+            <h3 className="ui header">
+              <i className="database icon" />
+              <div className="content">Components</div>
+            </h3>
+            <ul className="article-list">
+              {data.components.edges.map(this.renderMenuItem)}
+            </ul>
           </Menu>
         )}
       />
@@ -128,6 +135,20 @@ const menuQuery = graphql`
       sort: { order: ASC, fields: [frontmatter___index] }
       limit: 1000
       filter: { frontmatter: { category: { eq: "data-access" } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            path
+            title
+          }
+        }
+      }
+    }
+    components: allMarkdownRemark(
+      sort: { order: ASC, fields: [frontmatter___index] }
+      limit: 1000
+      filter: { frontmatter: { category: { eq: "component" } } }
     ) {
       edges {
         node {

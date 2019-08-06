@@ -5,7 +5,7 @@ path: /reference/state-layouts
 title: layouts
 ---
 
-An app state of component layouts.
+An [app state](/manual/flux-architecture) of component layouts.
 To get the `layouts` state:
 
 ```js
@@ -15,11 +15,11 @@ const { layouts } = inkdrop.store.getState()
 Or, to connect with your React component:
 
 ```js
-import { connect } from 'react-redux'
+import { connect } from "react-redux"
 
 const connector = connect(
   ({ layouts }) => ({ layouts }),
-  (dispatch) => ({ dispatch })
+  dispatch => ({ dispatch })
 )
 
 const MyComponent = connector(props => {
@@ -31,8 +31,8 @@ const MyComponent = connector(props => {
 
 A map of `[layout_name]: LayoutComponents` where:
 
-* `layout_name`: String
-* `LayoutComponents`: A class name of React component
+- `layout_name`: String
+- `LayoutComponents`: A class name of React component
 
 ### main:full
 
@@ -40,13 +40,8 @@ The main layout that consists of 3 columns.
 
 #### Default value
 
-```js
-[
-  'ModalLayout',
-  'SideBarLayout',
-  'NoteListBarLayout',
-  'EditorLayout'
-]
+```json
+["ModalLayout", "SideBarLayout", "NoteListBarLayout", "EditorLayout"]
 ```
 
 ### main:slim
@@ -55,8 +50,8 @@ The main layout that consists of 2 columns.
 
 #### Default value
 
-```js
-['ModalLayout', 'NoteListBarLayout', 'EditorLayout']
+```json
+["ModalLayout", "NoteListBarLayout", "EditorLayout"]
 ```
 
 ### main:distraction-free
@@ -65,8 +60,8 @@ The main layout for distraction-free mode.
 
 #### Default value
 
-```js
-['ModalLayout', 'EditorLayout']
+```json
+["ModalLayout", "EditorLayout"]
 ```
 
 ### sidebar
@@ -75,12 +70,8 @@ The sidebar layout
 
 #### Default value
 
-```js
-[
-    'SideBarHeader',
-    'SideBarNavigation',
-    'SideBarSyncStatusView'
-]
+```json
+["SideBarHeader", "SideBarNavigation", "SideBarSyncStatusView"]
 ```
 
 ### sidebar-menu
@@ -89,17 +80,17 @@ The menu layout of sidebar
 
 #### Default value
 
-```js
+```json
 [
-  'SideBarMenuItemAllNotes',
-  'SideBarMenuItemSearch',
-  'SideBarMenuSectionNotebooks',
-  'SideBarMenuBookList',
-  'SideBarMenuItemTrash',
-  'SideBarMenuSectionStatus',
-  'SideBarMenuStatusList',
-  'SideBarMenuSectionTags',
-  'SideBarMenuTagList'
+  "SideBarMenuItemAllNotes",
+  "SideBarMenuItemSearch",
+  "SideBarMenuSectionNotebooks",
+  "SideBarMenuBookList",
+  "SideBarMenuItemTrash",
+  "SideBarMenuSectionStatus",
+  "SideBarMenuStatusList",
+  "SideBarMenuSectionTags",
+  "SideBarMenuTagList"
 ]
 ```
 
@@ -109,13 +100,13 @@ The menu layout of sidebar book filter
 
 #### Default value
 
-```js
+```json
 [
-  'SidebarBookFilterTitle',
-  'SideBarMenuSectionStatus',
-  'SidebarBookFilterStatusList',
-  'SideBarMenuSectionTags',
-  'SidebarBookFilterTagList'
+  "SidebarBookFilterTitle",
+  "SideBarMenuSectionStatus",
+  "SidebarBookFilterStatusList",
+  "SideBarMenuSectionTags",
+  "SidebarBookFilterTagList"
 ]
 ```
 
@@ -125,12 +116,8 @@ The menu layout of note list bar
 
 #### Default value
 
-```js
-[
-  'NoteListHeader',
-  'NoteListSearchBar',
-  'NoteListBarContainer'
-]
+```json
+["NoteListHeader", "NoteListSearchBar", "NoteListBarContainer"]
 ```
 
 ### note-list-bar:trash
@@ -139,8 +126,8 @@ The trash menu layout of note list bar
 
 #### Default value
 
-```js
-['NoteListHeader', 'NoteListBarContainer']
+```json
+["NoteListHeader", "NoteListBarContainer"]
 ```
 
 ### mde
@@ -149,8 +136,8 @@ The mde layout
 
 #### Default value
 
-```js
-['Editor']
+```json
+["Editor"]
 ```
 
 ### editor
@@ -159,14 +146,14 @@ The editor layout
 
 #### Default value
 
-```js
+```json
 [
-  'EditorHeaderLayout',
-  'EditorTitleInput',
-  'EditorMetaLayout',
-  'EditorToolbar',
-  'MDELayout',
-  'MDESearchBar'
+  "EditorHeaderLayout",
+  "EditorTitleInput",
+  "EditorMetaLayout",
+  "EditorToolbar",
+  "MDELayout",
+  "MDESearchBar"
 ]
 ```
 
@@ -176,14 +163,14 @@ The header layout of the editor
 
 #### Default value
 
-```js
+```json
 [
-  'EditorHeaderItemNavigationButtons',
-  'EditorHeaderItemNotebook',
-  'EditorHeaderItemCreatedDate',
-  'EditorHeaderItemUpdatedDate',
-  'EditorHeaderItemSpacer',
-  'EditorHeaderItemActions'
+  "EditorHeaderItemNavigationButtons",
+  "EditorHeaderItemNotebook",
+  "EditorHeaderItemCreatedDate",
+  "EditorHeaderItemUpdatedDate",
+  "EditorHeaderItemSpacer",
+  "EditorHeaderItemActions"
 ]
 ```
 
@@ -193,8 +180,8 @@ The meta pane layout of the editor
 
 #### Default value
 
-```js
-['EditorMetaStatusPicker', 'EditorMetaTags']
+```json
+["EditorMetaStatusPicker", "EditorMetaTags"]
 ```
 
 ### modal
@@ -203,19 +190,19 @@ The layout for modal components
 
 #### Default value
 
-```js
+```json
 [
-  'NewNotebookDialog',
-  'DeleteNotebookDialog',
-  'RenameNotebookDialog',
-  'TagSettingsDialog',
-  'DeleteTagDialog',
-  'AssistiveErrorDialog',
-  'MoveNotesDialog',
-  'MoveNotebookDialog',
-  'EmptyTrashDialog',
-  'ShareNoteDialog',
-  'NoteRevisionsDialog'
+  "NewNotebookDialog",
+  "DeleteNotebookDialog",
+  "RenameNotebookDialog",
+  "TagSettingsDialog",
+  "DeleteTagDialog",
+  "AssistiveErrorDialog",
+  "MoveNotesDialog",
+  "MoveNotebookDialog",
+  "EmptyTrashDialog",
+  "ShareNoteDialog",
+  "NoteRevisionsDialog"
 ]
 ```
 
@@ -225,7 +212,7 @@ The toolbar layout of the editor
 
 ### Default value
 
-```js
+```json
 []
 ```
 
@@ -235,7 +222,6 @@ The status bar layout of the editor
 
 ### Default value
 
-```js
+```json
 []
 ```
-

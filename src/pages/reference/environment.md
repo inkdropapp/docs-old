@@ -106,6 +106,29 @@ Invoke the given callback when the editor has been unloaded.
 
 Returns a [Disposable](/reference/disposable) on which `.dispose()` can be called to unsubscribe.
 
+### onAppReady(callback)
+
+Invoke the given callback when the app is ready.
+
+| Argument | Description |
+| -------- | ----------- |
+| `callback()` | A Function to be invoked.  |
+
+#### Return values
+
+Returns a [Disposable](/reference/disposable) on which `.dispose()` can be called to unsubscribe.
+
+### onAppQuit(callback)
+
+Invoke the given callback when the app is about to quit.
+
+| Argument | Description |
+| -------- | ----------- |
+| `callback()` | A Function to be invoked.  |
+
+#### Return values
+
+Returns a [Disposable](/reference/disposable) on which `.dispose()` can be called to unsubscribe.
 
 ## Methods
 
