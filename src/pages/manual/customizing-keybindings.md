@@ -26,7 +26,7 @@ By default, `keymap.cson` is loaded when Inkdrop is started.
 It will always be loaded last, giving you the chance to override bindings that are defined by Inkdrop's core keymaps or third-party packages.
 
 Available commands can be found [here](/manual/list-of-commands).
-You can also see all the keybindings that are currently configured in your installation of Inkdrop in *Keybindings* section on *Preferences* window:
+You can also see all the keybindings that are currently configured in your installation of Inkdrop in _Keybindings_ section on _Preferences_ window:
 
 ![Preferences](./customizing-keybindings_preferences.png)
 
@@ -44,4 +44,11 @@ You can run a command when the app does not have keyboard focus.
 ```coffeescript
 'global':
   'cmd-shift-x': 'application:show-and-focus-main-window'
+```
+
+### Toggle Inkdrop main window
+
+```coffeescript
+'global':
+  'cmd-shift-x': 'application:toggle-main-window'
 ```

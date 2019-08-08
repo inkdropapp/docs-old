@@ -11,18 +11,20 @@ You can bind them with [keystrokes](/reference/keymap-manager), [menu](/referenc
 Note that some commands like `core:open-note` require parameters so you have to invoke them programmatically with [CommandRegistry](/reference/command-registry) like so:
 
 ```js
-inkdrop.commands.dispatch(document.body, 'core:open-note', { noteId: 'note:uugSvPq5r' })
+inkdrop.commands.dispatch(document.body, "core:open-note", {
+  noteId: "note:uugSvPq5r",
+})
 ```
 
 ## Table of Contents
 
-* [Application commands](#application-commands)
-* [Core commands](#core-commands)
-* [Editor commands](#editor-commands)
-* [Export commands](#export-commands)
-* [Import commands](#import-commands)
-* [View commands](#view-commands)
-* [Window commands](#window-commands)
+- [Application commands](#application-commands)
+- [Core commands](#core-commands)
+- [Editor commands](#editor-commands)
+- [Export commands](#export-commands)
+- [Import commands](#import-commands)
+- [View commands](#view-commands)
+- [Window commands](#window-commands)
 
 ## Application commands
 
@@ -30,8 +32,8 @@ Special commands that run in the main process to control the Inkdrop app.
 To invoke them, do like so:
 
 ```js
-import { ipcRenderer } from 'electron'
-ipcRenderer.send('command', 'application:about', {})
+import { ipcRenderer } from "electron"
+ipcRenderer.send("command", "application:about", {})
 ```
 
 ### application:about
@@ -40,19 +42,19 @@ Shows a dialog about Inkdrop.
 
 ### application:bring-all-windows-to-front
 
-* macOS only
+- macOS only
 
 Arranges windows listed in the Window menu in front of all other windows
 
 ### application:hide
 
-* macOS only
+- macOS only
 
 Hides Inkdrop windows
 
 ### application:hide-other-applications
 
-* macOS only
+- macOS only
 
 Hides all apps, except Inkdrop
 
@@ -66,7 +68,7 @@ Logs out from the currently authenticated account
 
 ### application:minimize
 
-* macOS only
+- macOS only
 
 Minimizes Inkdrop application
 
@@ -90,9 +92,17 @@ Opens up the Inkdrop forum
 
 Opens up the list of software licenses
 
+### application:show-and-focus-main-window
+
+Show and focus Inkdrop main window
+
+### application:toggle-main-window
+
+Toggle Inkdrop main window
+
 ### application:unhide-all-applications
 
-* macOS only
+- macOS only
 
 Unhides all apps, including Inkdrop.
 
@@ -102,7 +112,7 @@ Opens up the documentation website
 
 ### application:zoom
 
-* macOS only
+- macOS only
 
 Toggles the size and location of the window between its standard state and its user state
 
@@ -143,7 +153,7 @@ Duplicates notes currently selected on the note list
 
 ### core:emphasize
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Emphersize currently selected text
 
@@ -155,17 +165,17 @@ Empties trash
 
 Filters current note list items with given keywords
 
-| Argument | Description |
-| -------- | ----------- |
+| Argument  | Description             |
+| --------- | ----------------------- |
 | `keyword` | The keywords to filter. |
 
 ### core:filter-by-tag
 
 Adds a filter condition with specified tag
 
-| Argument | Description |
-| -------- | ----------- |
-| `tagId` | The ID of the tag to filter by. |
+| Argument | Description                     |
+| -------- | ------------------------------- |
+| `tagId`  | The ID of the tag to filter by. |
 
 ### core:find
 
@@ -193,25 +203,25 @@ Moves focus to the previous focussable UI component
 
 ### core:indent
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Indents the selected line(s)
 
 ### core:insert-code-block
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Inserts a code block
 
 ### core:insert-horizontal-rule
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Inserts a horizontal rule: `* * *`
 
 ### core:insert-link
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Inserts a link
 
@@ -255,13 +265,12 @@ Opens the next note of currently selected note on the note list bar.
 
 Opens a note with specified note ID
 
-| Argument | Description |
-| -------- | ----------- |
-| `noteId` | The ID of the note to open. |
+| Argument              | Description                                                 |
+| --------------------- | ----------------------------------------------------------- |
+| `noteId`              | The ID of the note to open.                                 |
 | `selectInNoteListBar` | Whether to select the correspond note in the note list bar. |
-| `pushState` | Remember it in the navigation history. |
-| `newWindow` | Whether to open the note in a separate window. |
-
+| `pushState`           | Remember it in the navigation history.                      |
+| `newWindow`           | Whether to open the note in a separate window.              |
 
 ### core:open-note-in-separate-window
 
@@ -275,9 +284,9 @@ Opens the previous note of currently selected note on the note list bar.
 
 Opens up the settings window for the tag with specified ID.
 
-| Argument | Description |
-| -------- | ----------- |
-| `tagId` | The ID of the tag to set. |
+| Argument | Description               |
+| -------- | ------------------------- |
+| `tagId`  | The ID of the tag to set. |
 
 ### core:paste
 
@@ -307,24 +316,24 @@ Select all text
 
 Search notes globally with given keywords
 
-| Argument | Description |
-| -------- | ----------- |
+| Argument  | Description             |
+| --------- | ----------------------- |
 | `keyword` | The keywords to search. |
 
 ### core:share-note
 
 Shows up a dialog for sharing note with specified ID
 
-| Argument | Description |
-| -------- | ----------- |
+| Argument | Description                      |
+| -------- | -------------------------------- |
 | `noteId` | The ID of the note to be shared. |
 
 ### core:show-note-revisions
 
 Shows up a dialog for viewing note change history with specified ID
 
-| Argument | Description |
-| -------- | ----------- |
+| Argument | Description                                      |
+| -------- | ------------------------------------------------ |
 | `noteId` | The ID of the note to view its revision history. |
 
 ### core:sidebar-focus
@@ -341,85 +350,85 @@ Select previous item of the side bar menu
 
 ### core:strikethrough
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Toggles strikethrough to the selected text
 
 ### core:strong
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Toggles strong emphasis to the selected text
 
 ### core:toggle-blockquote
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Toggles blockquote to the selected lines
 
 ### core:toggle-bulleted-list
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Toggles bulleted list to the selected lines
 
 ### core:toggle-heading-1
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Toggles h1 heading to the selected lines
 
 ### core:toggle-heading-2
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Toggles h2 heading to the selected lines
 
 ### core:toggle-heading-3
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Toggles h3 heading to the selected lines
 
 ### core:toggle-heading-4
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Toggles h4 heading to the selected lines
 
 ### core:toggle-heading-bigger
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Decreases heading level of the selected lines
 
 ### core:toggle-heading-smaller
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Increases heading level of the selected lines
 
 ### core:toggle-numbered-list
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Toggles ordered list to the selected lines
 
 ### core:toggle-task-list
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Toggles task list to the selected lines
 
 ### core:undo
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Undoes the last change
 
 ### core:unindent
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Unindents the current lines
 
@@ -481,9 +490,9 @@ Locates the previous item in the editor that matches criteria
 
 Finds given text in the editor
 
-| Argument | Description |
-| -------- | ----------- |
-| `text` | String, the text to find. |
+| Argument | Description               |
+| -------- | ------------------------- |
+| `text`   | String, the text to find. |
 
 ### editor:focus
 
@@ -500,115 +509,115 @@ Moves focus to the preview pane.
 
 ### editor:go-char-left
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Moves the cursor to one character left
 
 ### editor:go-char-right
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Moves the cursor to one character right
 
 ### editor:go-doc-end
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Moves the cursor to the end of the document
 
 ### editor:go-doc-start
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Moves the cursor to the start of the document
 
 ### editor:go-group-left
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Moves the cursor to one group left
 
 ### editor:go-group-right
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Moves the cursor to one group right
 
 ### editor:go-line-down
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Moves the cursor to one line down
 
 ### editor:go-line-end
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Moves the cursor to the line end
 
 ### editor:go-line-left
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Moves the cursor to the line left
 
 ### editor:go-line-right
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Moves the cursor to the line right
 
 ### editor:go-line-start
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Moves the cursor to the line start
 
 ### editor:go-line-up
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Moves the cursor to one line up
 
 ### editor:go-page-down
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Moves the cursor to one page down
 
 ### editor:go-page-up
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Moves the cursor to one page up
 
 ### editor:go-word-left
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Moves the cursor to one word left
 
 ### editor:go-word-right
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Moves the cursor to one word right
 
 ### editor:indent
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Indents the currently selected line(s)
 
 ### editor:indent-less
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Unindents the currently selected line(s)
 
 ### editor:indent-more
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Indents one more the currently selected line(s)
 
@@ -616,40 +625,40 @@ Indents one more the currently selected line(s)
 
 Inserts image files at the cursor to the editing note
 
-| Argument | Description |
-| -------- | ----------- |
-| `pos` | Position to insert with the following keys: |
-| &emsp;`ch` | Number, character position |
-| &emsp;`line` | Number, line position |
-| `files` | [FIleList](https://developer.mozilla.org/en-US/docs/Web/API/FileList), or an Array of [File](https://developer.mozilla.org/en-US/docs/Web/API/File) or [NativeImage](https://electronjs.org/docs/api/native-image) to insert. |
+| Argument     | Description                                                                                                                                                                                                                   |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `pos`        | Position to insert with the following keys:                                                                                                                                                                                   |
+| &emsp;`ch`   | Number, character position                                                                                                                                                                                                    |
+| &emsp;`line` | Number, line position                                                                                                                                                                                                         |
+| `files`      | [FIleList](https://developer.mozilla.org/en-US/docs/Web/API/FileList), or an Array of [File](https://developer.mozilla.org/en-US/docs/Web/API/File) or [NativeImage](https://electronjs.org/docs/api/native-image) to insert. |
 
 ### editor:jump-to-line
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Toggles a dialog which allows you to jump to the line at the specified number
 
 ### editor:kill-line
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Deletes the line at the cursor
 
 ### editor:new-line
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Insert a new line below the cursor
 
 ### editor:open-line
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Insert a new line above the cursor
 
 ### editor:redo-selection
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Redoes the last selection.
 
@@ -659,13 +668,13 @@ Initiates the replace sequence in the editor
 
 ### editor:replace-selection
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Replaces selected text with the given text
 
-| Argument | Description |
-| -------- | ----------- |
-| `text` | String, the text to replace. |
+| Argument | Description                  |
+| -------- | ---------------------------- |
+| `text`   | String, the text to replace. |
 
 ### editor:save-editor-scroll
 
@@ -679,39 +688,39 @@ Replaces selected text with the given text
 
 Scrolls the editor to the given line
 
-| Argument | Description |
-| -------- | ----------- |
-| `line` | Number, the destination line number. |
+| Argument | Description                          |
+| -------- | ------------------------------------ |
+| `line`   | Number, the destination line number. |
 
 ### editor:scroll-preview-to-line
 
 Scrolls the preview to the given line
 
-| Argument | Description |
-| -------- | ----------- |
-| `line` | Number, the destination line number. |
+| Argument | Description                          |
+| -------- | ------------------------------------ |
+| `line`   | Number, the destination line number. |
 
 ### editor:select-all
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Selects all text in the editor
 
 ### editor:select-lines-downward
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Adds a cursor downward
 
 ### editor:select-lines-upward
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Adds a cursor upward
 
 ### editor:single-selection
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Removes all cursors except the primary one
 
@@ -729,31 +738,31 @@ Moves focus to the title input bar of the editor
 
 ### editor:toggle-overwrite
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Toggles overwrite mode
 
 ### editor:toggle-task-list
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Toggles task list to the current selections
 
 ### editor:transpose-chars
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Transposes characters at the cursor
 
 ### editor:undo-selection
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Undoes the last selection
 
 ### editor:unindent
 
-* Selector: `.mde-cm-wrapper`
+- Selector: `.mde-cm-wrapper`
 
 Unindents the current lines
 
@@ -856,4 +865,3 @@ Toggles the Developer Tools window
 ### window:toggle-full-screen
 
 Toggles full screen mode
-
