@@ -120,21 +120,31 @@ Toggles the size and location of the window between its standard state and its u
 
 ### core:copy
 
+- Selector: `body`
+
 Copy the selected text to clipboard
 
 ### core:copy-image
+
+- Selector: `body`
 
 Copy the target element's image to clipboard
 
 ### core:copy-note-link
 
+- Selector: `body`
+
 Copy links to notes currently selected on the note list as Markdown
 
 ### core:cut
 
+- Selector: `body`
+
 Delete the selected text and copy it to clipboard
 
 ### core:delete-note
+
+- Selector: `body`
 
 Move notes currently selected on the note list to trash.
 If the notes are already in trash, they will be permanently deleted.
@@ -149,6 +159,8 @@ If the notes are already in trash, they will be permanently deleted.
 
 ### core:duplicate-note
 
+- Selector: `body`
+
 Duplicates notes currently selected on the note list
 
 ### core:emphasize
@@ -159,9 +171,13 @@ Emphersize currently selected text
 
 ### core:empty-trash
 
+- Selector: `body`
+
 Empties trash
 
 ### core:filter-notes
+
+- Selector: `body`
 
 Filters current note list items with given keywords
 
@@ -171,6 +187,8 @@ Filters current note list items with given keywords
 
 ### core:filter-by-tag
 
+- Selector: `body`
+
 Adds a filter condition with specified tag
 
 | Argument | Description                     |
@@ -179,25 +197,37 @@ Adds a filter condition with specified tag
 
 ### core:find
 
+- Selector: `body`
+
 Moves focus to the search bar
 
 ### core:find-clear
+
+- Selector: `body`
 
 Clears the search bar text
 
 ### core:find-global
 
+- Selector: `body`
+
 Moves focus to the search bar and switch the [search scope to global](/manual/searching-notes#local--global-search-scope).
 
 ### core:focus-next
+
+- Selector: `body`
 
 Moves focus to the next focussable UI component
 
 ### core:focus-note-list-bar
 
+- Selector: `body`
+
 Moves focus to the note list bar
 
 ### core:focus-previous
+
+- Selector: `body`
 
 Moves focus to the previous focussable UI component
 
@@ -235,33 +265,49 @@ Inserts a link
 
 ### core:navigate-back
 
+- Selector: `body`
+
 Moves backward through the note open history
 
 ### core:navigate-forward
+
+- Selector: `body`
 
 Moves forward through the note open history
 
 ### core:new-note
 
+- Selector: `body`
+
 Creates a new note and open it in the editor
 
 ### core:new-notebook
+
+- Selector: `body`
 
 Shows up a dialog for creating a new notebook
 
 ### core:note-list-show-all-notes
 
+- Selector: `body`
+
 Lists all notes on the note list bar
 
 ### core:open-first-note
+
+- Selector: `body`
 
 Opens the first note of the note list bar in the editor
 
 ### core:open-next-note
 
+- Selector: `body`
+
 Opens the next note of currently selected note on the note list bar.
 
 ### core:open-note
+
+- Selector: `body`
 
 Opens a note with specified note ID
 
@@ -274,13 +320,19 @@ Opens a note with specified note ID
 
 ### core:open-note-in-separate-window
 
+- Selector: `body`
+
 Opens notes selected on the note list bar in separate windows
 
 ### core:open-prev-note
 
+- Selector: `body`
+
 Opens the previous note of currently selected note on the note list bar.
 
 ### core:open-tag-settings
+
+- Selector: `body`
 
 Opens up the settings window for the tag with specified ID.
 
@@ -290,9 +342,13 @@ Opens up the settings window for the tag with specified ID.
 
 ### core:paste
 
+- Selector: `body`
+
 Pastes a text from clipboard
 
 ### core:redo
+
+- Selector: `body`
 
 Redoes the last undone change.
 
@@ -302,17 +358,25 @@ Redoes the last undone change.
 
 ### core:save-image
 
+- Selector: `body`
+
 Saves the target element's image to disk
 
 ### core:save-note
+
+- Selector: `body`
 
 Saves the currently editing note to the local database
 
 ### core:select-all
 
+- Selector: `body`
+
 Select all text
 
 ### core:search-notes
+
+- Selector: `body`
 
 Search notes globally with given keywords
 
@@ -322,6 +386,8 @@ Search notes globally with given keywords
 
 ### core:share-note
 
+- Selector: `body`
+
 Shows up a dialog for sharing note with specified ID
 
 | Argument | Description                      |
@@ -329,6 +395,8 @@ Shows up a dialog for sharing note with specified ID
 | `noteId` | The ID of the note to be shared. |
 
 ### core:show-note-revisions
+
+- Selector: `body`
 
 Shows up a dialog for viewing note change history with specified ID
 
@@ -338,13 +406,19 @@ Shows up a dialog for viewing note change history with specified ID
 
 ### core:sidebar-focus
 
+- Selector: `body`
+
 Moves focus to the side bar
 
 ### core:sidebar-select-next-item
 
+- Selector: `body`
+
 Select next item of the side bar menu
 
 ### core:sidebar-select-prev-item
+
+- Selector: `body`
 
 Select previous item of the side bar menu
 
@@ -436,57 +510,85 @@ Unindents the current lines
 
 ### editor:clear-find
 
+- Selector: `body`
+
 Clears the text in the editor search bar
 
 ### editor:delete-char-after
+
+- Selector: `.mde-cm-wrapper`
 
 Deletes the char after the cursor
 
 ### editor:delete-char-before
 
+- Selector: `.mde-cm-wrapper`
+
 Deletes the char before the cursor
 
 ### editor:delete-group-after
+
+- Selector: `.mde-cm-wrapper`
 
 Deletes the text group after the cursor
 
 ### editor:delete-group-before
 
+- Selector: `.mde-cm-wrapper`
+
 Deletes the text group before the cursor
 
 ### editor:delete-line
+
+- Selector: `.mde-cm-wrapper`
 
 Deletes the line
 
 ### editor:delete-word-after
 
+- Selector: `.mde-cm-wrapper`
+
 Deletes the word after the cursor
 
 ### editor:delete-word-before
+
+- Selector: `.mde-cm-wrapper`
 
 Deletes the word before the cursor
 
 ### editor:delete-wrapped-line-left
 
+- Selector: `.mde-cm-wrapper`
+
 Deletes the wrapped line left
 
 ### editor:delete-wrapped-line-right
+
+- Selector: `.mde-cm-wrapper`
 
 Deletes the wrapped line right
 
 ### editor:find
 
+- Selector: `body`
+
 Toggles the editor search bar
 
 ### editor:find-next
+
+- Selector: `body`
 
 Locates the next item in the editor that matches criteria
 
 ### editor:find-prev
 
+- Selector: `body`
+
 Locates the previous item in the editor that matches criteria
 
 ### editor:find-text
+
+- Selector: `body`
 
 Finds given text in the editor
 
@@ -496,14 +598,20 @@ Finds given text in the editor
 
 ### editor:focus
 
+- Selector: `body`
+
 If the editor mode is `'edit'` or `'side-by-side'`, it focuses to the MDE.
 If the editor mode is `'preview'`, it focuses to the preview pane.
 
 ### editor:focus-mde
 
+- Selector: `body`
+
 Moves focus to the MDE.
 
 ### editor:focus-preview
+
+- Selector: `body`
 
 Moves focus to the preview pane.
 
@@ -623,6 +731,8 @@ Indents one more the currently selected line(s)
 
 ### editor:insert-images
 
+- Selector: `body`
+
 Inserts image files at the cursor to the editing note
 
 | Argument     | Description                                                                                                                                                                                                                   |
@@ -664,6 +774,8 @@ Redoes the last selection.
 
 ### editor:replace
 
+- Selector: `body`
+
 Initiates the replace sequence in the editor
 
 ### editor:replace-selection
@@ -686,6 +798,8 @@ Replaces selected text with the given text
 
 ### editor:scroll-editor-to-line
 
+- Selector: `body`
+
 Scrolls the editor to the given line
 
 | Argument | Description                          |
@@ -693,6 +807,8 @@ Scrolls the editor to the given line
 | `line`   | Number, the destination line number. |
 
 ### editor:scroll-preview-to-line
+
+- Selector: `body`
 
 Scrolls the preview to the given line
 
@@ -770,21 +886,31 @@ Unindents the current lines
 
 ### export-as-html:export
 
+- Selector: `body`
+
 Exports selected notes on the note list bar as HTML to disk
 
 ### export-as-markdown:all
+
+- Selector: `body`
 
 Exports all notes as Markdown to disk
 
 ### export-as-markdown:single
 
+- Selector: `body`
+
 Exports the editing note as Markdown to disk
 
 ### export-print:export-as-pdf
 
+- Selector: `body`
+
 Exports the editing note as PDF to disk
 
 ### export-print:print
+
+- Selector: `body`
 
 Prints the editing note
 
@@ -792,43 +918,63 @@ Prints the editing note
 
 ### import-html:import-from-file
 
+- Selector: `body`
+
 Imports a note from a HTML file
 
 ## View commands
 
 ### view:sort-by-date-created
 
+- Selector: `body`
+
 Sorts the note list by date created
 
 ### view:sort-by-date-updated
+
+- Selector: `body`
 
 Sorts the note list by date updated
 
 ### view:sort-by-title
 
+- Selector: `body`
+
 Sorts the note list by title
 
 ### view:sort-in-ascending
+
+- Selector: `body`
 
 Sorts the note list in ascending
 
 ### view:sort-in-descending
 
+- Selector: `body`
+
 Sorts the note list in descending
 
 ### view:toggle-distraction-free
+
+- Selector: `body`
 
 Toggles distraction free mode.
 
 ### view:toggle-preview
 
+- Selector: `body`
+
 Toggles the preview pane.
 
 ### view:toggle-side-by-side
 
+- Selector: `body`
+
 Toggles the side-by-side mode.
 
 ### view:toggle-sidebar
+
+- Selector: `body`
 
 Toggles the side bar.
 
@@ -836,32 +982,48 @@ Toggles the side bar.
 
 ### window:close
 
+- Selector: `body`
+
 Closes the window
 
 ### window:decrease-font-size
+
+- Selector: `body`
 
 Decreases the font size in the editor
 
 ### window:increase-font-size
 
+- Selector: `body`
+
 Increases the font size in the editor
 
 ### window:install-shell-commands
+
+- Selector: `body`
 
 Installs `ipm` command to your system
 
 ### window:new-inkdrop-window
 
+- Selector: `body`
+
 Opens up a new window
 
 ### window:reload
+
+- Selector: `body`
 
 Reloads the window
 
 ### window:toggle-dev-tools
 
+- Selector: `body`
+
 Toggles the Developer Tools window
 
 ### window:toggle-full-screen
+
+- Selector: `body`
 
 Toggles full screen mode
