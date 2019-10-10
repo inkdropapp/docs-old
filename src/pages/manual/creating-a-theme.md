@@ -23,7 +23,7 @@ Themes are pretty straightforward but it's still helpful to be familiar with a f
  * Less is a superset of CSS, but it has some really handy features like variables. If you aren't familiar with its syntax, take a few minutes to [familiarize yourself](https://speakerdeck.com/danmatthews/less-css).
  * You may also want to review the concept of a `package.json` (as covered in Inkdrop `package.json`). This file is used to help distribute your theme to Inkdrop users.
  * Your theme's `package.json` must contain a `theme` key with a value of `ui`, `syntax` or `preview` for Inkdrop to recognize and load it as a theme.
- * You can find existing themes to install or fork in the [Inkdrop themes registry](https://my.inkdrop.app/themes).
+ * You can find existing themes to install or fork in the [Inkdrop themes registry](https://my.inkdrop.app/plugins/theme).
 
 ## Creating a Syntax Theme
 
