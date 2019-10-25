@@ -9,16 +9,15 @@ These Terms of Service ("**Terms**") govern your access to and use of the servic
 
 We reserve the right to update and change these Terms of Service without notice. Any new features that augment or enhance the current Service, including the release of new tools and resources, shall be subject to the Terms of Service. Continued use of the Service after any such changes shall constitute your consent to such changes. You can review the most current version of the Terms of Service at any time at: https://docs.inkdrop.app/terms
 
-Violation of any of the terms below will result in the termination of your Account. While Inkdrop prohibits such conduct and Content on the Service, you understand and agree that Inkdrop cannot be responsible for the Content posted on the Service and you nonetheless may be exposed to such materials. You agree to use the Service at your own risk. 
-
+Violation of any of the terms below will result in the termination of your Account. While Inkdrop prohibits such conduct and Content on the Service, you understand and agree that Inkdrop cannot be responsible for the Content posted on the Service and you nonetheless may be exposed to such materials. You agree to use the Service at your own risk.
 
 ## Account Registration and Passwords
 
 1. You may be required to create an account with Inkdrop in order to access certain Services. It is a condition of your use of the Services that all the information you provide on the Services is correct, current and complete. We reserve the right to disable any user account, at any time in our sole discretion for any or no reason, including if, in our opinion, you have failed to comply with any provision of these Terms.
 2. You are responsible for safeguarding the password that you use in association with your account and for any activities or actions performed under your account. We recommend that you use "strong" passwords (passwords that use a combination of upper and lower case letters, numbers and symbols) with your account and that you logout from your account at the end of every session. Inkdrop cannot and will not be liable for any loss or damage arising from your failure to comply with the above. You agree to notify Inkdrop immediately at [contact@inkdrop.app](mailto:contact@inkdrop.app) of any actual or suspected unauthorized use of your account or any other breach of security known by you.
-3. Your login may only be used by one person - a single login shared by multiple people is not permitted. You may create separate logins for as many people as you'd like.
-4. You may not use the Service for any illegal purpose or to violate any laws in your jurisdiction (including but not limited to copyright laws).
-
+3. You are responsible for remembering the password that you use in association with your account. You understand that Inkdrop encrypts [your note data](/privacy/#inkdrop-collects-note-data) [at rest based on the password](/security#end-to-end-encryption) and it is not able to restore the data without the password.
+4. Your login may only be used by one person - a single login shared by multiple people is not permitted. You may create separate logins for as many people as you'd like.
+5. You may not use the Service for any illegal purpose or to violate any laws in your jurisdiction (including but not limited to copyright laws).
 
 ## Privacy
 
