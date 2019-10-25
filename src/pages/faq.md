@@ -36,6 +36,16 @@ If you wish to delete your account but you forgot your password, please contact 
 Inkdrop cannot reset your password for security reason.
 Please read [how to recover your password](/manual/recovering-your-password).
 
+### If you think you remember your password
+
+If you believe you know your password, but it isn’t accepted, try these steps:
+
+- Make sure you’re typing lowercase and uppercase letters correctly. If Caps Lock is turned on, the password field shows a Caps Lock symbol ⇪.
+- Try older passwords. If you’re able to log in to Inkdrop with your old password, you can then change your password.
+- Type your password in another app, like a text editor, so you can see that you’ve entered it correctly. Then copy and paste it into Inkdrop.
+- If you use multiple languages, make sure you’re using the correct keyboard layout when you enter your password.
+- Make sure you’re typing correct email address.
+
 ## Do you offer student/teacher discounts?
 
 Yes. See [this page](/student-discount) for requesting your discount.
@@ -50,9 +60,9 @@ The sustainability is crucial especially for note-taking apps because you will s
 
 You have a local data stored in here:
 
- * on macOS: `~/Library/Application Support/inkdrop`
- * on Windows: `%APPDATA%/inkdrop`
- * on Linux: `~/.config/inkdrop`
+- on macOS: `~/Library/Application Support/inkdrop`
+- on Windows: `%APPDATA%/inkdrop`
+- on Linux: `~/.config/inkdrop`
 
 The config file is `config.cson` in that directory.
 
@@ -97,14 +107,13 @@ Your account will be deleted and you can no longer access to your account. But y
 
 The payment fails if you have canceled your card, the card may have expired, or the payment might be declined by the bank for some other reason. Then we will send you an email notification. Inkdrop will retry failed payments up to three times:
 
-*   1st failed attempt: Retry 3 days after the previous attempt
-*   2nd failed attempt: Retry 5 days after the previous attempt
-*   3rd failed attempt: Retry 7 days after the previous attempt
-*   Then finally: Cancel your subscription and deactivate your account
+- 1st failed attempt: Retry 3 days after the previous attempt
+- 2nd failed attempt: Retry 5 days after the previous attempt
+- 3rd failed attempt: Retry 7 days after the previous attempt
+- Then finally: Cancel your subscription and deactivate your account
 
 ### What happens if my account has been deactivated?
 
 Your data is kept stored on the Inkdrop server.
 You can't access your notes while deactivated.
 You can re-activate your account anytime.
-
