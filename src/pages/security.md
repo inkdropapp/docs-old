@@ -26,3 +26,11 @@ The key is also encrypted while stored on disk, with a 256-bit AES key derived w
 
 We never store a copy of this common key without encryption and don't use any escrow mechanism to recover your encrypted data. This means that if you forget your login password, we cannot recover your data and we can't even reset your password.
 So we strongly recommend you to use a password manager to store your password of Inkdrop.
+
+## Take a Back-up
+
+We humans are not perfect.
+No matter how much you are careful to manage your password, you possibly lose it for various reasons.
+No matter how much we are carefully operating our servers, we possibly lose your data.
+So, please do take a backup!
+The desktop app supports [backing up your data](/manual/backing-up-your-data) continuously.
