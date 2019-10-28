@@ -514,6 +514,36 @@ Unindents the current lines
 
 Clears the text in the editor search bar
 
+### editor:change-note-status-none
+
+- Selector: `body`
+
+Set the [note status](/manual/managing-tasks-with-status) of editing note to None.
+
+### editor:change-note-status-active
+
+- Selector: `body`
+
+Set the [note status](/manual/managing-tasks-with-status) of editing note to Active.
+
+### editor:change-note-status-onhold
+
+- Selector: `body`
+
+Set the [note status](/manual/managing-tasks-with-status) of editing note to OnHold.
+
+### editor:change-note-status-completed
+
+- Selector: `body`
+
+Set the [note status](/manual/managing-tasks-with-status) of editing note to Completed.
+
+### editor:change-note-status-dropped
+
+- Selector: `body`
+
+Set the [note status](/manual/managing-tasks-with-status) of editing note to Dropped.
+
 ### editor:delete-char-after
 
 - Selector: `.mde-cm-wrapper`
