@@ -83,7 +83,9 @@ Please try moving [your local data](#where-are-my-local-data-and-config-files-) 
 
 ### How do I cancel my plan?
 
-You can cancel your subscription by deleting your account through the Account page. Please keep in mind that all created notes and uploaded images will be deleted forever.
+You can cancel your subscription by deleting your account through [the Account page](https://my.inkdrop.app/account/delete).
+Please keep in mind that all created notes and uploaded images will be deleted forever.
+Since Inkdrop is not like a big company, we don't have a budget for keeping your data without your payments.
 
 ### What happens if I change my plan before my next billing date?
 
