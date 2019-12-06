@@ -81,6 +81,19 @@ exports.onPreBootstrap = async () => {
   )
 }
 
+const categories = [
+  'usage',
+  'hacking',
+  'appendix',
+  'info',
+  'data',
+  'classes',
+  'flux-state',
+  'flux-action',
+  'data-access',
+  'component'
+]
+
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
   const manualTemplate = path.resolve(`src/templates/manual-template.js`)
@@ -106,34 +119,45 @@ exports.createPages = async ({ actions, graphql }) => {
   /*
    * Generate pages from Markdown
    */
-  const result = await graphql(`
-    {
-      allMarkdownRemark(
-        sort: { order: ASC, fields: [frontmatter___index] }
-        limit: 1000
-      ) {
-        edges {
-          node {
-            frontmatter {
-              path
-              category
+  for (category of categories) {
+    const result = await graphql(`
+      {
+        allMarkdownRemark(
+          sort: { order: ASC, fields: [frontmatter___index] }
+          limit: 1000
+          filter: { frontmatter: { category: { eq: "${category}" } } }
+        ) {
+          edges {
+            node {
+              frontmatter {
+                path
+                title
+                category
+              }
             }
           }
         }
       }
+    `)
+    if (result.errors) {
+      throw result.errors
     }
-  `)
-  if (result.errors) {
-    throw result.errors
+    const posts = result.data.allMarkdownRemark.edges
+    posts.forEach(({ node }, index) => {
+      const { path, category } = node.frontmatter
+      const prev = index === 0 ? false : posts[index - 1].node
+      const next = index === posts.length - 1 ? false : posts[index + 1].node
+
+      if (path && category) {
+        createPage({
+          path,
+          component: getTemplateForCategory(category),
+          context: {
+            prev,
+            next
+          }
+        })
+      }
+    })
   }
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    const { path, category } = node.frontmatter
-    if (path && category) {
-      createPage({
-        path,
-        component: getTemplateForCategory(category),
-        context: {} // additional data can be passed via context
-      })
-    }
-  })
 }
