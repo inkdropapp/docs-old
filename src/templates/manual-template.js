@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import ManualLayout from '../components/manual-layout'
 
 export default function Template({
@@ -24,16 +24,16 @@ export default function Template({
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <div className="sibling-page-links">
         {prev && (
-          <a href={prev.frontmatter.path} className="page-link">
+          <Link to={prev.frontmatter.path} className="page-link">
             <i className="angle double left icon" /> Prev:{' '}
             {prev.frontmatter.title}
-          </a>
+          </Link>
         )}
         {next && (
-          <a href={next.frontmatter.path} className="page-link next-page">
+          <Link to={next.frontmatter.path} className="page-link next-page">
             Next: {next.frontmatter.title}{' '}
             <i className="angle double right icon" />
-          </a>
+          </Link>
         )}
       </div>
     </ManualLayout>
