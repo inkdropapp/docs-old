@@ -24,6 +24,8 @@ type Props = {|
   onDismiss?: (dialog: MessageDialog, buttonIndex: number) => boolean,
   onHidden?: (dialog: MessageDialog, buttonIndex: number) => any,
   children: React.Node,
+  // See: https://semantic-ui.com/modules/modal.html#/settings
+  modalSettings?: Object,
 |}
 
 type MessageDialogButton = {
@@ -66,3 +68,20 @@ type MessageDialogButton = {
 It produces:
 
 ![Example](component-message-dialog_example.png)
+
+## Customizing modal dialog
+
+The dialog is based on Semantic UI's Modal component.
+If you would like to customize it, you can specify `modalSettings` prop.
+Supported values are documented [here](https://semantic-ui.com/modules/modal.html#/settings).
+
+```js
+<MessageDialog
+  ...
+  modalSettings={{ closable: true }}
+>
+  <p>
+    ...
+  </p>
+</MessageDialog>
+```
