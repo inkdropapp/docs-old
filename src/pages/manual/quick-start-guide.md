@@ -35,6 +35,31 @@ Inkdrop is both available with a Windows installer and zip archive. The installe
 
 ## Installing Inkdrop on Linux
 
+You have two options to install it.
+
+### via Snap
+
+<div class="ui info message">
+If you don't have <code>snapd</code> yet, please <a href="https://snapcraft.io/docs/core/install" target="_blank">install it</a> beforehand.
+</div>
+
+The app is [available on Snap Store](https://snapcraft.io/inkdrop).
+You can install the app via Snap Store like following:
+
+```bash
+sudo snap install inkdrop
+# Allow the app to access to your keyring
+sudo snap connect inkdrop:password-manager-service
+```
+
+You can easily update the app by running below command:
+
+```bash
+sudo snap refresh inkdrop
+```
+
+### via Package
+
 To install Inkdrop on Linux, you can download a Debian package, a RPM package or a zip archive.
 The packages do not have auto-update features.
 So when you would like to upgrade to a new release of Inkdrop, you will have to repeat this installation process.
