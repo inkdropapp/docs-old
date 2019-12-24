@@ -16,13 +16,25 @@ The app provides a way to access old revisions of notes so you can restore them 
 
 ## How to restore old revisions
 
+### Desktop
 
 1. Open up a note
-2. Click *Revision History* button at the top right corner of the editor
+2. Click _Revision History_ button at the top right corner of the editor
    ![Revision History Button](./revision-history_button.png)
 3. Select a revision by clicking a dropdown list
    ![Select Revision](./revision-history_select-revision.png)
-4. Check if the selected revision is ok to restore. Click *Restore* button
+4. Check if the selected revision is ok to restore. Click _Restore_ button
    ![Select Revision](./revision-history_restore-revision.png)
 
 If you would like to undo restoring the revision, just press `Ctrl-Z` or `Cmd-Z` (Command: `core:undo`).
+
+### Mobile
+
+1. Open up a note
+2. Tap "..." button on the right of the navigation bar
+3. Select _Revision history.._ menu
+   ![Revision history menu](./revision-history_mobile_menu.png)
+4. Select a revision from the list
+   ![Select revision](./revision-history_mobile_select_revision.png)
+5. Check if the selected revision is ok to restore. Tap _Restore_ button
+   ![Restore revision](./revision-history_mobile_restore_revision.png)
