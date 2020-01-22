@@ -1,7 +1,7 @@
 ---
 index: 2
 category: "usage"
-toc: false
+toc: true
 path: "/manual/basic-usage"
 title: "Basic Usage"
 ---
@@ -10,9 +10,9 @@ title: "Basic Usage"
 
 ![Layout](./basic-usage_screen.png)
 
-* **Sidebar** (on the left): it lists notebooks, statuses and tags here. Notebooks are like folders you can create recursively. Statuses are additional information to treat notes as tasks. Tags are like labels which can link notes with related topic.
-* **Note list** (in the middle): all your notes live here, ordered by modification date by default. You can search notes with keywords from a search bar on the top of it.
-* **Editor** (on the right): this is where your magic happens; you're looking at it. 😄
+- **Sidebar** (on the left): it lists notebooks, statuses and tags here. Notebooks are like folders you can create recursively. Statuses are additional information to treat notes as tasks. Tags are like labels which can link notes with related topic.
+- **Note list** (in the middle): all your notes live here, ordered by modification date by default. You can search notes with keywords from a search bar on the top of it.
+- **Editor** (on the right): this is where your magic happens; you're looking at it. 😄
 
 ## Creating new note and notebook
 
@@ -32,12 +32,12 @@ Inkdrop has a number of settings and preferences you can modify in the Preferenc
 
 To open the Settings View, you can:
 
- * on macOS:
-   * Use the *Inkdrop > Preferences* menu item in the menu bar
-   * Use the `Cmd+,` keybinding
- * on Windows & Linux:
-   * Use the *File > Settings* menu item in the menu bar
-   * Use the `Ctrl+,` keybinding
+- on macOS:
+  - Use the _Inkdrop > Preferences_ menu item in the menu bar
+  - Use the `Cmd+,` keybinding
+- on Windows & Linux:
+  - Use the _File > Settings_ menu item in the menu bar
+  - Use the `Ctrl+,` keybinding
 
 And you should see the window like this:
 
@@ -47,15 +47,15 @@ And you should see the window like this:
 
 Inkdrop stores your data and config in local at following path:
 
-* on macOS: `~/Library/Application Support/inkdrop/`
-* on Windows: `%APPDATA%/inkdrop/`
-* on Linux: `~/.config/inkdrop/`
+- on macOS: `~/Library/Application Support/inkdrop/`
+- on Windows: `%APPDATA%/inkdrop/`
+- on Linux: `~/.config/inkdrop/`
 
-You can open it up in a file manager from *Preferences -> General -> Open Config Folder*.
+You can open it up in a file manager from _Preferences -> General -> Open Config Folder_.
 
 This directory has following files and folders:
 
-* `config.cson`: The app config file in [CSON format](https://github.com/bevry/cson#what-is-cson)
-* `keymap.cson`: The keybindings config file in [CSON format](https://github.com/bevry/cson#what-is-cson)
-* `packages/`: Installed plugins
-* `db/`: The local database
+- `config.cson`: The app config file in [CSON format](https://github.com/bevry/cson#what-is-cson)
+- `keymap.cson`: The keybindings config file in [CSON format](https://github.com/bevry/cson#what-is-cson)
+- `packages/`: Installed plugins
+- `db/`: The local database

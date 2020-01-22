@@ -1,7 +1,7 @@
 ---
 index: 1
 category: "usage"
-toc: false
+toc: true
 path: "/manual/"
 title: "Quick Start Guide"
 ---

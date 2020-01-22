@@ -1,7 +1,7 @@
 ---
 index: 70
 category: "usage"
-toc: false
+toc: true
 path: "/manual/extend-inkdrop-with-plugins"
 title: "Extend Inkdrop with Plugins"
 ---
@@ -9,14 +9,15 @@ title: "Extend Inkdrop with Plugins"
 Plugins add new functionality or provide new look to Inkdrop. You can activate or deactivate them at any time.
 Go to `Preferences > Plugins` on macOS or `File > Settings` on Windows and Linux to see a list of what’s installed.
 To find new plugins to install, please access to [Inkdrop plugin registry](https://my.inkdrop.app/plugins).
+For mobile, see [this section](#mobile-support).
 
 Developers can clone or download additional Inkdrop plugins via [GitHub](https://github.com/inkdropapp/). Installation instructions are [here](#installing-plugins). Many of these are community-contributed, and the selection will continue to grow over time.
 
 There are three types of the plugin:
 
- * **General plugin** - Plugin that adds new functionality
- * **UI Theme** - Theme for Inkdrop UI
- * **Preview Theme** - Theme for Markdown preview
+- **General plugin** - Plugin that adds new functionality
+- **UI Theme** - Theme for Inkdrop UI
+- **Preview Theme** - Theme for Markdown preview
 
 ## Using ipm (Inkdrop Plugin Manager)
 
@@ -74,8 +75,8 @@ Use `ipm install` to install them or visit https://my.inkdrop.app/plugins to rea
 
 Once you found new plugins to install, you can install them by using the `ipm install` command:
 
- * `ipm install <package_name>` to install the latest version.
- * `ipm install <package_name>@<package_version>` to install a specific version.
+- `ipm install <package_name>` to install the latest version.
+- `ipm install <package_name>@<package_version>` to install a specific version.
 
 For example `ipm install markdown-emoji@0.1.0` installs the 0.1.0 release of the [markdown-emoji](https://my.inkdrop.app/plugins/markdown-emoji) package.
 
@@ -92,3 +93,10 @@ You can also uninstall the plugin by running below command:
 ```
 $ ipm uninstall <package_name>
 ```
+
+## Mobile support
+
+Some plugins are bundled in the mobile app as Markdown renderer options.
+Go to `Preferences > Markdown Renderer` and you will see the list of available options:
+
+![Advanced markdown renderer options](./extend-inkdrop-with-plugins_mobile.png)

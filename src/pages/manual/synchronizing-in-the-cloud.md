@@ -1,7 +1,7 @@
 ---
 index: 50
 category: "usage"
-toc: false
+toc: true
 path: "/manual/synchronizing-in-the-cloud"
 title: "Synchronizing in the Cloud"
 ---
@@ -14,9 +14,9 @@ You can configure synchronizations in the Preferences window like this:
 
 There are three sync options:
 
- * **Don't Sync** - Store Inkdrop data only in your local computer
- * **Inkdrop Sync Server** - Sync with Inkdrop's own service
- * **Advanced (CouchDB)** - Sync with your own compatible server
+- **Don't Sync** - Store Inkdrop data only in your local computer
+- **Inkdrop Sync Server** - Sync with Inkdrop's own service
+- **Advanced (CouchDB)** - Sync with your own compatible server
 
 ## How to Set Up Your Own Sync Server
 
@@ -165,9 +165,8 @@ Also, please don't forget your server to enable SSL because iOS requires it for 
 To configure the mobile app to sync with your database:
 
 1. Go to Preferences → Synchronization
-2. Select *Advanced (CouchDB)*
-3. Input your database URL to the input field at the *ADDRESS* section.
-4. Press *Apply* button
+2. Select _Advanced (CouchDB)_
+3. Input your database URL to the input field at the _ADDRESS_ section.
+4. Press _Apply_ button
 
 ![Sync with custom server on the mobile app](./sync_mobile.jpg)
-
