@@ -293,6 +293,37 @@ Shows up a dialog for creating a new notebook
 
 Lists all notes on the note list bar
 
+### core:note-list-show-notes-in-book
+
+- Selector: `body`
+
+List notes in specified notebook on the note list bar
+
+| Argument | Description                |
+| -------- | -------------------------- |
+| `bookId` | The notebook ID            |
+| `tagId`  | The tag ID to filter items |
+
+### core:note-list-show-notes-with-tag
+
+- Selector: `body`
+
+List notes with specified tag on the note list bar
+
+| Argument | Description |
+| -------- | ----------- |
+| `tagId`  | The tag ID  |
+
+### core:note-list-show-notes-with-status
+
+- Selector: `body`
+
+List notes with specified [note status](/manual/managing-tasks-with-status) on the note list bar
+
+| Argument | Description                                                                                                     |
+| -------- | --------------------------------------------------------------------------------------------------------------- |
+| `status` | The note status which should be **one of:**`"none"` or `"active"` or `"onHold"` or `"completed"` or `"dropped"` |
+
 ### core:open-first-note
 
 - Selector: `body`
