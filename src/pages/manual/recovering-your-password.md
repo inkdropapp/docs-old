@@ -1,5 +1,5 @@
 ---
-index: 80
+index: 210
 category: "usage"
 toc: false
 path: "/manual/recovering-your-password"
@@ -21,3 +21,8 @@ But there is one way to recover your password, which is to check your computer s
   </p>
 </div>
 
+## See also
+
+- [FAQ - I forgot my password. How to reset my password?](/faq#i-forgot-my-password-how-to-reset-my-password)
+- [Troubleshooting - I can't login](/manual/troubleshooting#i-cant-log-in)
+- [Salvage Data from Local Database](/manual/salvage-data-from-local-database)
