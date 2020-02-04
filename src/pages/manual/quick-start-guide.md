@@ -64,14 +64,19 @@ To install Inkdrop on Linux, you can download a Debian package, a RPM package or
 The packages do not have auto-update features.
 So when you would like to upgrade to a new release of Inkdrop, you will have to repeat this installation process.
 
-To install Atom on Debian, Ubuntu, or related systems:
+#### Debian, Ubuntu, or related systems
 
 ```bash
-# Install Inkdrop
-sudo dpkg -i inkdrop_x.y.z_amd64.deb
+wget https://api.inkdrop.app/download/linux/deb -O /tmp/inkdrop.deb && sudo dpkg -i /tmp/inkdrop.deb && rm /tmp/inkdrop.deb
 
 # Install Inkdrop's dependencies if they are missing
 sudo apt-get -f install
+```
+
+#### RedHat, Fedora or related systems
+
+```bash
+wget https://api.inkdrop.app/download/linux/rpm -O /tmp/inkdrop.rpm && sudo yum install /tmp/inkdrop.rpm && rm /tmp/inkdrop.rpm
 ```
 
 ## Log in
