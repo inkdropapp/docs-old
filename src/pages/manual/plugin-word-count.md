@@ -233,8 +233,8 @@ The second file is a React Component class, `lib/wordcount-message-dialog.js`, w
 ```jsx
 'use babel';
 
-import { React } from 'inkdrop';
-import { CompositeDisposable } from 'inkdrop';
+import * as React from 'react';
+import { CompositeDisposable } from 'event-kit';
 
 export default class WordcountMessageDialog extends React.Component {
 
