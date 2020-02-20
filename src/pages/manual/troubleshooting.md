@@ -28,6 +28,12 @@ Please ask your network administrator to allow the app to access `*.inkdrop.app`
 Inkdrop stores your credentials in your Keyring.
 If you are not on Gnome, such as KDE, you need to install `gnome-keyring`.
 
+If you installed it via Snap and got an **AppArmor policy** error, please make sure you ran the below command to allow it to access to your keyring:
+
+```sh
+sudo snap connect inkdrop:password-manager-service
+```
+
 ### Install Missing Packages on Linux
 
 In some environment you need some additional packages installed. Please try installing following packages:
