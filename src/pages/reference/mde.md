@@ -45,7 +45,7 @@ For example, you can change the editor option like so:
 
 ```js
 const mde = inkdrop.getActiveEditorOrThrowError()
-mde.codeMirror.setOption('lineNumbers', true)
+mde.cm.setOption('lineNumbers', true)
 ```
 
 All available CodeMirror APIs are [documented here](https://codemirror.net/doc/manual.html).
