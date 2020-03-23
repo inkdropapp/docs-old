@@ -49,7 +49,9 @@ Inkdrop stores your data and config in local at following path:
 
 - on macOS: `~/Library/Application Support/inkdrop/`
 - on Windows: `%APPDATA%/inkdrop/`
-- on Linux: `~/.config/inkdrop/`
+- on Linux:
+  - deb/rpm: `~/.config/inkdrop/`
+  - Snap: `~/snap/inkdrop/current/.config/inkdrop/`
 
 You can open it up in a file manager from _Preferences -> General -> Open Config Folder_.
 
