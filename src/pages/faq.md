@@ -31,6 +31,11 @@ You data including personal information will be deleted immediately and permanen
 
 If you wish to delete your account but you forgot your password, please contact us from your registered email.
 
+## Can I deactivate my account without deleting data?
+
+No.
+Since Inkdrop is not a VC-backed startup, we don't have a budget for keeping your data without your payments.
+
 ## I forgot my password. How to reset my password?
 
 Inkdrop cannot reset your password for security reason.
