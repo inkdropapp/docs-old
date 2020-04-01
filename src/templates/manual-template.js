@@ -5,13 +5,11 @@ import ManualLayout from '../components/manual-layout'
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
-  pathContext
+  pageContext
 }) {
-  console.log('data:', data)
-  console.log('pathContext:', pathContext)
   const { pageByPath } = data
   const { frontmatter, html, tableOfContents } = pageByPath
-  const { next, prev } = pathContext
+  const { next, prev } = pageContext
   return (
     <ManualLayout currentPageTitle={frontmatter.title}>
       <h1>{frontmatter.title}</h1>
@@ -42,7 +40,7 @@ export default function Template({
 
 Template.propTypes = {
   data: PropTypes.object,
-  pathContext: PropTypes.object
+  pageContext: PropTypes.object
 }
 
 export const pageQuery = graphql`
