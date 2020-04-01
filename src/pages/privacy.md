@@ -10,16 +10,16 @@ This notice describes how Inkdrop collects and uses data about you.
 Skip to:
 
 - [Definitions](#definitions)
-- [How does Inkdrop collect data about me?](#how-does-inkdrop-collect-data-about-me-)
-- [What data does Inkdrop collect about me, and why?](#what-data-does-inkdrop-collect-about-me-and-why-)
-- [Where does Inkdrop keep data about me?](#where-does-inkdrop-keep-data-about-me-)
-- [Does Inkdrop comply with the EU General Data Protection Regulation?](#does-inkdrop-comply-with-the-eu-general-data-protection-regulation-)
-- [How can I access data about me?](#how-can-i-access-data-about-me-)
-- [How can I change or erase data about me?](#how-can-i-change-or-erase-data-about-me-)
-- [Does Inkdrop share data about me with others?](#does-inkdrop-share-data-about-me-with-others-)
-- [Who can I contact about Inkdrop and my privacy?](#who-can-i-contact-about-inkdrop-and-my-privacy-)
-- [Does Inkdrop make automated decisions based on data about me?](#does-inkdrop-make-automated-decisions-based-on-data-about-me-)
-- [How can I find out about changes?](#how-can-i-find-out-about-changes-)
+- [How does Inkdrop collect data about me?](#how-does-inkdrop-collect-data-about-me)
+- [What data does Inkdrop collect about me, and why?](#what-data-does-inkdrop-collect-about-me-and-why)
+- [Where does Inkdrop keep data about me?](#where-does-inkdrop-keep-data-about-me)
+- [Does Inkdrop comply with the EU General Data Protection Regulation?](#does-inkdrop-comply-with-the-eu-general-data-protection-regulation)
+- [How can I access data about me?](#how-can-i-access-data-about-me)
+- [How can I change or erase data about me?](#how-can-i-change-or-erase-data-about-me)
+- [Does Inkdrop share data about me with others?](#does-inkdrop-share-data-about-me-with-others)
+- [Who can I contact about Inkdrop and my privacy?](#who-can-i-contact-about-inkdrop-and-my-privacy)
+- [Does Inkdrop make automated decisions based on data about me?](#does-inkdrop-make-automated-decisions-based-on-data-about-me)
+- [How can I find out about changes?](#how-can-i-find-out-about-changes)
 
 ## Definitions
 
