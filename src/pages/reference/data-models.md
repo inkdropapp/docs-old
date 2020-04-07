@@ -67,6 +67,7 @@ A note data
 | **migratedBy** | *string* | The type of the data migration<br/> **Length:** `0..128` | `"migrateAddingParentBookId"` |
 | **numOfCheckedTasks** | *number* | The number of checked tasks, extracted from body | `42.0` |
 | **numOfTasks** | *number* | The number of tasks, extracted from body | `42.0` |
+| **pinned** | *boolean* | Whether the note is pinned to top | `true` |
 | **share** | *string* | The sharing mode of the note<br/> **one of:**`"private"` or `"public"` | `"private"` |
 | **status** | *string* | The status of the note<br/> **one of:**`"none"` or `"active"` or `"onHold"` or `"completed"` or `"dropped"` | `"none"` |
 | **tags** | *array* | The list of tag IDs | `["tag:a28ca207"]` |

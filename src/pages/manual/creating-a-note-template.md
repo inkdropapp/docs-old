@@ -50,6 +50,7 @@ inkdrop.commands.add(document.body, "custom:new-journal", async () => {
     title: new Date().toLocaleDateString(),
     createdAt: +new Date(),
     updatedAt: +new Date(),
+    pinned: false,
   }
   try {
     await db.notes.put(note)
