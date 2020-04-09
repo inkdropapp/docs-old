@@ -45,7 +45,7 @@ And you should see the window like this:
 
 ## User data directory
 
-Inkdrop stores your data and config in local at following path:
+Inkdrop stores your data and config in local at the following path:
 
 - on macOS: `~/Library/Application Support/inkdrop/`
 - on Windows: `%APPDATA%/inkdrop/`
@@ -55,7 +55,7 @@ Inkdrop stores your data and config in local at following path:
 
 You can open it up in a file manager from _Preferences -> General -> Open Config Folder_.
 
-This directory has following files and folders:
+This directory has the following files and folders:
 
 - `config.cson`: The app config file in [CSON format](https://github.com/bevry/cson#what-is-cson)
 - `keymap.cson`: The keybindings config file in [CSON format](https://github.com/bevry/cson#what-is-cson)
