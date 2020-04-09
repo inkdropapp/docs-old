@@ -12,11 +12,11 @@ Notes are only useful if you can find them quickly. Inkdrop's full-text search a
 
 Inkdrop provides two search scopes:
 
-- **Local**: It searches current context of the note list. It is useful if you would like to just filter notes shown in the note list.
-- **Global**: It searches all notes, regardless of which notebook, tag or status is currently selected.
+- **Local**: It searches the current items of the note list.
+- **Global**: It searches all notes across notebooks including dropped/completed status.
 
-When search scope is local, the search bar on top of the note list has "Filter" placeholder with funnel icon as following image.
-While you are navigating notes, search scope automatically switches to local.
+When search scope is local, the search bar on top of the note list has "Filter" placeholder with funnel icon as the following image.
+While you are exploring notes, search scope automatically switches to local.
 
 ![Search Bar](./searching-notes_search-bar-local.png)
 
@@ -27,8 +27,8 @@ If you would like to search all notes, click **"Search All"** item on the sideba
 
 ### Shortcut Keys
 
-You can move focus to the search bar by pressing `Cmd+Shift+F` on macOS or `Ctrl+Shift+F` on Windows and Linux.
-To switch search scope from local to global, press the same shortcut key again while having focus on the search bar, or press `Cmd+Shift+Alt+F` on macOS or `Ctrl+Shift+Alt+F` on Windows and Linux.
+You can move focus to the search bar by pressing `Cmd+Shift+F` on macOS or `Ctrl+Shift+F` on Windows and Linux (Command: `core:find`).
+To switch search scope from local to global, press the same shortcut key again while having focus on the search bar, or press `Cmd+Shift+Alt+F` on macOS or `Ctrl+Shift+Alt+F` on Windows and Linux (Command: `core:find-global`).
 
 ## Filter Notes with Special Qualifiers
 
@@ -71,3 +71,5 @@ To search notes NOT matched with specified keyword and condition, add `-` modifi
 -foo
 -"foo bar"
 ```
+
+Note that you can't specify excluding modifiers only without including condition.
