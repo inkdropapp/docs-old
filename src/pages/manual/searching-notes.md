@@ -13,7 +13,7 @@ Notes are only useful if you can find them quickly. Inkdrop's full-text search a
 Inkdrop provides two search scopes:
 
 - **Local**: It searches the current items of the note list.
-- **Global**: It searches all notes across notebooks including dropped/completed status.
+- **Global**: It searches all notes across notebooks including dropped & completed statuses.
 
 When search scope is local, the search bar on top of the note list has "Filter" placeholder with funnel icon as the following image.
 While you are exploring notes, search scope automatically switches to local.
