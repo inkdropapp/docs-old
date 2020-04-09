@@ -72,4 +72,4 @@ To search notes NOT matched with specified keyword and condition, add `-` modifi
 -"foo bar"
 ```
 
-Note that you can't specify excluding modifiers only without including condition.
+Note that you can't specify excluding modifiers only without including conditions.
