@@ -11,9 +11,9 @@ Here is a quick tip for those dealing with a proxy.
 
 You can configure the web proxy settings by editing `config.cson`. This config file is in following directory:
 
- * on macOS: `~/Library/Application Support/inkdrop/config.cson`
- * on Windows: `%APPDATA%/inkdrop/config.cson`
- * on Linux: `~/.config/inkdrop/config.cson`
+- on macOS: `~/Library/Application Support/inkdrop/config.cson`
+- on Windows: `%APPDATA%/inkdrop/config.cson`
+- on Linux: `~/.config/inkdrop/config.cson`
 
 Quit Inkdrop before you edit it.
 
@@ -25,13 +25,20 @@ Quit Inkdrop before you edit it.
       https_proxy: "http://webproxy:8080/"
 ```
 
-Now open Inkdrop and you will be able to get synced!
 If the web proxy requires BASIC auth, you can just specify a URL with username and password like so:
 
 ```
 http://username:password@webproxy:8080/
 ```
 
+Note that if your username or password is like a mail address which includes "@" character or non-alphabetical characters, you have to percent-encode them according to [RFC 3986, section 3.2.1](https://tools.ietf.org/html/rfc3986#section-3.2.1), as following:
+
+```
+NG: http://david@company.com:password@webproxy:8080/
+OK: http://david%40company.com:password@webproxy:8080/
+```
+
+Now open Inkdrop and you should be able to authenticate and get synced!
 
 ## Configuring ipm
 
@@ -66,4 +73,3 @@ ipm config set strict-ssl false
 
 If you got an error like that, your proxy server may be using TLSv1.0 which is obsolete.
 You have to update your proxy server to support newer protocols like TLSv1.2 since Inkdrop does not support TLSv1.0.
-
