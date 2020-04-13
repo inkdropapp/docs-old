@@ -58,3 +58,21 @@ You have to reload the app so that it recognizes new plugins installed.
 
 If it's an official plugin, please create a topic on [our forum here](https://forum.inkdrop.app/).
 If a third-party plugin, please create an issue on its GitHub repository.
+
+## Payment failed
+
+### My credit card was declined with `StripeCardError(code=card_declined)`
+
+That's probably because the charge was issued from Japan and your bank thought that's suspicious somehow.
+But it is impossible from us to know the actual reason why your card has been declined.
+Stripe provides [the documentation](https://stripe.com/docs/declines/codes) about card declines but it is not helpful to solve it.
+
+Therefore, **please ask your bank to allow us to charge you from Japan**.
+Some people with the same issue solved by doing that.
+Sorry for the inconvenience.
+
+### My debit card was declined
+
+Please check your debit card supports recurring payments.
+Some debit cards don't support paying for subscription services.
+
