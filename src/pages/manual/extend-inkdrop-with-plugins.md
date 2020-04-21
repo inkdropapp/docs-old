@@ -86,6 +86,28 @@ Go to `Preferences > Plugins` (macOS) or `File > Settings` (Windows and Linux), 
 
 ![Activating Plugins](./extend-inkdrop-with-plugins_toggle.png)
 
+## Updating plugins
+
+You can update outdated plugins like so:
+
+```sh
+$ ipm update
+Package Updates Available (1)
+└── vim 2.0.0 -> 2.0.1
+
+Would you like to install these updates? (yes) yes
+
+Installing vim@2.0.1 to /Users/nora/.inkdrop/packages ✓
+```
+
+If there are no updates available, you will get:
+
+```sh
+$ ipm update
+Package Updates Available (0)
+└── (empty)
+```
+
 ## Uninstalling plugins
 
 You can also uninstall the plugin by running below command:
