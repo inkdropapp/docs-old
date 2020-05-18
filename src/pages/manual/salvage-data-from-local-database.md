@@ -32,7 +32,6 @@ npm install -g inkdrop-localdb-extract
 
 You got a command `inkdrop-localdb-extract`:
 
-
 ```sh
 inkdrop-localdb-extract
 
@@ -47,7 +46,7 @@ Options:
 Your data directory can be found at the following path:
 
 - on macOS: `~/Library/Application Support/inkdrop/db/<USER_ID>`
-- on Windows: `%APPDATA%/inkdrop/db/<USER_ID>`
+- on Windows: `%APPDATA%\inkdrop\db\<USER_ID>`
 - on Linux: `~/.config/inkdrop/db/<USER_ID>`
 
 `USER_ID` looks something like `56ab08396cec2c0f87492c9a0f005f86`.
@@ -57,6 +56,7 @@ For example:
 ```sh
 inkdrop-localdb-extract --src /path/to/db --dest /path/to/store
 ```
+
 Then, you should get [backup files](/manual/backing-up-your-data) in the specified destination directory.
 
 ## Migrate data to new account

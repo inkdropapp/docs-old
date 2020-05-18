@@ -49,7 +49,8 @@ You can also manually install `ipm` from `Inkdrop -> Install Shell Commands` fro
 
 ### Windows
 
-The setup program will install `ipm`, and add it to your `PATH`.
+The setup program will automatically install `ipm` command, and add it to your `PATH`.
+The ipm command can be found in `%APPDATA%\inkdrop\bin`.
 
 ### Linux
 

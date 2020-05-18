@@ -12,7 +12,7 @@ Here is a quick tip for those dealing with a proxy.
 You can configure the web proxy settings by editing `config.cson`. This config file is in following directory:
 
 - on macOS: `~/Library/Application Support/inkdrop/config.cson`
-- on Windows: `%APPDATA%/inkdrop/config.cson`
+- on Windows: `%APPDATA%\inkdrop\config.cson`
 - on Linux: `~/.config/inkdrop/config.cson`
 
 Quit Inkdrop before you edit it.
