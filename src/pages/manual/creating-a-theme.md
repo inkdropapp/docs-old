@@ -28,7 +28,7 @@ Themes are pretty straightforward but it's still helpful to be familiar with a f
 ## Creating a Syntax Theme
 
 <div class="ui message info">
-  <strong>Tip:</strong> Syntax themes should end with <code>-syntax</code>, UI themes should end with <code>-ui</code> and Preview themes should end with <code>-preview</code>.
+  <strong>Tip:</strong> Syntax themes should end with <code>-syntax</code>.
 </div>
 
 Let's create your first theme which is called `motif-syntax`.
@@ -58,6 +58,10 @@ After making changes, reload the app to reflected changes.
 
 ## Creating a UI Theme
 
+<div class="ui message info">
+  <strong>Tip:</strong> UI themes should end with <code>-ui</code> or for dark theme<code>-dark-ui</code>.
+</div>
+
 To create a UI theme, do the following:
 
 1. fork the [Inkdrop's default UI theme repository on GitHub](https://github.com/inkdropapp/inkdrop-default-light-ui-theme)
@@ -81,6 +85,11 @@ Inkdrop's UI elements are styled with [CSS variables](https://developer.mozilla.
 Inkdrop's CSS Variables are defined in `src/definitions/globals/variables.less`, and you can change them by editing `src/themes/default/globals/site.variables`.
 
 ## Creating a Preview Theme
+
+<div class="ui message info">
+  <strong>Tip:</strong> Preview themes should end with <code>-preview</code>.
+</div>
+
 Let's create your first theme which is called `motif-preview`.
 To create a preview theme, do the following:
 

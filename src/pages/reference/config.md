@@ -183,7 +183,7 @@ In this example, the setting must be one of the 3 strings:
 ### title and description
 
 The settings view will use the `title` and `description` keys to display your config setting in a readable way.
-By default the settings view humanizes your config key, so `someSeting` becomes `Some Setting`.
+By default the settings view humanizes your config key, so `someSetting` becomes `Some Setting`.
 In some cases, this is confusing for users, and a more descriptive title is useful.
 
 Descriptions will be displayed below the title in the settings view.
