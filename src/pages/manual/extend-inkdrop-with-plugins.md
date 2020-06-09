@@ -49,7 +49,8 @@ You can also manually install `ipm` from `Inkdrop -> Install Shell Commands` fro
 
 ### Windows
 
-The setup program will install `ipm`, and add it to your `PATH`.
+The setup program will automatically install `ipm` command, and add it to your `PATH`.
+The ipm command can be found in `C:\Users\<USER>\AppData\Local\inkdrop\bin`.
 
 ### Linux
 
@@ -85,6 +86,28 @@ For example `ipm install markdown-emoji@0.1.0` installs the 0.1.0 release of the
 Go to `Preferences > Plugins` (macOS) or `File > Settings` (Windows and Linux), you can activate/deactivate plugins by toggling a switch on the left of the plugin name here.
 
 ![Activating Plugins](./extend-inkdrop-with-plugins_toggle.png)
+
+## Updating plugins
+
+You can update outdated plugins like so:
+
+```sh
+$ ipm update
+Package Updates Available (1)
+└── vim 2.0.0 -> 2.0.1
+
+Would you like to install these updates? (yes) yes
+
+Installing vim@2.0.1 to /Users/nora/.inkdrop/packages ✓
+```
+
+If there are no updates available, you will get:
+
+```sh
+$ ipm update
+Package Updates Available (0)
+└── (empty)
+```
 
 ## Uninstalling plugins
 

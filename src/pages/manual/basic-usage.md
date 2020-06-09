@@ -48,7 +48,7 @@ And you should see the window like this:
 Inkdrop stores your data and config in local at the following path:
 
 - on macOS: `~/Library/Application Support/inkdrop/`
-- on Windows: `%APPDATA%/inkdrop/`
+- on Windows: `%APPDATA%\inkdrop\`
 - on Linux:
   - deb/rpm: `~/.config/inkdrop/`
   - Snap: `~/snap/inkdrop/current/.config/inkdrop/`

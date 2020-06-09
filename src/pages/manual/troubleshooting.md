@@ -61,15 +61,17 @@ If a third-party plugin, please create an issue on its GitHub repository.
 
 ## Payment failed
 
-### My credit card was declined with `StripeCardError(code=card_declined)`
+### My credit card was declined with error code `do_not_honor` / `generic_decline`
 
-That's probably because the charge was issued from Japan and your bank thought that's suspicious somehow.
+That's probably because the charge was issued from Japan and your card issuer thought that's suspicious somehow.
 But it is impossible from us to know the actual reason why your card has been declined.
-Stripe provides [the documentation](https://stripe.com/docs/declines/codes) about card declines but it is not helpful to solve it.
+Stripe provides [the documentation](https://stripe.com/docs/declines/codes) about these error codes but it is not helpful to solve it.
 
-Therefore, **please ask your bank to allow us to charge you from Japan**.
+Therefore, **please ask your card issuer or bank to allow us to charge you from Japan**.
 Some people with the same issue solved by doing that.
 Sorry for the inconvenience.
+
+For other error codes, please refer to [the Stripe documentation](https://stripe.com/docs/declines/codes).
 
 ### My debit card was declined
 
