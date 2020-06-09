@@ -10,7 +10,7 @@ We humans are not perfect. No matter how much you are careful to manage your pas
 No matter how much we are carefully operating our servers, we possibly lose your data.
 So, please do take a backup!
 
-You can back up your all data to your local filesystem and restore it at anytime.
+You can back up all your data to your local filesystem and restore it at anytime.
 Inkdrop stores them as JSON files **continuously** while you use it. It works like local replication.
 You can configure where to store from the preferences:
 
