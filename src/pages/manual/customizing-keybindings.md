@@ -32,6 +32,8 @@ You can also see all the keybindings that are currently configured in your insta
 
 By clicking **your keymap file** on the top of this section, you can open up the file.
 
+To unbind the existing keybindings, set `false` value instead of command name to them.
+
 ## Global keybindings
 
 There is a special selector called `global` which lets you configure global keybindings.
