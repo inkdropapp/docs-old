@@ -84,6 +84,11 @@ If you are getting an error saying `Failed to load database`, please make sure t
 If you still get the error, your local data might be corrupt or missing.
 Please try moving [your local data](#where-are-my-local-data-and-config-files-) to other place and launch it again.
 
+## Is it possible to attach files to a note?
+
+No. Inkdrop only supports attaching images.
+Please upload files to a cloud storage service and paste the URLs of them to the note.
+
 ## Billing
 
 ### How do I cancel my plan?
