@@ -134,7 +134,11 @@ Copy the target element's image to clipboard
 
 - Selector: `body`
 
-Copy links to notes currently selected on the note list as Markdown
+Copy links to notes as Markdown links. By default, copy currently selected on the note list.
+
+| Argument | Description                                                           |
+| -------- | --------------------------------------------------------------------- |
+| `noteId` | (Optional) A String or An Array. The ID(s) of the note(s) to process. |
 
 ### core:cut
 
@@ -343,6 +347,12 @@ Opens the first note of the note list bar in the editor
 
 Opens the next note of currently selected note on the note list bar.
 
+### core:close-note
+
+- Selector: `body`
+
+Closes the currently editing note
+
 ### core:open-note
 
 - Selector: `body`
@@ -360,7 +370,11 @@ Opens a note with specified note ID
 
 - Selector: `body`
 
-Opens notes selected on the note list bar in separate windows
+Opens notes in separate windows. By default, opens notes selected on the note list bar.
+
+| Argument | Description                                                        |
+| -------- | ------------------------------------------------------------------ |
+| `noteId` | (Optional) A String or An Array. The ID(s) of the note(s) to open. |
 
 ### core:open-prev-note
 
