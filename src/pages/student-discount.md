@@ -14,20 +14,21 @@ Apply for an educational license below to receive your discount.
 
 To be approved for an educational discount, please provide proof of eligibility for the following items:
 
-* ID card for your institution
-* Enrollment documents for the current academic year
-* Valid receipt (must contain the student name, date/duration of the course and the name of the academic institution)
+- ID card for your institution
+- Enrollment documents for the current academic year
+- Valid receipt (must contain the student name, date/duration of the course and the name of the academic institution)
 
 ## Request your discount
 
 Please email us to [contact@inkdrop.app](mailto:contact@inkdrop.app) with below informations to apply it.
+Note that you have to request it at least 3 business days before your free trial expires.
+If you don't, your first invoice will not be applied the discount.
 
-* Your full name
-* Your registered account's email address
-* Educational institution
-* Country
-* Course you're enrolled in
-* Proof of student/teacher status
+- Your full name
+- Your registered account's email address
+- Educational institution
+- Country
+- Course you're enrolled in
+- Proof of student/teacher status
   (i.e: scan of ID card with a visible expiration date, enrollment document, invoice or receipt)
-* Additional comments (optional)
-
+- Additional comments (optional)
