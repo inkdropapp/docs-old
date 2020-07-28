@@ -11,9 +11,13 @@ It allows you to share your Markdown notes with anyone, even those who don't use
 
 ## Steps to Publish Notes
 
-First, open a note you wish to publish and then click “Share Note” button on the top right corner of the window.
+First, click the three-dash button on the top right corner of the editor, or press <kbd>Cmd + J</kbd> on macOS or <kbd>Ctrl + J</kbd> on Linux and Windows:
 
 ![“Share Note” button](./sharing-notes_button.png)
+
+Then, click "Share on Web.." menu on the editor drawer.
+
+!["Share on Web.." menu](./sharing-notes_menu.png)
 
 You will see a dialog which confirms you share the note on the web. Press “Share” button to proceed.
 

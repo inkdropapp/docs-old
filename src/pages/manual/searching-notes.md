@@ -12,23 +12,25 @@ Notes are only useful if you can find them quickly. Inkdrop's full-text search a
 
 Inkdrop provides two search scopes:
 
-- **Local**: It searches the current items of the note list.
-- **Global**: It searches all notes across notebooks including dropped & completed statuses.
+- **Local**: It filters the items of the note list
+- **Global**: It searches all notes across notebooks
 
-When search scope is local, the search bar on top of the note list has "Filter" placeholder with funnel icon as the following image.
-While you are exploring notes, search scope automatically switches to local.
+When you are viewing a certain notebook, tag, or status, the search scope is automatically set to local.
+In this mode, you can see the search bar on top of the note list has "Filter" placeholder with funnel icon.
 
-![Search Bar](./searching-notes_search-bar-local.png)
+![Local search scope](./searching-notes_search-bar-local.png)
 
-When search scope is global, the search bar has "Search" placeholder with magnifier icon.
-If you would like to search all notes, click **"Search All"** item on the sidebar as following:
+When you are viewing "All Notes", the search scope is set to global.
+In this mode, the search bar has "Search" placeholder with magnifier icon.
 
-![Search Bar Global](./searching-notes_search-bar-global.png)
+![Global search scope](./searching-notes_search-bar-global.png)
 
 ### Shortcut Keys
 
-You can move focus to the search bar by pressing `Cmd+Shift+F` on macOS or `Ctrl+Shift+F` on Windows and Linux (Command: `core:find`).
-To switch search scope from local to global, press the same shortcut key again while having focus on the search bar, or press `Cmd+Shift+Alt+F` on macOS or `Ctrl+Shift+Alt+F` on Windows and Linux (Command: `core:find-global`).
+You can move focus to the search bar by pressing <kbd>Cmd+Shift+F</kbd> on macOS or <kbd>Ctrl+Shift+F</kbd> on Windows and Linux (Command: `core:find`).
+To switch search scope from local to global, press the same shortcut key again while having focus on the search bar, or press <kbd>Cmd+Shift+Alt+F</kbd> on macOS or <kbd>Ctrl+Shift+Alt+F</kbd> on Windows and Linux (Command: `core:find-global`).
+
+Pressing <kbd>Esc</kbd> key to clear out the search keyword.
 
 ## Filter Notes with Special Qualifiers
 
