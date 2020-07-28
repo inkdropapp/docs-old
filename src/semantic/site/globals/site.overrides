@@ -11,3 +11,17 @@ h5 {
 }
 
 @import (css) url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+
+kbd {
+  padding: 4px 6px;
+  margin: 0 4px;
+  white-space: nowrap;
+  font-size: .9rem;
+  font-family: monospace;
+  color: @mutedTextColor;
+  vertical-align: middle;
+  background-color: @offWhite;
+  border: 1px solid @borderColor;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 @borderColor;
+}
