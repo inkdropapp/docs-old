@@ -1,9 +1,9 @@
 import './index.less'
 import React from 'react'
 import { Container } from 'semantic-ui-react'
-import UserManualIcon from '../images/user-manual.svg'
-import APIReferenceIcon from '../images/api-reference.svg'
-import InfoIcon from '../images/information.svg'
+import { ReactComponent as UserManualIcon } from '../images/user-manual.svg'
+import { ReactComponent as APIReferenceIcon } from '../images/api-reference.svg'
+import { ReactComponent as InfoIcon } from '../images/information.svg'
 
 import SearchBar from '../components/search-bar'
 import Layout from '../components/layout'

@@ -85,6 +85,6 @@ module.exports = {
         respectDNT: true
       }
     },
-    'gatsby-plugin-react-svg'
+    'gatsby-plugin-svgr'
   ]
 }

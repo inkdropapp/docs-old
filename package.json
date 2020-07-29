@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Takuya Matsuyama <t@inkdrop.app>",
   "dependencies": {
+    "@svgr/webpack": "^5.4.0",
     "gatsby": "^2.24.11",
     "gatsby-image": "^2.4.13",
     "gatsby-plugin-catch-links": "^2.3.11",
@@ -13,8 +14,8 @@
     "gatsby-plugin-manifest": "^2.4.21",
     "gatsby-plugin-offline": "^3.2.21",
     "gatsby-plugin-react-helmet": "^3.3.10",
-    "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sharp": "^2.6.22",
+    "gatsby-plugin-svgr": "^2.0.2",
     "gatsby-remark-autolink-headers": "^2.3.11",
     "gatsby-remark-default-html-attrs": "^1.0.1",
     "gatsby-remark-images": "^3.3.21",
