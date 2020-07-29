@@ -71,7 +71,12 @@ The sidebar layout
 #### Default value
 
 ```json
-["SideBarHeader", "SideBarNavigation", "SideBarSyncStatusView"]
+[
+  "SideBarHeader",
+  "SideBarNavigation",
+  "SideBarSyncStatusView",
+  "SideBarPluginUpdatesNotificationView"
+]
 ```
 
 ### sidebar-menu
@@ -83,9 +88,8 @@ The menu layout of sidebar
 ```json
 [
   "SideBarMenuItemAllNotes",
-  "SideBarMenuItemSearch",
   "SideBarMenuSectionNotebooks",
-  "SideBarMenuBookList",
+  "SideBarMenuBookListRoot",
   "SideBarMenuItemTrash",
   "SideBarMenuSectionStatus",
   "SideBarMenuStatusList",
@@ -94,19 +98,22 @@ The menu layout of sidebar
 ]
 ```
 
-### sidebar-book-filter-menu
+### sidebar-workspace-menu
 
-The menu layout of sidebar book filter
+The menu layout of sidebar workspace menu
 
 #### Default value
 
 ```json
 [
-  "SidebarBookFilterTitle",
+  "SidebarWorkspaceMenuTitle",
+  "SideBarWorkspaceMenuAllNotes",
+  "SideBarMenuSectionNotebooks",
+  "SideBarWorkspaceMenuBookList",
   "SideBarMenuSectionStatus",
-  "SidebarBookFilterStatusList",
+  "SidebarWorkspaceMenuStatusList",
   "SideBarMenuSectionTags",
-  "SidebarBookFilterTagList"
+  "SidebarWorkspaceMenuTagList"
 ]
 ```
 
@@ -148,12 +155,14 @@ The editor layout
 
 ```json
 [
+  "EditorDrawer",
+  "EditorFloatingActions",
   "EditorHeaderLayout",
-  "EditorTitleInput",
   "EditorMetaLayout",
   "EditorToolbar",
   "MDELayout",
-  "MDESearchBar"
+  "MDESearchBar",
+  "EditorStatusBarLayout"
 ]
 ```
 
@@ -164,14 +173,7 @@ The header layout of the editor
 #### Default value
 
 ```json
-[
-  "EditorHeaderItemNavigationButtons",
-  "EditorHeaderItemNotebook",
-  "EditorHeaderItemCreatedDate",
-  "EditorHeaderItemUpdatedDate",
-  "EditorHeaderItemSpacer",
-  "EditorHeaderItemActions"
-]
+["EditorHeaderTitleInput", "EditorHeaderMore"]
 ```
 
 ### editor-meta
@@ -181,7 +183,7 @@ The meta pane layout of the editor
 #### Default value
 
 ```json
-["EditorMetaStatusPicker", "EditorMetaTags"]
+["EditorMetaNotebook", "EditorMetaStatusPicker", "EditorMetaTags"]
 ```
 
 ### modal
@@ -214,6 +216,34 @@ The toolbar layout of the editor
 
 ```json
 []
+```
+
+### editor-drawer-menu
+
+The editor drawer menu items
+
+### Default value
+
+```json
+[
+  "EditorDrawerSectionHeaderNoteInformation",
+  "EditorDrawerMenuItemNotebook",
+  "EditorDrawerItemStatus",
+  "EditorDrawerItemTags",
+  "EditorDrawerItemCreatedDate",
+  "EditorDrawerItemUpdatedDate",
+  "EditorDrawerSeparator-1",
+  "EditorDrawerSectionHeaderActions",
+  "EditorDrawerActionButtonDuplicate",
+  "EditorDrawerActionButtonCopyNoteLink",
+  "EditorDrawerActionButtonPinToTop",
+  "EditorDrawerActionButtonOpenNoteInSeparateWindow",
+  "EditorDrawerSeparator-2",
+  "EditorDrawerActionButtonDeleteNote",
+  "EditorDrawerActionButtonRevisionHistory",
+  "EditorDrawerSeparator-3",
+  "EditorDrawerActionButtonShare"
+]
 ```
 
 ### editor-status-bar
