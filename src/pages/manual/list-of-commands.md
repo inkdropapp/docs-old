@@ -964,6 +964,24 @@ Undoes the last selection
 
 Unindents the current lines
 
+### core:toggle-editor-drawer
+
+- Selector: `body`
+
+Toggle editor drawer
+
+### core:show-editor-drawer
+
+- Selector: `body`
+
+Show editor drawer
+
+### core:close-editor-drawer
+
+- Selector: `body`
+
+Hide editor drawer
+
 ## Export commands
 
 ### export-as-html:export
