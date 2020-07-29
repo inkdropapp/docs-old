@@ -1,6 +1,8 @@
 import { Link } from 'gatsby'
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import DocumentationIcon from '../images/documentation.svg'
+import ForumIcon from '../images/forum.svg'
 import './masthead.less'
 
 export default class Masthead extends Component {
@@ -13,7 +15,13 @@ export default class Masthead extends Component {
       <div className="ui inverted vertical masthead segment">
         <div className="ui text container">
           <h1>
-            <Link to="/">Documentation</Link>
+            <Link to="/">
+              <DocumentationIcon
+                className="section-svg-icon"
+                style={{ marginRight: '.8rem' }}
+              />
+              Documentation
+            </Link>
           </h1>
           <p>
             Welcome to Inkdrop! These docs give an overview of how Inkdrop
@@ -22,8 +30,10 @@ export default class Masthead extends Component {
 
           <div>
             <h3 className="ui header">
-              <i className="comments outline icon" />
-              <div className="content">Inkdrop Forum</div>
+              <div className="content">
+                <ForumIcon className="section-svg-icon" />
+                Inkdrop Forum
+              </div>
             </h3>
             <p>
               The <a href="https://forum.inkdrop.app/">Inkdrop Forum</a> is the

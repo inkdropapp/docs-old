@@ -1,6 +1,9 @@
 import './index.less'
 import React from 'react'
 import { Container } from 'semantic-ui-react'
+import UserManualIcon from '../images/user-manual.svg'
+import APIReferenceIcon from '../images/api-reference.svg'
+import InfoIcon from '../images/information.svg'
 
 import SearchBar from '../components/search-bar'
 import Layout from '../components/layout'
@@ -16,20 +19,29 @@ const IndexPage = () => (
     <Container className="main-content">
       <div className="top-menu">
         <h2 className="ui header">
-          <div className="content">User Manual</div>
+          <div className="content">
+            <UserManualIcon className="section-svg-icon" />
+            User Manual
+          </div>
         </h2>
         <div className="ui segment">
           <ManualMenu />
         </div>
         <h2 className="ui header">
-          <div className="content">API Reference</div>
+          <div className="content">
+            <APIReferenceIcon className="section-svg-icon" />
+            API Reference
+          </div>
         </h2>
         <div className="ui segment">
           <ReferenceMenu />
         </div>
 
         <h2 className="ui header">
-          <div className="content">Further Informations</div>
+          <div className="content">
+            <InfoIcon className="section-svg-icon" />
+            Further Informations
+          </div>
         </h2>
         <div className="ui segment">
           <InfoMenu />
