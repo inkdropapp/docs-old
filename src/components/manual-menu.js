@@ -10,58 +10,68 @@ export default class ManualMenu extends Component {
   }
 
   render() {
+    const { sideMenu } = this.props
     return (
       <StaticQuery
         query={menuQuery}
         render={data => (
           <Menu className="manual-menu">
-            <h3 className="ui header">
-              <i className="write icon" />
-              <div className="content">Using Inkdrop</div>
-            </h3>
-            <ul className="article-list">
-              {data.usageManual.edges.map(edge => {
-                const { path, title } = edge.node.frontmatter
-                return (
-                  <li key={path}>
-                    <MenuLink to={path}>{title}</MenuLink>
-                  </li>
-                )
-              })}
-            </ul>
-            <h3 className="ui header">
-              <i className="configure icon" />
-              <div className="content">Hacking Inkdrop</div>
-            </h3>
-            <ul className="article-list">
-              {data.hackingManual.edges.map(edge => {
-                const { path, title } = edge.node.frontmatter
-                return (
-                  <li key={path}>
-                    <MenuLink to={path}>{title}</MenuLink>
-                  </li>
-                )
-              })}
-            </ul>
-            <h3 className="ui header">
-              <i className="sticky note outline icon" />
-              <div className="content">Appendix</div>
-            </h3>
-            <ul className="article-list">
-              <li>
-                <MenuLink to="/manual/markdown-cheatsheet">
-                  Markdown Cheatsheet
-                </MenuLink>
-              </li>
-              {data.appendix.edges.map(edge => {
-                const { path, title } = edge.node.frontmatter
-                return (
-                  <li key={path}>
-                    <MenuLink to={path}>{title}</MenuLink>
-                  </li>
-                )
-              })}
-            </ul>
+            <div className={sideMenu ? '' : 'ui stackable grid'}>
+              <div className={sideMenu ? '' : 'two column row'}>
+                <div className={sideMenu ? 'single-column' : 'column'}>
+                  <h3 className="ui header">
+                    <i className="write icon" />
+                    <div className="content">Using Inkdrop</div>
+                  </h3>
+                  <ul className="article-list">
+                    {data.usageManual.edges.map(edge => {
+                      const { path, title } = edge.node.frontmatter
+                      return (
+                        <li key={path}>
+                          <MenuLink to={path}>{title}</MenuLink>
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </div>
+                <div className={sideMenu ? '' : 'column'}>
+                  <h3 className="ui header">
+                    <i className="configure icon" />
+                    <div className="content">Hacking Inkdrop</div>
+                  </h3>
+                  <ul className="article-list">
+                    {data.hackingManual.edges.map(edge => {
+                      const { path, title } = edge.node.frontmatter
+                      return (
+                        <li key={path}>
+                          <MenuLink to={path}>{title}</MenuLink>
+                        </li>
+                      )
+                    })}
+                  </ul>
+
+                  <h3 className="ui header">
+                    <i className="sticky note outline icon" />
+                    <div className="content">Appendix</div>
+                  </h3>
+                  <ul className="article-list">
+                    <li>
+                      <MenuLink to="/manual/markdown-cheatsheet">
+                        Markdown Cheatsheet
+                      </MenuLink>
+                    </li>
+                    {data.appendix.edges.map(edge => {
+                      const { path, title } = edge.node.frontmatter
+                      return (
+                        <li key={path}>
+                          <MenuLink to={path}>{title}</MenuLink>
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </div>
+              </div>
+            </div>
           </Menu>
         )}
       />

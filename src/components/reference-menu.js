@@ -19,53 +19,62 @@ export default class RefereneMenu extends Component {
   }
 
   render() {
+    const { sideMenu } = this.props
     return (
       <StaticQuery
         query={menuQuery}
         render={data => (
           <Menu className="manual-menu">
-            <h3 className="ui header">
-              <i className="cube icon" />
-              <div className="content">Data</div>
-            </h3>
-            <ul className="article-list">
-              {data.data.edges.map(this.renderMenuItem)}
-            </ul>
-            <h3 className="ui header">
-              <i className="dot circle outline icon" />
-              <div className="content">Essential Classes</div>
-            </h3>
-            <ul className="article-list">
-              {data.classes.edges.map(this.renderMenuItem)}
-            </ul>
-            <h3 className="ui header">
-              <i className="dot recycle icon" />
-              <div className="content">States</div>
-            </h3>
-            <ul className="article-list">
-              {data.states.edges.map(this.renderMenuItem)}
-            </ul>
-            <h3 className="ui header">
-              <i className="bolt icon" />
-              <div className="content">Actions</div>
-            </h3>
-            <ul className="article-list">
-              {data.actions.edges.map(this.renderMenuItem)}
-            </ul>
-            <h3 className="ui header">
-              <i className="database icon" />
-              <div className="content">Data Access</div>
-            </h3>
-            <ul className="article-list">
-              {data.db.edges.map(this.renderMenuItem)}
-            </ul>
-            <h3 className="ui header">
-              <i className="database icon" />
-              <div className="content">Components</div>
-            </h3>
-            <ul className="article-list">
-              {data.components.edges.map(this.renderMenuItem)}
-            </ul>
+            <div className={sideMenu ? '' : 'ui stackable grid'}>
+              <div className={sideMenu ? '' : 'two column row'}>
+                <div className="column">
+                  <h3 className="ui header">
+                    <i className="cube icon" />
+                    <div className="content">Data</div>
+                  </h3>
+                  <ul className="article-list">
+                    {data.data.edges.map(this.renderMenuItem)}
+                  </ul>
+                  <h3 className="ui header">
+                    <i className="dot circle outline icon" />
+                    <div className="content">Essential Classes</div>
+                  </h3>
+                  <ul className="article-list">
+                    {data.classes.edges.map(this.renderMenuItem)}
+                  </ul>
+                </div>
+                <div className="column">
+                  <h3 className="ui header">
+                    <i className="dot recycle icon" />
+                    <div className="content">States</div>
+                  </h3>
+                  <ul className="article-list">
+                    {data.states.edges.map(this.renderMenuItem)}
+                  </ul>
+                  <h3 className="ui header">
+                    <i className="bolt icon" />
+                    <div className="content">Actions</div>
+                  </h3>
+                  <ul className="article-list">
+                    {data.actions.edges.map(this.renderMenuItem)}
+                  </ul>
+                  <h3 className="ui header">
+                    <i className="database icon" />
+                    <div className="content">Data Access</div>
+                  </h3>
+                  <ul className="article-list">
+                    {data.db.edges.map(this.renderMenuItem)}
+                  </ul>
+                  <h3 className="ui header">
+                    <i className="database icon" />
+                    <div className="content">Components</div>
+                  </h3>
+                  <ul className="article-list">
+                    {data.components.edges.map(this.renderMenuItem)}
+                  </ul>
+                </div>
+              </div>
+            </div>
           </Menu>
         )}
       />

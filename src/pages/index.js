@@ -15,33 +15,24 @@ const IndexPage = () => (
     <SearchBar />
     <Container className="main-content">
       <div className="top-menu">
-        <div className="ui stackable grid">
-          <div className="two column row">
-            <div className="column">
-              <h2 className="ui header">
-                <div className="content">User Manual</div>
-              </h2>
-              <div className="ui segment">
-                <ManualMenu />
-              </div>
-            </div>
+        <h2 className="ui header">
+          <div className="content">User Manual</div>
+        </h2>
+        <div className="ui segment">
+          <ManualMenu />
+        </div>
+        <h2 className="ui header">
+          <div className="content">API Reference</div>
+        </h2>
+        <div className="ui segment">
+          <ReferenceMenu />
+        </div>
 
-            <div className="column">
-              <h2 className="ui header">
-                <div className="content">API Reference</div>
-              </h2>
-              <div className="ui segment">
-                <ReferenceMenu />
-              </div>
-
-              <h2 className="ui header">
-                <div className="content">Further Informations</div>
-              </h2>
-              <div className="ui segment">
-                <InfoMenu />
-              </div>
-            </div>
-          </div>
+        <h2 className="ui header">
+          <div className="content">Further Informations</div>
+        </h2>
+        <div className="ui segment">
+          <InfoMenu />
         </div>
       </div>
 
