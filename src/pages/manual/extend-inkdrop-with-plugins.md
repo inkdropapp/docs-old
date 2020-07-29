@@ -6,34 +6,96 @@ path: "/manual/extend-inkdrop-with-plugins"
 title: "Extend Inkdrop with Plugins"
 ---
 
-Plugins add new functionality or provide new look to Inkdrop. You can activate or deactivate them at any time.
-Go to `Preferences > Plugins` on macOS or `File > Settings` on Windows and Linux to see a list of what’s installed.
-To find new plugins to install, please access to [Inkdrop plugin registry](https://my.inkdrop.app/plugins).
-For mobile, see [this section](#mobile-support).
+Plugins add new functionality or provide new look to Inkdrop.
+There are more than 100 plugins registered on [the Inkdrop plugin registry](https://my.inkdrop.app/plugins).
 
-Developers can clone or download additional Inkdrop plugins via [GitHub](https://github.com/inkdropapp/). Installation instructions are [here](#installing-plugins). Many of these are community-contributed, and the selection will continue to grow over time.
+Why do you need plugins?
+Markdown is a very simple markup language with plain-text-formatting syntax.
+Because of its simplicity, people have been customizing it for their use-cases.
+So, there are a lot of 'flavors' of Markdown extended by the third parties such as GitHub.
+You may like one of the flavors already.
+For example, you may want to write math forumulas with LaTeX syntax, but Markdown itself does not support it by default.
+You can use [math](https://my.inkdrop.app/plugins/math) plugin to make Inkdrop support to render math.
+Those language extensions make Markdown incredibly powerful and help you write notes effectively.
 
-There are three types of the plugin:
+Plugins can also change everything from the very look and feel of the entire interface to the basic operation of even core functionality.
+For example, [vim](https://my.inkdrop.app/plugins/vim) plugin provides Vim keybindings.
+[nord-ui](https://my.inkdrop.app/plugins/nord-ui) provides [Nord theme](https://www.nordtheme.com/) to the Inkdrop UI.
 
-- **General plugin** - Plugin that adds new functionality
+You can activate or deactivate them at any time.
+Go to _Preferences > Plugins_ on macOS or _File > Settings > Plugins_ on Windows and Linux to see a list of what’s installed.
+You should see some default plugins are already installed.
+
+![Installed plugins](./extend-inkdrop-with-plugins_installed.png)
+
+## Install plugins
+
+In order to install new plugin, you can use the Install tab in the Preferences window.
+
+![Instald plugins](./extend-inkdrop-with-plugins_install.png)
+
+Type your search query into the input box on the right hand of the pane.
+All of the plugins will come up with an "Install" button.
+Clicking that will download the plugin and install it.
+Your note app will now have the functionality that the plugin provides.
+
+### Mobile
+
+Some plugins are bundled in the mobile app as Markdown renderer options.
+Go to `Preferences > Markdown Renderer` and you will see the list of available options:
+
+![Advanced markdown renderer options](./extend-inkdrop-with-plugins_mobile.png)
+
+## Plugin settings
+
+Once a plugin is installed in Inkdrop, it will show up in the Preferences window under the "Plugins" tab, along with all the pre-installed plugins that come with Inkdrop.
+
+![Plugin settings](./extend-inkdrop-with-plugins_settings.png)
+
+Clicking the plugin will give you the settings screen for that plugin specifically.
+Here you have the option of changing some of the default variables for the plugin, seeing what all the command keybindings are, disabling the plugin temporarily, looking at the source code, seeing the current version of the plugin and uninstalling the plugin.
+
+## Keep plugins up to date
+
+If a new version of any of your plugins is released, Inkdrop will automatically detect it and notify you like this:
+
+![Available updates](./extend-inkdrop-with-plugins_update.png)
+
+Clicking the notification will give you the update screen where you can see the plugins that have the new version.
+By clicking "Update" button for the plugin, you can quickly update it.
+This helps you easily keep all your installed plugins up to date.
+
+![Update plugins](./extend-inkdrop-with-plugins_update_preferences.jpg)
+
+## Change themes
+
+![Theme types](./creating-a-theme_types.png)
+
+There are three types of themes in Inkdrop:
+
 - **UI Theme** - Theme for Inkdrop UI
+- **Syntax Theme** - Theme for Markdown editor
 - **Preview Theme** - Theme for Markdown preview
 
-## Using ipm (Inkdrop Plugin Manager)
+Once you installed theme plugins, you can activate it by pressing "Select" button for the theme:
 
-<div class="ui info message">
-  Currently Inkdrop doesn't provide GUI for installing/uninstalling plugins. It's planned to support in the future.
-</div>
+![Select theme](./extend-inkdrop-with-select_theme.png)
+
+Or, you can use the Themes tab in the Preferences window:
+
+![Themes](./extend-inkdrop-with-change_themes.png)
+
+## Command line (ipm - Inkdrop Plugin Manager)
 
 <div class="ui message">
-  ipm is a fork of <a href="https://github.com/atom/apm">apm (atom package manager)</a>, some output messages may include Atom-related though, please ignore them. 😉
+  <b>ipm</b> is a fork of <a href="https://github.com/atom/apm">apm (atom package manager)</a>, some output messages may include Atom-related though, please ignore them. 😉
 </div>
 
 <div class="ui warning message">
   If you are using beta version of the app, please note that the command name is <b>ipm-beta</b>.
 </div>
 
-**ipm** is a command-line tool to manage plugins for Inkdrop.
+You can also install packages or themes from the command line using `ipm`.
 
 ### macOS
 
@@ -60,7 +122,7 @@ For example, on Ubuntu the path to ipm is `/usr/lib/inkdrop/resources/app/ipm/bi
 
 If you have installed via Snap, `inkdrop.ipm` command is available in the path of `/snap/bin/`.
 
-## Finding new plugins
+### Finding new plugins
 
 You can also use `ipm` to find new plugins to install. If you run `ipm search`, you can search the plugin registry for a search term.
 
@@ -72,7 +134,7 @@ Search Results For 'emoji' (1)
 Use `ipm install` to install them or visit https://my.inkdrop.app/plugins to read more about them.
 ```
 
-## Installing plugins
+### Installing plugins
 
 Once you found new plugins to install, you can install them by using the `ipm install` command:
 
@@ -81,13 +143,7 @@ Once you found new plugins to install, you can install them by using the `ipm in
 
 For example `ipm install markdown-emoji@0.1.0` installs the 0.1.0 release of the [markdown-emoji](https://my.inkdrop.app/plugins/markdown-emoji) package.
 
-## Activating plugins
-
-Go to `Preferences > Plugins` (macOS) or `File > Settings` (Windows and Linux), you can activate/deactivate plugins by toggling a switch on the left of the plugin name here.
-
-![Activating Plugins](./extend-inkdrop-with-plugins_toggle.png)
-
-## Updating plugins
+### Updating plugins
 
 You can update outdated plugins like so:
 
@@ -109,17 +165,10 @@ Package Updates Available (0)
 └── (empty)
 ```
 
-## Uninstalling plugins
+### Uninstalling plugins
 
 You can also uninstall the plugin by running below command:
 
 ```
 $ ipm uninstall <package_name>
 ```
-
-## Mobile support
-
-Some plugins are bundled in the mobile app as Markdown renderer options.
-Go to `Preferences > Markdown Renderer` and you will see the list of available options:
-
-![Advanced markdown renderer options](./extend-inkdrop-with-plugins_mobile.png)

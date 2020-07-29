@@ -169,4 +169,4 @@ To configure the mobile app to sync with your database:
 3. Input your database URL to the input field at the _ADDRESS_ section.
 4. Press _Apply_ button
 
-![Sync with custom server on the mobile app](./sync_mobile.jpg)
+![Sync with custom server on the mobile app](./sync_mobile.png)
