@@ -42,10 +42,10 @@ Similar to [Node modules](https://docs.npmjs.com/getting-started/what-is-npm), I
 
 In addition to some of the regular [Node `package.json` keys](https://docs.npmjs.com/files/package.json) available, Inkdrop `package.json` files have their own additions.
 
- * `main`: the path to the JavaScript file that's the entry point to your package. If this is missing, Inkdrop will default to looking for an `index.js`.
- * `styles`: an Array of Strings identifying the order of the style sheets your plugin needs to load. If not specified, style sheets in the `styles` directory are added alphabetically.
- * `keymaps`: an Array of Strings identifying the order of the key mappings your plugin needs to load. If not specified, mappings in the `keymaps` directory are added alphabetically.
- * `menus`: an Array of Strings identifying the order of the menu mappings your plugin needs to load. If not specified, mappings in the `menus` directory are added alphabetically.
+- `main`: the path to the JavaScript file that's the entry point to your package. If this is missing, Inkdrop will default to looking for an `index.js`.
+- `styles`: an Array of Strings identifying the order of the style sheets your plugin needs to load. If not specified, style sheets in the `styles` directory are added alphabetically.
+- `keymaps`: an Array of Strings identifying the order of the key mappings your plugin needs to load. If not specified, mappings in the `keymaps` directory are added alphabetically.
+- `menus`: an Array of Strings identifying the order of the menu mappings your plugin needs to load. If not specified, mappings in the `menus` directory are added alphabetically.
 
 The `package.json` in the plugin we've just generated looks like this currently:
 
@@ -55,15 +55,13 @@ The `package.json` in the plugin we've just generated looks like this currently:
   "main": "./lib/wordcount",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "keywords": [
-  ],
+  "keywords": [],
   "repository": "https://github.com/inkdropapp/wordcount",
   "license": "MIT",
   "engines": {
-    "inkdrop": ">=0.9.0 <2.0.0"
+    "inkdrop": "^5.x"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
 ```
 
@@ -81,16 +79,16 @@ Your plugin's top-level module is a singleton object that manages the lifecycle 
 
 Your plugin's top-level module can implement the following basic methods:
 
- * `activate()`: This **optional** method is called when your plugin is activated. Use this to do initialization work when your plugin is started (like setting up React Components or binding events).
- * `deactivate()`: This **optional** method is called when the window is shutting down. If your plugin is watching any files or holding external resources in any other way, release them here. If you're just subscribing to things on window, you don't need to worry because that's getting torn down anyway.
+- `activate()`: This **optional** method is called when your plugin is activated. Use this to do initialization work when your plugin is started (like setting up React Components or binding events).
+- `deactivate()`: This **optional** method is called when the window is shutting down. If your plugin is watching any files or holding external resources in any other way, release them here. If you're just subscribing to things on window, you don't need to worry because that's getting torn down anyway.
 
 ### Style Sheets
 
 Style sheets for your plugin should be placed in the `styles` directory. Any style sheets in this directory will be loaded and attached to the DOM when your plugin is activated. Style sheets can be written as CSS or [Less](http://lesscss.org/), but Less is recommended.
 
-Ideally, you won't need much in the way of styling. Inkdrop's styles are based on [Semantic UI](http://semantic-ui.com/) which provides a standard set of components which define both the colors and UI elements for any plugin that fits into Inkdrop seamlessly. 
+Ideally, you won't need much in the way of styling. Inkdrop's styles are based on [Semantic UI](http://semantic-ui.com/) which provides a standard set of components which define both the colors and UI elements for any plugin that fits into Inkdrop seamlessly.
 
-If you *do* need special styling, try to keep only structural styles in the plugin style sheets. If you must specify colors and sizing, these should be taken from the pre-defined CSS Variables where you can find at [variables.less](https://github.com/inkdropapp/inkdrop-ui-theme-template/blob/master/src/definitions/globals/variables.less) like this:
+If you _do_ need special styling, try to keep only structural styles in the plugin style sheets. If you must specify colors and sizing, these should be taken from the pre-defined CSS Variables where you can find at [variables.less](https://github.com/inkdropapp/inkdrop-ui-theme-template/blob/master/src/definitions/globals/variables.less) like this:
 
 ```less
 .special-button.highlighted {
@@ -130,7 +128,7 @@ See also: [Menu Manager](/reference/menu-manager)
 
 ### Application Menu
 
-It's recommended that you create an application menu item under the *Plugins* menu for common actions with your plugin that aren't tied to a specific element. If we look in the `menus/wordcount.json` file that was generated for us, we'll see a section that looks like this:
+It's recommended that you create an application menu item under the _Plugins_ menu for common actions with your plugin that aren't tied to a specific element. If we look in the `menus/wordcount.json` file that was generated for us, we'll see a section that looks like this:
 
 ```json
 {
@@ -219,7 +217,7 @@ You can install the plugin locally for development.
 
 Run `ipm link --dev` to symlink your repository to `/dev/packages` in [the user data directory](/manual/basic-usage#user-data-directory).
 
-Let Inkdrop run in **Development Mode** by selecting the *Inkdrop > Preferences* menu, clicking the *General* tab on the left hand navigation, and check the "*Development Mode*", then reload the app by pressing `Alt+Cmd+Ctrl+L` / `Alt+Ctrl+L`.
+Let Inkdrop run in **Development Mode** by selecting the _Inkdrop > Preferences_ menu, clicking the _General_ tab on the left hand navigation, and check the "_Development Mode_", then reload the app by pressing `Alt+Cmd+Ctrl+L` / `Alt+Ctrl+L`.
 
 ### Understanding the Generated Code
 
@@ -230,43 +228,44 @@ There are two files in our lib directory. One is the main file (`lib/wordcount.j
 The second file is a React Component class, `lib/wordcount-message-dialog.js`, which handles the UI elements of the plugin. Let's look at this file first:
 
 ```jsx
-'use babel';
+"use babel"
 
-import * as React from 'react';
-import { CompositeDisposable } from 'event-kit';
+import * as React from "react"
+import { CompositeDisposable } from "event-kit"
 
 export default class WordcountMessageDialog extends React.Component {
-
-  componentWillMount () {
+  componentWillMount() {
     // Events subscribed to in Inkdrop's system can be easily cleaned up with a CompositeDisposable
-    this.subscriptions = new CompositeDisposable();
+    this.subscriptions = new CompositeDisposable()
 
     // Register command that toggles this view
-    this.subscriptions.add(inkdrop.commands.add(document.body, {
-      'wordcount:toggle': () => this.toggle()
-    }));
+    this.subscriptions.add(
+      inkdrop.commands.add(document.body, {
+        "wordcount:toggle": () => this.toggle(),
+      })
+    )
   }
 
-  componentWillUnmount () {
-    this.subscriptions.dispose();
+  componentWillUnmount() {
+    this.subscriptions.dispose()
   }
 
   render() {
-    const { MessageDialog } = inkdrop.components.classes;
+    const { MessageDialog } = inkdrop.components.classes
     return (
-      <MessageDialog ref='dialog' title='Word Count'>
+      <MessageDialog ref="dialog" title="Word Count">
         Word Count was toggled!
       </MessageDialog>
-    );
+    )
   }
 
   toggle() {
-    console.log('Wordcount was toggled!');
-    const { dialog } = this.refs;
+    console.log("Wordcount was toggled!")
+    const { dialog } = this.refs
     if (!dialog.isShown) {
-      dialog.showDialog();
+      dialog.showDialog()
     } else {
-      dialog.dismissDialog();
+      dialog.dismissDialog()
     }
   }
 }
@@ -276,33 +275,34 @@ Inkdrop is built with [React](https://facebook.github.io/react/), and you can ma
 The `WordcountMessageDialog` defines a React Component which shows a modal message dialog on toggling from the command.
 This component implements following four methods:
 
- * `componentWillMount` - invoked once, immediately before the initial rendering occurs. See [here](https://facebook.github.io/react/docs/component-specs.html#mounting-componentwillmount) for more information.
- * `componentWillUnmount` - invoked once, immediately before a component is unmounted from the DOM. See [here](https://facebook.github.io/react/docs/component-specs.html#unmounting-componentwillunmount) for more information.
- * `render` - invoked when React renders your component. See [here](https://facebook.github.io/react/docs/tutorial.html) for more information.
- * `toggle` - invoked when `wordcount:toggle` is dispatched.
+- `componentWillMount` - invoked once, immediately before the initial rendering occurs. See [here](https://facebook.github.io/react/docs/component-specs.html#mounting-componentwillmount) for more information.
+- `componentWillUnmount` - invoked once, immediately before a component is unmounted from the DOM. See [here](https://facebook.github.io/react/docs/component-specs.html#unmounting-componentwillunmount) for more information.
+- `render` - invoked when React renders your component. See [here](https://facebook.github.io/react/docs/tutorial.html) for more information.
+- `toggle` - invoked when `wordcount:toggle` is dispatched.
 
 In the `componentWillMount` method, it creates an instance of the [CompositeDisposable](/reference/composite-disposable) class so it can register all the commands that can be called from the plugin so other plugins could subscribe to these events.
 
 The second file we have is the main entry point to the plugin. Again, because it's referenced in the `package.json` file. Let's take a look at that file, it's pretty simple:
 
 ```js
-'use babel';
+"use babel"
 
-import WordcountMessageDialog from './wordcount-message-dialog';
+import WordcountMessageDialog from "./wordcount-message-dialog"
 
 module.exports = {
-
   activate() {
-    inkdrop.components.registerClass(WordcountMessageDialog);
-    inkdrop.layouts.addComponentToLayout('modals', 'WordcountMessageDialog');
+    inkdrop.components.registerClass(WordcountMessageDialog)
+    inkdrop.layouts.addComponentToLayout("modals", "WordcountMessageDialog")
   },
 
   deactivate() {
-    inkdrop.layouts.removeComponentFromLayout('modals', 'WordcountMessageDialog');
-    inkdrop.components.deleteClass(WordcountMessageDialog);
-  }
-
-};
+    inkdrop.layouts.removeComponentFromLayout(
+      "modals",
+      "WordcountMessageDialog"
+    )
+    inkdrop.components.deleteClass(WordcountMessageDialog)
+  },
+}
 ```
 
 In the `activate` method called on activation of the plugin, it registers the `WordcountMessageDialog` class to a [Inkdrop component registry](/reference/component-manager) and adds it to a hidden modal layout.
@@ -346,7 +346,7 @@ We'll do this in a very simple way. When the dialog is toggled, we'll count the 
       if(editingNote) {
         const { body } = editingNote;
         const words = body.split(/\s+/).length;
-        this.setState({ words });        
+        this.setState({ words });
         dialog.showDialog();
       }
     } else {
@@ -382,7 +382,7 @@ Pretty simple! We take the count number that was passed in and place it into a s
 
 You'll notice a few `console.log` statements in the code. One of the cool things about Inkdrop being built on Chromium is that you can use some of the same debugging tools available to you that you have when doing web development.
 
-To open up the Developer Console, press `Alt+Cmd+I`, or choose the menu option *Developer > Toggle Developer Tools*.
+To open up the Developer Console, press `Alt+Cmd+I`, or choose the menu option _Developer > Toggle Developer Tools_.
 
 ![DevTools](./plugin-word-count_devtools.png)
 
@@ -398,17 +398,17 @@ Inkdrop bundles a command line utility called `ipm` which we first used back in 
 
 There are a few things you should double check before publishing:
 
- * Your `package.json` file has `name`, `description`, and `repository` fields.
- * Your `package.json` file has a `version` field with a value of "0.0.0".
- * Your `package.json` file has an `engines` field that contains an entry for Inkdrop such as: `"engines": {"inkdrop": ">=0.9.0 <2.0.0"}`.
- * Your plugin has a `README.md` file at the root.
- * Change the repository url in the `package.json` file to match the URL of your repository.
- * Your plugin is in a Git repository that has been pushed to [GitHub](https://github.com/). Follow [this guide](http://guides.github.com/overviews/desktop) if your plugin isn't already on GitHub.
+- Your `package.json` file has `name`, `description`, and `repository` fields.
+- Your `package.json` file has a `version` field with a value of "0.0.0".
+- Your `package.json` file has an `engines` field that contains an entry for Inkdrop such as: `"engines": {"inkdrop": ">=0.9.0 <2.0.0"}`.
+- Your plugin has a `README.md` file at the root.
+- Change the repository url in the `package.json` file to match the URL of your repository.
+- Your plugin is in a Git repository that has been pushed to [GitHub](https://github.com/). Follow [this guide](http://guides.github.com/overviews/desktop) if your plugin isn't already on GitHub.
 
 ### Publish Your Package
 
 Before you publish a plugin it is a good idea to check ahead of time if a plugin with the same name has already been published to the [Inkdrop package registry](https://my.inkdrop.app/plugins).
-You can do that by visiting https://my.inkdrop.app/plugins/wordcount to see if the plugin already exists. 
+You can do that by visiting https://my.inkdrop.app/plugins/wordcount to see if the plugin already exists.
 If it does, update your plugin's name to something that is available before proceeding.
 
 Now let's review what the `ipm publish` command does:
