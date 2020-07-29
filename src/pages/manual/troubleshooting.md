@@ -6,6 +6,8 @@ path: "/manual/troubleshooting"
 title: "Troubleshooting"
 ---
 
+![Troubleshooting #cover](/images/troubleshooting.svg)
+
 ## I Can't Log In
 
 ### Restart Computer

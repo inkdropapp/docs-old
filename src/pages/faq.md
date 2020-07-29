@@ -5,6 +5,8 @@ path: /faq
 title: Frequently Asked Questions
 ---
 
+![FAQ #cover](/images/faq.svg)
+
 ## What platforms does Inkdrop run on?
 
 Inkdrop is available for macOS 10.11.4 (El Capitan) or later, Windows 7 or later, and Ubuntu Linux 16.04 or later.

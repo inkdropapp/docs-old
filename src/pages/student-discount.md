@@ -5,6 +5,8 @@ path: /student-discount
 title: Student Discount
 ---
 
+![Student #cover](/images/student.svg) ![Teacher #cover](/images/teacher.svg)
+
 We're committed to helping **students** and **teachers** experience the power of Inkdrop.
 If you are eligible, you can get **a 60% off discount valid for 12 months**.
 
