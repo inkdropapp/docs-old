@@ -151,7 +151,7 @@ It's recommended that you create an application menu item under the _Plugins_ me
 }
 ```
 
-This section puts a "Toggle" menu item under a menu group named "Your Name Word Count" in the "Plugins" menu.
+This section puts a "Toggle" menu item under a menu group named "Word Count" in the "Plugins" menu.
 
 ![Application Menu](./plugin-word-count_application-menu.png)
 
@@ -450,5 +450,5 @@ You can also run `ipm help publish` to see all the available options and `ipm he
 
 We've now generated, customized and published our first plugin for Inkdrop. Congratulations! Now anyone can install our masterpiece from directly within Inkdrop as we did in [Extend Inkdrop with Plugins](/manual/extend-inkdrop-with-plugins).
 
-If you don't decide what to build, there are many ideas posted on our forum and those topics are [tagged with `plugin-idea`](https://forum.inkdrop.app/tags/plugin-idea).
+If you can't decide what to build, there are many ideas posted on our forum and those topics are [tagged with `plugin-idea`](https://forum.inkdrop.app/tags/plugin-idea).
 You will get inspirations from them!
