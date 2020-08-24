@@ -5,6 +5,10 @@ path: "/manual/managing-tasks-with-status"
 title: "Managing Tasks with Note Status"
 ---
 
+<video controls playsInline muted class="ui demo">
+  <source src="https://site-cdn.inkdrop.app/docs/manual/managing-tasks-with-status.mp4" type="video/mp4" />
+</video>
+
 You may want to use Inkdrop as a task management tool if you write notes regarding your tasks.
 Inkdrop allows you to add a status to each note.
 
