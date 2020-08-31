@@ -10,13 +10,15 @@ title: "Basic Usage"
 
 ![Layout](./basic-usage_screen.png)
 
-- **Sidebar** (on the left): it lists notebooks, statuses and tags here. Notebooks are like folders you can create recursively. Statuses are additional information to treat notes as tasks. Tags are like labels which can link notes with related topic.
+- **Sidebar** (on the left): it lists notebooks, statuses and tags here. Notebooks are like folders you can create recursively. Statuses are additional information to treat notes as tasks. Tags are like labels which can link notes with related topic. Sidebar can be toggled by pressing <kbd>Cmd + /</kbd> on macOS or <kbd>Ctrl + /</kbd> on Windows and Linux.
 - **Note list** (in the middle): all your notes live here, ordered by modification date by default. You can search notes with keywords from a search bar on the top of it.
-- **Editor** (on the right): this is where your magic happens; you're looking at it. 😄
+- **Editor** (on the right): this is where your magic happens; you're looking at it. 😄 Press <kbd>Cmd + E</kbd> / <kbd>Ctrl + E</kbd> to toggle editor/preview, or press <kbd>Cmd + P</kbd> / <kbd>Ctrl + P</kbd> to toggle side-by-side mode.
+
+Press <kbd>Cmd+Shift+D</kbd> / <kbd>Ctrl+Shift+D</kbd> to enter/leave _Distraction Free Mode_ which hides sidebar and note list.
 
 ## Creating new note and notebook
 
-To create new note, you can either push a button on the right top of the note list or input keybind `Cmd+N` / `Ctrl+N`.
+To create new note, you can either push a button on the right top of the note list or input keybind <kbd>Cmd+N</kbd> / <kbd>Ctrl+N</kbd>.
 
 ![AddNote](./basic-usage_addnote.png)
 
@@ -34,10 +36,10 @@ To open the Settings View, you can:
 
 - on macOS:
   - Use the _Inkdrop > Preferences_ menu item in the menu bar
-  - Use the `Cmd+,` keybinding
+  - Use the <kbd>Cmd+,</kbd> keybinding
 - on Windows & Linux:
   - Use the _File > Settings_ menu item in the menu bar
-  - Use the `Ctrl+,` keybinding
+  - Use the <kbd>Ctrl+,</kbd> keybinding
 
 And you should see the window like this:
 
