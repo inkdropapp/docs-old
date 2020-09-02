@@ -26,6 +26,17 @@ Yes!
 See the [documentation](/manual/synchronizing-in-the-cloud) for full instructions on setting up the sync server on your local machine.
 Or you can simply use it in offline by setting from preferences.
 
+## Why don't you support WYSIWYG or rich text editor?
+
+No. Because Inkdrop is for people who like writing Markdown in plain text.
+That allows the app to provide special features like [vim](https://my.inkdrop.app/plugins/vim) keybindings.
+Providing both will end up becoming bad UX.
+
+## Why don't you target non-programmers? You will attract more customers.
+
+No. Inkdrop should be simple and clean.
+It will never be feature-fat like a Swiss army knife.
+
 ## How can I delete my account?
 
 You can delete your account from [here](https://my.inkdrop.app/account/delete).
