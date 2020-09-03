@@ -15,6 +15,12 @@ Inkdrop supports live preview of note. You can switch to Side-by-Side Preview wi
 
 ![SideBySide](./writing-note_sidebyside.png)
 
+You can also toggle preview mode by clicking buttons on bottom right corner of the editor:
+
+![Toggle buttons](./writing-note_toggle_buttons.png)
+
+Note that those buttons are hidden unless you move the mouse cursor on the editor in order not to distract your writing.
+
 ## Distraction Free Mode
 
 To hide the sidebar and the note list, press <kbd>Cmd+Shift+D</kbd> / <kbd>Ctrl+Shift+D</kbd> to toggle _Distraction Free Mode_.
