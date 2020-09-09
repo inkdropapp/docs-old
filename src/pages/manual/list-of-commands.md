@@ -335,6 +335,12 @@ List notes with specified [note status](/manual/managing-tasks-with-status) on t
 | `status`          | The note status which should be **one of:**`"none"` or `"active"` or `"onHold"` or `"completed"` or `"dropped"` |
 | `selectFirstNote` | A Boolean, whether select the first note or not. Default: `true`                                                |
 
+### core:note-list-show-notes-in-book-of-editing-note
+
+- Selector: `body`
+
+List notes in a notebook of the currently editing note on the note list bar
+
 ### core:open-first-note
 
 - Selector: `body`
