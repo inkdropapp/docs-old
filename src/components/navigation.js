@@ -40,15 +40,19 @@ const Navigation = () => (
             More
             <i className="dropdown icon" />
             <div className="menu">
-              <a className="item" href="https://my.inkdrop.app/demo">
-                Demo
-              </a>
               <a className="item" href="https://inkdrop.app/pricing">
                 Pricing
               </a>
               <Link className="item" to="/faq">
                 FAQ
               </Link>
+              <div className="divider" />
+              <a className="item" href="https://forum.inkdrop.app/">
+                User Forum
+              </a>
+              <a className="item" href="https://discord.gg/QfsG5Kj">
+                Discord Community
+              </a>
               <div className="divider" />
               <a className="item" href="https://twitter.com/inkdrop_app">
                 Twitter
