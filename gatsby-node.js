@@ -8,6 +8,8 @@ const path = require('path')
 const fs = require('fs')
 const fetch = require('node-fetch')
 const yaml = require('js-yaml')
+const remark = require('remark')
+const remarkHtml = require('remark-html')
 
 exports.onCreateWebpackConfig = ({ stage: _stage, actions }) => {
   actions.setWebpackConfig({
@@ -33,16 +35,6 @@ exports.onPreBootstrap = async () => {
   /*
    * Generate release notes
    */
-  await createPageFromRemoteMd(
-    `https://raw.githubusercontent.com/inkdropapp/version-history/master/README.md`,
-    `src/pages/releases.md`,
-    {
-      index: 20,
-      category: 'info',
-      path: '/releases',
-      title: 'Release Notes'
-    }
-  )
   await createPageFromRemoteMd(
     `https://raw.githubusercontent.com/inkdropapp/version-history-beta/master/README.md`,
     `src/pages/releases-beta.md`,
@@ -81,6 +73,33 @@ exports.onPreBootstrap = async () => {
   )
 }
 
+exports.sourceNodes = async ({
+  actions: { createNode },
+  createContentDigest
+}) => {
+  // get version history data from GitHub
+  const res = await fetch(
+    'https://raw.githubusercontent.com/inkdropapp/version-history/master/history.yml'
+  )
+  const txtData = await res.text()
+  const versionHistory = yaml.safeLoad(txtData)
+
+  for (const item of versionHistory) {
+    const file = remark().use(remarkHtml).processSync(item.notes)
+    createNode({
+      ...item,
+      html: file.contents,
+      id: `version-${item.version}`,
+      parent: null,
+      children: [],
+      internal: {
+        type: `versionHistory`,
+        contentDigest: createContentDigest(JSON.stringify(item))
+      }
+    })
+  }
+}
+
 const categories = [
   'usage',
   'hacking',
@@ -99,6 +118,9 @@ exports.createPages = async ({ actions, graphql }) => {
   const manualTemplate = path.resolve(`src/templates/manual-template.js`)
   const referenceTemplate = path.resolve(`src/templates/reference-template.js`)
   const infoTemplate = path.resolve(`src/templates/info-template.js`)
+  const versionHistoryTemplate = path.resolve(
+    `src/templates/version-history-template.js`
+  )
 
   function getTemplateForCategory(category) {
     switch (category) {
@@ -157,6 +179,34 @@ exports.createPages = async ({ actions, graphql }) => {
             next
           }
         })
+      }
+    })
+  }
+
+  /*
+   * Generate pages of version history
+   */
+  const result = await graphql(`
+    {
+      allVersionHistory(sort: { order: ASC, fields: [pub_date] }, limit: 1000) {
+        edges {
+          node {
+            version
+            pub_date
+            notes
+          }
+        }
+      }
+    }
+  `)
+  const versionItems = result.data.allVersionHistory.edges
+  for (const item of versionItems) {
+    const path = `/releases/${item.node.version}`
+    createPage({
+      path,
+      component: versionHistoryTemplate,
+      context: {
+        version: item.node.version
       }
     })
   }
