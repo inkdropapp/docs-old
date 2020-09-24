@@ -1,6 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { StaticQuery, graphql, Link } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 import InfoLayout from '../components/info-layout'
 import ReleaseNotes from '../components/release-notes'
 
