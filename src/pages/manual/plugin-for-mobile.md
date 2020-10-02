@@ -65,7 +65,7 @@ Fork [inkdrop-mobile-plugins](https://github.com/inkdropapp/inkdrop-mobile-plugi
 Then, clone it:
 
 ```sh
-git clone https://github.com/<YOUR_FORK_OF_inkdrop-mobile-plugins>.git
+git clone https://github.com/<YOUR_FORK_OF_inkdrop-mobile-plugins>.git --recursive
 cd inkdrop-mobile-plugins
 ```
 
