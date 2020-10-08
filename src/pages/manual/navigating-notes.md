@@ -15,7 +15,11 @@ With your notes having organized with notebooks, tags and status, Inkdrop can he
 </video>
 
 Inkdrop allows you to navigate backward/forward into the opened notes just like web browsers.
-You can move backward/forward using back/forward button of your mouse, or by pressing <kbd>Cmd + ←</kbd>/<kbd>Cmd + →</kbd> on macOS or <kbd>Alt + ←</kbd>/<kbd>Alt + →</kbd> on Linux and Windows.
+You can move backward/forward in the following ways:
+
+- Click back/forward button of your mouse
+- Press <kbd>Cmd + ←</kbd>/<kbd>Cmd + →</kbd> on macOS or <kbd>Alt + ←</kbd>/<kbd>Alt + →</kbd> on Linux and Windows
+- Choose menu _View → Back or Forward_
 
 ## Collapsing/expanding notebook
 
