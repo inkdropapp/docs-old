@@ -8,8 +8,10 @@ const path = require('path')
 const fs = require('fs')
 const fetch = require('node-fetch')
 const yaml = require('js-yaml')
-const remark = require('remark')
-const remarkHtml = require('remark-html')
+const {
+  createNodesFromVersionHistory,
+  createVersionHistoryPages
+} = require('./utils/version-history')
 
 exports.onCreateWebpackConfig = ({ stage: _stage, actions }) => {
   actions.setWebpackConfig({
@@ -49,16 +51,6 @@ exports.onPreBootstrap = async () => {
     }
   )
   await createPageFromRemoteMd(
-    `https://raw.githubusercontent.com/inkdropapp/version-history-mobile/master/README.md`,
-    `src/pages/releases-mobile.md`,
-    {
-      index: 30,
-      category: 'info',
-      path: '/releases-mobile',
-      title: 'Release Notes (Mobile)'
-    }
-  )
-  await createPageFromRemoteMd(
     `https://raw.githubusercontent.com/inkdropapp/inkdrop-model/master/docs/schema.md`,
     `src/pages/reference/data-models.md`,
     {
@@ -77,27 +69,22 @@ exports.sourceNodes = async ({
   actions: { createNode },
   createContentDigest
 }) => {
-  // get version history data from GitHub
-  const res = await fetch(
-    'https://raw.githubusercontent.com/inkdropapp/version-history/master/history.yml'
-  )
-  const txtData = await res.text()
-  const versionHistory = yaml.safeLoad(txtData)
-
-  for (const item of versionHistory) {
-    const file = remark().use(remarkHtml).processSync(item.notes)
-    createNode({
-      ...item,
-      html: file.contents,
-      id: `version-${item.version}`,
-      parent: null,
-      children: [],
-      internal: {
-        type: `versionHistory`,
-        contentDigest: createContentDigest(JSON.stringify(item))
-      }
-    })
-  }
+  await createNodesFromVersionHistory({
+    type: 'versionHistory',
+    idPrefix: 'version',
+    url:
+      'https://raw.githubusercontent.com/inkdropapp/version-history/master/history.yml',
+    createNode,
+    createContentDigest
+  })
+  await createNodesFromVersionHistory({
+    type: 'versionHistoryMobile',
+    idPrefix: 'version-mobile',
+    url:
+      'https://raw.githubusercontent.com/inkdropapp/version-history-mobile/master/history.yml',
+    createNode,
+    createContentDigest
+  })
 }
 
 const categories = [
@@ -120,6 +107,9 @@ exports.createPages = async ({ actions, graphql }) => {
   const infoTemplate = path.resolve(`src/templates/info-template.js`)
   const versionHistoryTemplate = path.resolve(
     `src/templates/version-history-template.js`
+  )
+  const versionHistoryMobileTemplate = path.resolve(
+    `src/templates/version-history-mobile-template.js`
   )
 
   function getTemplateForCategory(category) {
@@ -186,28 +176,18 @@ exports.createPages = async ({ actions, graphql }) => {
   /*
    * Generate pages of version history
    */
-  const result = await graphql(`
-    {
-      allVersionHistory(sort: { order: ASC, fields: [pub_date] }, limit: 1000) {
-        edges {
-          node {
-            version
-            pub_date
-            notes
-          }
-        }
-      }
-    }
-  `)
-  const versionItems = result.data.allVersionHistory.edges
-  for (const item of versionItems) {
-    const path = `/releases/${item.node.version}`
-    createPage({
-      path,
-      component: versionHistoryTemplate,
-      context: {
-        version: item.node.version
-      }
-    })
-  }
+  await createVersionHistoryPages({
+    type: 'versionHistory',
+    pathPrefix: '/releases',
+    component: versionHistoryTemplate,
+    graphql,
+    createPage
+  })
+  await createVersionHistoryPages({
+    type: 'versionHistoryMobile',
+    pathPrefix: '/releases-mobile',
+    component: versionHistoryMobileTemplate,
+    graphql,
+    createPage
+  })
 }

@@ -19,7 +19,8 @@ export default class InfoMenu extends Component {
               path: edge.node.frontmatter.path,
               title: edge.node.frontmatter.title
             })),
-            { path: '/releases', title: 'Release Notes' }
+            { path: '/releases', title: 'Release Notes' },
+            { path: '/releases-mobile', title: 'Release Notes (Mobile)' }
           ].sort((i1, i2) => i1.title.localeCompare(i2.title))
 
           return (

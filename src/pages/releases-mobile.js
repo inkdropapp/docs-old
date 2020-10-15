@@ -3,14 +3,14 @@ import { StaticQuery, graphql } from 'gatsby'
 import InfoLayout from '../components/info-layout'
 import ReleaseNotes from '../components/release-notes'
 
-export default function ReleaseNotesIndex() {
-  const title = `Inkdrop Release Notes of the Desktop App`
+export default function ReleaseNotesMobileIndex() {
+  const title = `Inkdrop Release Notes of the Mobile App`
   return (
     <InfoLayout currentPageTitle={title}>
       <StaticQuery
         query={pageQuery}
         render={data =>
-          data.allVersionHistory.edges.map(edge => {
+          data.allVersionHistoryMobile.edges.map(edge => {
             const { version, html, pub_date } = edge.node
             return (
               <ReleaseNotes
@@ -18,8 +18,8 @@ export default function ReleaseNotesIndex() {
                 version={version}
                 htmlContent={html}
                 pubDate={pub_date}
-                title="Release Notes"
-                pathPrefix="/releases"
+                title="Release Notes (Mobile)"
+                pathPrefix="/releases-mobile"
               />
             )
           })
@@ -31,7 +31,7 @@ export default function ReleaseNotesIndex() {
 
 export const pageQuery = graphql`
   query {
-    allVersionHistory(limit: 10) {
+    allVersionHistoryMobile(limit: 10) {
       edges {
         node {
           html

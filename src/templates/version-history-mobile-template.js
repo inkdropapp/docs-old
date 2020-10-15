@@ -7,17 +7,17 @@ import ReleaseNotes from '../components/release-notes'
 export default function Template({
   data // this prop will be injected by the GraphQL query below.
 }) {
-  const { versionHistory } = data
-  const { version, html, pub_date } = versionHistory
-  const title = `v${version} Release Notes `
+  const { versionHistoryMobile } = data
+  const { version, html, pub_date } = versionHistoryMobile
+  const title = `v${version} Release Notes (Mobile)`
   return (
     <InfoLayout currentPageTitle={title}>
       <ReleaseNotes
         version={version}
         htmlContent={html}
         pubDate={pub_date}
-        title="Release Notes"
-        pathPrefix="/releases"
+        title="Release Notes (Mobile)"
+        pathPrefix="/releases-mobile"
       />
     </InfoLayout>
   )
@@ -29,7 +29,7 @@ Template.propTypes = {
 
 export const pageQuery = graphql`
   query($version: String) {
-    versionHistory(version: { eq: $version }) {
+    versionHistoryMobile(version: { eq: $version }) {
       version
       pub_date
       html
