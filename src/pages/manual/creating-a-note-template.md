@@ -174,7 +174,7 @@ You can accomplish that by creating new command and associating it with the same
 Let's make a command named `custom:new-note` in your `init.js`:
 
 ```js
-;(async () => {
+(async () => {
   const db = inkdrop.main.dataStore.getLocalDB()
   const template = await db.notes.get("note:08zdMqQyj")
 
