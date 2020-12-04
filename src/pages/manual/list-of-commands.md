@@ -341,6 +341,40 @@ List notes with specified [note status](/manual/managing-tasks-with-status) on t
 
 List notes in a notebook of the currently editing note on the note list bar
 
+### core:note-tags-bar-item-list-unselect
+
+- Selector: `.note-tags-bar-item-list`
+
+Unselect items on the note tags bar
+
+### core:note-tags-bar-item-list-select-prev
+
+- Selector: `.note-tags-bar-item-list`
+
+Select the previous item on the note tags bar
+
+### core:note-tags-bar-item-list-select-next
+
+- Selector: `.note-tags-bar-item-list`
+
+Select the next item on the note tags bar
+
+### core:note-tags-bar-item-list-select-remove-item-before
+
+- Selector: `.note-tags-bar-item-list`
+
+Remove the selected item and select its previous item on the note tags bar
+
+### core:note-tags-bar-item-list-select-remove-item
+
+- Selector: `.note-tags-bar-item-list`
+
+Remove the target item on the note tags bar
+
+| Argument | Description                     |
+| -------- | ------------------------------- |
+| `tagId`  | (Optional) The tag ID to remove |
+
 ### core:open-first-note
 
 - Selector: `body`
