@@ -53,6 +53,13 @@ For example, to find notes which contain a keyword "Hello" and a tag "Issue":
 Hello tag:Issue
 ```
 
+Also, you can filter notes by title or body:
+
+```
+title:"JavaScript setTimeout"
+body:keyword
+```
+
 ## Search with a phrase
 
 By enclosing keywords in double quotes (`"`), you can search notes by a phrase including spaces.
