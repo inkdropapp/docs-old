@@ -19,7 +19,7 @@ const Footer = () => (
               <Link to="/faq">FAQ</Link>
             </li>
             <li>
-              <a href="mailto:contact@inkdrop.app">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
             <li>
               <a href="https://status.inkdrop.app/">Status</a>
