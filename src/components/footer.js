@@ -22,6 +22,9 @@ const Footer = () => (
               <a href="mailto:contact@inkdrop.app">Contact</a>
             </li>
             <li>
+              <a href="https://status.inkdrop.app/">Status</a>
+            </li>
+            <li>
               <a
                 href="https://twitter.com/inkdrop_app"
                 target="_blank"
