@@ -249,15 +249,10 @@ You can read [the privacy policy for Mixpanel online](https://mixpanel.com/legal
 You can opt out of Mixpanel by visiting this page: [www.mixpanel.com/optout](https://www.mixpanel.com/optout) and [my.inkdrop.app/account/privacy](https://my.inkdrop.app/account/privacy).
 Those tracking data are not associated with your Inkdrop account.
 
-### Inkdrop uses Rollbar.
-
-Inkdrop uses [Rollbar](https://rollbar.com/) to collect crash reports and error logs from our desktop apps and websites. Those crash reports include your technical information for simpler identification and incident management. Those data are not associated with your Inkdrop account.
-For more information on what type of information Rollbar collects, please visit [the Privacy Policy page of Rollbar](https://rollbar.com/privacy/).
-
 ### Inkdrop uses Bugsnag.
 
 Inkdrop uses [Bugsnag](https://www.bugsnag.com/) to collect crash reports and error logs from our mobile apps. Those crash reports include your technical information for simpler identification and incident management. Those data are not associated with your Inkdrop account.
-For more information on what type of information Bugsnag collects, please visit [the Privacy Policy page of Rollbar](https://docs.bugsnag.com/legal/privacy-policy/).
+For more information on what type of information Bugsnag collects, please visit [the Privacy Policy page of Bugsnag](https://docs.bugsnag.com/legal/privacy-policy/).
 
 ## Does Inkdrop make automated decisions based on data about me?
 
