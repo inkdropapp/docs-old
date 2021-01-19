@@ -23,7 +23,7 @@ Skip to:
 
 ## Definitions
 
-Inkdrop is owned by Takuya Matsuyama, based in Tokyo - Japan. (referred to as "I", "Me", "Our" or "We"). As a customer of this service you're a "User" or "You" according to this policy. The applications or any services offered by us will be referred to as "Inkdrop", "App", "Website" or "Service".
+Inkdrop is owned by Takuya Matsuyama, based in Japan. (referred to as "I", "Me", "Our" or "We"). As a customer of this service you're a "User" or "You" according to this policy. The applications or any services offered by us will be referred to as "Inkdrop", "App", "Website" or "Service".
 
 ## How does Inkdrop collect data about me?
 
@@ -136,11 +136,23 @@ In some cases, however, plugin publishers can unpublish packages, erasing them f
 
 ### Inkdrop collects payment card data.
 
-To continue using Inkdrop service after expiring free trial, Inkdrop requires your payment card data. Inkdrop itself does not collect or store enough information to charge your card itself. Rather, [Stripe](https://stripe.com/) collects that data on Inkdrop's behalf, and gives Inkdrop security tokens that allow Inkdrop to create charges and subscriptions. Stripe meets the highest level of PCI compliance (Level 1). See more on their [Security page](https://stripe.com/docs/security/stripe).
+To continue using Inkdrop service after expiring free trial, Inkdrop requires your payment card data.
+Inkdrop itself does not collect or store enough information to charge your card itself.
+Rather, [Stripe](https://stripe.com/) collects that data on Inkdrop's behalf, and gives Inkdrop security tokens that allow Inkdrop to create charges and subscriptions.
+Stripe meets the highest level of PCI compliance (Level 1). See more on their [Security page](https://stripe.com/docs/security/stripe).
 
 Inkdrop uses your payment card data only to charge for Inkdrop service.
 
 Inkdrop instructs Stripe to store your payment card data only as long as you use paid Inkdrop service.
+
+### Inkdrop collects billing address.
+
+In Japan, there is [consumption tax](https://www.nta.go.jp/english/taxes/consumption_tax/01.htm) on Inkdrop service.
+However, people who live outside Japan are exempt from consumption tax.
+Inkdrop collects your billing address in order to ensure whether you live in Japan or not.
+This is required by the national tax agency Japan.
+
+Inkdrop stores it safely on Stripe.
 
 ### Inkdrop collects data about correspondence.
 
@@ -228,7 +240,7 @@ Inkdrop uses [Papertrail](https://papertrailapp.com/) to collect logs from its s
 
 ### Inkdrop uses Stripe.
 
-Inkdrop uses [Stripe](https://www.stripe.com/) to collect and use payment card payment data. You can read [the privacy policy for Stripe online](https://stripe.com/privacy).
+Inkdrop uses [Stripe](https://www.stripe.com/) to collect and use card payment data and billing information. You can read [the privacy policy for Stripe online](https://stripe.com/privacy).
 
 ### Inkdrop uses Mixpanel.
 
