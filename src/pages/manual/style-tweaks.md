@@ -18,7 +18,7 @@ For example, to change the color of selected item of the note list bar, you coul
 
 ![Tweaking note list bar style](style-tweaks-example.png)
 
-To inspect elements which you would like to tweak, enable **Development Mode** by selecting the _Inkdrop > Preferences_ menu, clicking the _General_ tab on the left hand navigation, and check the "_Development Mode_", then reload the app.
+To inspect elements which you would like to tweak, enable **Development Mode** by selecting the menu _Inkdrop > Preferences_ on macOS or _File > Settings_ on Windows and Linux, clicking the _General_ tab on the left hand navigation, and check the "_Development Mode_", then reload the app.
 After that, you should get "Inspect Element" context menu by right-clicking any element on the app just like browser.
 
 <div class="ui info message">

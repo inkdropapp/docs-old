@@ -217,7 +217,7 @@ You can install the plugin locally for development.
 
 Run `ipm link --dev` to symlink your repository to `/dev/packages` in [the user data directory](/manual/basic-usage#user-data-directory).
 
-Let Inkdrop run in **Development Mode** by selecting the _Inkdrop > Preferences_ menu, clicking the _General_ tab on the left hand navigation, and check the "_Development Mode_", then reload the app by pressing `Alt+Cmd+Ctrl+L` / `Alt+Ctrl+L`.
+Let Inkdrop run in **Development Mode** by selecting the menu _Inkdrop > Preferences_ on macOS or _File > Settings_ on Windows and Linux, clicking the _General_ tab on the left hand navigation, and check the "_Development Mode_", then reload the app by pressing `Alt+Cmd+Ctrl+L` / `Alt+Ctrl+L`.
 
 ### Understanding the Generated Code
 
