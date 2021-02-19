@@ -82,3 +82,15 @@ To search notes NOT matched with specified keyword and condition, add `-` modifi
 ```
 
 Note that you can't specify excluding modifiers only without including conditions.
+
+## Caveats
+
+The Inkdrop's full-text search does not support partial keyword matching while prefix matching works.
+That is, you can't find notes with "string" when you search for "trin".
+
+That's because it uses the SQLite's full-text search engine which uses a token-based indexing algorithm like Google web search.
+It gives you a great performance and an ability to sort by rank, by tokenizing text into words and rank them based on TF-IDF:
+
+- [https://sqlite.org/fts5.html](https://sqlite.org/fts5.html)
+
+That's why you can't search notes like grep.
