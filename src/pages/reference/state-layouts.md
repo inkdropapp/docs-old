@@ -255,3 +255,11 @@ The status bar layout of the editor
 ```json
 []
 ```
+
+### editor-floating-actions
+
+The floating action buttons on the editor
+
+```json
+["EditorFloatingActionTogglePreview", "EditorFloatingActionToggleSideBySide"]
+```
