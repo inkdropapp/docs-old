@@ -73,3 +73,14 @@ ipm config set strict-ssl false
 
 If you got an error like that, your proxy server may be using TLSv1.0 which is obsolete.
 You have to update your proxy server to support newer protocols like TLSv1.2 since Inkdrop does not support TLSv1.0.
+
+### Run network diagnosis
+
+You can run a network diagnosis from the menu _Help → Run Network Diagnosis_:
+
+![Network diagnosis menu](working-behind-a-corporate-web-proxy_network-diagnosis.png)
+
+It launches Developer Tools and reports the diagnosis result in the console.
+You should get something like this:
+
+![Network diagnosis output](working-behind-a-corporate-web-proxy_network-diagnosis_result.png)
