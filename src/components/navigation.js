@@ -27,9 +27,6 @@ const Navigation = () => (
               <Img fixed={data.placeholderImage.childImageSharp.fixed} />
             )}
           />
-          {typeof location === 'object' && location.hostname.match(/beta/) && (
-            <span className="ui label basic yellow badge-beta">Beta</span>
-          )}
         </Link>
 
         <ul className="app--navbar reset-list un-select">

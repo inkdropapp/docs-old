@@ -25,6 +25,12 @@ export default class Breadcrumb extends Component {
             </Link>
             <i className="right chevron icon divider" />
             <div className="active section">{currentPageTitle}</div>
+            {typeof location === 'object' &&
+              !location.hostname.match(/beta/) && (
+                <span className="ui label circular basic yellow badge-beta">
+                  Beta
+                </span>
+              )}
           </div>
         </div>
       </div>
