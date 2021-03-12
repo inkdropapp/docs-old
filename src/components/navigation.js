@@ -27,7 +27,7 @@ const Navigation = () => (
               <Img fixed={data.placeholderImage.childImageSharp.fixed} />
             )}
           />
-          {location.hostname.match(/beta/) && (
+          {typeof location === 'object' && location.hostname.match(/beta/) && (
             <span className="ui label basic yellow badge-beta">Beta</span>
           )}
         </Link>

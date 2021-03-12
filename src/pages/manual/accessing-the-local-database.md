@@ -68,7 +68,7 @@ The Inkdrop client app can open a simple HTTP server so that you can access the 
 
 You can configure the HTTP server settings by editing `config.cson` in [the user data directory](/manual/basic-usage/#user-data-directory).
 
-Quit Inkdrop before you edit it like so:
+Quit Inkdrop, then edit it like so:
 
 ```yaml
 "*":
@@ -82,7 +82,7 @@ Quit Inkdrop before you edit it like so:
         password: "bar"
 ```
 
-Then, launch the app.
+Now, launch the app.
 
 ### Configurations
 
@@ -483,3 +483,89 @@ Response:
   "rev": "2-e5ad1c150a30e1ad5a781755466b19a1"
 }
 ```
+
+#### GET `/_changes`
+
+Returns a list of changes made to documents in the database, in the order they were made.
+
+##### Query parameters
+
+- `descending` (boolean) - Reverse the order of the output documents.
+- `since` (number) - Start the results from the change immediately after the given sequence number.
+- `limit` (number) - Limit the number of results to this number.
+- `include_docs` (boolean) - Include the associated document with each change. Default is `true`.
+- `conflicts` (boolean) - Include conflicts.
+- `attachments` (boolean) - Include attachments.
+
+##### Example
+
+Request:
+
+```
+GET /_changes?limit=1&since=306 HTTP/1.1
+Host: localhost:19840
+Authorization: Basic Zm9vOmJhcg==
+```
+
+Response:
+
+````json
+{
+  "results": [
+    {
+      "id": "note:BkS41x0T",
+      "changes": [
+        {
+          "rev": "2-4cd3d27dbda7cbd98cf8474970353460"
+        }
+      ],
+      "doc": {
+        "doctype": "markdown",
+        "updatedAt": 1475375009783,
+        "createdAt": 1475374892611,
+        "bookId": "book:Bk5Ivk0T:HJu6tyRT",
+        "status": "none",
+        "migratedBy": "migrateAddingNumOfTasks",
+        "numOfTasks": 0,
+        "numOfCheckedTasks": 0,
+        "title": "code diff",
+        "body": "```\nhello\n```",
+        "tags": [],
+        "_id": "note:BkS41x0T",
+        "_rev": "2-4cd3d27dbda7cbd98cf8474970353460"
+      },
+      "seq": 307
+    }
+  ],
+  "last_seq": 307
+}
+````
+
+Example response when a doc was deleted:
+
+```json
+{
+  "results": [
+    {
+      "id": "note:coPJ4TB7u",
+      "changes": [
+        {
+          "rev": "3-2396b4e8542389a6c464826fba8b9ef2"
+        }
+      ],
+      "doc": {
+        "_id": "note:coPJ4TB7u",
+        "_rev": "3-2396b4e8542389a6c464826fba8b9ef2",
+        "_deleted": true
+      },
+      "deleted": true,
+      "seq": 200
+    }
+  ],
+  "last_seq": 200
+}
+```
+
+`seq` and `last_seq` correspond to the overall sequence number of the entire database, and it’s what is passed in when using `since`.
+It is the primary key for the changes feed, and is also used as a checkpointer by the replication algorithm.
+Note that `live` option is not supported.
