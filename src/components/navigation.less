@@ -1,7 +1,9 @@
 .app--navigation {
   .app--logo {
+    display: flex;
     flex: 1 auto;
     line-height: 1;
+    align-items: center;
 
     > span.beta-label {
       color: #ff63c3;
@@ -54,5 +56,10 @@
     }
   }
 
+  .badge-beta.ui.basic.label {
+    display: inline-block;
+    margin-left: 1rem;
+    background-color: transparent !important;
+  }
 }
 
