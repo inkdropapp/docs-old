@@ -7,8 +7,10 @@ title: "Clipping Web Pages from Browser"
 ---
 
 <div class="ui warning message">
-  <strong>Beta feature</strong>: This feature is currently in beta. You need to use <a href='https://my.inkdrop.app/download/beta'>Inkdrop v5.3.0-beta.1</a>. It works on Google Chrome only. Firefox will be supported.
+  <strong>Beta feature</strong>: This feature is currently in beta. You need to use <a href='https://my.inkdrop.app/download/beta'>Inkdrop v5.3.0-beta.1</a>.
 </div>
+
+![Clipping webpage #cover](/images/clipping-web-pages-from-browser.svg)
 
 Inkdrop can clip web pages as Markdown via a browser extension.
 It allows you to grab the web page's main article or selection.
@@ -18,6 +20,11 @@ It allows you to grab the web page's main article or selection.
 The browser extension stores the clipped data to the Inkdrop app **locally**, not to the Inkdrop server directly
 because the app syncs data securely via the end-to-end encryption.
 To accomplish that, you have to set up [a local Inkdrop server](manual/accessing-the-local-database/#accessing-via-http-advanced) beforehand so that the browser extension can access your local database.
+
+## Install Web Clipper
+
+- [Chrome Extension](https://chrome.google.com/webstore/detail/inkdrop-web-clipper/foeipofmnkjhlbojckgiecdffbfnnofj)
+- [Firefox Add-on](https://addons.mozilla.org/en-US/firefox/addon/inkdrop-web-clipper/)
 
 ## Set up Web Clipper
 
