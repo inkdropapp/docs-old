@@ -19,7 +19,7 @@ It allows you to grab the web page's main article or selection.
 
 The browser extension stores the clipped data to the Inkdrop app **locally**, not to the Inkdrop server directly
 because the app syncs data securely via the end-to-end encryption.
-To accomplish that, you have to set up [a local Inkdrop server](manual/accessing-the-local-database/#accessing-via-http-advanced) beforehand so that the browser extension can access your local database.
+To accomplish that, you have to set up [a local Inkdrop server](/manual/accessing-the-local-database/#accessing-via-http-advanced) beforehand so that the browser extension can access your local database.
 
 ## Install Web Clipper
 
