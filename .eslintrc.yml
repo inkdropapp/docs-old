@@ -1,9 +1,7 @@
 root: true
 plugins:
-  - flowtype
   - prettier
 extends:
-  - plugin:flowtype/recommended
   - plugin:prettier/recommended
   - plugin:react/recommended
 parser: babel-eslint
@@ -13,7 +11,6 @@ settings:
 env:
   browser: true
   es6: true
-  mocha: true
   node: true
 globals:
   __PATH_PREFIX__: true
