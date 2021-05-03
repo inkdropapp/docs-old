@@ -64,6 +64,8 @@ Use it only if [InkdropDatabase](/reference/inkdrop-database) does not provide w
 
 ## Accessing via HTTP (Advanced)
 
+![Local REST API endpoint](./accessing-the-local-database_local-rest-api-endpoint.png)
+
 The Inkdrop client app can open a simple HTTP server so that you can access the data from an external program easily, which gives you a flexible ability to import/export your notes.
 
 You can configure the HTTP server settings by editing `config.cson` in [the user data directory](/manual/basic-usage/#user-data-directory).
