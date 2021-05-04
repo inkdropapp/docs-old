@@ -6,10 +6,6 @@ path: "/manual/clipping-web-pages-from-browser"
 title: "Clipping Web Pages from Browser"
 ---
 
-<div class="ui warning message">
-  <strong>Beta feature</strong>: This feature is currently in beta. You need to use <a href='https://my.inkdrop.app/download/beta'>Inkdrop v5.3.0-beta.1</a>.
-</div>
-
 ![Clipping webpage #cover](/images/clipping-web-pages-from-browser.svg)
 
 Inkdrop can clip web pages as Markdown via a browser extension.
