@@ -11,7 +11,7 @@ title: "Clipping Web Pages from Browser"
 Inkdrop can clip web pages as Markdown via a browser extension.
 It allows you to grab the web page's main article or selection.
 
-## Prerequisites
+## Prerequisites: Set up a local Inkdrop server
 
 The browser extension stores the clipped data to the Inkdrop app **locally**, not to the Inkdrop server directly
 because the app syncs data securely via the end-to-end encryption.
