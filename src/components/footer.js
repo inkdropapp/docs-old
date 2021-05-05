@@ -22,9 +22,6 @@ const Footer = () => (
               <Link to="/contact">Contact</Link>
             </li>
             <li>
-              <a href="https://status.inkdrop.app/">Status</a>
-            </li>
-            <li>
               <a
                 href="https://twitter.com/inkdrop_app"
                 target="_blank"
