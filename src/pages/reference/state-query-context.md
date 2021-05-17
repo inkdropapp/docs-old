@@ -49,12 +49,13 @@ It is a mode to show all notes.
 
 It is a mode to show notes in a particular notebook.
 
-| Field           | Description                                        |
-| --------------- | -------------------------------------------------- |
-| `bookId`        | String. A notebook ID to query                     |
-| `tagId`         | String, optional. A tag ID to filter               |
-| `status`        | String, optional. A status to filter               |
-| `filterKeyword` | String. A filter keyword to filter note list items |
+| Field             | Description                                          |
+| ----------------- | ---------------------------------------------------- |
+| `bookId`          | String. A notebook ID to query                       |
+| `tagId`           | String, optional. A tag ID to filter                 |
+| `status`          | String, optional. A status to filter                 |
+| `filterKeyword`   | String. A filter keyword to filter note list items   |
+| `includeChildren` | Boolean. Whether to include notes in child notebooks |
 
 ### `"tag"`: Show notes with a tag
 
