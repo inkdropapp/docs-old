@@ -855,7 +855,7 @@ Indents one more the currently selected line(s)
 
 ### editor:insert-images
 
-- Selector: `body`
+- Selector: `.mde-cm-wrapper`
 
 Inserts image files at the cursor to the editing note
 
@@ -865,6 +865,23 @@ Inserts image files at the cursor to the editing note
 | &emsp;`ch`   | Number, character position                                                                                                                                                                                                    |
 | &emsp;`line` | Number, line position                                                                                                                                                                                                         |
 | `files`      | [FIleList](https://developer.mozilla.org/en-US/docs/Web/API/FileList), or an Array of [File](https://developer.mozilla.org/en-US/docs/Web/API/File) or [NativeImage](https://electronjs.org/docs/api/native-image) to insert. |
+
+#### Example
+
+You can override the default file drop handler like so:
+
+```js
+const mde = inkdrop.getActiveEditorOrThrowError()
+inkdrop.commands.add(mde.wrapper.wrapper, {
+  "editor:insert-images": e => {
+    const { files, pos } = e
+    // Do something
+
+    // prevent the default behavior
+    e.stopPropagation()
+  },
+})
+```
 
 ### editor:jump-to-line
 
