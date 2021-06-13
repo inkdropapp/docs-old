@@ -5,6 +5,10 @@ path: /reference/message-dialog
 title: MessageDialog
 ---
 
+<div class='ui warning message'>
+Deprecated as of v5.3.1. Use <code>Dialog</code> component instead.
+</div>
+
 A built-in React [component](/reference/component-manager) of Inkdrop that allows you to display a simple modal dialog with buttons.
 To get the class of `MessageDialog` component:
 

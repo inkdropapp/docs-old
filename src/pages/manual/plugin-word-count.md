@@ -230,57 +230,73 @@ The second file is a React Component class, `lib/wordcount-message-dialog.js`, w
 ```jsx
 "use babel"
 
-import * as React from "react"
-import { CompositeDisposable } from "event-kit"
+import React, { useEffect, useCallback } from "react"
+import { logger, useModal } from "inkdrop"
 
-export default class WordcountMessageDialog extends React.Component {
-  componentWillMount() {
-    // Events subscribed to in Inkdrop's system can be easily cleaned up with a CompositeDisposable
-    this.subscriptions = new CompositeDisposable()
+const WordcountMessageDialog = props => {
+  const modal = useModal()
+  const { Dialog } = inkdrop.components.classes
 
-    // Register command that toggles this view
-    this.subscriptions.add(
-      inkdrop.commands.add(document.body, {
-        "wordcount:toggle": () => this.toggle(),
-      })
-    )
-  }
+  const toggle = useCallback(() => {
+    modal.show()
+    logger.debug("Wordcount was toggled!")
+  }, [])
 
-  componentWillUnmount() {
-    this.subscriptions.dispose()
-  }
+  useEffect(() => {
+    const sub = inkdrop.commands.add(document.body, {
+      "wordcount:toggle": toggle,
+    })
+    return () => sub.dispose()
+  }, [toggle])
 
-  render() {
-    const { MessageDialog } = inkdrop.components.classes
-    return (
-      <MessageDialog ref="dialog" title="Word Count">
-        Word Count was toggled!
-      </MessageDialog>
-    )
-  }
-
-  toggle() {
-    console.log("Wordcount was toggled!")
-    const { dialog } = this.refs
-    if (!dialog.isShown) {
-      dialog.showDialog()
-    } else {
-      dialog.dismissDialog()
-    }
-  }
+  return (
+    <Dialog {...modal.state} onBackdropClick={modal.close}>
+      <Dialog.Title>Wordcount</Dialog.Title>
+      <Dialog.Content>Wordcount was toggled!</Dialog.Content>
+      <Dialog.Actions>
+        <button className="ui button" onClick={modal.close}>
+          Close
+        </button>
+      </Dialog.Actions>
+    </Dialog>
+  )
 }
+
+export default WordcountMessageDialog
 ```
 
 Inkdrop is built with [React](https://facebook.github.io/react/), and you can make UI components with it.
 The `WordcountMessageDialog` defines a React Component which shows a modal message dialog on toggling from the command.
-This component implements following four methods:
+This component is [a function component](https://reactjs.org/docs/components-and-props.html) that renders the message dialog using `Dialog` built-in component imported from [the component manager](/reference/component-manager) by doing like so:
 
-- `componentWillMount` - invoked once, immediately before the initial rendering occurs. See [here](https://facebook.github.io/react/docs/component-specs.html#mounting-componentwillmount) for more information.
-- `componentWillUnmount` - invoked once, immediately before a component is unmounted from the DOM. See [here](https://facebook.github.io/react/docs/component-specs.html#unmounting-componentwillunmount) for more information.
-- `render` - invoked when React renders your component. See [here](https://facebook.github.io/react/docs/tutorial.html) for more information.
-- `toggle` - invoked when `wordcount:toggle` is dispatched.
+```js
+const { Dialog } = inkdrop.components.classes
+```
 
-In the `componentWillMount` method, it creates an instance of the [CompositeDisposable](/reference/composite-disposable) class so it can register all the commands that can be called from the plugin so other plugins could subscribe to these events.
+It uses `useModal` built-in React Hook method to manage the dialog visibility state.
+You can show the dialog by calling `modal.show()` and hide with `modal.hide()` method.
+To toggle the dialog by a command, it defines a callback function with React's [useCallback](https://reactjs.org/docs/hooks-reference.html#usecallback) as following:
+
+```js
+const toggle = useCallback(() => {
+  modal.show()
+  logger.debug("Wordcount was toggled!")
+}, [])
+```
+
+Then, it binds the callback function with the `"wordcount:toggle"` command with React's [useEffect](https://reactjs.org/docs/hooks-effect.html):
+
+```js
+useEffect(() => {
+  const sub = inkdrop.commands.add(document.body, {
+    "wordcount:toggle": toggle,
+  })
+  return () => sub.dispose()
+}, [toggle])
+```
+
+The [`inkdrop.commands.add` method](/reference/command-registry#addtarget-commands) returns an instance of the [CompositeDisposable](/reference/composite-disposable) class.
+It automatically unbinds the command when the component is unmounted from the DOM by calling `CompositeDisposable#dispose()` method.
 
 The second file we have is the main entry point to the plugin. Again, because it's referenced in the `package.json` file. Let's take a look at that file, it's pretty simple:
 
@@ -327,51 +343,122 @@ So, let's review the actual flow in this plugin.
 
 So now that we understand what is happening, let's modify the code so that our little modal message dialog shows us the current word count instead of static text.
 
-We'll do this in a very simple way. When the dialog is toggled, we'll count the words right before displaying the modal. So let's do this in the `toggle` command. If we add some code to count the words and ask the React component to update itself, we'll have something like this in `lib/wordcount-message-dialog.js`:
+We'll do this in a very simple way. When the dialog is toggled, we'll count the words right before displaying the modal. So let's do this in the `toggle` command.
+If we add some code to count the words and ask the React component to update itself, we'll have something as following in `lib/wordcount-message-dialog.js`.
+First, import `useState` method from `react`:
 
 ```js
-  componentWillMount () {
-    /* ... */
-
-    this.setState({ words: 0 });
-  }
+import React, { useState, useEffect, useCallback } from "react"
 ```
 
+Next, import [react-redux](https://react-redux.js.org/). You don't have to add it as a dependency because Inkdrop provides it out of the box:
+
 ```js
-  toggle() {
-    console.log('WordCount was toggled!');
-    const { dialog } = this.refs;
-    if (!dialog.isShown) {
-      const { editingNote } = inkdrop.store.getState();
-      if(editingNote) {
-        const { body } = editingNote;
-        const words = body.split(/\s+/).length;
-        this.setState({ words });
-        dialog.showDialog();
-      }
-    } else {
-      dialog.dismissDialog();
-    }
-  }
+import { useSelector } from "react-redux"
 ```
 
-Let's look at the lines we've added.
-First we set `words` to `0` by calling `setState` method.
-Secondly we get the [state of the current note](/reference/state-editing-note).
-
-Provided a note is opened, we get its `body` and the number of words by splitting the `body` on whitespace with a regular expression and then getting the length of that array.
-
-Finally, we tell our message dialog to update the word count it displays by calling the `setState()` method on our dialog and then showing the modal again. Let's add a code to display the word count through the `render` method of our `lib/wordcount-message-dialog.js` file:
+Then, in the dialog component, add the following line to remember the word count using React's [useState](https://reactjs.org/docs/hooks-state.html):
 
 ```js
-  render() {
-    const { MessageDialog } = inkdrop.components.classes;
-    return (
-      <MessageDialog ref='dialog' title='Word Count'>
-        There are { this.state.words } words.
-      </MessageDialog>
-    );
-  }
+const [count, setCount] = useState(0)
+```
+
+The app state is managed with [Redux](https://react-redux.js.org/).
+You can refer the state via [inkdrop.store](/reference/environment#store) or the Redux function.
+In this example, we use [useSelector](https://react-redux.js.org/api/hooks) function to get the current state of [the editing note](/reference/state-editing-note) like so:
+
+```js
+const noteBody = useSelector(selectEditingNoteBody)
+```
+
+The `selectEditingNoteBody` function should be defined outside the component function like so:
+
+```js
+const selectEditingNoteBody = ({ editingNote }) =>
+  editingNote ? editingNote.body : ""
+```
+
+Now, let's define a function that counts the words:
+
+```js
+const countWords = useCallback(() => {
+  return noteBody.split(/\s+/).length
+}, [noteBody])
+```
+
+We call it when toggling the dialog:
+
+```js
+const toggle = useCallback(() => {
+  setCount(countWords())
+  modal.show()
+}, [countWords])
+```
+
+Finally, we tell our message dialog to display the word count.
+
+```js
+return (
+  <Dialog {...modal.state} onBackdropClick={modal.close}>
+    <Dialog.Title>Wordcount</Dialog.Title>
+    <Dialog.Content>There are {count} words.</Dialog.Content>
+    <Dialog.Actions>
+      <button className="ui button" onClick={modal.close}>
+        Close
+      </button>
+    </Dialog.Actions>
+  </Dialog>
+)
+```
+
+Now, `lib/wordcount-message-dialog.js` looks like this:
+
+```js
+"use babel"
+
+import React, { useState, useEffect, useCallback } from "react"
+import { logger, useModal } from "inkdrop"
+import { useSelector } from "react-redux"
+
+const selectEditingNoteBody = ({ editingNote }) =>
+  editingNote ? editingNote.body : ""
+
+const WordcountMessageDialog = props => {
+  const modal = useModal()
+  const { Dialog } = inkdrop.components.classes
+  const [count, setCount] = useState(0)
+  const noteBody = useSelector(selectEditingNoteBody)
+
+  const countWords = useCallback(() => {
+    return noteBody.split(/\s+/).length
+  }, [noteBody])
+
+  const toggle = useCallback(() => {
+    setCount(countWords())
+    modal.show()
+  }, [countWords])
+
+  useEffect(() => {
+    const sub = inkdrop.commands.add(document.body, {
+      "wordcount:toggle": toggle,
+    })
+    return () => sub.dispose()
+  }, [toggle])
+
+  return (
+    <Dialog {...modal.state} onBackdropClick={modal.close}>
+      <Dialog.Title>Wordcount</Dialog.Title>
+      <Dialog.Content>There are {count} words.</Dialog.Content>
+      <Dialog.Actions>
+        <button className="ui button" onClick={modal.close}>
+          Close
+        </button>
+      </Dialog.Actions>
+    </Dialog>
+  )
+}
+
+export default WordcountMessageDialog
 ```
 
 Pretty simple! We take the count number that was passed in and place it into a string that we then stick into the element that our component is controlling.
@@ -382,7 +469,7 @@ Pretty simple! We take the count number that was passed in and place it into a s
 
 You'll notice a few `console.log` statements in the code. One of the cool things about Inkdrop being built on Chromium is that you can use some of the same debugging tools available to you that you have when doing web development.
 
-To open up the Developer Console, press `Alt+Cmd+I`, or choose the menu option _Developer > Toggle Developer Tools_.
+To open up the Developer Console, press <kbd>Alt+Cmd+I</kbd> on macOS or <kbd>Alt+Ctrl+I</kbd> on Linux and Windows, or choose the menu option _Developer > Toggle Developer Tools_.
 
 ![DevTools](./plugin-word-count_devtools.png)
 
@@ -400,7 +487,7 @@ There are a few things you should double check before publishing:
 
 - Your `package.json` file has `name`, `description`, and `repository` fields.
 - Your `package.json` file has a `version` field with a value of "0.0.0".
-- Your `package.json` file has an `engines` field that contains an entry for Inkdrop such as: `"engines": {"inkdrop": ">=0.9.0 <2.0.0"}`.
+- Your `package.json` file has an `engines` field that contains an entry for Inkdrop such as: `"engines": {"inkdrop": "^5.x"}`.
 - Your plugin has a `README.md` file at the root.
 - Change the repository url in the `package.json` file to match the URL of your repository.
 - Your plugin is in a Git repository that has been pushed to [GitHub](https://github.com/). Follow [this guide](http://guides.github.com/overviews/desktop) if your plugin isn't already on GitHub.
