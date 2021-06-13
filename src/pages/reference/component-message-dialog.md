@@ -6,7 +6,7 @@ title: MessageDialog
 ---
 
 <div class='ui warning message'>
-Deprecated as of v5.3.1. Use <code>Dialog</code> component instead.
+Deprecated as of v5.3.1. Use <a href='/reference/dialog'><code>Dialog</code></a> component instead.
 </div>
 
 A built-in React [component](/reference/component-manager) of Inkdrop that allows you to display a simple modal dialog with buttons.
