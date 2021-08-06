@@ -271,6 +271,6 @@ You can send questions or complaints to:
 
 ## How can I find out about changes?
 
-Inkdrop will announce the next version on [the Inkdrop blog](https://blog.inkdrop.info/). In the meantime, Inkdrop may update its contact information and minor changes by updating the page at [Privacy Policy](https://docs.inkdrop.app/privacy), without an announcement. Inkdrop may change how it announces changes in future privacy versions.
+Inkdrop will announce the next version on [the Inkdrop blog](https://blog.inkdrop.app/). In the meantime, Inkdrop may update its contact information and minor changes by updating the page at [Privacy Policy](https://docs.inkdrop.app/privacy), without an announcement. Inkdrop may change how it announces changes in future privacy versions.
 
 You can review the history of changes in [the Git repository for Inkdrop's documentation](https://github.com/inkdropapp/docs).

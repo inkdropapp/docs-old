@@ -9,7 +9,7 @@ title: "Making plugin for mobile"
 ## Your plugin will be bundled as an advanced Markdown renderer option
 
 Extending Markdown renderer in the mobile app is also supported by the similar way as the desktop app.
-But as [Apple prohibits loading dynamic scripts that change the app's functionality](https://blog.inkdrop.info/a-promising-idea-towards-supporting-plugins-for-ios-app-5f7803715be7), it has to be bundled at the compilation time.
+But as [Apple prohibits loading dynamic scripts that change the app's functionality](https://blog.inkdrop.app/a-promising-idea-towards-supporting-plugins-for-ios-app-5f7803715be7), it has to be bundled at the compilation time.
 Plugins are displayed as _"Advanced Markdown renderer options"_.
 So, basically, it is for adding features for the Markdown renderer like [math](https://github.com/inkdropapp/inkdrop-math).
 
