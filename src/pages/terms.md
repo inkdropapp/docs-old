@@ -26,7 +26,7 @@ Violation of any of the terms below will result in the termination of your Accou
 
 ## Payment and Refunds Terms
 
-1. The Service is offered with a 60-day free trial. You will only be able to continue using the Service by paying in advance for additional usage. If you fail to pay for additional usage, your account will be frozen and inaccessible until payment is made.
+1. The Service is offered with a 30-day free trial. You will only be able to continue using the Service by paying in advance for additional usage. If you fail to pay for additional usage, your account will be frozen and inaccessible until payment is made.
 2. There will be no refunds or credits for partial months of service.
 3. All fees are exclusive of all taxes, levies, or duties imposed by taxing authorities. If your billing address is in Japan, you shall be responsible for payment of a consumption tax.
 4. The credit card that you provided will automatically be charged the new rate on your next billing cycle when your billing status changes.
