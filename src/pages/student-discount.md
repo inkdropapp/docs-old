@@ -10,6 +10,9 @@ title: Student Discount
 We're committed to helping **students** and **teachers** experience the power of Inkdrop.
 If you are eligible, you can get **a 60% off discount valid for 12 months**.
 
+Please note that you have to be enrolled in an academic program for at least 1 year.
+For example, it's not available for short-term online school programs.
+
 Apply for an educational license below to receive your discount.
 
 ## Proof of eligibility for students and teachers
