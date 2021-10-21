@@ -8,7 +8,14 @@ title: "Troubleshooting"
 
 ![Troubleshooting #cover](/images/troubleshooting.svg)
 
-## I Can't Log In
+## I Can't Log In / Sync Not Working
+
+### Use the latest version
+
+Using an old version can cause a network issue.
+For example, the version prior to v5.4.3 no longer works as expected due to [an Electron bug caused by the expiration of the Let's Encrypt root certificate](https://forum.inkdrop.app/t/lets-encrypt-root-certificate-expiration-error/2609).
+
+You can download the latest version from [here](https://my.inkdrop.app/download).
 
 ### Restart Computer
 
@@ -43,6 +50,17 @@ In some environment you need some additional packages installed. Please try inst
 ```
 sudo apt-get install libgconf2-4 libcanberra-gtk-module libgnome-keyring0 gnome-keyring
 ```
+
+### Run Network Diagnosis
+
+You can run a network diagnosis from the menu _Help → Run Network Diagnosis_:
+
+![Network diagnosis menu](working-behind-a-corporate-web-proxy_network-diagnosis.png)
+
+It launches Developer Tools and reports the diagnosis result in the console.
+You should get something like this:
+
+![Network diagnosis output](working-behind-a-corporate-web-proxy_network-diagnosis_result.png)
 
 ## Plugin Won't Work
 
@@ -79,4 +97,3 @@ For other error codes, please refer to [the Stripe documentation](https://stripe
 
 Please check your debit card supports recurring payments.
 Some debit cards don't support paying for subscription services.
-
