@@ -116,6 +116,14 @@ Opens up the documentation website
 
 Toggles the size and location of the window between its standard state and its user state
 
+### application:sync-db
+
+Perform data sync from the last checkpointer.
+
+### application:sync-db-full
+
+Perform data sync from the beginning.
+
 ## Core commands
 
 ### core:copy
