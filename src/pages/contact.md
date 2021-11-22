@@ -17,12 +17,6 @@ place to discuss anything and everything Inkdrop related with the
 entire Inkdrop community. If you have problems or are looking for
 help, this is your place.
 
-## Discord Community
-
-The [Discord community](https://discord.gg/QfsG5Kj) is
-the place to help each other on using Inkdrop. You can ask
-questions, post your tips, and discuss about plugin development.
-
 ## Email
 
 If you have an issue on your account or any other inquiries, send me [an email](mailto:contact@inkdrop.app).
