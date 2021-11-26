@@ -19,9 +19,9 @@ help, this is your place.
 
 ## Email
 
-If you have an issue on your account or any other inquiries, send me [an email](mailto:contact@inkdrop.app).
-Please do not forget to check out the [FAQ](/faq) beforehand.
+If you have an issue with your account or any other inquiries, send me [an email](mailto:contact@inkdrop.app).
+Please do not forget to check out the [FAQ](/faq) and [troubleshooting](/manual/troubleshooting) beforehand.
 
 ## Twitter
 
-I'm usually on [Twitter @inkdrop_app](https://twitter.com/inkdrop_app).
+I'm usually on [Twitter @inkdrop\_app](https://twitter.com/inkdrop_app).
