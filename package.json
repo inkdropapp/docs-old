@@ -34,12 +34,11 @@
     "semantic-ui-react": "^2.0.3"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.14.0",
-    "babel-eslint": "^10.1.0",
+    "@babel/eslint-parser": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.23.2",
-    "prettier": "^2.2.1"
+    "eslint-plugin-react": "^7.27.1",
+    "prettier": "^2.5.1"
   },
   "keywords": [
     "gatsby",

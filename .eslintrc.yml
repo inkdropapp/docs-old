@@ -1,10 +1,8 @@
 root: true
-plugins:
-  - prettier
 extends:
-  - plugin:prettier/recommended
+  - prettier
   - plugin:react/recommended
-parser: babel-eslint
+parser: "@babel/eslint-parser"
 settings:
   react:
     version: "16.8"
@@ -16,12 +14,6 @@ globals:
   __PATH_PREFIX__: true
 rules:
   no-useless-escape: 0
-  prettier/prettier:
-    - 2
-    -
-      trailingComma: none
-      singleQuote: true
-      semi: false
   prefer-const: 2
   no-unused-vars:
     - 2
