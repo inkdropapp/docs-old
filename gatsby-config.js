@@ -55,9 +55,11 @@ module.exports = {
             }
           },
           {
-            resolve: `gatsby-remark-default-html-attrs`,
+            resolve: `gatsby-remark-classes`,
             options: {
-              table: 'ui celled small table'
+              classMap: {
+                table: 'ui celled small table'
+              }
             }
           },
           {
