@@ -62,6 +62,49 @@ You should get something like this:
 
 ![Network diagnosis output](working-behind-a-corporate-web-proxy_network-diagnosis_result.png)
 
+## App won't launch
+
+### Enable logging
+
+To investigate what's happening, please try running the app from terminal with `--enable-logging` parameter.
+
+#### On Windows
+
+```
+C:\Users\USER_NAME\AppData\Local\inkdrop\app-VERSION\Inkdrop.exe --enable-logging
+```
+
+#### On Linux
+
+deb package:
+
+```
+/usr/bin/inkdrop --enable-logging
+```
+
+Snap app:
+
+```
+/snap/bin/inkdrop --enable-logging
+```
+
+#### On macOS
+
+```
+/Applications/Inkdrop.app/Contents/MacOS/Inkdrop --enable-logging
+```
+
+### Error: Failed to launch GPU process
+
+If you get an error like below:
+
+```
+[4428:1217/161336.565:ERROR:browser_gpu_channel_host_factory.cc(154)] Failed to launch GPU process.
+```
+
+You can disable the GPU acceleration by appending `--disable-gpu-sandbox` parameter to avoid it.
+
+
 ## Plugin Won't Work
 
 ### Update the Plugin
