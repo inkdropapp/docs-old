@@ -19,7 +19,7 @@ You can move backward/forward in the following ways:
 
 - Press <kbd>Cmd + ←</kbd>/<kbd>Cmd + →</kbd> on macOS or <kbd>Alt + ←</kbd>/<kbd>Alt + →</kbd> on Linux and Windows (Note: The shortcut keys don't work if the focus is at an input or editor)
 - Choose menu _View → Back or Forward_
-- Click your back/forward buttons on your mouse (It depends on your mouse configuration)
+- Click back/forward button on your mouse (It depends on your mouse configuration)
 
 The commands for the navigation actions are [`core:navigate-back`](/manual/list-of-commands#corenavigate-back) and [`core:navigate-forward`](/manual/list-of-commands#corenavigate-forward).
 
