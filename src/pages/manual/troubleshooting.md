@@ -62,6 +62,13 @@ You should get something like this:
 
 ![Network diagnosis output](working-behind-a-corporate-web-proxy_network-diagnosis_result.png)
 
+### Synchronize Notes from Scratch_
+
+Inkdrop stores checkpointers for providing quick sync.
+If your new edits are synced but old ones are missing, the checkpointers may be broken.
+In this case, please try running sync from scratch by selecting menu _Help → Synchronize Notes from Scratch_.
+By doing this, Inkdrop will try to sync data from the beginning of the change history.
+
 ## App won't launch
 
 ### Enable logging
