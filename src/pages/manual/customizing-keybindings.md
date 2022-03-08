@@ -46,6 +46,7 @@ You can run a command when the app does not have keyboard focus.
 ```coffeescript
 'global':
   'cmd-shift-x': 'application:show-and-focus-main-window'
+  'cmd-shift-c': 'application:quick-note'
 ```
 
 ### Toggle Inkdrop main window
@@ -53,4 +54,13 @@ You can run a command when the app does not have keyboard focus.
 ```coffeescript
 'global':
   'cmd-shift-x': 'application:toggle-main-window'
+```
+
+### Create a note and show it in a separate window
+
+Quickly open up a new note with a shortcut:
+
+```coffeescript
+'global':
+  'cmd-shift-c': 'application:quick-note'
 ```
