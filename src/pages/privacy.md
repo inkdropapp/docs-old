@@ -264,9 +264,9 @@ You can send questions or complaints to:
 
 - Takuya Matsuyama
 - [contact@inkdrop.app](mailto:contact@inkdrop.app)
-- 2-5-12-502
-- Shinsenri-Higashimachi, Toyonaka, Osaka
-- 560-0082
+- 1-34-2-1605
+- Shimmachi, Nishi, Osaka, Osaka
+- 550-0013
 - Japan
 
 ## How can I find out about changes?
