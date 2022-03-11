@@ -10,6 +10,7 @@
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-catch-links": "^4.9.0",
     "gatsby-plugin-google-analytics": "^4.9.0",
+    "gatsby-plugin-image": "^2.9.1",
     "gatsby-plugin-less": "^6.9.0",
     "gatsby-plugin-manifest": "^4.9.1",
     "gatsby-plugin-offline": "^5.9.1",

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import ManualLayout from '../../components/manual-layout'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import Prism from 'prismjs'
 import 'prismjs/components/prism-python.js'
 
@@ -398,8 +398,8 @@ Reference-style: ![alt text][logo]
 
             <p>
               Inline-style:{' '}
-              <Img
-                fixed={data.icon.childImageSharp.fixed}
+              <GatsbyImage
+                fixed={data.icon.childImageSharp.gatsbyImageData}
                 alt="alt text"
                 title="Logo Title Text 1"
               />
@@ -407,8 +407,8 @@ Reference-style: ![alt text][logo]
 
             <p>
               Reference-style:{' '}
-              <Img
-                fixed={data.icon.childImageSharp.fixed}
+              <GatsbyImage
+                fixed={data.icon.childImageSharp.gatsbyImageData}
                 alt="alt text"
                 title="Logo Title Text 2"
               />
@@ -829,9 +829,7 @@ export const query = graphql`
   query {
     icon: file(relativePath: { eq: "favicon.png" }) {
       childImageSharp {
-        fixed(width: 64, height: 64) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FIXED, width: 64, height: 64)
       }
     }
   }
