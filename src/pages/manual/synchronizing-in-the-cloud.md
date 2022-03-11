@@ -170,3 +170,10 @@ To configure the mobile app to sync with your database:
 4. Press _Apply_ button
 
 ![Sync with custom server on the mobile app](./sync_mobile.png)
+
+## Debugging the database connections
+
+If the app won't sync with the database, there are two ways to debug the issue:
+
+1. Run [Network diagnosis](/manual/troubleshooting#run-network-diagnosis)
+2. [Enable main process logging](/manual/troubleshooting#enable-logging)
