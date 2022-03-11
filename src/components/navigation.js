@@ -1,7 +1,7 @@
 import { StaticQuery, graphql, Link } from 'gatsby'
 import { Container } from 'semantic-ui-react'
 import React from 'react'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import './navigation.less'
 
 const Navigation = () => (
@@ -16,15 +16,15 @@ const Navigation = () => (
                   relativePath: { eq: "navbar-logo.png" }
                 ) {
                   childImageSharp {
-                    fixed(width: 142, height: 45) {
-                      ...GatsbyImageSharpFixed
-                    }
+                    gatsbyImageData(layout: FIXED, width: 142, height: 45)
                   }
                 }
               }
             `}
             render={data => (
-              <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+              <GatsbyImage
+                image={data.placeholderImage.childImageSharp.gatsbyImageData}
+              />
             )}
           />
         </Link>
