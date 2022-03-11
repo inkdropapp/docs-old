@@ -124,6 +124,10 @@ Perform data sync from the last checkpointer.
 
 Perform data sync from the beginning.
 
+### application:quick-note
+
+Create a note and show it in a separate window.
+
 ## Core commands
 
 ### core:copy
