@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { ReactComponent as DocumentationIcon } from '../images/documentation.svg'
 import { ReactComponent as ForumIcon } from '../images/forum.svg'
-import { ReactComponent as DiscordIcon } from '../images/discord.svg'
 import './masthead.less'
 
 export default class Masthead extends Component {
@@ -41,18 +40,6 @@ export default class Masthead extends Component {
               place to discuss anything and everything Inkdrop related with the
               entire Inkdrop community. If you have problems or are looking for
               help, this is your place.
-            </p>
-
-            <h3 className="ui header">
-              <div className="content">
-                <DiscordIcon className="section-svg-icon" />
-                Discord Community
-              </div>
-            </h3>
-            <p>
-              The <a href="https://discord.gg/QfsG5Kj">Discord community</a> is
-              the place to help each other on using Inkdrop. You can ask
-              questions, post your tips, and discuss about plugin development.
             </p>
           </div>
           {this.props.children}
