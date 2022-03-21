@@ -29,7 +29,7 @@ Then, a public link for the note is created. You can view the note on your brows
 
 ## Note
 
-The note may not be correctly displayed on your browser if you opened too quickly after creating the public link as the synchronization of your database does not complete yet.
+The note may not be correctly displayed on your browser if you opened too quickly after creating the public link as the synchronization of your database hasn't been completed yet.
 Please try it again after a few moments.
 
 Images on external sites are prohibited because of the security reason. Please use attachment images if you want to insert images in your notes.
