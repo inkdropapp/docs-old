@@ -28,3 +28,19 @@ If you are unfamiliar with Less, it is a basic CSS preprocessor that makes some 
 If you prefer to use CSS instead, you can do that in the same `styles.less` file, since CSS is also valid in Less.
 
 </div>
+
+## Applying custom styles for printing
+
+When you'd like to have custom styling for printed notes, use a media selector `@media print` like so:
+
+```css
+@media print {
+  strong {
+    color: red !important;
+  }
+}
+```
+
+## Related article
+
+- [Adding Styles For Text Annotation](/manual/text-annotation)
