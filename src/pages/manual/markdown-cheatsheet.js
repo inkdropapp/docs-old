@@ -758,7 +758,7 @@ Underscores`}</code>
             </h2>
             <p>
               My basic recommendation for learning how line breaks work is to
-              experiment and discover -- hit &lt;Enter&gt; once (i.e., insert
+              experiment and discover -- hit <kbd>Enter</kbd> once (i.e., insert
               one newline), then hit it twice (i.e., insert two newlines), see
               what happens. You can view the editor and preview panel
               side-by-side on Inkdrop.
@@ -773,8 +773,8 @@ Underscores`}</code>
 
 This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
 
-This line is also a separate paragraph, but...
-This line is only separated by a single newline, so it's a separate line in the *same paragraph*.`}</code>
+This line is also a separate paragraph but ends with two spaces.  
+It's parsed as a hard line break.`}</code>
             </pre>
           </div>
           <div className="column">
@@ -784,10 +784,9 @@ This line is only separated by a single newline, so it's a separate line in the 
               will be a <em>separate paragraph</em>.
             </p>
             <p>
-              This line is also begins a separate paragraph, but...
+              This line is also a separate paragraph but ends with two spaces.
               <br />
-              This line is only separated by a single newline, so it&apos;s a
-              separate line in the <em>same paragraph</em>.
+              It&apos;s parsed as a hard line break.
             </p>
           </div>
         </div>
