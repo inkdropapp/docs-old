@@ -19,8 +19,10 @@ export default class InfoMenu extends Component {
               path: edge.node.frontmatter.path,
               title: edge.node.frontmatter.title
             })),
-            { path: '/releases', title: 'Release Notes' },
-            { path: '/releases-mobile', title: 'Release Notes (Mobile)' }
+            {
+              href: 'https://forum.inkdrop.app/c/announcements/',
+              title: 'Release Notes'
+            }
           ].sort((i1, i2) => i1.title.localeCompare(i2.title))
 
           return (
@@ -31,10 +33,14 @@ export default class InfoMenu extends Component {
               </h3>
               <ul className="article-list">
                 {pages.map(page => {
-                  const { path, title } = page
-                  return (
+                  const { path, href, title } = page
+                  return path ? (
                     <li key={path}>
                       <MenuLink to={path}>{title}</MenuLink>
+                    </li>
+                  ) : (
+                    <li key={href}>
+                      <MenuLink to={href}>{title}</MenuLink>
                     </li>
                   )
                 })}
