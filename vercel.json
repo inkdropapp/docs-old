@@ -4,17 +4,17 @@
   },
   "redirects": [
     {
-      "source": "/releases/?",
+      "source": "/releases(/.*)?",
       "destination": "https://forum.inkdrop.app/c/announcements/",
       "permanent": true
     },
     {
-      "source": "/releases-beta/?",
+      "source": "/releases-beta(/.*)?",
       "destination": "https://forum.inkdrop.app/c/announcements/",
       "permanent": true
     },
     {
-      "source": "/releases-mobile/?",
+      "source": "/releases-mobile(/.*)?",
       "destination": "https://forum.inkdrop.app/c/announcements/",
       "permanent": true
     }
