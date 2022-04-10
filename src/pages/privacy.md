@@ -197,7 +197,7 @@ You can also access to the Inkdrop database directly via [the Data Access API](/
 
 You can change your account data and payment card data at any time by visiting your account settings page on [my.inkdrop.app](https://my.inkdrop.app).
 
-You can close your Inkdrop account at any time through [my.inkdrop.app](https://my.inkdrop.app).
+You can close your Inkdrop account at any time through [my.inkdrop.app](https://my.inkdrop.app/account/delete).
 Closing your account starts a process of erasing Inkdrop's records of your account data including notes, shared notes, notebooks, tags and attachment files.
 Closing your account does not automatically erase plugins published under your account.
 You can unpublish plugins before closing your account with `ipm unpublish` command.

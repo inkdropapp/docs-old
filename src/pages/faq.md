@@ -64,6 +64,10 @@ If you believe you know your password, but it isn’t accepted, try these steps:
 - If you use multiple languages, make sure you’re using the correct keyboard layout when you enter your password.
 - Make sure you’re typing correct email address.
 
+## I don't remember my password but can I delete my account?
+
+Yes, you can delete your account by receiving a link via email from [here](https://my.inkdrop.app/forgot-password).
+
 ## Do you offer student/teacher discounts?
 
 Yes. See [this page](/student-discount) for requesting your discount.
