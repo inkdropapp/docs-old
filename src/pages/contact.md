@@ -9,6 +9,7 @@ title: Contact the Author
 
 Hello! My name is Takuya, the solo developer of Inkdrop.
 You have several ways to contact me about the product.
+I will not answer any inquiries that aren&apos;t related to Inkdrop.
 
 ## User Forum
 
