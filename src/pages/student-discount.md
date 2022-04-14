@@ -26,7 +26,7 @@ To be approved for an educational discount, please provide proof of eligibility 
 ## Request your discount
 
 Please email us to [contact@inkdrop.app](mailto:contact@inkdrop.app) with the following information to apply it.
-Note that you have to request it at least **3 business days before your free trial expires**.
+Note that you have to request it at least **5 business days before your free trial expires**.
 If you don't, your first invoice will not be applied the discount.
 
 - Your full name
@@ -42,4 +42,4 @@ If you don't, your first invoice will not be applied the discount.
 
 If you are still a student or teacher, you can continue getting the student discount.
 Please email us to [contact@inkdrop.app](mailto:contact@inkdrop.app) with the latest proof of eligibility to apply it again.
-Note that you have to request it at least **3 business days before the next payment** or you will not be able to get the discount.
+Note that you have to request it at least **5 business days before the next payment** or you will not be able to get the discount.
