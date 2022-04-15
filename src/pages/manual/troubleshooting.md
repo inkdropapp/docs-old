@@ -71,6 +71,12 @@ By doing this, Inkdrop will try to sync data from the beginning of the change hi
 
 ## App won't launch
 
+### "You can't open the application because this application is not supported on this Mac."
+
+This error is due to [the Mac transition to Apple silicon](https://www.apple.com/newsroom/2020/06/apple-announces-mac-transition-to-apple-silicon/).
+If the app doesn't launch on your Mac, you've downloaded an Apple silicon version of the app, which doesn't work on Intel-based Macs.
+Also, if you've downloaded an Intel version of the app on an Apple silicon-based Mac (like M1 MacBook Air), the performance will be restricted due to the translation technology called Rosetta 2.
+
 ### Enable logging
 
 To investigate what's happening, please try running the app from terminal with `--enable-logging` parameter.
