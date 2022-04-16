@@ -25,7 +25,7 @@ To be approved for an educational discount, please provide proof of eligibility 
 
 ## Request your discount
 
-Please email us to [contact@inkdrop.app](mailto:contact@inkdrop.app) with the following information to apply it.
+Please submit [via the website here](https://my.inkdrop.app/account/educational-discount) with the following information to apply it.
 Note that you have to request it at least **5 business days before your free trial expires**.
 If you don't, your first invoice will not be applied the discount.
 
