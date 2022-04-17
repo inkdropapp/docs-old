@@ -50,9 +50,6 @@ const Navigation = () => (
               <a className="item" href="https://forum.inkdrop.app/">
                 User Forum
               </a>
-              <a className="item" href="https://discord.gg/QfsG5Kj">
-                Discord Community
-              </a>
               <div className="divider" />
               <a className="item" href="https://twitter.com/inkdrop_app">
                 Twitter
