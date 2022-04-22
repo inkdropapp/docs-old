@@ -77,15 +77,10 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-fathom',
       options: {
-        trackingId: 'UA-58709134-3',
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true
+        siteId: 'GKTOOZAA',
+        honorDnt: true
       }
     },
     'gatsby-plugin-svgr'
