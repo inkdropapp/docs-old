@@ -7,6 +7,7 @@ title: "Style Tweaks"
 ---
 
 If you want to apply quick-and-dirty personal styling changes without creating an entire theme that you intend to publish, you can add styles to the `styles.less` file in [your data directory](/manual/basic-usage#user-data-directory).
+It does not exist by default.
 
 For example, to change the color of selected item of the note list bar, you could add the following rule to your `styles.less` file:
 
