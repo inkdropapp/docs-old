@@ -222,9 +222,11 @@ Inkdrop does not sell information about you to others. However, Inkdrop uses ser
 
 Some of these services may be used to collect information about your online activities across different websites.
 
-### Inkdrop uses Google Analytics.
+### Inkdrop uses Fathom Analytics.
 
-Inkdrop's website uses Google Analytics to collect and analyze data about visitors to its websites. You can read [the privacy policy for Google Analytics online](https://www.google.com/analytics/terms/). You can opt out of Google Analytics by installing a [free browser extension](https://tools.google.com/dlpage/gaoptout).
+Inkdrop's website uses Fathom Analytics to collect and analyze data about visitors to its websites.
+You can find more information about [the technical implementation here](https://usefathom.com/blog/anonymization).
+Further information on data protection at Fathom can be found at [usefathom.com/data](https://usefathom.com/data).
 
 ### Inkdrop uses cloud computing platforms.
 
