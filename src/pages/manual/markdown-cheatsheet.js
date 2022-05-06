@@ -438,11 +438,11 @@ Reference-style: ![alt text][logo]
               like diffs and HTTP headers); to see the complete list, and how to
               write the language names, see the{' '}
               <a
-                href="http://softwaremaniacs.org/media/soft/highlight/test.html"
+                href="https://codemirror.net/mode/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                highlight.js demo page
+                CodeMirror language modes page
               </a>
               .
             </p>
