@@ -27,7 +27,7 @@ Desktop application is ready for macOS, Windows, and Linux, so choose one for yo
 
 ## Installing Inkdrop on macOS
 
-Inkdrop follows the standard Mac zip installation process. You can download the `Inkdrop-x.y.z-Mac.zip` file from the Inkdrop website. Once you have that file, you can double click it to extract the application and drag the new Inkdrop application into your "Applications" folder.
+Inkdrop follows the standard Mac zip installation process. You can download the `Inkdrop-x.y.z-Mac.zip` file from the Inkdrop website. Once you have that file, you can double-click it to extract the application and drag the new Inkdrop application into your "Applications" folder.
 
 ## Installing Inkdrop on Windows
 
