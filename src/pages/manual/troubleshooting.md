@@ -62,7 +62,7 @@ You should get something like this:
 
 ![Network diagnosis output](working-behind-a-corporate-web-proxy_network-diagnosis_result.png)
 
-### Synchronize Notes from Scratch_
+### Synchronize Notes from Scratch
 
 Inkdrop stores checkpointers for providing quick sync.
 If your new edits are synced but old ones are missing, the checkpointers may be broken.
