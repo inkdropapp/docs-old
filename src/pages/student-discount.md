@@ -12,6 +12,7 @@ If you are eligible, you can get **a 60% off discount valid for 12 months**.
 
 Please note that you have to be enrolled in an academic program for at least 1 year.
 For example, it's not available for short-term online school programs.
+**Request it ONLY when you decided to purchase a license.**
 
 Apply for an educational license below to receive your discount.
 
