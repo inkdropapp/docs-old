@@ -40,7 +40,7 @@ You have two options to install it.
 ### via Snap
 
 <div class="ui info message">
-If you don't have <code>snap</code> yet, please <a href="https://snapcraft.io/docs/core/install" target="_blank">install it</a> beforehand.
+If you don't have <code>snapd</code> yet, please <a href="https://snapcraft.io/docs/core/install" target="_blank">install it</a> beforehand.
 </div>
 
 The app is [available on Snap Store](https://snapcraft.io/inkdrop).
