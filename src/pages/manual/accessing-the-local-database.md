@@ -37,7 +37,7 @@ console.log("Search result:", docs)
 ```
 
 <div class="ui info message">
-<strong>NOTE</strong>: Returned objects from the database represent <a href="https://github.com/electron/electron/blob/master/docs/api/remote.md#remote-objects">Remote Objects</a>.
+<strong>NOTE</strong>: Returned objects from the database represent <a href="https://github.com/electron/remote#remote-objects">Remote Objects</a>.
 </div>
 
 ## Accessing the PouchDB instance (Advanced)
@@ -59,7 +59,7 @@ _Be careful, you could break your database_ by accessing it with PouchDB since i
 Use it only if [InkdropDatabase](/reference/inkdrop-database) does not provide what you would do.
 
 <div class="ui info message">
-<strong>NOTE</strong>: Returned objects from the database represent <a href="https://github.com/electron/electron/blob/master/docs/api/remote.md#remote-objects">Remote Objects</a>.
+<strong>NOTE</strong>: Returned objects from the database represent <a href="https://github.com/electron/remote#remote-objects">Remote Objects</a>.
 </div>
 
 ## Accessing via HTTP (Advanced)
