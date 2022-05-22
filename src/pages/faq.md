@@ -42,7 +42,7 @@ It will never be feature-fat like a Swiss army knife.
 You can delete your account from [here](https://my.inkdrop.app/account/delete).
 You data including personal information will be deleted immediately and permanently.
 
-If you wish to delete your account but you forgot your password, please contact us from your registered email.
+If you wish to delete your account but you forgot your password, you can delete it by receiving a link via email from [here](https://my.inkdrop.app/forgot-password).
 
 ## Can I deactivate my account without deleting data?
 
