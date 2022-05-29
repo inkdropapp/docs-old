@@ -13,17 +13,17 @@ An instance of this class is always available as the `inkdrop.config` global.
 
 ```js
 // Note that with no value set, `::get` returns the setting's default value. 
-inkdrop.config.get('my-package.myKey') // -> 'defaultValue' 
+inkdrop.config.get('my-plugin.myKey') // -> 'defaultValue' 
  
-inkdrop.config.set('my-package.myKey', 'value')
-inkdrop.config.get('my-package.myKey') // -> 'value' 
+inkdrop.config.set('my-plugin.myKey', 'value')
+inkdrop.config.get('my-plugin.myKey') // -> 'value' 
 ```
 
 You may want to watch for changes. Use `::observe` to catch changes to the setting.
 
 ```js
-inkdrop.config.set('my-package.myKey', 'value')
-inkdrop.config.observe('my-package.myKey', newValue => {
+inkdrop.config.set('my-plugin.myKey', 'value')
+inkdrop.config.observe('my-plugin.myKey', newValue => {
   // `observe` calls immediately and every time the value is changed 
   console.log('My configuration changed:', newValue)
 })
@@ -32,7 +32,7 @@ inkdrop.config.observe('my-package.myKey', newValue => {
 If you want a notification only when the value changes, use `::onDidChange`.
 
 ```js
-inkdrop.config.onDidChange('my-package.myKey', ({ newValue, oldValue }) => {
+inkdrop.config.onDidChange('my-plugin.myKey', ({ newValue, oldValue }) => {
   console.log('My configuration changed:', newValue, oldValue)
 })
 ```
@@ -44,20 +44,20 @@ For example we might want an integer setting that only allows integers greater t
 
 ```js
 // When no value has been set, `::get` returns the setting's default value 
-inkdrop.config.get('my-package.anInt') // -> 12 
+inkdrop.config.get('my-plugin.anInt') // -> 12 
  
 // The string will be coerced to the integer 123 
-inkdrop.config.set('my-package.anInt', '123')
-inkdrop.config.get('my-package.anInt') // -> 123 
+inkdrop.config.set('my-plugin.anInt', '123')
+inkdrop.config.get('my-plugin.anInt') // -> 123 
  
 // The string will be coerced to an integer, but it must be greater than 0, so is set to 1 
-inkdrop.config.set('my-package.anInt', '-20')
-inkdrop.config.get('my-package.anInt') // -> 1 
+inkdrop.config.set('my-plugin.anInt', '-20')
+inkdrop.config.get('my-plugin.anInt') // -> 1 
 ```
 
-## Defining settings for your package
+## Defining settings for your plugin
 
-Define a schema under a `config` key in your package main.
+Define a schema under a `config` key in your plugin main.
 
 ```js
 
@@ -75,7 +75,7 @@ module.exports = {
     // ...
 ```
 
-See [package docs](/manual/plugin-word-count) for more info.
+See [plugin docs](/manual/plugin-word-count) for more info.
 
 ## Config Schemas
 
@@ -203,7 +203,7 @@ Descriptions will be displayed below the title in the settings view.
 
 ### Manipulating values outside your configuration schema
 
-It is possible to manipulate (`get`, `set`, `observe` etc) values that do not appear in your configuration schema. For example, if the config schema of the package 'some-package' is
+It is possible to manipulate (`get`, `set`, `observe` etc) values that do not appear in your configuration schema. For example, if the config schema of the plugin 'some-plugin' is
 
 ```js
 {
@@ -219,11 +219,11 @@ It is possible to manipulate (`get`, `set`, `observe` etc) values that do not ap
 You can still do the following
 
 ```js
-let otherSetting  = inkdrop.config.get('some-package.otherSetting')
-inkdrop.config.set('some-package.stillAnotherSetting', otherSetting * 5)
+let otherSetting  = inkdrop.config.get('some-plugin.otherSetting')
+inkdrop.config.set('some-plugin.stillAnotherSetting', otherSetting * 5)
 ```
 
-In other words, if a function asks for a `key-path`, that path doesn't have to be described in the config schema for the package or any package.
+In other words, if a function asks for a `key-path`, that path doesn't have to be described in the config schema for the plugin or any plugin.
 However, as highlighted in the best practices section, you are advised against doing the above.
 
 
