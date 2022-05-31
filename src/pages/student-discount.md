@@ -41,6 +41,6 @@ If you don't, your first invoice will not be applied the discount.
 
 ## Renew your discount
 
-If you are still a student or teacher, you can continue getting the student discount.
-Please email us to [contact@inkdrop.app](mailto:contact@inkdrop.app) with the latest proof of eligibility to apply it again.
+If you are still a student or teacher, you can continue getting the educational discount.
+Please submit again with the latest proof of eligibility.
 Note that you have to request it at least **5 business days before the next payment** or you will not be able to get the discount.
