@@ -16,7 +16,7 @@ Inkdrop interface is broken up into 3 main sections.
   - Notebooks are like folders that store your notes. You can nest notebooks in one another as deeply as needed.
   - Statuses help you treat notes as tasks and, for example, display only active or completed ones. 
   - Tags are like labels that let you link notes with one another. For example, if they relate to a common topic.
-  You can toggle the Sidebar by pressing <kbd>Command+/</kbd> on macOS or <kbd>Ctrl+/</kbd> on Windows and Linux.
+  You can toggle the Sidebar by using <kbd>Command+/</kbd> on macOS or <kbd>Ctrl+/</kbd> on Windows and Linux.
 - **Note list** is located amid. All your notes live here ordered by modification date by default. You can search for notes via the search box at the very top of the section.
 - **Editor** is the rightmost section. This is where your magic happens 🪄 — your workspace. 
 
@@ -28,7 +28,7 @@ Inkdrop interface is broken up into 3 main sections.
 
 ## Create new note and notebook
 
-To create a new note, you can either click the pencil icon on the right top of the note list or press <kbd>Command+N</kbd> / <kbd>Ctrl+N</kbd>. The newly created note will appear in the **Note list** section.
+To create a new note, you can either click the pencil icon on the right top of the note list or use the <kbd>Command+N</kbd> / <kbd>Ctrl+N</kbd> shortcut. The newly created note will appear in the **Note list** section.
 
 ![AddNote](./basic-usage_addnote.png)
 
@@ -50,11 +50,11 @@ Inkdrop has the **Preferences** view where you can fine-tune look and feel of th
 
 ### MacOS
 
-Go to **Inkdrop** > **Preferences** in the menu bar. Alternatively, you can press <kbd>Command+,</kbd>. 
+Go to **Inkdrop** > **Preferences** in the menu bar. Alternatively, you can use the <kbd>Command+,</kbd> shortcut. 
 
 ### Windows and Linux
 
-Go to **File** > **Settings** in the menu bar. Alternatively, you can press <kbd>Ctrl+,</kbd>.
+Go to **File** > **Settings** in the menu bar. Alternatively, you can use the <kbd>Ctrl+,</kbd> shortcut.
 
 And you will see the window like this:
 
