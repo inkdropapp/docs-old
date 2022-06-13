@@ -120,11 +120,15 @@ If you switch from a monthly plan to a yearly plan, the billing date becomes the
 
 ### What payment methods are available?
 
-Currently, we can accept credit and debit card payment with Visa, MasterCard, and American Express.
+We can accept credit and debit card payment with Visa, MasterCard, and American Express via [Stripe](https://stripe.com/).
+
+### Can I pay with PayPal, WebMoney, Alipay, WeChat Pay, or other payment methods?
+
+No. Since Inkdrop is a small business by a single developer, it is too hard to support various payment methods.
 
 ### Is it secure to send my card information?
 
-We uses [Stripe.com](https://stripe.com/) for online payments. Stripe has been audited by a PCI-certified auditor and is certified to [PCI Service Provider Level 1](http://www.visa.com/splisting/searchGrsp.do?companyNameCriteria=stripe). This is the most stringent level of certification available in the payments industry. We never send and store your credit/debit card information to Inkdrop server.
+We use [Stripe.com](https://stripe.com/) for online payments. Stripe has been audited by a PCI-certified auditor and is certified to [PCI Service Provider Level 1](http://www.visa.com/splisting/searchGrsp.do?companyNameCriteria=stripe). This is the most stringent level of certification available in the payments industry. We never send and store your credit/debit card information to Inkdrop server.
 
 Learn more: [Security at Stripe](https://stripe.com/docs/security/stripe)
 
