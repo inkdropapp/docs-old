@@ -6,48 +6,63 @@ path: "/manual/basic-usage"
 title: "Basic Usage"
 ---
 
-## Inkdrop has three parts
+## Get acquainted with Inkdrop interface
+
+Inkdrop interface is broken up into 3 main sections.
 
 ![Layout](./basic-usage_screen.png)
 
-- **Sidebar** (on the left): it lists notebooks, statuses and tags here. Notebooks are like folders you can create recursively. Statuses are additional information to treat notes as tasks. Tags are like labels which can link notes with related topic. Sidebar can be toggled by pressing <kbd>Cmd + /</kbd> on macOS or <kbd>Ctrl + /</kbd> on Windows and Linux.
-- **Note list** (in the middle): all your notes live here, ordered by modification date by default. You can search notes with keywords from a search bar on the top of it.
-- **Editor** (on the right): this is where your magic happens; you're looking at it. 😄 Press <kbd>Cmd + E</kbd> / <kbd>Ctrl + E</kbd> to toggle editor/preview, or press <kbd>Cmd + P</kbd> / <kbd>Ctrl + P</kbd> to toggle side-by-side mode.
+- **Sidebar** is the leftmost section. It lists notebooks, statuses, and tags. 
+  - Notebooks are like folders that store your notes. You can nest notebooks in one another as deeply as needed.
+  - Statuses help you treat notes as tasks and, for example, display only active or completed ones. 
+  - Tags are like labels that let you link notes with one another. For example, if they relate to a common topic.
+  You can toggle the Sidebar by using <kbd>Command+/</kbd> on macOS or <kbd>Ctrl+/</kbd> on Windows and Linux.
+- **Note list** is located amid. All your notes live here ordered by modification date by default. You can search for notes via the search box at the very top of the section.
+- **Editor** is the rightmost section. This is where your magic happens 🪄 — your workspace. 
 
-Press <kbd>Cmd+Shift+D</kbd> / <kbd>Ctrl+Shift+D</kbd> to enter/leave _Distraction Free Mode_ which hides sidebar and note list.
+**More useful shortcuts:**
 
-## Creating new note and notebook
+- <kbd>Command+E</kbd> or <kbd>Ctrl+E</kbd> — to switch between the editor and preview modes.
+- <kbd>Command+P</kbd> or <kbd>Ctrl+P</kbd> — to display the editor and preview side-by-side.
+- <kbd>Command+Shift+D</kbd> or <kbd>Ctrl+Shift+D</kbd> — to enter/leave the 'Distraction Free Mode' 🧘 Is when the sidebar and note list are hidden, and you can focus on the writing process.
 
-To create new note, you can either push a button on the right top of the note list or input keybind <kbd>Cmd+N</kbd> / <kbd>Ctrl+N</kbd>.
+## Create new note and notebook
+
+To create a new note, you can either click the pencil icon on the right top of the note list or use the <kbd>Command+N</kbd> / <kbd>Ctrl+N</kbd> shortcut. The newly created note will appear in the **Note list** section.
 
 ![AddNote](./basic-usage_addnote.png)
 
-To create new notebook, click 'Add' button on the right of 'Notebooks' section:
+To create a new notebook, click the plus icon next to the **Notebooks** title:
 
 ![AddBook](./basic-usage_addbook.png)
 
-To create a sub notebook, right click on the notebook item which would be parent and choose "New Sub Notebook.." menu.
+To create a sub notebook: 
+
+1. Right-click the notebook, which will be the parent, and select **New Sub Notebook..**.
+2. Provide a title for the nested notebook.
+3. Click **Create**.  
+The newly created notebook will appear inside the parent one.  
+
 
 ## Settings and preferences
 
-Inkdrop has a number of settings and preferences you can modify in the Preferences View.
+Inkdrop has the **Preferences** view where you can fine-tune look and feel of the app. To open the **Preferences** view, take the following steps:
 
-To open the Settings View, you can:
+### MacOS
 
-- on macOS:
-  - Use the _Inkdrop > Preferences_ menu item in the menu bar
-  - Use the <kbd>Cmd+,</kbd> keybinding
-- on Windows & Linux:
-  - Use the _File > Settings_ menu item in the menu bar
-  - Use the <kbd>Ctrl+,</kbd> keybinding
+Go to **Inkdrop** > **Preferences** in the menu bar. Alternatively, you can use the <kbd>Command+,</kbd> shortcut. 
 
-And you should see the window like this:
+### Windows and Linux
+
+Go to **File** > **Settings** in the menu bar. Alternatively, you can use the <kbd>Ctrl+,</kbd> shortcut.
+
+And you will see the window like this:
 
 ![Preferences](./basic-usage_preferences.png)
 
 ## User data directory
 
-Inkdrop stores your data and config in local at the following path:
+Inkdrop stores your data and config locally at the following path:
 
 - on macOS: `~/Library/Application Support/inkdrop/`
 - on Windows: `%APPDATA%\inkdrop\`
@@ -55,11 +70,11 @@ Inkdrop stores your data and config in local at the following path:
   - deb/rpm: `~/.config/inkdrop/`
   - Snap: `~/snap/inkdrop/current/.config/inkdrop/`
 
-You can open it up in a file manager from _Preferences -> General -> Open Config Folder_.
+To open it in a file manager, go to **Preferences** > **General** and select **Open Config Folder**.
 
-This directory has the following files and folders:
+The config folder has the following files and folders:
 
-- `config.cson`: The app config file in [CSON format](https://github.com/bevry/cson#what-is-cson)
-- `keymap.cson`: The keybindings config file in [CSON format](https://github.com/bevry/cson#what-is-cson)
-- `packages/`: Installed plugins
-- `db/`: The local database
+- `config.cson` — app config file in the [CSON format](https://github.com/bevry/cson#what-is-cson)
+- `keymap.cson` — keybindings config file in the [CSON format](https://github.com/bevry/cson#what-is-cson)
+- `packages/` — installed plugins
+- `db/` — local database
