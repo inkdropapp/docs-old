@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+   <title>love-it</title>
+   <defs>
+     <style>.a{
+       fill:currentColor;
+       stroke:white;
+       stroke-linecap:round;
+       stroke-linejoin:round;
+       stroke-width:1.5px;
+     }</style>
+   </defs>
+   <path class="a" d="M23.3,5.076a6.582,6.582,0,0,0-10.446-1.71L12,4.147l-.827-.753A6.522,6.522,0,0,0,5.485,1.588,6.472,6.472,0,0,0,.7,5.075,6.4,6.4,0,0,0,1.91,12.544L11.283,22.2a1,1,0,0,0,1.434,0l9.36-9.638A6.414,6.414,0,0,0,23.3,5.076Z" />
+</svg>
