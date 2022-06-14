@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+   <defs>
+      <style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style>
+   </defs>
+   <title>road-sign-warning</title>
+   <path class="a" d="M13.313,2.275a1.5,1.5,0,0,0-2.626,0l-9.75,18A1.5,1.5,0,0,0,2.25,22.5h19.5a1.5,1.5,0,0,0,1.313-2.225Z" />
+   <path class="a" d="M12,18a.375.375,0,0,1,.375.375" />
+   <path class="a" d="M11.625,18.375A.375.375,0,0,1,12,18" />
+   <path class="a" d="M12,18.75a.375.375,0,0,1-.375-.375" />
+   <path class="a" d="M12.375,18.375A.375.375,0,0,1,12,18.75" />
+   <line class="a" x1="12" y1="15" x2="12" y2="8.25" />
+</svg>
