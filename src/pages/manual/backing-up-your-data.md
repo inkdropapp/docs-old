@@ -17,7 +17,7 @@ Inkdrop stores your data as the JSON files **continuously** while you use them. 
 
 To specify where to store your data, take the following steps:
 
-1. Open **Preferences** by clicking the <img src="/images/icons/cog.svg" width="20" /> icon. You can also use <kbd>Command+-+,</kbd>, or <kbd>Ctrl+-+,</kbd> for Windows.
+1. Open **Preferences** by clicking the <img src="/images/icons/cog.svg" width="20" /> icon. You can also use <kbd>Command+-+,</kbd>, or <kbd>Ctrl+-+,</kbd> on Windows.
 2. In the opened window, go to **Backup <img src="/images/icons/database-sync.svg" width="20" />**.
 3. In the **Backup location** field, enter path to the folder where you want to store the notes data.  
    You can also select the desired folder by clicking **...** (the three dots button).
@@ -36,7 +36,7 @@ The backup folder contains three subfolders:
 
 To restore your data, take the following steps:
 
-1. Open **Preferences** by clicking the <img src="/images/icons/cog.svg" width="20" /> icon. You can also use <kbd>Command+-+,</kbd>, or <kbd>Ctrl+-+,</kbd> for Windows.
+1. Open **Preferences** by clicking the <img src="/images/icons/cog.svg" width="20" /> icon. You can also use <kbd>Command+-+,</kbd>, or <kbd>Ctrl+-+,</kbd> on Windows.
 2. In the opened window, go to **Backup <img src="/images/icons/database-sync.svg" width="20" />**.
 3. Click **Restore...**.
 4. In the opened window, select the folder where your store your data.
