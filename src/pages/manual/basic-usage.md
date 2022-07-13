@@ -3,7 +3,7 @@ index: 2
 category: "usage"
 toc: true
 path: "/manual/basic-usage"
-title: "Basic Usage"
+title: "Basic usage"
 ---
 
 ## Get acquainted with Inkdrop interface

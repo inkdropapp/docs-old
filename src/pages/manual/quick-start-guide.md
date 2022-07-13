@@ -3,7 +3,7 @@ index: 1
 category: "usage"
 toc: true
 path: "/manual/"
-title: "Quick Start Guide"
+title: "Quick start"
 ---
 
 Welcome to Inkdrop! Here's how to get started.
