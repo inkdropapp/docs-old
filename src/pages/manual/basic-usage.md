@@ -16,7 +16,7 @@ Inkdrop interface is broken up into 3 main sections.
   - Notebooks are like folders that store your notes. You can nest notebooks in one another as deeply as needed.
   - Statuses help you treat notes as tasks and, for example, display only active or completed ones. 
   - Tags are like labels that let you link notes with one another. For example, if they relate to a common topic.
-  You can toggle the Sidebar by using <kbd>Command+/</kbd> on macOS or <kbd>Ctrl+/</kbd> on Windows and Linux.
+  You can toggle the Sidebar by using <kbd>Command+/</kbd> or <kbd>Ctrl+/</kbd> on Windows/Linux.
 - **Note list** is located amid. All your notes live here ordered by modification date by default. You can search for notes via the search box at the very top of the section.
 - **Editor** is the rightmost section. This is where your magic happens 🪄 — your workspace. 
 
