@@ -25,7 +25,7 @@ Note that the icons are hidden unless you hover the mouse cursor over the editor
 
 ## Distraction Free Mode
 
-To toggle the 'Distraction Free Mode', use <kbd>Command+Shift+D</kbd>, or <kbd>Ctrl+Shift+D</kbd> on Windows/Linux. It will hide the sidebar and note list. 
+'Distraction Free Mode' lets you focus on the writing process by hiding the sidebar and note list. To toggle the 'Distraction Free Mode', use <kbd>Command+Shift+D</kbd>, or <kbd>Ctrl+Shift+D</kbd> on Windows/Linux. 
 
 You can even hide the toolbar with controls for quick formatting. For this, take the following steps:
 
