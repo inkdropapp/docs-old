@@ -28,12 +28,12 @@ Inkdrop interface is broken up into 3 main sections.
 
 ## Create new note and notebook
 
-To create a new note, you can either click the <img src="/images/icons/pencil-write.svg" width="20" /> icon on the right top of the note list or use the <kbd>Command+N</kbd> / <kbd>Ctrl+N</kbd> shortcut. The newly created note will appear in the **Note list** section.
+To create a new note, you can either click the ![ui-icon](/images/icons/pencil-write.svg) icon on the right top of the note list or use the <kbd>Command+N</kbd> / <kbd>Ctrl+N</kbd> shortcut. The newly created note will appear in the **Note list** section.
 
 
 ![AddNote](./basic-usage_addnote.png)
 
-To create a new notebook, click the <img src="/images/icons/add-circle.svg" width="20" /> icon next to the **Notebooks** title:
+To create a new notebook, click the ![ui-icon](/images/icons/add-circle.svg) icon next to the **Notebooks** title:
 
 ![AddBook](./basic-usage_addbook.png)
 

@@ -1,10 +1,11 @@
-@import "../variables.less";
+@import '../variables.less';
 
 .main-content .doc-content {
   background: white;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: 16px;
   line-height: 26px;
   word-wrap: break-word;
@@ -24,7 +25,8 @@
     margin-bottom: 1em;
   }
 
-  h3, h4 {
+  h3,
+  h4 {
     font-weight: bold;
   }
 
@@ -67,11 +69,11 @@
     border-left: 4px solid #ddd;
   }
 
-  blockquote>:first-child {
+  blockquote > :first-child {
     margin-top: 0;
   }
 
-  blockquote>:last-child {
+  blockquote > :last-child {
     margin-bottom: 0;
   }
 
@@ -81,21 +83,22 @@
     padding-bottom: 0.2em;
     margin: 0;
     font-size: 85%;
-    background-color: rgba(0,0,0,0.04);
+    background-color: rgba(0, 0, 0, 0.04);
     border-radius: 3px;
 
-    &::selection, *::selection {
-      color: rgba(255,255,255,0.7);
+    &::selection,
+    *::selection {
+      color: rgba(255, 255, 255, 0.7);
     }
   }
 
   code:before,
   code:after {
     letter-spacing: -0.2em;
-    content: "\00a0";
+    content: '\00a0';
   }
 
-  pre>code {
+  pre > code {
     padding: 0;
     margin: 0;
     font-size: 100%;
@@ -160,6 +163,14 @@
   img[alt$='#circle-cover'] {
     width: 200px;
     border-radius: 100px;
+  }
+
+  .ui-icon {
+    color: #b3b2b3;
+
+    svg {
+      width: 20px;
+    }
   }
 }
 
