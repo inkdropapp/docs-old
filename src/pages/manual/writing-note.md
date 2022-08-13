@@ -31,10 +31,8 @@ Inkdrop also lets you delete multiple notes at once. To do this:
 Inkdrop lets you restore the deleted notes. To do this, take the following steps:
 
 1. In the sidebar, go to ![ui-icon](/images/icons/bin-1.svg) **Trash**.
-2. Select the note(s) you want to restore.  
-   - If you selected one note, right-click it and select **Move to Notebook**.
-   - If you selected multiple notes, click ![ui-icon](/images/icons/book-close-2.svg) **Move to Notebook** in the rightmost area.  
-     ![Restore multiple notes in Inkdrop](./writing-note-select-multiple.png)
+2. Select the note(s) you want to restore and click ![ui-icon](/images/icons/book-close-2.svg) **Move to Notebook** in the rightmost area.  
+   ![Restore multiple notes in Inkdrop](./writing-note-select-multiple.png)
 3. In the **Move to Notebook** dialog, select a notebook where you want to restore the notes.
    The notes will be restored to the selected notebook.
 
@@ -45,9 +43,7 @@ Inkdrop lets you restore the deleted notes. To do this, take the following steps
 To delete notes permanently, take the following steps:
 
 1. In the sidebar, go to ![ui-icon](/images/icons/bin-1.svg) **Trash**.
-2. Select the note(s) you want to delete permanently.  
-   - If you selected one note, right-click it and select **Delete Permanently**.
-   - If you selected multiple notes, click  **![ui-icon](/images/icons/bin-1.svg) Delete Permanently** in the rightmost area.
+2. Select the note(s) you want to delete permanently and click **![ui-icon](/images/icons/bin-1.svg) Delete Permanently** in the rightmost area.
 
 The selected notes will be deleted forever.
 
