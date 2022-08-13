@@ -26,8 +26,6 @@ Inkdrop also lets you delete multiple notes at once. To do this:
    Inkdrop will show the number of selected notes in the rightmost area.
 2. On the right screen, click **![ui-icon](/images/icons/bin-1.svg) Move to Trash**.
 
-
-
 ### Restore deleted notes
 
 Inkdrop lets you restore the deleted notes. To do this, take the following steps:
@@ -53,9 +51,17 @@ To delete notes permanently, take the following steps:
 
 The selected notes will be deleted forever.
 
+## Make copy of notes
+
+Inkdrop lets you make a complete copy of notes. It means that the copy has the same title, content, and tags. 
+
+To duplicate notes, right-click the notes and select **Duplicate**. Alternatively, you can select the notes and use the <kbd>Command+D</kbd> shortcut.
+
+A note copy will be created in the current notebook.
+
 ## Live preview
 
-Inkdrop lets you preview notes to see what they will eventually look like. Use <kbd>Command+P</kbd> or <kbd>Ctrl+P</kbd> on Windows/Linux to display note and its preview side-by-side.
+Inkdrop lets you preview notes to see what they will eventually look like. Use <kbd>Command+P</kbd> / <kbd>Ctrl+P</kbd> to display note and its preview side-by-side.
 
 ![SideBySide](./writing-note_sidebyside.png)
 
@@ -69,11 +75,11 @@ Note that the icons are hidden unless you hover the mouse cursor over the editor
 
 ## Distraction Free Mode
 
-'Distraction Free Mode' lets you focus on the writing process by hiding the sidebar and note list. To toggle the 'Distraction Free Mode', use <kbd>Command+Shift+D</kbd>, or <kbd>Ctrl+Shift+D</kbd> on Windows/Linux. 
+'Distraction Free Mode' lets you focus on the writing process by hiding the sidebar and note list. To toggle the 'Distraction Free Mode', use <kbd>Command+Shift+D</kbd> / <kbd>Ctrl+Shift+D</kbd>. 
 
 You can even hide the toolbar with controls for quick formatting. For this, take the following steps:
 
 1. Open **Preferences** by clicking the ![ui-icon](/images/icons/cog.svg) icon in the upper right corner of the sidebar.  
-   You can also use <kbd>Command+,</kbd>, or <kbd>Ctrl+,</kbd> on Windows/Linux.
+   You can also use <kbd>Command+,</kbd> / <kbd>Ctrl+,</kbd>.
 2. Go to **Editing** and clear the **Toolbar** checkbox.  
    It will hide the toolbar.  
