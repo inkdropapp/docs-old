@@ -27,10 +27,11 @@ Here is a command that inserts the current date in an editor:
 
 ```js
 inkdrop.commands.add(document.body, {
-  'user:insert-date': () => {
-    const { document } = inkdrop.flux.getStore('editor').getState()
-    document.body = document.body + '\n' + new Date().toLocaleString()
-    inkdrop.flux.getActions('editor').update({ document, changed: true })
+  'custom:insert-date': () => {
+    const { editingNote } = inkdrop.store.getState()
+    const body = editingNote.body + '\n' + new Date().toLocaleString()
+    inkdrop.store.dispatch(actions.editingNote.update({ body }))
+    inkdrop.store.dispatch(actions.editor.change(true))
   }
 })
 ```
