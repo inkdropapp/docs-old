@@ -1,9 +1,9 @@
 ---
 index: 2
-category: "usage"
+category: 'usage'
 toc: true
-path: "/manual/basic-usage"
-title: "Basic usage"
+path: '/manual/basic-usage'
+title: 'Basic usage'
 ---
 
 ## Get acquainted with Inkdrop interface
@@ -12,13 +12,13 @@ Inkdrop interface is broken up into 3 main sections.
 
 ![Layout](./basic-usage_screen.png)
 
-- **Sidebar** is the leftmost section. It lists notebooks, statuses, and tags. 
+- **Sidebar** is the leftmost section. It lists notebooks, statuses, and tags.
   - Notebooks are like folders that store your notes. You can nest notebooks in one another as deeply as needed.
-  - Statuses help you treat notes as tasks and, for example, display only active or completed ones. 
+  - Statuses help you treat notes as tasks and, for example, display only active or completed ones.
   - Tags are like labels that let you link notes with one another. For example, if they relate to a common topic.
-  You can toggle the Sidebar by using <kbd>Command+/</kbd> or <kbd>Ctrl+/</kbd> on Windows/Linux.
+    You can toggle the Sidebar by using <kbd>Command+/</kbd> or <kbd>Ctrl+/</kbd> on Windows/Linux.
 - **Note list** is located amid. All your notes live here ordered by modification date by default. You can search for notes via the search box at the very top of the section.
-- **Editor** is the rightmost section. This is where your magic happens 🪄 — your workspace. 
+- **Editor** is the rightmost section. This is where your magic happens 🪄 — your workspace.
 
 **More useful shortcuts:**
 
@@ -30,20 +30,18 @@ Inkdrop interface is broken up into 3 main sections.
 
 To create a new note, you can either click the ![ui-icon](/images/icons/pencil-write.svg) icon on the right top of the note list or use the <kbd>Command+N</kbd> / <kbd>Ctrl+N</kbd> shortcut. The newly created note will appear in the **Note list** section.
 
-
 ![AddNote](./basic-usage_addnote.png)
 
 To create a new notebook, click the ![ui-icon](/images/icons/add-circle.svg) icon next to the **Notebooks** title:
 
 ![AddBook](./basic-usage_addbook.png)
 
-To create a sub notebook: 
+To create a sub notebook:
 
 1. Right-click the notebook, which will be the parent, and select **New Sub Notebook..**.
 2. Provide a title for the nested notebook.
 3. Click **Create**.  
-The newly created notebook will appear inside the parent one.  
-
+   The newly created notebook will appear inside the parent one.
 
 ## Settings and preferences
 
@@ -51,7 +49,7 @@ Inkdrop has the **Preferences** view where you can fine-tune look and feel of th
 
 ### MacOS
 
-Go to **Inkdrop** > **Preferences** in the menu bar. Alternatively, you can use the <kbd>Command+,</kbd> shortcut. 
+Go to **Inkdrop** > **Preferences** in the menu bar. Alternatively, you can use the <kbd>Command+,</kbd> shortcut.
 
 ### Windows and Linux
 

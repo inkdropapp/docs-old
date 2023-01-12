@@ -1,9 +1,9 @@
 ---
 index: 80
-category: "hacking"
+category: 'hacking'
 toc: false
-path: "/manual/list-of-commands"
-title: "List of Commands"
+path: '/manual/list-of-commands'
+title: 'List of Commands'
 ---
 
 Inkdrop provides a bunch of commands to allow you to associate arbitrary interactions with the features.
@@ -11,8 +11,8 @@ You can bind them with [keystrokes](/reference/keymap-manager), [menu](/referenc
 Note that some commands like `core:open-note` require parameters so you have to invoke them programmatically with [CommandRegistry](/reference/command-registry) like so:
 
 ```js
-inkdrop.commands.dispatch(document.body, "core:open-note", {
-  noteId: "note:uugSvPq5r",
+inkdrop.commands.dispatch(document.body, 'core:open-note', {
+  noteId: 'note:uugSvPq5r'
 })
 ```
 
@@ -32,8 +32,8 @@ Special commands that run in the main process to control the Inkdrop app.
 To invoke them, do like so:
 
 ```js
-import { ipcRenderer } from "electron"
-ipcRenderer.send("command", "application:about", {})
+import { ipcRenderer } from 'electron'
+ipcRenderer.send('command', 'application:about', {})
 ```
 
 ### application:about
@@ -303,8 +303,8 @@ Creates a new note and open it in the editor
 
 Shows up a dialog for creating a new notebook
 
-| Argument       | Description                                          |
-| -------------- | ---------------------------------------------------- |
+| Argument       | Description                                                                                                     |
+| -------------- | --------------------------------------------------------------------------------------------------------------- |
 | `parentBookId` | A string, a parent notebook ID. If `undefined`, a notebook will be created under the root. Default: `undefined` |
 
 ### core:note-list-show-all-notes
@@ -889,13 +889,13 @@ You can override the default file drop handler like so:
 ```js
 const mde = inkdrop.getActiveEditorOrThrowError()
 inkdrop.commands.add(mde.wrapper.wrapper, {
-  "editor:insert-images": e => {
+  'editor:insert-images': e => {
     const { files, pos } = e
     // Do something
 
     // prevent the default behavior
     e.stopPropagation()
-  },
+  }
 })
 ```
 

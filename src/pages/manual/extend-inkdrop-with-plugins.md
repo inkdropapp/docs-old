@@ -1,9 +1,9 @@
 ---
 index: 70
-category: "usage"
+category: 'usage'
 toc: true
-path: "/manual/extend-inkdrop-with-plugins"
-title: "Extend Inkdrop with Plugins"
+path: '/manual/extend-inkdrop-with-plugins'
+title: 'Extend Inkdrop with Plugins'
 ---
 
 Plugins add new functionality or provide new look to Inkdrop.

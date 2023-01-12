@@ -27,7 +27,7 @@ Here is a command that inserts the current date in an editor:
 
 ```js
 inkdrop.commands.add(document.body, {
-  'user:insert-date': ()=> {
+  'user:insert-date': () => {
     const { document } = inkdrop.flux.getStore('editor').getState()
     document.body = document.body + '\n' + new Date().toLocaleString()
     inkdrop.flux.getActions('editor').update({ document, changed: true })
@@ -38,7 +38,7 @@ inkdrop.commands.add(document.body, {
 Here is how to invoke the save command:
 
 ```js
-inkdrop.commands.dispatch(document.body, 'core:save-note');
+inkdrop.commands.dispatch(document.body, 'core:save-note')
 ```
 
 ## Methods
@@ -47,19 +47,19 @@ inkdrop.commands.dispatch(document.body, 'core:save-note');
 
 Add a command listener associated with a DOM node.
 
-| Argument  | Description  |
-|:----------|:-------------|
-| `target`  | A DOM node.  |
-| `commandName` | A String containing the name of a command you want to handle such as `user:insert-date`. |
+| Argument          | Description                                                                                                                                              |
+| :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `target`          | A DOM node.                                                                                                                                              |
+| `commandName`     | A String containing the name of a command you want to handle such as `user:insert-date`.                                                                 |
 | `callback(event)` | A Function to call when the given command is invoked on an element matching the selector. It will be called with this referencing the matching DOM node. |
 
 ### add(target, commands)
 
 Add multiple command listeners associated with a DOM node.
 
-| Argument  | Description  |
-|:----------|:-------------|
-| `target`  | A DOM node.  |
+| Argument   | Description                                                                    |
+| :--------- | :----------------------------------------------------------------------------- |
+| `target`   | A DOM node.                                                                    |
 | `commands` | An Object mapping command names like `user:insert-date` to listener Functions. |
 
 ### dispatch(target, commandName, detail)
@@ -69,9 +69,8 @@ Simulate the dispatch of a command on a DOM node.
 This can be useful for testing when you want to simulate the invocation of a command on a detached DOM node.
 Otherwise, the DOM node in question needs to be attached to the document so the event bubbles up to the root node to be processed.
 
-| Argument  | Description  |
-|:----------|:-------------|
-| `target`  | The DOM node at which to start bubbling the command event. |
-| `commandName` | String indicating the name of the command to dispatch. |
-| `detail` | Object of parametrs to be passed |
-
+| Argument      | Description                                                |
+| :------------ | :--------------------------------------------------------- |
+| `target`      | The DOM node at which to start bubbling the command event. |
+| `commandName` | String indicating the name of the command to dispatch.     |
+| `detail`      | Object of parametrs to be passed                           |

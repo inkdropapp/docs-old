@@ -13,9 +13,9 @@ Loads and activates a package's main module and resources such as stylesheets, k
 
 Invoke the given callback when all packages have been deactivated.
 
-| Argument | Description |
-| -------- | ----------- |
-| `callback()` | Function |
+| Argument     | Description |
+| ------------ | ----------- |
+| `callback()` | Function    |
 
 ### Return values
 
@@ -32,4 +32,3 @@ Incompatible packages cannot be activated.
 #### Return values
 
 Returns a Boolean, true if compatible, false if incompatible.
-

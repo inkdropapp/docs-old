@@ -14,13 +14,13 @@ An instance of this class is always available as the `inkdrop.menu` global.
 Here is an example from the [inkdrop-paste-as-markdown](https://github.com/inkdropapp/inkdrop-paste-as-markdown):
 
 ```js
-[
+;[
   {
-    "label": "Plugins",
-    "submenu": [
+    label: 'Plugins',
+    submenu: [
       {
-        "label": "Paste as Markdown",
-        "command": "paste-as-markdown"
+        label: 'Paste as Markdown',
+        command: 'paste-as-markdown'
       }
     ]
   }
@@ -59,17 +59,17 @@ Adds the given items to the application menu.
 inkdrop.menu.add([
   {
     label: 'Hello',
-    submenu : [{label: 'World!', command: 'hello:world'}]
+    submenu: [{ label: 'World!', command: 'hello:world' }]
   }
-]);
+])
 ```
 
-| Argument | Description |
-| -------- | ----------- |
-| `items`  | An Array of menu item Objects containing the keys: |
-| | `label`: The String menu label. |
-| | `submenu`: An optional Array of sub menu items. |
-| | `command`: An optional String command to trigger when the item is clicked. |
+| Argument | Description                                                                |
+| -------- | -------------------------------------------------------------------------- |
+| `items`  | An Array of menu item Objects containing the keys:                         |
+|          | `label`: The String menu label.                                            |
+|          | `submenu`: An optional Array of sub menu items.                            |
+|          | `command`: An optional String command to trigger when the item is clicked. |
 
 #### Return values
 

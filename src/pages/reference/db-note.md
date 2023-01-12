@@ -24,9 +24,9 @@ Creates new note ID which is String
 
 Tests if given `docId` is a valid note ID
 
-| Argument | Description |
-| -------- | ----------- |
-| `docId` | String, a document ID to be validated.  |
+| Argument | Description                            |
+| -------- | -------------------------------------- |
+| `docId`  | String, a document ID to be validated. |
 
 #### Return values
 
@@ -36,9 +36,9 @@ true if valid
 
 Creates or updates a note. It throws an `InvalidDataError` if the given doc was invalid.
 
-| Argument | Description |
-| -------- | ----------- |
-| `doc` | A [Note](/reference/data-models#a-nameresource-notenotea) data to be put. |
+| Argument | Description                                                               |
+| -------- | ------------------------------------------------------------------------- |
+| `doc`    | A [Note](/reference/data-models#a-nameresource-notenotea) data to be put. |
 
 #### Return values
 
@@ -58,9 +58,9 @@ Or it will reject with an error if it failed to put.
 
 Retrieves a note
 
-| Argument | Description |
-| -------- | ----------- |
-| `docId` | String, a note ID to retrieve. |
+| Argument  | Description                                                                                   |
+| --------- | --------------------------------------------------------------------------------------------- |
+| `docId`   | String, a note ID to retrieve.                                                                |
 | `options` | Object, optional. See [PouchDB's documentation](https://pouchdb.com/api.html#fetch_document). |
 
 #### Return values
@@ -71,9 +71,9 @@ A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Gl
 
 Deletes a note with specified note ID
 
-| Argument | Description |
-| -------- | ----------- |
-| `docId` | String, a note ID to delete. |
+| Argument | Description                  |
+| -------- | ---------------------------- |
+| `docId`  | String, a note ID to delete. |
 
 #### Return values
 
@@ -93,8 +93,8 @@ Or it will reject with an error if it failed to delete.
 
 Deletes notes with specified note IDs
 
-| Argument | Description |
-| -------- | ----------- |
+| Argument | Description                     |
+| -------- | ------------------------------- |
 | `docIds` | An Array of note IDs to delete. |
 
 #### Return values
@@ -123,13 +123,13 @@ A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Gl
 
 Retrieves all notes
 
-| Argument | Description |
-| -------- | ----------- |
-| `options` | Object with following keys, optional:  |
-| &emsp;sort | An array of an object indicating the field and order.<br />Ex: `[ { updatedAt: 'asc' } ]`, `[ { title: 'desc' } ]`.<br />Inkdrop supports sorting notes with only one field.<br />Supported fields are: `'title'`, `'updatedAt'` and `'createdAt'`. |
-| &emsp;limit | A number to limit how many notes to fetch. Default: `20` |
-| &emsp;skip | A number of notes to skip at the start of a collection. Default: `0` |
-| &emsp;includeDocs | A Boolean, whether the return values include doc contents. Default: `true` |
+| Argument          | Description                                                                                                                                                                                                                                         |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `options`         | Object with following keys, optional:                                                                                                                                                                                                               |
+| &emsp;sort        | An array of an object indicating the field and order.<br />Ex: `[ { updatedAt: 'asc' } ]`, `[ { title: 'desc' } ]`.<br />Inkdrop supports sorting notes with only one field.<br />Supported fields are: `'title'`, `'updatedAt'` and `'createdAt'`. |
+| &emsp;limit       | A number to limit how many notes to fetch. Default: `20`                                                                                                                                                                                            |
+| &emsp;skip        | A number of notes to skip at the start of a collection. Default: `0`                                                                                                                                                                                |
+| &emsp;includeDocs | A Boolean, whether the return values include doc contents. Default: `true`                                                                                                                                                                          |
 
 #### Return values
 
@@ -178,10 +178,10 @@ Example response:
 
 Retrieves notes associated with given notebook ID.
 
-| Argument | Description |
-| -------- | ----------- |
-| `bookId` | A notebook ID to find  |
-| `options` | An Object, optional. See [::all(options)](#alloptions).  |
+| Argument  | Description                                             |
+| --------- | ------------------------------------------------------- |
+| `bookId`  | A notebook ID to find                                   |
+| `options` | An Object, optional. See [::all(options)](#alloptions). |
 
 #### Return values
 
@@ -193,10 +193,10 @@ See [::all(options)](#alloptions).
 
 Retrieves notes associated with given tag ID.
 
-| Argument | Description |
-| -------- | ----------- |
-| `tagId` | A tag ID to find  |
-| `options` | An Object, optional. See [::all(options)](#alloptions).  |
+| Argument  | Description                                             |
+| --------- | ------------------------------------------------------- |
+| `tagId`   | A tag ID to find                                        |
+| `options` | An Object, optional. See [::all(options)](#alloptions). |
 
 #### Return values
 
@@ -208,14 +208,13 @@ See [::all(options)](#alloptions).
 
 Retrieves notes with given note status.
 
-| Argument | Description |
-| -------- | ----------- |
-| `status` | A note status, which can be `'none'`, `'active'`, `'onHold'`, `'completed'` or `'dropped'` |
-| `options` | An Object, optional. See [::all(options)](#alloptions).  |
+| Argument  | Description                                                                                |
+| --------- | ------------------------------------------------------------------------------------------ |
+| `status`  | A note status, which can be `'none'`, `'active'`, `'onHold'`, `'completed'` or `'dropped'` |
+| `options` | An Object, optional. See [::all(options)](#alloptions).                                    |
 
 #### Return values
 
 A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that will resolve with a query result.
 
 See [::all(options)](#alloptions).
-

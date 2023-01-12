@@ -1,9 +1,9 @@
 ---
 index: 110
-category: "hacking"
+category: 'hacking'
 toc: true
-path: "/manual/integrating-with-an-astro-site"
-title: "Integrating with an Astro site"
+path: '/manual/integrating-with-an-astro-site'
+title: 'Integrating with an Astro site'
 ---
 
 ## live-export: A tool to export notes programmatically and continuously
@@ -80,9 +80,7 @@ const sub = await liveExport.start({
   // Generate a path and URL to export the specified image file
   pathForFile: ({ mdastNode, /* note, file, */ extension, frontmatter }) => {
     if (frontmatter.slug && mdastNode.alt) {
-      const fn = `${frontmatter.slug}_${toKebabCase(
-        mdastNode.alt
-      )}${extension}`
+      const fn = `${frontmatter.slug}_${toKebabCase(mdastNode.alt)}${extension}`
       const res = {
         filePath: `./<PATH_TO_EXPORT_IMAGES>/${fn}`,
         url: `./<URL_TO_LINK_IMAGES>/${fn}`
@@ -122,15 +120,15 @@ So, you first have to enable it by editing the `config.cson` file stored in [the
 Quit Inkdrop, and add the following lines like so:
 
 ```yaml
-"*":
+'*':
   core:
     server:
       enabled: true
       port: 19840
-      bindAddress: "127.0.0.1"
+      bindAddress: '127.0.0.1'
       auth:
-        username: "foo"
-        password: "bar"
+        username: 'foo'
+        password: 'bar'
 ```
 
 Then, relaunch the app.
@@ -292,4 +290,3 @@ Run the app with a `--enable-logging` flag. See [the documentation](/manual/trou
 ### Can I import the notes back to Inkdrop?
 
 No. As it transforms the notes for your projects, they are no longer compatible with Inkdrop.
-

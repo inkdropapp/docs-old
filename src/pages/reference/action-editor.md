@@ -12,7 +12,7 @@ Actions for managing [editor](/reference/state-editor) app state.
 If you manipulated the note data and want the app to save it, do like so:
 
 ```js
-import { actions } from "inkdrop"
+import { actions } from 'inkdrop'
 
 inkdrop.store.dispatch(actions.editor.change(true))
 ```

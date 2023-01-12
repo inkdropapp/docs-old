@@ -15,9 +15,9 @@ An instance of this class is always available as the `inkdrop.themes` global.
 
 Invoke `callback` when style sheet changes associated with updating the list of active themes have completed.
 
-| Argument | Description |
-| -------- | ----------- |
-| `callback()` | Function |
+| Argument     | Description |
+| ------------ | ----------- |
+| `callback()` | Function    |
 
 #### Return values
 

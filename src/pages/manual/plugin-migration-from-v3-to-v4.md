@@ -1,8 +1,8 @@
 ---
 index: 10
-category: "appendix"
-path: "/manual/plugin-migration-from-v3-to-v4"
-title: "Plugin Migration Guide from v3 to v4"
+category: 'appendix'
+path: '/manual/plugin-migration-from-v3-to-v4'
+title: 'Plugin Migration Guide from v3 to v4'
 ---
 
 In v4, there are some breaking changes in its APIs.
@@ -12,8 +12,8 @@ If you are a plugin author, please upgrade your plugins along with following ins
 
 Here are my commit logs to support v4:
 
-* [breaks](https://github.com/inkdropapp/inkdrop-breaks/commit/65d2e895485356f06b2e5e8f892ab0cd46496c5f)
-* [spell-checker](https://github.com/inkdropapp/inkdrop-spell-checker/commit/60bba2e4958be4fdfdd5ea3881759d9c29b0b2e1)
+- [breaks](https://github.com/inkdropapp/inkdrop-breaks/commit/65d2e895485356f06b2e5e8f892ab0cd46496c5f)
+- [spell-checker](https://github.com/inkdropapp/inkdrop-spell-checker/commit/60bba2e4958be4fdfdd5ea3881759d9c29b0b2e1)
 
 ## Update `engines.inkdrop` field in `package.json`
 
@@ -33,7 +33,7 @@ If your plugin adds a remark plugin to the markdown renderer, please change it a
 ```diff
 + const { markdownRenderer } = require('inkdrop')
   const breaks = require('remark-breaks')
-  
+
   module.exports = {
     activate () {
 -     const { MDEPreview } = inkdrop.components.classes

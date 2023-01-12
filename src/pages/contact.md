@@ -25,4 +25,4 @@ Please do not forget to check out the [FAQ](/faq) and [troubleshooting](/manual/
 
 ## Twitter
 
-I'm usually on [Twitter @inkdrop\_app](https://twitter.com/inkdrop_app).
+I'm usually on [Twitter @inkdrop_app](https://twitter.com/inkdrop_app).

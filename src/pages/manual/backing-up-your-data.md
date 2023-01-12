@@ -1,9 +1,9 @@
 ---
 index: 9
-category: "usage"
+category: 'usage'
 toc: false
-path: "/manual/backing-up-your-data"
-title: "Data backup"
+path: '/manual/backing-up-your-data'
+title: 'Data backup'
 ---
 
 > We are not perfect human beings, nor do we have to pretend to be, but it is necessary for us to be the best version of ourselves we can be.
@@ -22,8 +22,8 @@ To specify where to store your data, take the following steps:
 3. In the **Backup location** field, enter path to the folder where you want to store the notes data.  
    You can also select the desired folder by clicking **...** (the three dots button).
 4. Click **Apply**.  
-   From this moment, Inkdrop will store your notes data in the specified folder.  
-   
+   From this moment, Inkdrop will store your notes data in the specified folder.
+
 <div class="ui warning message"> <b>Note</b> that Inkdrop doesn't have a default backup folder. If you lost access to the account and hadn't made a backup, read <a href="https://docs.inkdrop.app/manual/salvage-data-from-local-database">Salvaging Data from Local Database</a>.</div>
    
 ![Backup](./backing-up-your-data_preferences.png)

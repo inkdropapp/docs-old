@@ -37,9 +37,9 @@ An instance of [DBUtils](/reference/db-utils)
 
 Invoke the given callback when the database has been changed.
 
-| Argument | Description |
-| -------- | ----------- |
-| `callback(change)` | A Function to be invoked.  |
+| Argument           | Description                                                                                           |
+| ------------------ | ----------------------------------------------------------------------------------------------------- |
+| `callback(change)` | A Function to be invoked.                                                                             |
 | &emsp;`change`     | Object, indicating the [changes feed](https://pouchdb.com/guides/changes.html#understanding-changes). |
 
 #### Return values
@@ -50,9 +50,9 @@ Returns a [Disposable](/reference/disposable) on which `.dispose()` can be calle
 
 Invoke the given callback when a note has been added, modified or deleted.
 
-| Argument | Description |
-| -------- | ----------- |
-| `callback(change)` | A Function to be invoked.  |
+| Argument           | Description                                                                                           |
+| ------------------ | ----------------------------------------------------------------------------------------------------- |
+| `callback(change)` | A Function to be invoked.                                                                             |
 | &emsp;`change`     | Object, indicating the [changes feed](https://pouchdb.com/guides/changes.html#understanding-changes). |
 
 #### Return values
@@ -63,9 +63,9 @@ Returns a [Disposable](/reference/disposable) on which `.dispose()` can be calle
 
 Invoke the given callback when a notebook has been added, modified or deleted.
 
-| Argument | Description |
-| -------- | ----------- |
-| `callback(change)` | A Function to be invoked.  |
+| Argument           | Description                                                                                           |
+| ------------------ | ----------------------------------------------------------------------------------------------------- |
+| `callback(change)` | A Function to be invoked.                                                                             |
 | &emsp;`change`     | Object, indicating the [changes feed](https://pouchdb.com/guides/changes.html#understanding-changes). |
 
 #### Return values
@@ -76,9 +76,9 @@ Returns a [Disposable](/reference/disposable) on which `.dispose()` can be calle
 
 Invoke the given callback when a tag has been added, modified or deleted.
 
-| Argument | Description |
-| -------- | ----------- |
-| `callback(change)` | A Function to be invoked.  |
+| Argument           | Description                                                                                           |
+| ------------------ | ----------------------------------------------------------------------------------------------------- |
+| `callback(change)` | A Function to be invoked.                                                                             |
 | &emsp;`change`     | Object, indicating the [changes feed](https://pouchdb.com/guides/changes.html#understanding-changes). |
 
 #### Return values
@@ -89,9 +89,9 @@ Returns a [Disposable](/reference/disposable) on which `.dispose()` can be calle
 
 Invoke the given callback when the app started building full-text search index.
 
-| Argument | Description |
-| -------- | ----------- |
-| `callback()` | A Function to be invoked.  |
+| Argument     | Description               |
+| ------------ | ------------------------- |
+| `callback()` | A Function to be invoked. |
 
 #### Return values
 
@@ -101,9 +101,9 @@ Returns a [Disposable](/reference/disposable) on which `.dispose()` can be calle
 
 Invoke the given callback when the app finished building full-text search index.
 
-| Argument | Description |
-| -------- | ----------- |
-| `callback()` | A Function to be invoked.  |
+| Argument     | Description               |
+| ------------ | ------------------------- |
+| `callback()` | A Function to be invoked. |
 
 #### Return values
 
@@ -113,12 +113,11 @@ Returns a [Disposable](/reference/disposable) on which `.dispose()` can be calle
 
 Invoke the given callback when the app failed to build full-text search index.
 
-| Argument | Description |
-| -------- | ----------- |
-| `callback(error)` | A Function to be invoked.  |
-| &emsp;`error`     | Error that was occurred. |
+| Argument          | Description               |
+| ----------------- | ------------------------- |
+| `callback(error)` | A Function to be invoked. |
+| &emsp;`error`     | Error that was occurred.  |
 
 #### Return values
 
 Returns a [Disposable](/reference/disposable) on which `.dispose()` can be called to unsubscribe.
-

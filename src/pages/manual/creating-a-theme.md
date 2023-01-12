@@ -1,9 +1,9 @@
 ---
 index: 20
-category: "hacking"
+category: 'hacking'
 toc: true
-path: "/manual/creating-a-theme"
-title: "Creating a Theme"
+path: '/manual/creating-a-theme'
+title: 'Creating a Theme'
 ---
 
 Inkdrop's interface is rendered using HTML, and it's styled via Less which is a superset of CSS. Don't worry if you haven't heard of Less before; it's just like CSS, but with a few handy extensions.

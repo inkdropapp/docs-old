@@ -1,9 +1,9 @@
 ---
 index: 110
-category: "usage"
+category: 'usage'
 toc: false
-path: "/manual/sharing-your-notes-on-the-web"
-title: "Sharing Your Notes on the Web"
+path: '/manual/sharing-your-notes-on-the-web'
+title: 'Sharing Your Notes on the Web'
 ---
 
 Publishing notes on the web comes in handy if you are working on a team project or just passing along useful tips to friends.

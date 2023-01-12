@@ -1,8 +1,8 @@
 ---
 index: 30
-category: "usage"
-path: "/manual/managing-tasks-with-status"
-title: "Managing Tasks with Note Status"
+category: 'usage'
+path: '/manual/managing-tasks-with-status'
+title: 'Managing Tasks with Note Status'
 ---
 
 <video controls playsInline muted class="ui demo">

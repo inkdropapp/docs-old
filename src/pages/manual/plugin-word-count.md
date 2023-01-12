@@ -1,9 +1,9 @@
 ---
 index: 30
-category: "hacking"
+category: 'hacking'
 toc: true
-path: "/manual/plugin-word-count"
-title: "Plugin: Word Count"
+path: '/manual/plugin-word-count'
+title: 'Plugin: Word Count'
 ---
 
 Let's get started by writing a very simple plugin and looking at some of the tools needed to develop one effectively. We'll start by writing a plugin that tells you how many words are in the current editor and display it in a small modal window.
@@ -228,10 +228,10 @@ There are two files in our lib directory. One is the main file (`lib/wordcount.j
 The second file is a React Component class, `lib/wordcount-message-dialog.js`, which handles the UI elements of the plugin. Let's look at this file first:
 
 ```jsx
-"use babel"
+'use babel'
 
-import React, { useEffect, useCallback } from "react"
-import { logger, useModal } from "inkdrop"
+import React, { useEffect, useCallback } from 'react'
+import { logger, useModal } from 'inkdrop'
 
 const WordcountMessageDialog = props => {
   const modal = useModal()
@@ -239,12 +239,12 @@ const WordcountMessageDialog = props => {
 
   const toggle = useCallback(() => {
     modal.show()
-    logger.debug("Wordcount was toggled!")
+    logger.debug('Wordcount was toggled!')
   }, [])
 
   useEffect(() => {
     const sub = inkdrop.commands.add(document.body, {
-      "wordcount:toggle": toggle,
+      'wordcount:toggle': toggle
     })
     return () => sub.dispose()
   }, [toggle])
@@ -280,7 +280,7 @@ To toggle the dialog by a command, it defines a callback function with React's [
 ```js
 const toggle = useCallback(() => {
   modal.show()
-  logger.debug("Wordcount was toggled!")
+  logger.debug('Wordcount was toggled!')
 }, [])
 ```
 
@@ -289,7 +289,7 @@ Then, it binds the callback function with the `"wordcount:toggle"` command with 
 ```js
 useEffect(() => {
   const sub = inkdrop.commands.add(document.body, {
-    "wordcount:toggle": toggle,
+    'wordcount:toggle': toggle
   })
   return () => sub.dispose()
 }, [toggle])
@@ -301,23 +301,23 @@ It automatically unbinds the command when the component is unmounted from the DO
 The second file we have is the main entry point to the plugin. Again, because it's referenced in the `package.json` file. Let's take a look at that file, it's pretty simple:
 
 ```js
-"use babel"
+'use babel'
 
-import WordcountMessageDialog from "./wordcount-message-dialog"
+import WordcountMessageDialog from './wordcount-message-dialog'
 
 module.exports = {
   activate() {
     inkdrop.components.registerClass(WordcountMessageDialog)
-    inkdrop.layouts.addComponentToLayout("modals", "WordcountMessageDialog")
+    inkdrop.layouts.addComponentToLayout('modals', 'WordcountMessageDialog')
   },
 
   deactivate() {
     inkdrop.layouts.removeComponentFromLayout(
-      "modals",
-      "WordcountMessageDialog"
+      'modals',
+      'WordcountMessageDialog'
     )
     inkdrop.components.deleteClass(WordcountMessageDialog)
-  },
+  }
 }
 ```
 
@@ -348,13 +348,13 @@ If we add some code to count the words and ask the React component to update its
 First, import `useState` method from `react`:
 
 ```js
-import React, { useState, useEffect, useCallback } from "react"
+import React, { useState, useEffect, useCallback } from 'react'
 ```
 
 Next, import [react-redux](https://react-redux.js.org/). You don't have to add it as a dependency because Inkdrop provides it out of the box:
 
 ```js
-import { useSelector } from "react-redux"
+import { useSelector } from 'react-redux'
 ```
 
 Then, in the dialog component, add the following line to remember the word count using React's [useState](https://reactjs.org/docs/hooks-state.html):
@@ -375,7 +375,7 @@ The `selectEditingNoteBody` function should be defined outside the component fun
 
 ```js
 const selectEditingNoteBody = ({ editingNote }) =>
-  editingNote ? editingNote.body : ""
+  editingNote ? editingNote.body : ''
 ```
 
 Now, let's define a function that counts the words:
@@ -414,14 +414,14 @@ return (
 Now, `lib/wordcount-message-dialog.js` looks like this:
 
 ```js
-"use babel"
+'use babel'
 
-import React, { useState, useEffect, useCallback } from "react"
-import { logger, useModal } from "inkdrop"
-import { useSelector } from "react-redux"
+import React, { useState, useEffect, useCallback } from 'react'
+import { logger, useModal } from 'inkdrop'
+import { useSelector } from 'react-redux'
 
 const selectEditingNoteBody = ({ editingNote }) =>
-  editingNote ? editingNote.body : ""
+  editingNote ? editingNote.body : ''
 
 const WordcountMessageDialog = props => {
   const modal = useModal()
@@ -440,7 +440,7 @@ const WordcountMessageDialog = props => {
 
   useEffect(() => {
     const sub = inkdrop.commands.add(document.body, {
-      "wordcount:toggle": toggle,
+      'wordcount:toggle': toggle
     })
     return () => sub.dispose()
   }, [toggle])

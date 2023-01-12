@@ -18,17 +18,17 @@ class User {
   constructor() {
     this.emitter = new Emitter()
   }
- 
+
   onDidChangeName(callback) {
     this.emitter.on('did-change-name', callback)
   }
- 
+
   setName(name) {
     if (name !== this.name) {
       this.name = name
       this.emitter.emit('did-change-name', name)
     }
- 
+
     return this.name
   }
 }
@@ -58,10 +58,10 @@ Unsubscribe all handlers.
 
 Register the given handler function to be invoked whenever events by the given name are emitted via `::emit`.
 
-| Argument | Description |
-| -------- | ----------- |
+| Argument    | Description                                                               |
+| ----------- | ------------------------------------------------------------------------- |
 | `eventName` | String naming the event that you want to invoke the handler when emitted. |
-| `handler()` | Function to invoke when `::emit` is called with the given event name. |
+| `handler()` | Function to invoke when `::emit` is called with the given event name.     |
 
 #### Return values
 
@@ -71,10 +71,10 @@ Returns a Boolean indicating whether `object` is a valid `Disposable`.
 
 Register the given handler function to be invoked the next time an events with the given name is emitted via `::emit`.
 
-| Argument | Description |
-| -------- | ----------- |
+| Argument    | Description                                                               |
+| ----------- | ------------------------------------------------------------------------- |
 | `eventName` | String naming the event that you want to invoke the handler when emitted. |
-| `handler()` | Function to invoke when `::emit` is called with the given event name. |
+| `handler()` | Function to invoke when `::emit` is called with the given event name.     |
 
 #### Return values
 
@@ -82,15 +82,15 @@ Returns a Boolean indicating whether `object` is a valid `Disposable`.
 
 ### ::preempt(eventName, handler)
 
-Register the given handler function to be invoked *before* all other handlers existing at the time of subscription whenever events by the given name are emitted via `::emit`.
+Register the given handler function to be invoked _before_ all other handlers existing at the time of subscription whenever events by the given name are emitted via `::emit`.
 
 Use this method when you need to be the first to handle a given event. This could be required when a data structure in a parent object needs to be updated before third-party event handlers registered on a child object via a public API are invoked.
 Your handler could itself be preempted via subsequent calls to this method, but this can be controlled by keeping methods based on `::preempt` private.
 
-| Argument | Description |
-| -------- | ----------- |
+| Argument    | Description                                                               |
+| ----------- | ------------------------------------------------------------------------- |
 | `eventName` | String naming the event that you want to invoke the handler when emitted. |
-| `handler()` | Function to invoke when `::emit` is called with the given event name. |
+| `handler()` | Function to invoke when `::emit` is called with the given event name.     |
 
 #### Return values
 
@@ -102,8 +102,7 @@ Returns a Boolean indicating whether `object` is a valid `Disposable`.
 
 Invoke handlers registered via `::on` for the given event name.
 
-| Argument | Description |
-| -------- | ----------- |
+| Argument    | Description                                                                                       |
+| ----------- | ------------------------------------------------------------------------------------------------- |
 | `eventName` | The name of the event to emit. Handlers registered with `::on` for the same name will be invoked. |
-| `value` | Callbacks will be invoked with this value as an argument. |
-
+| `value`     | Callbacks will be invoked with this value as an argument.                                         |

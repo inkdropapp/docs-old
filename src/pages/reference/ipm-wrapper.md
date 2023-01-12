@@ -39,8 +39,8 @@ async function installPackage(
     await inkdrop.ipm.install({ name: pluginName, version, theme })
   } catch (e) {
     logger.error(e)
-    logger.error("stdout:", e.stdout)
-    logger.error("stderr:", e.stderr)
+    logger.error('stdout:', e.stdout)
+    logger.error('stderr:', e.stderr)
   }
 }
 ```
@@ -73,8 +73,8 @@ async function updatePackage(
     await ipm.update({ name: pluginName, theme }, newVersion)
   } catch (e) {
     logger.error(e)
-    logger.error("stdout:", e.stdout)
-    logger.error("stderr:", e.stderr)
+    logger.error('stdout:', e.stdout)
+    logger.error('stderr:', e.stderr)
   }
 }
 ```
@@ -101,8 +101,8 @@ async function uninstallPackage(pluginName: string) {
     await ipm.uninstall({ name: pluginName })
   } catch (e) {
     logger.error(e)
-    logger.error("stdout:", e.stdout)
-    logger.error("stderr:", e.stderr)
+    logger.error('stdout:', e.stdout)
+    logger.error('stderr:', e.stderr)
   }
 }
 ```
@@ -178,7 +178,7 @@ Rejects if failed to get the package.
 #### Example
 
 ```js
-await inkdrop.ipm.getPackage("vim")
+await inkdrop.ipm.getPackage('vim')
 ```
 
 It returns the following json object:

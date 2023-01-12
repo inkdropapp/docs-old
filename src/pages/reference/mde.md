@@ -59,4 +59,3 @@ A [CodeMirror](http://codemirror.net/) instance
 ### wrapper
 
 A React component that wraps [CodeMirror](http://codemirror.net/).
-

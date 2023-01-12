@@ -35,5 +35,3 @@ Throws an error if it's not loaded yet.
 ### updateFTSIndex()
 
 Triggers updating full-text search index.
-
-

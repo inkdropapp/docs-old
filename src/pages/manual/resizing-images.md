@@ -1,9 +1,9 @@
 ---
 index: 140
-category: "usage"
+category: 'usage'
 toc: false
-path: "/manual/resizing-images"
-title: "Resizing Images"
+path: '/manual/resizing-images'
+title: 'Resizing Images'
 ---
 
 Inkdrop basically follows GitHub-flavored Markdown which does not support specifying image size.
@@ -12,7 +12,8 @@ Add following rules to your `styles.less`:
 
 ```less
 .editor {
-  .mde-cm-wrapper .CodeMirror .CodeMirror-linewidget, .mde-preview {
+  .mde-cm-wrapper .CodeMirror .CodeMirror-linewidget,
+  .mde-preview {
     img[alt$='#small'] {
       max-width: 75% !important;
       min-width: 200pt !important;
@@ -27,7 +28,6 @@ Add following rules to your `styles.less`:
       max-width: 25% !important;
       min-width: 50pt !important;
     }
-
   }
 }
 ```

@@ -35,7 +35,7 @@ Note that changing this options would cause unexpected behaviors.
 
 It is an array of custom remark plugins.
 
-* Example plugin: [math](https://github.com/inkdropapp/inkdrop-math)
+- Example plugin: [math](https://github.com/inkdropapp/inkdrop-math)
 
 ### remarkReactComponents: `{ [string]: ReactComponent }`
 
@@ -44,14 +44,14 @@ If you would like to override rendering `a` HTML elements with custom component,
 
 ```js
 class Anchor extends React.Component {
-  render () {
+  render() {
     // ...
   }
 }
 markdownRenderer.remarkReactComponents.a = Anchor
 ```
 
-* Example plugin: [toc](https://github.com/inkdropapp/inkdrop-toc)
+- Example plugin: [toc](https://github.com/inkdropapp/inkdrop-toc)
 
 ### remarkCodeComponents: `{ [string]: ReactComponent }`
 
@@ -60,11 +60,11 @@ You can define a component for a language like so:
 
 ```js
 class JSCodeBlock extends React.Component {
-  render () {
+  render() {
     // ...
   }
 }
 markdownRenderer.remarkCodeComponents['javascript'] = JSCodeBlock
 ```
 
-* Example plugin: [sequence-diagrams](https://github.com/inkdropapp/inkdrop-sequence-diagrams)
+- Example plugin: [sequence-diagrams](https://github.com/inkdropapp/inkdrop-sequence-diagrams)

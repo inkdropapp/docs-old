@@ -11,7 +11,7 @@ A built-in React [component](/reference/component-manager) of Inkdrop that allow
 To get the class of `Dialog` component:
 
 ```js
-const Dialog = inkdrop.components.getComponentClass("Dialog")
+const Dialog = inkdrop.components.getComponentClass('Dialog')
 ```
 
 ## Props
@@ -23,17 +23,17 @@ type Props = {
   visible: boolean,
   hiding: boolean,
   onBackdropClick?: () => any,
-  autofocus?: boolean,
+  autofocus?: boolean
 }
 ```
 
 ## Example
 
 ```js
-"use babel"
+'use babel'
 
-import React, { useEffect, useCallback } from "react"
-import { logger, useModal } from "inkdrop"
+import React, { useEffect, useCallback } from 'react'
+import { logger, useModal } from 'inkdrop'
 
 const HelloMessageDialog = props => {
   const modal = useModal()
@@ -41,12 +41,12 @@ const HelloMessageDialog = props => {
 
   const toggle = useCallback(() => {
     modal.show()
-    logger.debug("Dialog was toggled!")
+    logger.debug('Dialog was toggled!')
   }, [])
 
   useEffect(() => {
     const sub = inkdrop.commands.add(document.body, {
-      "yourplugin:toggle": toggle,
+      'yourplugin:toggle': toggle
     })
     return () => sub.dispose()
   }, [toggle])
