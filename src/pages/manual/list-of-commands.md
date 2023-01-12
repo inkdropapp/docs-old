@@ -303,6 +303,10 @@ Creates a new note and open it in the editor
 
 Shows up a dialog for creating a new notebook
 
+| Argument       | Description                                          |
+| -------------- | ---------------------------------------------------- |
+| `parentBookId` | A string, a parent notebook ID. If `undefined`, a notebook will be created under the root. Default: `undefined` |
+
 ### core:note-list-show-all-notes
 
 - Selector: `body`
