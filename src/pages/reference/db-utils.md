@@ -20,13 +20,13 @@ const utils = db.utils
 
 Retrieves notes which match given keyword.
 
-| Argument | Description |
-| -------- | ----------- |
-| `keyword` | String, a keyword. The syntax is described [here](/manual/searching-notes). |
-| `options` | Object with following keys, optional:  |
-| &emsp;sort | An array of an object indicating the field and order.<br />Ex: `[ { updatedAt: 'asc' } ]`, `[ { title: 'desc' } ]`.<br />Inkdrop supports sorting notes with only one field.<br />Supported fields are: `'title'`, `'updatedAt'` and `'createdAt'`. |
-| &emsp;limit | A number to limit how many notes to fetch. Default: `20` |
-| &emsp;skip | A number of notes to skip at the start of a collection. Default: `0` |
+| Argument    | Description                                                                                                                                                                                                                                         |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `keyword`   | String, a keyword. The syntax is described [here](/manual/searching-notes).                                                                                                                                                                         |
+| `options`   | Object with following keys, optional:                                                                                                                                                                                                               |
+| &emsp;sort  | An array of an object indicating the field and order.<br />Ex: `[ { updatedAt: 'asc' } ]`, `[ { title: 'desc' } ]`.<br />Inkdrop supports sorting notes with only one field.<br />Supported fields are: `'title'`, `'updatedAt'` and `'createdAt'`. |
+| &emsp;limit | A number to limit how many notes to fetch. Default: `20`                                                                                                                                                                                            |
+| &emsp;skip  | A number of notes to skip at the start of a collection. Default: `0`                                                                                                                                                                                |
 
 #### Return values
 
@@ -79,14 +79,13 @@ Example response:
 }
 ```
 
-
 ### countNotesWithTag(tagId)
 
 Counts number of notes which are associated with specified tag ID
 
-| Argument | Description |
-| -------- | ----------- |
-| `tagId` | String, a tag ID.  |
+| Argument | Description       |
+| -------- | ----------------- |
+| `tagId`  | String, a tag ID. |
 
 #### Return values
 
@@ -96,9 +95,9 @@ A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Gl
 
 Deletes a tag with given ID and removes it from associated notes.
 
-| Argument | Description |
-| -------- | ----------- |
-| `tagId` | String, a tag ID to delete.  |
+| Argument | Description                 |
+| -------- | --------------------------- |
+| `tagId`  | String, a tag ID to delete. |
 
 #### Return values
 
@@ -109,10 +108,10 @@ Rejects if failed to delete the tag.
 
 Moves a note to a notebook
 
-| Argument | Description |
-| -------- | ----------- |
-| `noteId` | String, a note ID to move.  |
-| `moveToBookId` | String, a destination notebook ID where the note is moved.  |
+| Argument       | Description                                                |
+| -------------- | ---------------------------------------------------------- |
+| `noteId`       | String, a note ID to move.                                 |
+| `moveToBookId` | String, a destination notebook ID where the note is moved. |
 
 #### Return values
 
@@ -123,10 +122,10 @@ Rejects if failed to move the note.
 
 Moves notes to a notebook
 
-| Argument | Description |
-| -------- | ----------- |
-| `noteIds` | Array, a list of note IDs to move.  |
-| `moveToBookId` | String, a destination notebook ID where the notes are moved.  |
+| Argument       | Description                                                  |
+| -------------- | ------------------------------------------------------------ |
+| `noteIds`      | Array, a list of note IDs to move.                           |
+| `moveToBookId` | String, a destination notebook ID where the notes are moved. |
 
 #### Return values
 
@@ -138,9 +137,9 @@ Rejects if failed to move the notes.
 Duplicates a note with given ID.
 A duplicated note will have new values with `_id`, `createdAt`, `updatedAt` and `_rev` fields.
 
-| Argument | Description |
-| -------- | ----------- |
-| `noteId` | String, a note ID to duplicate.  |
+| Argument | Description                     |
+| -------- | ------------------------------- |
+| `noteId` | String, a note ID to duplicate. |
 
 #### Return values
 
@@ -152,9 +151,9 @@ which resolves a duplicated note.
 Duplicates notes with given IDs.
 Duplicated notes will have new values with `_id`, `createdAt`, `updatedAt` and `_rev` fields.
 
-| Argument | Description |
-| -------- | ----------- |
-| `noteIds` | Array, a list of note IDs to duplicate.  |
+| Argument  | Description                             |
+| --------- | --------------------------------------- |
+| `noteIds` | Array, a list of note IDs to duplicate. |
 
 #### Return values
 
@@ -165,9 +164,9 @@ which resolves duplicated notes.
 
 Moves given notes to trash or deletes permanently if they were already in trash.
 
-| Argument | Description |
-| -------- | ----------- |
-| `noteIds` | Array, a list of note IDs to move to trash or delete.  |
+| Argument  | Description                                           |
+| --------- | ----------------------------------------------------- |
+| `noteIds` | Array, a list of note IDs to move to trash or delete. |
 
 #### Return values
 
@@ -187,10 +186,10 @@ which rejects if failed to empty trash.
 
 Sets given tags to notes with specified IDs.
 
-| Argument | Description |
-| -------- | ----------- |
-| `noteIds` | Array, a list of IDs of notes to be set.  |
-| `tags` | Array of String, a list of tag IDs to set.  |
+| Argument  | Description                                |
+| --------- | ------------------------------------------ |
+| `noteIds` | Array, a list of IDs of notes to be set.   |
+| `tags`    | Array of String, a list of tag IDs to set. |
 
 #### Return values
 
@@ -201,18 +200,18 @@ which resolves an Array of updated [Note](/reference/data-models#a-nameresource-
 
 Sets specified note status to notes with given IDs.
 
-| Argument | Description |
-| -------- | ----------- |
-| `noteIds` | Array, a list of IDs of notes to be set.  |
-| `status` | String, a note status which can be `'none'`, `'active'`, `'onHold'`, `'completed'` or `'dropped'`.  |
+| Argument  | Description                                                                                        |
+| --------- | -------------------------------------------------------------------------------------------------- |
+| `noteIds` | Array, a list of IDs of notes to be set.                                                           |
+| `status`  | String, a note status which can be `'none'`, `'active'`, `'onHold'`, `'completed'` or `'dropped'`. |
 
 ### moveBook(bookId, newParentBookId)
 
 Sets a notebook with specified ID as a child of a notebook.
 
-| Argument | Description |
-| -------- | ----------- |
-| `bookId` | String, a notebook ID to move.  |
+| Argument          | Description                                                                                               |
+| ----------------- | --------------------------------------------------------------------------------------------------------- |
+| `bookId`          | String, a notebook ID to move.                                                                            |
 | `newParentBookId` | String or `null`. a notebook ID of new parent notebook. Specifying `null` moves the notebook to the root. |
 
 #### Return values
@@ -224,9 +223,9 @@ which resolves the updated [Book](/reference/data-models#a-nameresource-bookbook
 
 Deletes a notebook with given ID and moves notes associated with it into trash.
 
-| Argument | Description |
-| -------- | ----------- |
-| `bookId` | String, a notebook ID to delete.  |
+| Argument | Description                      |
+| -------- | -------------------------------- |
+| `bookId` | String, a notebook ID to delete. |
 
 #### Return values
 
@@ -236,13 +235,11 @@ A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Gl
 
 Loads an image file as [Buffer](https://nodejs.org/api/buffer.html#buffer_buffer).
 
-| Argument | Description |
-| -------- | ----------- |
-| `fileId` | String, a file ID to load.  |
-
+| Argument | Description                |
+| -------- | -------------------------- |
+| `fileId` | String, a file ID to load. |
 
 #### Return values
 
 A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise),
 which resolves a content of the image file.
-

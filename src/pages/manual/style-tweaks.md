@@ -1,9 +1,9 @@
 ---
 index: 11
-category: "hacking"
+category: 'hacking'
 toc: false
-path: "/manual/style-tweaks"
-title: "Style Tweaks"
+path: '/manual/style-tweaks'
+title: 'Style Tweaks'
 ---
 
 If you want to apply quick-and-dirty personal styling changes without creating an entire theme that you intend to publish, you can add styles to the `styles.less` file in [your data directory](/manual/basic-usage#user-data-directory).

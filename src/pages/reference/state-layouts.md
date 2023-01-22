@@ -15,7 +15,7 @@ const { layouts } = inkdrop.store.getState()
 Or, to connect with your React component:
 
 ```js
-import { connect } from "react-redux"
+import { connect } from 'react-redux'
 
 const connector = connect(
   ({ layouts }) => ({ layouts }),

@@ -91,6 +91,7 @@ To preview a note:
   The note and its preview are displayed side-by-side.  
 ![SideBySide](./writing-note_sidebyside.png)
 
+
 There're 2 more ways to toggle preview. In the lower right corner of the editor:
 
 * Click ![ui-icon](/images/icons/view-1.svg) to swith between the note and its preview.

@@ -1,9 +1,9 @@
 ---
 index: 210
-category: "usage"
+category: 'usage'
 toc: false
-path: "/manual/recovering-your-password"
-title: "Recovering Your Password"
+path: '/manual/recovering-your-password'
+title: 'Recovering Your Password'
 ---
 
 ## Inkdrop cannot reset your password

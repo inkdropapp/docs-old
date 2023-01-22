@@ -1,8 +1,8 @@
 ---
 index: 100
-category: "info"
-path: "/notation"
-title: "Notation based on the Specified Commercial Transaction Act"
+category: 'info'
+path: '/notation'
+title: 'Notation based on the Specified Commercial Transaction Act'
 ---
 
 特定商取引法に基づく表記

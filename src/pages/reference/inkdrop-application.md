@@ -18,5 +18,3 @@ A [DataStore](/reference/data-store) instance
 ### version
 
 String, indicating the app version
-
-

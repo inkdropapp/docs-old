@@ -1,9 +1,9 @@
 ---
 index: 1
-category: "usage"
+category: 'usage'
 toc: true
-path: "/manual/"
-title: "Quick start"
+path: '/manual/'
+title: 'Quick start'
 ---
 
 Welcome to Inkdrop! Here's how to get started.
@@ -86,4 +86,3 @@ When you first open Inkdrop, you should see a Log-in screen like this:
 ![Login](quick-start-guide_login.png)
 
 Enter your email address and password to get started.
-

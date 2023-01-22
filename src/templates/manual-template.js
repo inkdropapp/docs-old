@@ -44,7 +44,7 @@ Template.propTypes = {
 }
 
 export const pageQuery = graphql`
-  query($path: String!) {
+  query ($path: String!) {
     pageByPath: markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       tableOfContents(pathToSlugField: "frontmatter.path")

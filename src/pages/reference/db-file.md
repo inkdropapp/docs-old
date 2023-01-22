@@ -26,9 +26,9 @@ Creates new file ID which is String
 
 Tests if given `docId` is a valid file ID
 
-| Argument | Description |
-| -------- | ----------- |
-| `docId` | String, a document ID to be validated.  |
+| Argument | Description                            |
+| -------- | -------------------------------------- |
+| `docId`  | String, a document ID to be validated. |
 
 #### Return values
 
@@ -38,9 +38,9 @@ true if valid
 
 Creates or updates a file. It throws an `InvalidDataError` if the given doc was invalid.
 
-| Argument | Description |
-| -------- | ----------- |
-| `doc` | A [File](/reference/data-models#a-nameresource-filefilea) data to be put. |
+| Argument | Description                                                               |
+| -------- | ------------------------------------------------------------------------- |
+| `doc`    | A [File](/reference/data-models#a-nameresource-filefilea) data to be put. |
 
 #### Return values
 
@@ -60,9 +60,9 @@ Or it will reject with an error if it failed to put.
 
 Retrieves a file
 
-| Argument | Description |
-| -------- | ----------- |
-| `docId` | String, a file ID to retrieve. |
+| Argument  | Description                                                                                   |
+| --------- | --------------------------------------------------------------------------------------------- |
+| `docId`   | String, a file ID to retrieve.                                                                |
 | `options` | Object, optional. See [PouchDB's documentation](https://pouchdb.com/api.html#fetch_document). |
 
 #### Return values
@@ -73,9 +73,9 @@ A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Gl
 
 Deletes a file with specified file ID
 
-| Argument | Description |
-| -------- | ----------- |
-| `docId` | String, a file ID to remove. |
+| Argument | Description                  |
+| -------- | ---------------------------- |
+| `docId`  | String, a file ID to remove. |
 
 #### Return values
 
@@ -130,4 +130,3 @@ Example response:
   ...
 ]
 ```
-

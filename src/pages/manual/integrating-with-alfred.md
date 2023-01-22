@@ -1,9 +1,9 @@
 ---
 index: 100
-category: "hacking"
+category: 'hacking'
 toc: true
-path: "/manual/integrating-with-alfred"
-title: "Integrating with Alfred"
+path: '/manual/integrating-with-alfred'
+title: 'Integrating with Alfred'
 ---
 
 [Alfred](https://www.alfredapp.com/) is the powerful alternative to Spotlight.
@@ -37,6 +37,6 @@ You can search using `ink {query}` in Alfred. You can use [the same qualifiers](
 
 ![screenshot][workflow]
 
-[workflow]: ./integrating-with-alfred_screenshot.png "Sample Inkdrop result"
-[configure-1]: ./integrating-with-alfred_configure-workflow-1.png "Configure workflow 01"
-[configure-2]: ./integrating-with-alfred_configure-workflow-2.png "Configure workflow 02"
+[workflow]: ./integrating-with-alfred_screenshot.png 'Sample Inkdrop result'
+[configure-1]: ./integrating-with-alfred_configure-workflow-1.png 'Configure workflow 01'
+[configure-2]: ./integrating-with-alfred_configure-workflow-2.png 'Configure workflow 02'

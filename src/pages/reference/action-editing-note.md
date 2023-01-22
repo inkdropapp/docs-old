@@ -12,9 +12,9 @@ Actions for changing [editingNote](/reference/state-editing-note) app state.
 If you would like to change the title of editing note, do like so:
 
 ```js
-import { actions } from "inkdrop"
+import { actions } from 'inkdrop'
 
-inkdrop.store.dispatch(actions.editingNote.update({ title: "NEW TITLE" }))
+inkdrop.store.dispatch(actions.editingNote.update({ title: 'NEW TITLE' }))
 inkdrop.store.dispatch(actions.editor.change(true))
 ```
 
@@ -45,4 +45,3 @@ Load a note data to the editor.
 Close the editing note.
 
 **Warning**: Do not use this action in your plugin. Please invoke [`editor.close` action](/reference/action-editor#close) instead.
-

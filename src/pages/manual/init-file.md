@@ -1,9 +1,9 @@
 ---
 index: 10
-category: "hacking"
+category: 'hacking'
 toc: false
-path: "/manual/the-init-file"
-title: "The Init File"
+path: '/manual/the-init-file'
+title: 'The Init File'
 ---
 
 When Inkdrop finishes loading, it will evaluate `init.js` in [your data directory](/manual/basic-usage#user-data-directory), giving you a chance to run JavaScript code to make customizations.
@@ -31,14 +31,15 @@ inkdrop.commands.add(document.body, 'editor:paste-as-link', () => {
 inkdrop.menu.add([
   {
     label: 'Edit',
-    submenu: [{
-      label: 'Paste as Link',
-      command: 'editor:paste-as-link'
-    }]
+    submenu: [
+      {
+        label: 'Paste as Link',
+        command: 'editor:paste-as-link'
+      }
+    ]
   }
 ])
 ```
 
-Now, reload Inkdrop and select *Edit -> Paste as Link* from the application menu to execute the new command.
+Now, reload Inkdrop and select _Edit -> Paste as Link_ from the application menu to execute the new command.
 And if you'd like to trigger the command via a keyboard shortcut, you can define a [keybinding for the command](/manual/customizing-keybindings).
-

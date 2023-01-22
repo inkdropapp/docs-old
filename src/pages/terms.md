@@ -1,8 +1,8 @@
 ---
 index: 60
-category: "info"
-path: "/terms"
-title: "Terms of Service"
+category: 'info'
+path: '/terms'
+title: 'Terms of Service'
 ---
 
 These Terms of Service ("**Terms**") govern your access to and use of the services, including our various websites, APIs, email notifications, and applications (the "**Services**" or "**Inkdrop**"), and any information, text, graphics, photos or other materials uploaded, downloaded or appearing on the Services (collectively referred to as "**Content**"). Inkdrop is owned by Takuya Matsuyama, Osaka - Japan. (referred to as "**I**", "**Me**", "**Our**" or "**We**"). As a customer of this service you're a "**User**" or "**You**" according to this agreement. Your access to and use of the Services are conditioned on your acceptance of and compliance with these Terms. By accessing or using the Services you agree to be bound by these Terms.

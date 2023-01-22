@@ -1,9 +1,9 @@
 ---
 index: 220
-category: "usage"
+category: 'usage'
 toc: false
-path: "/manual/salvage-data-from-local-database"
-title: "Salvaging Data from Local Database"
+path: '/manual/salvage-data-from-local-database'
+title: 'Salvaging Data from Local Database'
 ---
 
 If you lost your password and cannot authenticate anymore, it means unfortunately that you have lost your account because [your data is encrypted in client](/security).

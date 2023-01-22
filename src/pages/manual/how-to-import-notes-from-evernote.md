@@ -1,9 +1,9 @@
 ---
 index: 120
-category: "usage"
+category: 'usage'
 toc: false
-path: "/manual/how-to-import-notes-from-evernote"
-title: "How to Import Your Notes from Evernote"
+path: '/manual/how-to-import-notes-from-evernote'
+title: 'How to Import Your Notes from Evernote'
 ---
 
 You can import notes from HTML files.
@@ -23,7 +23,7 @@ You will get HTML files on your disk.
 
 ## Import Notes from HTML Files
 
-Now let’s import them. Select ‘*Inkdrop -> Import -> from HTML files…*’ from menu.
+Now let’s import them. Select ‘_Inkdrop -> Import -> from HTML files…_’ from menu.
 
 ![Import Notes from HTML](./how-to-import-notes-from-evernote_import-from-html.png)
 

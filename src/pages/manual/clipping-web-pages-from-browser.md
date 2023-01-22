@@ -1,9 +1,9 @@
 ---
 index: 115
-category: "usage"
+category: 'usage'
 toc: false
-path: "/manual/clipping-web-pages-from-browser"
-title: "Clipping Web Pages from Browser"
+path: '/manual/clipping-web-pages-from-browser'
+title: 'Clipping Web Pages from Browser'
 ---
 
 ![Clipping webpage #cover](/images/clipping-web-pages-from-browser.svg)

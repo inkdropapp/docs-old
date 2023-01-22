@@ -1,6 +1,8 @@
-@font-family-base: 'SF UI Text', 'Helvetica Neue', 'Helvetica', 'Roboto', sans-serif;
+@font-family-base: 'SF UI Text', 'Helvetica Neue', 'Helvetica', 'Roboto',
+  sans-serif;
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: @font-family-base;
@@ -9,14 +11,19 @@ html, body {
 .section-svg-icon {
   display: inline;
   width: 1.2em;
-  margin-right: .4rem;
+  margin-right: 0.4rem;
 }
 
 .main-content {
   padding-top: 2rem;
   margin-bottom: 50px;
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     a.anchor {
       opacity: 0;
       margin-left: -20px;
@@ -69,7 +76,7 @@ html, body {
     &:after {
       clear: both;
       display: table;
-      content: ''
+      content: '';
     }
   }
   a.next-page {
@@ -79,12 +86,14 @@ html, body {
   video {
     width: 100%;
     outline: none;
-    border-radius: .2em;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07), rgba(255, 255, 255, 0.3) 0px 0px 0px 1px;
+    border-radius: 0.2em;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07),
+      rgba(255, 255, 255, 0.3) 0px 0px 0px 1px;
     margin-bottom: 1rem;
 
     &.ui.demo {
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.07), rgba(255, 255, 255, 0.3) 0px 0px 0px 1px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.07),
+        rgba(255, 255, 255, 0.3) 0px 0px 0px 1px;
     }
   }
 }

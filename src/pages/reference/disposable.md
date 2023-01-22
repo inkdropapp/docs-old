@@ -28,8 +28,8 @@ Returns a Boolean indicating whether `object` is a valid `Disposable`.
 
 Construct a Disposable
 
-| Argument | Description |
-| -------- | ----------- |
+| Argument           | Description                                                       |
+| ------------------ | ----------------------------------------------------------------- |
 | `disposalAction()` | A Function to call when `::dispose` is called for the first time. |
 
 ### ::dispose()
@@ -37,4 +37,3 @@ Construct a Disposable
 Perform the disposal action, indicating that the resource associated with this disposable is no longer needed.
 
 You can call this method more than once, but the disposal action will only be performed the first time.
-

@@ -24,9 +24,9 @@ Creates new notebook ID which is String
 
 Tests if given `docId` is a valid notebook ID
 
-| Argument | Description |
-| -------- | ----------- |
-| `docId` | String, a document ID to be validated.  |
+| Argument | Description                            |
+| -------- | -------------------------------------- |
+| `docId`  | String, a document ID to be validated. |
 
 #### Return values
 
@@ -36,9 +36,9 @@ true if valid
 
 Creates or updates a notebook. It throws an `InvalidDataError` if the given doc was invalid.
 
-| Argument | Description |
-| -------- | ----------- |
-| `doc` | A [Book](/reference/data-models#a-nameresource-bookbooka) data to be put. |
+| Argument | Description                                                               |
+| -------- | ------------------------------------------------------------------------- |
+| `doc`    | A [Book](/reference/data-models#a-nameresource-bookbooka) data to be put. |
 
 #### Return values
 
@@ -58,9 +58,9 @@ Or it will reject with an error if it failed to put.
 
 Retrieves a notebook
 
-| Argument | Description |
-| -------- | ----------- |
-| `docId` | String, a notebook ID to retrieve. |
+| Argument  | Description                                                                                   |
+| --------- | --------------------------------------------------------------------------------------------- |
+| `docId`   | String, a notebook ID to retrieve.                                                            |
 | `options` | Object, optional. See [PouchDB's documentation](https://pouchdb.com/api.html#fetch_document). |
 
 #### Return values
@@ -71,9 +71,9 @@ A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Gl
 
 Deletes a notebook with specified notebook ID
 
-| Argument | Description |
-| -------- | ----------- |
-| `docId` | String, a notebook ID to remove. |
+| Argument | Description                      |
+| -------- | -------------------------------- |
+| `docId`  | String, a notebook ID to remove. |
 
 #### Return values
 
@@ -135,11 +135,10 @@ A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Gl
 
 Retrieves a notebook with the given name
 
-| Argument | Description |
-| -------- | ----------- |
-| `name` | String, a notebook name to find. |
+| Argument | Description                      |
+| -------- | -------------------------------- |
+| `name`   | String, a notebook name to find. |
 
 #### Return values
 
 A [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that will resolve with a [Book](/reference/data-models#a-nameresource-bookbooka) data if found or undefined if not found, or will reject if failed to get.
-
