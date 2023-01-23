@@ -1,9 +1,9 @@
 ---
 index: 130
-category: "usage"
+category: 'usage'
 toc: false
-path: "/manual/revision-history"
-title: "Restore Old Revisions"
+path: '/manual/revision-history'
+title: 'Restore Old Revisions'
 ---
 
 Inkdrop keeps your notes with revision history locally.

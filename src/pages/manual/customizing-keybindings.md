@@ -1,9 +1,9 @@
 ---
 index: 60
-category: "usage"
+category: 'usage'
 toc: false
-path: "/manual/customizing-keybindings"
-title: "Customizing Keybindings"
+path: '/manual/customizing-keybindings'
+title: 'Customizing Keybindings'
 ---
 
 Inkdrop keymaps work similarly to stylesheets.

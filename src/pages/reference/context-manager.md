@@ -38,17 +38,18 @@ This is just for example purposes and not the way the menu is actually configure
 
 ```js
 inkdrop.contextMenu.add({
-  '.CodeMirror': [{
-    label: 'History',
-    submenu: [
-      { label: 'Undo', command: 'core:undo' },
-      { label: 'Redo', command: 'core:redo' }
-    ]
-  }]
+  '.CodeMirror': [
+    {
+      label: 'History',
+      submenu: [
+        { label: 'Undo', command: 'core:undo' },
+        { label: 'Redo', command: 'core:redo' }
+      ]
+    }
+  ]
 })
 ```
 
 #### Return values
 
 Returns a [Disposable](/reference/disposable) on which `.dispose()` can be called to remove the added menu items.
-

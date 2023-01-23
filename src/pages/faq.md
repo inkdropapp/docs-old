@@ -134,7 +134,7 @@ Learn more: [Security at Stripe](https://stripe.com/docs/security/stripe)
 
 ### What happens if the free trial expired without adding my payment information?
 
-Your account will be deleted and you can no longer access to your account. But you can still access your data stored in local with the app in read-only mode.
+Your account will be deactivated and you are no longer able to add/edit/remove your notes. But you can still access your data stored in local with the app in read-only mode.
 
 ### What happens if the payment failed?
 

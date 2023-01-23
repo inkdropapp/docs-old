@@ -19,17 +19,11 @@ Below example registers `MyDialog` class to the component registry and adds it t
 module.exports = {
   activate() {
     inkdrop.components.registerClass(MyDialog)
-    inkdrop.layouts.addComponentToLayout(
-      'modal',
-      'MyDialog'
-    )
+    inkdrop.layouts.addComponentToLayout('modal', 'MyDialog')
   },
 
   deactivate() {
-    inkdrop.layouts.removeComponentFromLayout(
-      'modal',
-      'MyDialog'
-    )
+    inkdrop.layouts.removeComponentFromLayout('modal', 'MyDialog')
     inkdrop.components.deleteClass(MyDialog)
   }
 }
@@ -45,10 +39,10 @@ Available layouts can be found [here](/reference/state-layouts).
 
 Invoke the given callback when the layout with given name is changed.
 
-| Argument | Description |
-| -------- | ----------- |
+| Argument               | Description                                            |
+| ---------------------- | ------------------------------------------------------ |
 | `callback(components)` | Function to be called when keystrokes match a binding. |
-| &emsp;components | An array of component class names that was changed |
+| &emsp;components       | An array of component class names that was changed     |
 
 #### Return values
 
@@ -60,38 +54,38 @@ Returns a [Disposable](/reference/disposable) on which `.dispose()` can be calle
 
 Adds a component to specified layout
 
-| Argument | Description |
-| -------- | ----------- |
-| `layoutName` | String, a layout name |
+| Argument             | Description                                                                                       |
+| -------------------- | ------------------------------------------------------------------------------------------------- |
+| `layoutName`         | String, a layout name                                                                             |
 | `componentClassName` | A React class name which is registered in the [component registry](/reference/component-manager). |
 
 ### insertComponentToLayoutBefore(layoutName, referenceComponentClassName, componentClassNameToInsert)
 
 Inserts a component before the reference component to specified layout
 
-| Argument | Description |
-| -------- | ----------- |
-| `layoutName` | String, a layout name |
-| `referenceComponentClassName` | A React class name before which `componentClassName` is inserted. |
-| `componentClassName` | A React class name which is registered in the [component registry](/reference/component-manager). |
+| Argument                      | Description                                                                                       |
+| ----------------------------- | ------------------------------------------------------------------------------------------------- |
+| `layoutName`                  | String, a layout name                                                                             |
+| `referenceComponentClassName` | A React class name before which `componentClassName` is inserted.                                 |
+| `componentClassName`          | A React class name which is registered in the [component registry](/reference/component-manager). |
 
 ### insertComponentToLayoutAfter(layoutName, referenceComponentClassName, componentClassNameToInsert)
 
 Inserts a component after the reference component to specified layout
 
-| Argument | Description |
-| -------- | ----------- |
-| `layoutName` | String, a layout name |
-| `referenceComponentClassName` | A React class name after which `componentClassName` is inserted. |
-| `componentClassName` | A React class name which is registered in the [component registry](/reference/component-manager). |
+| Argument                      | Description                                                                                       |
+| ----------------------------- | ------------------------------------------------------------------------------------------------- |
+| `layoutName`                  | String, a layout name                                                                             |
+| `referenceComponentClassName` | A React class name after which `componentClassName` is inserted.                                  |
+| `componentClassName`          | A React class name which is registered in the [component registry](/reference/component-manager). |
 
 ### getLayout(name)
 
 Returns a set of components of the specified layout
 
-| Argument | Description |
-| -------- | ----------- |
-| `name` | A name of the layout to get |
+| Argument | Description                 |
+| -------- | --------------------------- |
+| `name`   | A name of the layout to get |
 
 #### Return values
 
@@ -101,9 +95,9 @@ An array of component class names
 
 Returns a set of React component classes of the specified layout
 
-| Argument | Description |
-| -------- | ----------- |
-| `name` | A name of the layout to get |
+| Argument | Description                 |
+| -------- | --------------------------- |
+| `name`   | A name of the layout to get |
 
 #### Return values
 
@@ -113,9 +107,9 @@ An array of React component classes
 
 Returns the first index at which a given component can be found in the specified layout, or `-1` if cannot found.
 
-| Argument | Description |
-| -------- | ----------- |
-| `layoutName` | String, a layout name |
+| Argument             | Description                   |
+| -------------------- | ----------------------------- |
+| `layoutName`         | String, a layout name         |
 | `componentClassName` | A React class name to search. |
 
 #### Return values
@@ -126,16 +120,16 @@ Number
 
 Removes a component from specified layout
 
-| Argument | Description |
-| -------- | ----------- |
-| `layoutName` | String, a layout name |
+| Argument             | Description                                                                                       |
+| -------------------- | ------------------------------------------------------------------------------------------------- |
+| `layoutName`         | String, a layout name                                                                             |
 | `componentClassName` | A React class name which is registered in the [component registry](/reference/component-manager). |
 
 ### setLayout(name, components)
 
 Sets a set of components to the specified layout
 
-| Argument | Description |
-| -------- | ----------- |
-| `name` | A name of the layout to be set |
+| Argument     | Description                       |
+| ------------ | --------------------------------- |
+| `name`       | A name of the layout to be set    |
 | `components` | An array of component class names |

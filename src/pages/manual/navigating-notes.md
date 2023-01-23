@@ -1,9 +1,9 @@
 ---
 index: 20
-category: "usage"
+category: 'usage'
 toc: false
-path: "/manual/navigating-notes"
-title: "Navigating Notes"
+path: '/manual/navigating-notes'
+title: 'Navigating Notes'
 ---
 
 With your notes having organized with notebooks, tags and status, Inkdrop can help you navigate them elegantly.

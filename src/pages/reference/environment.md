@@ -85,9 +85,9 @@ A [BrowserWindow](https://electronjs.org/docs/api/browser-window) instance of th
 
 Invoke the given callback when the editor has been loaded.
 
-| Argument | Description |
-| -------- | ----------- |
-| `callback(editor)` | A Function to be invoked.  |
+| Argument           | Description                                |
+| ------------------ | ------------------------------------------ |
+| `callback(editor)` | A Function to be invoked.                  |
 | &emsp;`editor`     | The [MDE](/reference/mde) that was loaded. |
 
 #### Return values
@@ -98,9 +98,9 @@ Returns a [Disposable](/reference/disposable) on which `.dispose()` can be calle
 
 Invoke the given callback when the editor has been unloaded.
 
-| Argument | Description |
-| -------- | ----------- |
-| `callback()` | A Function to be invoked.  |
+| Argument     | Description               |
+| ------------ | ------------------------- |
+| `callback()` | A Function to be invoked. |
 
 #### Return values
 
@@ -110,9 +110,9 @@ Returns a [Disposable](/reference/disposable) on which `.dispose()` can be calle
 
 Invoke the given callback when the app is ready.
 
-| Argument | Description |
-| -------- | ----------- |
-| `callback()` | A Function to be invoked.  |
+| Argument     | Description               |
+| ------------ | ------------------------- |
+| `callback()` | A Function to be invoked. |
 
 #### Return values
 
@@ -122,9 +122,9 @@ Returns a [Disposable](/reference/disposable) on which `.dispose()` can be calle
 
 Invoke the given callback when the app is about to quit.
 
-| Argument | Description |
-| -------- | ----------- |
-| `callback()` | A Function to be invoked.  |
+| Argument     | Description               |
+| ------------ | ------------------------- |
+| `callback()` | A Function to be invoked. |
 
 #### Return values
 
@@ -148,6 +148,6 @@ Returns an instance of [MDE](/reference/mde) if the editor is active, otherwise 
 
 Set an instance of [MDE](/reference/mde) which is currently active.
 
-| Argument | Description |
-| -------- | ----------- |
+| Argument | Description                          |
+| -------- | ------------------------------------ |
 | `editor` | An instance of [MDE](/reference/mde) |

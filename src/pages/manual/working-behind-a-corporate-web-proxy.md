@@ -1,9 +1,9 @@
 ---
 index: 90
-category: "usage"
+category: 'usage'
 toc: false
-path: "/manual/working-behind-a-corporate-web-proxy"
-title: "Working Behind Web Proxy"
+path: '/manual/working-behind-a-corporate-web-proxy'
+title: 'Working Behind Web Proxy'
 ---
 
 If you are working behind a company proxy or you have a local proxy running, it's necessary to tell Inkdrop to go through it.
@@ -18,11 +18,11 @@ You can configure the web proxy settings by editing `config.cson`. This config f
 Quit Inkdrop before you edit it.
 
 ```yaml
-"*":
+'*':
   core:
     network:
-      http_proxy: "http://webproxy:8080/"
-      https_proxy: "http://webproxy:8080/"
+      http_proxy: 'http://webproxy:8080/'
+      https_proxy: 'http://webproxy:8080/'
 ```
 
 If the web proxy requires BASIC auth, you can just specify a URL with username and password like so:
@@ -55,7 +55,7 @@ You have to disable SSL certificate validation if your proxy server is SSL-enabl
 You can disable it by adding `strict_ssl: 0` in your `config.cson` like so:
 
 ```yaml
-"*":
+'*':
   core:
     network:
       strict_ssl: 0

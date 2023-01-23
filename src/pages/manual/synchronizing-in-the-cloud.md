@@ -1,9 +1,9 @@
 ---
 index: 50
-category: "usage"
+category: 'usage'
 toc: true
-path: "/manual/synchronizing-in-the-cloud"
-title: "Synchronizing in the Cloud"
+path: '/manual/synchronizing-in-the-cloud'
+title: 'Synchronizing in the Cloud'
 ---
 
 Inkdrop lets you sync notes across multiple computers via Cloud.

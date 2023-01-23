@@ -1,9 +1,9 @@
 ---
 index: 50
-category: "hacking"
+category: 'hacking'
 toc: true
-path: "/manual/accessing-the-local-database"
-title: "Accessing the Local Database"
+path: '/manual/accessing-the-local-database'
+title: 'Accessing the Local Database'
 ---
 
 There are two databases in local and on remote and they sync via HTTP(S).
@@ -22,7 +22,7 @@ For example, below code gets data directly from the local database:
 const db = inkdrop.main.dataStore.getLocalDB()
 
 // Get a note data by note ID
-const note = await db.notes.get("note:F8xUp-23G")
+const note = await db.notes.get('note:F8xUp-23G')
 
 // Get all notebooks
 const books = await db.books.all()
@@ -31,9 +31,9 @@ const books = await db.books.all()
 const notesInBook = await db.notes.findInBook(books[0]._id)
 
 // Search notes with keywords
-const result = await db.utils.search("Foobar")
+const result = await db.utils.search('Foobar')
 const { docs } = result
-console.log("Search result:", docs)
+console.log('Search result:', docs)
 ```
 
 <div class="ui info message">
@@ -73,15 +73,15 @@ You can configure the HTTP server settings by editing `config.cson` in [the user
 Quit Inkdrop, then edit it like so:
 
 ```yaml
-"*":
+'*':
   core:
     server:
       enabled: true
       port: 19840
-      bindAddress: "127.0.0.1"
+      bindAddress: '127.0.0.1'
       auth:
-        username: "foo"
-        password: "bar"
+        username: 'foo'
+        password: 'bar'
 ```
 
 Now, launch the app.

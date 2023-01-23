@@ -1,9 +1,9 @@
 ---
 index: 70
-category: "hacking"
+category: 'hacking'
 toc: true
-path: "/manual/extending-the-ui"
-title: "Extending the UI"
+path: '/manual/extending-the-ui'
+title: 'Extending the UI'
 ---
 
 Inkdrop's UI is built on top of [React](https://reactjs.org/).
@@ -19,13 +19,13 @@ Below example registers `MyDialog` class to the component registry and adds it t
 module.exports = {
   activate() {
     inkdrop.components.registerClass(MyDialog)
-    inkdrop.layouts.addComponentToLayout("modal", "MyDialog")
+    inkdrop.layouts.addComponentToLayout('modal', 'MyDialog')
   },
 
   deactivate() {
-    inkdrop.layouts.removeComponentFromLayout("modal", "MyDialog")
+    inkdrop.layouts.removeComponentFromLayout('modal', 'MyDialog')
     inkdrop.components.deleteClass(MyDialog)
-  },
+  }
 }
 ```
 
@@ -96,7 +96,7 @@ To register your component as custom note list item view:
 ```js
 inkdrop.components.registerClass(
   LayoutExampleNoteListItemView,
-  "CustomNoteListItemView"
+  'CustomNoteListItemView'
 )
 ```
 
@@ -105,6 +105,6 @@ Don't forget to unregister it when your plugin is deactivated:
 ```js
 inkdrop.components.deleteClass(
   LayoutExampleNoteListItemView.default,
-  "CustomNoteListItemView"
+  'CustomNoteListItemView'
 )
 ```

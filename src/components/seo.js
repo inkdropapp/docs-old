@@ -45,7 +45,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:image`,
-          content: `/og-cover-image.jpg`
+          content: `https://docs.inkdrop.app/og-cover-image.jpg`
         },
         {
           property: `og:image:width`,
@@ -85,7 +85,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:image`,
-          content: `https://beta.docs.inkdrop.app/og-cover-image.jpg`
+          content: `https://docs.inkdrop.app/og-cover-image.jpg`
         }
       ]
         .concat(

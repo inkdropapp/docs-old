@@ -1,9 +1,9 @@
 ---
 index: 31
-category: "hacking"
+category: 'hacking'
 toc: true
-path: "/manual/plugin-for-mobile"
-title: "Making plugin for mobile"
+path: '/manual/plugin-for-mobile'
+title: 'Making plugin for mobile'
 ---
 
 ## Your plugin will be bundled as an advanced Markdown renderer option
@@ -105,16 +105,16 @@ Add a test for your plugin to `test/index.js` to make sure it gets loaded proper
 For example:
 
 ```js
-test.serial.cb("mermaid", t => {
+test.serial.cb('mermaid', t => {
   global.window.inkdrop.packages.setPackageMainModule = (name, p) => {
-    t.is(name, "mermaid")
+    t.is(name, 'mermaid')
     t.is(p instanceof Object, true)
-    t.is(typeof p.activate, "function")
-    t.is(typeof p.deactivate, "function")
+    t.is(typeof p.activate, 'function')
+    t.is(typeof p.deactivate, 'function')
     t.end()
   }
 
-  require("../lib/mermaid")
+  require('../lib/mermaid')
 })
 ```
 

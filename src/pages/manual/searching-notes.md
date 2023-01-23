@@ -1,9 +1,9 @@
 ---
 index: 40
-category: "usage"
+category: 'usage'
 toc: true
-path: "/manual/searching-notes"
-title: "Searching Notes"
+path: '/manual/searching-notes'
+title: 'Searching Notes'
 ---
 
 Notes are only useful if you can find them quickly. Inkdrop's full-text search also supports filtering notebooks and tags with search qualifiers.

@@ -1,8 +1,8 @@
 ---
 index: 70
-category: "info"
-path: "/privacy"
-title: "Privacy Policy"
+category: 'info'
+path: '/privacy'
+title: 'Privacy Policy'
 ---
 
 This notice describes how Inkdrop collects and uses data about you.

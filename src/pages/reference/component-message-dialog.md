@@ -13,7 +13,7 @@ A built-in React [component](/reference/component-manager) of Inkdrop that allow
 To get the class of `MessageDialog` component:
 
 ```js
-const MessageDialog = inkdrop.components.getComponentClass("MessageDialog")
+const MessageDialog = inkdrop.components.getComponentClass('MessageDialog')
 ```
 
 ## Props
@@ -29,13 +29,13 @@ type Props = {|
   onHidden?: (dialog: MessageDialog, buttonIndex: number) => any,
   children: React.Node,
   // See: https://semantic-ui.com/modules/modal.html#/settings
-  modalSettings?: Object,
+  modalSettings?: Object
 |}
 
 type MessageDialogButton = {
   label: string,
   primary?: boolean,
-  destructive?: boolean,
+  destructive?: boolean
 }
 ```
 
@@ -50,8 +50,8 @@ type MessageDialogButton = {
     </span>
   )}
   buttons={[
-    { label: "Cancel", cancel: true },
-    { label: "Share", primary: true },
+    { label: 'Cancel', cancel: true },
+    { label: 'Share', primary: true }
   ]}
   onDismiss={(caller, buttonIndex) => {
     if (buttonIndex === 1 /* Share */) {

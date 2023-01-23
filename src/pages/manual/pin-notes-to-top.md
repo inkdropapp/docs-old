@@ -1,9 +1,9 @@
 ---
 index: 21
-category: "usage"
+category: 'usage'
 toc: false
-path: "/manual/pin-notes-to-top"
-title: "Pin Notes to the Top"
+path: '/manual/pin-notes-to-top'
+title: 'Pin Notes to the Top'
 ---
 
 Let's say you sometimes have trouble remembering which notes you were working on in Inkdrop.

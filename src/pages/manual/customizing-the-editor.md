@@ -1,9 +1,9 @@
 ---
 index: 60
-category: "hacking"
+category: 'hacking'
 toc: false
-path: "/manual/customizing-the-editor"
-title: "Customizing the Editor"
+path: '/manual/customizing-the-editor'
+title: 'Customizing the Editor'
 ---
 
 Inkdrop's text editor is built on top of [CodeMirror](https://codemirror.net/) which is specialized for editing code, and comes with a number of [language modes](https://codemirror.net/mode/index.html) and [addons](https://codemirror.net/doc/manual.html#addons) that implement more advanced editing functionality.
@@ -23,11 +23,11 @@ But you can't require them like `require('codemirror/addons/fold/foldcode.js')` 
 To do so, add a path to the app's `node_modules` to your `require` statements as following:
 
 ```js
-const app = require('electron').remote.app;
+const app = require('electron').remote.app
 const modulePath = app.getAppPath() + '/node_modules/'
-require(modulePath + 'codemirror/addon/fold/foldcode.js');
-require(modulePath + 'codemirror/addon/fold/foldgutter.js');
-require(modulePath + 'codemirror/addon/fold/markdown-fold.js');
+require(modulePath + 'codemirror/addon/fold/foldcode.js')
+require(modulePath + 'codemirror/addon/fold/foldgutter.js')
+require(modulePath + 'codemirror/addon/fold/markdown-fold.js')
 ```
 
 ## When to customize the editor
@@ -36,8 +36,8 @@ If you are building a plugin which changes CodeMirror's behaviors, you have to s
 `global.inkdrop` provides two methods to subscribe events on the editor. You can use them like so:
 
 ```js
-global.inkdrop.onEditorLoad((editor) => console.log('Editor loaded'));
-global.inkdrop.onEditorUnload(() => console.log('Editor unloaded'));
+global.inkdrop.onEditorLoad(editor => console.log('Editor loaded'))
+global.inkdrop.onEditorUnload(() => console.log('Editor unloaded'))
 ```
 
 See also [this page](/reference/environment#event-subscription) for more detail about the event subscription.

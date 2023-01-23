@@ -20,13 +20,13 @@ Below example registers `MyDialog` class to the component registry and adds it t
 module.exports = {
   activate() {
     inkdrop.components.registerClass(MyDialog)
-    inkdrop.layouts.addComponentToLayout("modal", "MyDialog")
+    inkdrop.layouts.addComponentToLayout('modal', 'MyDialog')
   },
 
   deactivate() {
-    inkdrop.layouts.removeComponentFromLayout("modal", "MyDialog")
+    inkdrop.layouts.removeComponentFromLayout('modal', 'MyDialog')
     inkdrop.components.deleteClass(MyDialog)
-  },
+  }
 }
 ```
 

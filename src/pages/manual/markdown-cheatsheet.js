@@ -103,7 +103,7 @@ const MarkdownCheatsheetPage = ({ data }) => {
                   href="#linebreaks"
                   onClick={handleAnchorLinkClick('linebreaks')}
                 >
-                  Link Breaks
+                  Line Breaks
                 </a>
               </li>
             </ul>

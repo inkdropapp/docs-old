@@ -19,7 +19,7 @@ class Something {
     this.disposables.add(editor.onDidChange(() => {})
     this.disposables.add(editor.onDidChangePath(() => {})
   }
- 
+
   destroy() {
     this.disposables.dispose();
   }
@@ -46,20 +46,18 @@ Add disposables to be disposed when the composite is disposed.
 
 If this object has already been disposed, this method has no effect.
 
-| Argument | Description |
-| -------- | ----------- |
+| Argument         | Description                                                                             |
+| ---------------- | --------------------------------------------------------------------------------------- |
 | `...disposables` | [Disposable](/reference/disposable) instances or any objects with `.dispose()` methods. |
 
 ### ::remove(disposable)
 
 Remove a previously added disposable.
 
-| Argument | Description |
-| -------- | ----------- |
+| Argument     | Description                                                                            |
+| ------------ | -------------------------------------------------------------------------------------- |
 | `disposable` | [Disposable](/reference/disposable) instance or any object with a `.dispose()` method. |
-
 
 ### ::clear()
 
 Clear all disposables. They will not be disposed by the next call to dispose.
-

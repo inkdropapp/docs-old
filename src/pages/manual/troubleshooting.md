@@ -1,9 +1,9 @@
 ---
 index: 200
-category: "usage"
+category: 'usage'
 toc: false
-path: "/manual/troubleshooting"
-title: "Troubleshooting"
+path: '/manual/troubleshooting'
+title: 'Troubleshooting'
 ---
 
 ![Troubleshooting #cover](/images/troubleshooting.svg)
@@ -116,7 +116,6 @@ If you get an error like below:
 ```
 
 You can disable the GPU acceleration by appending `--disable-gpu-sandbox` parameter to avoid it.
-
 
 ## Plugin Won't Work
 

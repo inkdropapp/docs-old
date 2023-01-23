@@ -11,8 +11,8 @@ A notification to the user containing a message and type.
 
 ### ::onDidDismiss(callback)
 
-| Argument | Description |
-| -------- | ----------- |
+| Argument     | Description                                               |
+| ------------ | --------------------------------------------------------- |
 | `callback()` | Function to be called when the notification is dismissed. |
 
 #### Return values
@@ -23,8 +23,8 @@ Returns a [Disposable](/reference/disposable) on which `.dispose()` can be calle
 
 Invoke the given callback when the notification is displayed.
 
-| Argument | Description |
-| -------- | ----------- |
+| Argument     | Description                                               |
+| ------------ | --------------------------------------------------------- |
 | `callback()` | Function to be called when the notification is displayed. |
 
 #### Return values

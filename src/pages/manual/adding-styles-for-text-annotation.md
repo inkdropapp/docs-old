@@ -1,9 +1,9 @@
 ---
 index: 91
-category: "hacking"
+category: 'hacking'
 toc: true
-path: "/manual/text-annotation"
-title: "Adding Styles For Text Annotation"
+path: '/manual/text-annotation'
+title: 'Adding Styles For Text Annotation'
 ---
 
 <div class="ui message">

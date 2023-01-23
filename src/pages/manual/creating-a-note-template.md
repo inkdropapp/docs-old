@@ -1,9 +1,9 @@
 ---
 index: 90
-category: "hacking"
+category: 'hacking'
 toc: true
-path: "/manual/creating-a-note-template"
-title: "Creating a Note Template"
+path: '/manual/creating-a-note-template'
+title: 'Creating a Note Template'
 ---
 
 Once Inkdrop becomes a part of your daily workflow, you may want to save time and effort with note templates.
@@ -40,9 +40,9 @@ In this example, you define a command named `custom:new-journal`.
 Create `init.js` in [your data directory](/manual/basic-usage#user-data-directory) and write some JavaScript like the following:
 
 ```js
-inkdrop.commands.add(document.body, "custom:new-journal", async () => {
+inkdrop.commands.add(document.body, 'custom:new-journal', async () => {
   const db = inkdrop.main.dataStore.getLocalDB()
-  const template = await db.notes.get("note:bSU-gSHd_")
+  const template = await db.notes.get('note:bSU-gSHd_')
   const note = {
     ...template,
     _id: db.notes.createId(),
@@ -50,14 +50,14 @@ inkdrop.commands.add(document.body, "custom:new-journal", async () => {
     title: new Date().toLocaleDateString(),
     createdAt: +new Date(),
     updatedAt: +new Date(),
-    pinned: false,
+    pinned: false
   }
   try {
     await db.notes.put(note)
-    inkdrop.commands.dispatch(document.body, "core:open-note", {
-      noteId: note._id,
+    inkdrop.commands.dispatch(document.body, 'core:open-note', {
+      noteId: note._id
     })
-    inkdrop.commands.dispatch(document.body, "editor:focus-mde")
+    inkdrop.commands.dispatch(document.body, 'editor:focus-mde')
   } catch (e) {
     console.error(e)
   }
@@ -73,7 +73,7 @@ const db = inkdrop.main.dataStore.getLocalDB()
 It gets an instance of [the local Inkdrop database](/reference/inkdrop-database).
 
 ```js
-const template = await db.notes.get("note:bSU-gSHd_")
+const template = await db.notes.get('note:bSU-gSHd_')
 ```
 
 Then, it loads the note with ID `note:bSU-gSHd_` by calling [DBNote's `get` method](/reference/db-note#getdocid-options).
@@ -86,7 +86,7 @@ const note = {
   _rev: undefined,
   title: new Date().toLocaleDateString(),
   createdAt: +new Date(),
-  updatedAt: +new Date(),
+  updatedAt: +new Date()
 }
 ```
 
@@ -102,13 +102,13 @@ await db.notes.put(note)
 It saves the manipulated note to the local database by calling [DBNote's `put` method](/reference/db-note#putdoc).
 
 ```js
-inkdrop.commands.dispatch(document.body, "core:open-note", { noteId: note._id })
+inkdrop.commands.dispatch(document.body, 'core:open-note', { noteId: note._id })
 ```
 
 It invokes `core:open-note` to open the new note.
 
 ```js
-inkdrop.commands.dispatch(document.body, "editor:focus-mde")
+inkdrop.commands.dispatch(document.body, 'editor:focus-mde')
 ```
 
 Finally, it invokes `editor:focus-mde` to move focus to the editor.
@@ -122,19 +122,19 @@ The below code adds a menu to _File -> Templates -> Create a journal_, which run
 ```js
 inkdrop.menu.add([
   {
-    label: "File",
+    label: 'File',
     submenu: [
       {
-        label: "Templates",
+        label: 'Templates',
         submenu: [
           {
-            label: "Create a journal",
-            command: "custom:new-journal",
-          },
-        ],
-      },
-    ],
-  },
+            label: 'Create a journal',
+            command: 'custom:new-journal'
+          }
+        ]
+      }
+    ]
+  }
 ])
 ```
 
@@ -157,8 +157,8 @@ It would be more useful to associate the command with [keybinding](/manual/custo
 Here is an example keybinding configuration:
 
 ```yaml
-"body":
-  "cmd-shift-j": "custom:new-journal"
+'body':
+  'cmd-shift-j': 'custom:new-journal'
 ```
 
 So you can quickly create notes with the template!
@@ -176,37 +176,37 @@ Let's make a command named `custom:new-note` in your `init.js`:
 ```js
 ;(async () => {
   const db = inkdrop.main.dataStore.getLocalDB()
-  const template = await db.notes.get("note:08zdMqQyj")
+  const template = await db.notes.get('note:08zdMqQyj')
 
-  inkdrop.commands.add(document.body, "custom:new-journal", async e => {
+  inkdrop.commands.add(document.body, 'custom:new-journal', async e => {
     const note = {
       ...template,
       _id: db.notes.createId(),
       _rev: undefined,
       title: new Date().toISOString().slice(0, 10),
       createdAt: +new Date(),
-      updatedAt: +new Date(),
+      updatedAt: +new Date()
     }
     try {
       await db.notes.put(note)
-      inkdrop.commands.dispatch(document.body, "core:open-note", {
-        noteId: note._id,
+      inkdrop.commands.dispatch(document.body, 'core:open-note', {
+        noteId: note._id
       })
-      inkdrop.commands.dispatch(document.body, "editor:focus-mde")
+      inkdrop.commands.dispatch(document.body, 'editor:focus-mde')
     } catch (e) {
       console.error(e)
     }
   })
 
-  inkdrop.commands.add(document.body, "custom:new-note", async () => {
+  inkdrop.commands.add(document.body, 'custom:new-note', async () => {
     const { queryContext } = inkdrop.store.getState()
     if (
-      queryContext.mode === "book" &&
+      queryContext.mode === 'book' &&
       queryContext.bookId === template.bookId
     ) {
-      inkdrop.commands.dispatch(document.body, "custom:new-journal")
+      inkdrop.commands.dispatch(document.body, 'custom:new-journal')
     } else {
-      inkdrop.commands.dispatch(document.body, "core:new-note")
+      inkdrop.commands.dispatch(document.body, 'core:new-note')
     }
   })
 })()
@@ -223,7 +223,7 @@ Let's look at the lines we've added.
 First, it loads the template note.
 
 ```js
-inkdrop.commands.add(document.body, "custom:new-journal", async e => {
+inkdrop.commands.add(document.body, 'custom:new-journal', async e => {
   // ...
 })
 ```
@@ -231,12 +231,12 @@ inkdrop.commands.add(document.body, "custom:new-journal", async e => {
 It is equivalent to the command we've created before.
 
 ```js
-inkdrop.commands.add(document.body, "custom:new-note", async () => {
+inkdrop.commands.add(document.body, 'custom:new-note', async () => {
   const { queryContext } = inkdrop.store.getState()
-  if (queryContext.mode === "book" && queryContext.bookId === template.bookId) {
-    inkdrop.commands.dispatch(document.body, "custom:new-journal")
+  if (queryContext.mode === 'book' && queryContext.bookId === template.bookId) {
+    inkdrop.commands.dispatch(document.body, 'custom:new-journal')
   } else {
-    inkdrop.commands.dispatch(document.body, "core:new-note")
+    inkdrop.commands.dispatch(document.body, 'core:new-note')
   }
 })
 ```
@@ -256,15 +256,15 @@ Learn more about [getting & setting the app state](/manual/flux-architecture).
 Now, let's associate the command with the keystroke in your [keymap.cson](/manual/customizing-keybindings/)! On macOS:
 
 ```yaml
-"body":
-  "cmd-n": "custom:new-note"
+'body':
+  'cmd-n': 'custom:new-note'
 ```
 
 On Windows and Linux:
 
 ```yaml
-"body":
-  "ctrl-n": "custom:new-note"
+'body':
+  'ctrl-n': 'custom:new-note'
 ```
 
 Now you don't have to remember the keystroke nor select the menu to invoke `custom:new-journal` command!
