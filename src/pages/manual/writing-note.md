@@ -67,7 +67,7 @@ The copy is created in the current notebook.
 Tags are keywords that you can add to notes, so they're easier to group and find. For example, you can add the `react` tag to all notes related to the technology. Tags help you organize and browse your notes a lot easier.
 
 <div class="ui info message">
-   You can use emojis to name tags. For example, if you learn a new language, you can tag the language-related notes with the corresponding country flags 🇮🇹
+   You can use emojis to name tags. For example, if you learn a new language, you can tag the language-related notes with the corresponding country flag 🇮🇹
 </div>
 
 To tag a note:
