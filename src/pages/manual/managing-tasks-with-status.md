@@ -6,7 +6,7 @@ path: '/manual/managing-tasks-with-status'
 title: "Turn notes into tasks"
 ---
 
-Inkdrop is a Swiss Army knife in the world of note-taking. One of its features is task management. It's possible due to the dedicated progress statuses. You can add a status like 'Active' or 'Completed' to manage task-oriented notes easier. 
+Inkdrop is a Swiss Army knife in the world of note-taking. One of its features is task management. It's possible due to the dedicated progress statuses. You can use statuses like 'Active' or 'Completed' to manage task-oriented notes easier. 
 
 ![Task management](./managing-tasks-with-status-note_status.png)
 
