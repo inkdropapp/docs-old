@@ -32,22 +32,77 @@ To create a new note, you can either click the ![ui-icon](/images/icons/pencil-w
 
 ![AddNote](./basic-usage_addnote.png)
 
-To create a new notebook, click the ![ui-icon](/images/icons/add-circle.svg) icon next to the **Notebooks** title:
+To create a new notebook: 
+
+* Click ![ui-icon](/images/icons/add-circle.svg) next to **Notebooks**.
 
 ![AddBook](./basic-usage_addbook.png)
 
-To create a sub notebook:
+To create a sub-notebook:
 
-1. Right-click the notebook, which will be the parent, and select **New Sub Notebook..**.
-2. Provide a title for the nested notebook.
+1. Right-click the notebook and select **New Sub Notebook..**.
+2. Enter a title for the sub-notebook.
 3. Click **Create**.  
-   The newly created notebook will appear inside the parent one.
+   The newly created sub-notebook appears inside the selected notebook.
+
+## Browse viewed notes
+
+As you view your notes, Inkdrop remembers in what order you opened them. It lets you go through the history of the viewed notes back and forth.
+
+There're several options to see the viewed notes:
+
+### Via keyboard
+
+| macOS                             | Windows/Linux                 | Action              |
+| --------------------------------- | ----------------------------- | ------------------- |
+| <kbd>Command</kbd> + <kbd>←</kbd> | <kbd>Alt</kbd> + <kbd>←</kbd> | Go to previous note |
+| <kbd>Command</kbd> + <kbd>→</kbd> | <kbd>Alt</kbd> + <kbd>→</kbd> | Go to next note     |
+
+### Via application menu
+
+To navigate between notes via the app menu:
+
+* Click **View** and then select **Back** or **Forward**.
+
+### Via mouse buttons
+
+Some computer mouses have additional buttons that you can bind to navigate back and forth through your viewed notes.
+
+### Using touchpad
+
+You can use gestures on the touchpad to navigate the history of viewed notes.
+
+By default, gestures can be disabled on your computer. Bind the <b>Swipe between pages</b> action (it can have a similar name on your computer) to a gesture to be able to navigate.
+
+Depending on your operating system and its version, the setting can be in different locations.  
+
+#### macOS Ventura 13.2
+
+1. Go to **System Settings** > **Trackpad**.
+2. Select the **More Gestures** tab.
+3. Next to the **Swipe between pages** action, select a gesture from the list. For example, **Swipe with Three Fingers**.  
+   Use this gesture to navigate via the viewed notes in Inkdrop.
+
+
+Watch a video showing how to navigate via the viewed notes using a touchpad on macOS.
+
+<video controls playsInline muted>
+  <source src="https://site-cdn.inkdrop.app/docs/manual/navigating-notes_history.mp4" type="video/mp4" />
+</video>
+
+
+### Set custom keyboard shorcuts
+
+You can [set custom keyboard shortcuts](/manual/customizing-keybindings) for navigation through the visited notes. The commands for the navigation are:
+
+* <a href="/manual/list-of-commands#corenavigate-back"><code>core:navigate-back</code></a>: To go to the previous note.
+* <a href="/manual/list-of-commands#corenavigate-forward"><code>core:navigate-forward</code></a>: To go to the next note.
 
 ## Settings and preferences
 
 Inkdrop has the **Preferences** view where you can fine-tune look and feel of the app. To open the **Preferences** view, take the following steps:
 
-### MacOS
+### macOS
 
 Go to **Inkdrop** > **Preferences** in the menu bar. Alternatively, you can use the <kbd>Command+,</kbd> shortcut.
 

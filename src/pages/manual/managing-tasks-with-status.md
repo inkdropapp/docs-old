@@ -3,7 +3,7 @@ index: 30
 category: 'usage'
 toc: true
 path: '/manual/managing-tasks-with-status'
-title: "Track notes' progress"
+title: "Turn notes into tasks"
 ---
 
 Inkdrop is a Swiss Army knife in the world of note-taking. One of its features is task management. It's possible due to the dedicated progress statuses. You can add a status like 'Active' or 'Completed' to manage task-oriented notes easier. 
@@ -23,7 +23,7 @@ To add a status to a note:
    * **Dropped**: Task is canceled.
    * **None**: Initial status for all notes. Set this status if you don't want to track progress of a note.
 
-Watch a short video showing a basic use case:
+Watch a video showing a basic use case:
 
 <video controls playsInline muted class="ui demo">
   <source src="https://site-cdn.inkdrop.app/docs/manual/managing-tasks-with-status.mp4" type="video/mp4" />
