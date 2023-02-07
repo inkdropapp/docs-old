@@ -1,7 +1,7 @@
 ---
 index: 20
 category: 'usage'
-path: '/manual/orhanize-notebooks'
+path: '/manual/organize-notebooks'
 title: 'Organize notebooks'
 toc: true
 ---
