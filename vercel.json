@@ -17,6 +17,11 @@
       "source": "/releases-mobile(/.*)?",
       "destination": "https://forum.inkdrop.app/c/announcements/",
       "permanent": true
+    },
+    {
+      "source": "/manual/navigating-notes",
+      "destination": "/manual/organize-notebooks",
+      "pemanent": true
     }
   ]
 }
