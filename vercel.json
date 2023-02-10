@@ -19,7 +19,7 @@
       "permanent": true
     },
     {
-      "source": "/manual/navigating-notes",
+      "source": "https://docs.inkdrop.app/manual/navigating-notes",
       "destination": "https://docs.inkdrop.app/manual/organize-notebooks",
       "pemanent": true
     }
