@@ -72,9 +72,13 @@ Some computer mouses have additional buttons that you can bind to navigate back 
 
 You can use gestures on the touchpad to navigate the history of viewed notes.
 
-By default, gestures can be disabled on your computer. Bind the <b>Swipe between pages</b> action (it can have a similar name on your computer) to a gesture to be able to navigate.
+<div class="ui warning message">
+The feature relies on the Electron's <a href="https://www.electronjs.org/docs/latest/api/browser-window#event-swipe-macos"><code>swipe</code></a> event which is only available for the macOS.
+<br><br>
+If you're a Windows user, check the <a href="#hack-windows-gestures">Hack Windows gestures</a> section.
+</div>
 
-Depending on your operating system and its version, the setting can be in different locations.  
+Depedning on the macOS version, you can find the trackpad settings in different places.
 
 #### macOS Ventura 13.2
 
@@ -90,6 +94,23 @@ Watch a video showing how to navigate via the viewed notes using a touchpad on m
   <source src="https://site-cdn.inkdrop.app/docs/manual/navigating-notes_history.mp4" type="video/mp4" />
 </video>
 
+#### Hack Windows gestures
+
+By default, navigating through notes using touchpad on a Windows machine isn't supported. Here's a neat workaround for Windows 11:
+
+1. Go to **Bluetooth & devices** > **Touchpad** > **Advanced gestures**.
+2. Expand the **Configure three-finger gestures**.
+3. For the **Swipe left** gesture:  
+   3.1. Select **Custom shortcut** from the list of actions.  
+   3.2. Click **Start recording** and use the `Alt` + `←` keyboard shortcut.  
+   3.3. Click **Stop recording**.
+4. For the **Swipe right** gesture:  
+   4.1. Select **Custom shortcut** from the list of actions.  
+   4.2. Click **Start recording** and use the `Alt` + `→` keyboard shortcut.  
+   4.3. Click **Stop recording**.  
+   Now, you can use 3-fingers swipes left and right to go back and forth via the viewed notes.
+
+Note that this workaround doesn't break browser navigation with the gestures.
 
 ### Set custom keyboard shorcuts
 
