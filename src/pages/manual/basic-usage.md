@@ -96,7 +96,7 @@ Watch a video showing how to navigate via the viewed notes using a touchpad on m
 
 #### Hack Windows gestures
 
-By default, navigating through notes using touchpad on a Windows machine isn't supported. Here's a neat workaround for Windows 11:
+By default, navigating through notes using touchpad on Windows machines isn't supported. Check out a workaround for Windows 11:
 
 1. Go to **Bluetooth & devices** > **Touchpad** > **Advanced gestures**.
 2. Expand the **Configure three-finger gestures**.
