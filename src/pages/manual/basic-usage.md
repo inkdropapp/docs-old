@@ -87,7 +87,6 @@ Depedning on the macOS version, you can find the trackpad settings in different 
 3. Next to the **Swipe between pages** action, select a gesture from the list. For example, **Swipe with Three Fingers**.  
    Use this gesture to navigate via the viewed notes in Inkdrop.
 
-
 Watch a video showing how to navigate via the viewed notes using a touchpad on macOS.
 
 <video controls playsInline muted>
