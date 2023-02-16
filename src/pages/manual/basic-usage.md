@@ -101,11 +101,11 @@ By default, navigating through notes using touchpad on Windows machines isn't su
 2. Expand the **Configure three-finger gestures**.
 3. For the **Swipe left** gesture:  
    3.1. Select **Custom shortcut** from the list of actions.  
-   3.2. Click **Start recording** and use the `Alt` + `←` keyboard shortcut.  
+   3.2. Click **Start recording** and use the <kbd>Alt</kbd> + <kbd>←</kbd> keyboard shortcut.  
    3.3. Click **Stop recording**.
 4. For the **Swipe right** gesture:  
    4.1. Select **Custom shortcut** from the list of actions.  
-   4.2. Click **Start recording** and use the `Alt` + `→` keyboard shortcut.  
+   4.2. Click **Start recording** and use the <kbd>Alt</kbd> + <kbd>→</kbd> keyboard shortcut.  
    4.3. Click **Stop recording**.  
    Now, you can use 3-fingers swipes left and right to go back and forth via the viewed notes.
 
