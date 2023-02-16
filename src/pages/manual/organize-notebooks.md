@@ -14,7 +14,7 @@ Inkdrop lets you gracefully organize the notebooks, declutter your workspace, an
 
 To view the notes belonging to a specific notebook:
 
-* Click ![ui-icon](/images/icons/arrow-down-1.svg) next to the notebook's title.
+- Click ![ui-icon](/images/icons/arrow-down-1.svg) next to the notebook's title.
 
 When a notebook is expanded, the note list shows the notebook's direct notes. The **Project** notebook in the image below has only one note.
 
@@ -27,11 +27,11 @@ When a notebook is collapsed, the note list shows direct notes from the collapse
 ## View notebook-specific statuses and tags
 
 By default, the sidebar shows all notebooks, statuses, and tags fetched from the database.
-They're mixed together, and it can be challenging to understand which entity belongs to which notebook. 
+They're mixed together, and it can be challenging to understand which entity belongs to which notebook.
 
 To display entities of a specific notebook:
 
-* Hover over the notebook and click **Detail** next to its name. You can also open a notebook and press <kbd>Enter</kbd>.  
+- Hover over the notebook and click **Detail** next to its name. You can also open a notebook and press <kbd>Enter</kbd>.  
   The sidebar only shows sub-notebooks, statuses, and tags of the selected notebook so you can focus on specific information.
 
 ![Disclosure button on sidebar](./notebook_detail.png)
@@ -40,6 +40,6 @@ To display entities of a specific notebook:
 
 To display notebook-specific entities on a mobile device:
 
-* Select **Detail** next to the desired notebook.
+- Select **Detail** next to the desired notebook.
 
 ![Disclosure Button on Notebook List on Mobile](./navigating-notes_sidebar-mobile.png)

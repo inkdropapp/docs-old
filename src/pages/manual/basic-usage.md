@@ -32,9 +32,9 @@ To create a new note, you can either click the ![ui-icon](/images/icons/pencil-w
 
 ![AddNote](./basic-usage_addnote.png)
 
-To create a new notebook: 
+To create a new notebook:
 
-* Click ![ui-icon](/images/icons/add-circle.svg) next to **Notebooks**.
+- Click ![ui-icon](/images/icons/add-circle.svg) next to **Notebooks**.
 
 ![AddBook](./basic-usage_addbook.png)
 
@@ -62,7 +62,7 @@ There're several options to see the viewed notes:
 
 To navigate between notes via the app menu:
 
-* Click **View** and then select **Back** or **Forward**.
+- Click **View** and then select **Back** or **Forward**.
 
 ### Via mouse buttons
 
@@ -115,8 +115,8 @@ Note that this workaround doesn't break browser navigation with the gestures.
 
 You can [set custom keyboard shortcuts](/manual/customizing-keybindings) for navigation through the visited notes. The commands for the navigation are:
 
-* <a href="/manual/list-of-commands#corenavigate-back"><code>core:navigate-back</code></a>: To go to the previous note.
-* <a href="/manual/list-of-commands#corenavigate-forward"><code>core:navigate-forward</code></a>: To go to the next note.
+- <a href="/manual/list-of-commands#corenavigate-back"><code>core:navigate-back</code></a>: To go to the previous note.
+- <a href="/manual/list-of-commands#corenavigate-forward"><code>core:navigate-forward</code></a>: To go to the next note.
 
 ## Settings and preferences
 
