@@ -26,7 +26,7 @@ Read [the tutorial here](/manual/plugin-word-count) to learn how to build a plug
 But there are some limitations.
 As the above section mentioned, you can only extend Markdown renderer with plugin.
 
-There is [`inkdrop` global variable](/reference/environment) which provides only the following prooperties:
+There is [`inkdrop` global variable](/reference/environment) which provides only the following properties:
 
 - [commands](/reference/command-registry)
 - [config](/reference/config) - Read only
@@ -37,7 +37,7 @@ There is [`inkdrop` global variable](/reference/environment) which provides only
 [Markdown renderer module](/reference/markdown-renderer) is available.
 
 If you have LESS stylesheets in a plugin, it will be pre-compiled into CSS.
-Similary, your ES6 JavaScript will be compiled beforehand.
+Similarly, your ES6 JavaScript will be compiled beforehand.
 
 ## How to register your plugin
 

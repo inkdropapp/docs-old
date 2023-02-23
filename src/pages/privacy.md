@@ -92,7 +92,7 @@ Inkdrop may preserve log entries for all kinds of visitors longer, as needed in 
 
 ### Inkdrop collects account data.
 
-Basically Inkdrop serviecs require an Inkdrop account. For example, you must have an Inkdrop account to use the Inkdrop client apps.
+Basically Inkdrop services require an Inkdrop account. For example, you must have an Inkdrop account to use the Inkdrop client apps.
 
 To create an Inkdrop account, Inkdrop requires a working email address. Inkdrop uses this data to provide you access to features and identify you across Inkdrop service, publicly and within Inkdrop.
 

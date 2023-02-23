@@ -14,7 +14,7 @@ As you may know, a lot of people are writing their blog posts in Markdown alread
 So, it is suitable not only to take tech notes but also to publish tech articles.
 
 Inkdrop provides a seamless experience between devices and platforms, which allows you to read and write Markdown anywhere.
-However, it sacrificed the affinity with local filesystems for the sync feature.
+However, it sacrificed the affinity with local file systems for the sync feature.
 To solve that, we've created [live-export](https://github.com/inkdropapp/inkdrop-live-export), which allows you to export notes 'programmatically' to your local filesystem.
 
 ## A flexible way to work in the filesystem
