@@ -37,7 +37,7 @@ Let Inkdrop run in **Development Mode** by selecting the _Inkdrop > Preferences_
 
 ## Check the class name of the editor
 
-First, open a note in a notebook which you would like to add custom highlighting ("Reading" in this example).
+First, open a note in a notebook which you would like to add custom highlightings ("Reading" in this example).
 Then, right-click on the preview pane and select _"Inspect Element"_.
 
 ![Inspect element](adding-styles-for-text-annotation_inspect-element.png)
@@ -84,7 +84,7 @@ Create a `styles.less` in [your data directory](/manual/basic-usage#user-data-di
 ```
 
 Reload the app by selecting the _Developer -> Reload_ menu or by pressing `Alt+Cmd+Ctrl+L` / `Alt+Ctrl+L`.
-Then, boom! You should see that your notes got special higlighting for italic and strong emphasises.
+Then, boom! You should see that your notes got special highlightings for italic and strong emphasises.
 
 ![Result](adding-styles-for-text-annotation_result.png)
 
