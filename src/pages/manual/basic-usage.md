@@ -78,7 +78,7 @@ The feature relies on the Electron's <a href="https://www.electronjs.org/docs/la
 If you're a Windows user, check the <a href="#hack-windows-gestures">Hack Windows gestures</a> section.
 </div>
 
-Depedning on the macOS version, you can find the trackpad settings in different places.
+Depending on the macOS version, you can find the trackpad settings in different places.
 
 #### macOS Ventura 13.2
 
@@ -111,7 +111,7 @@ By default, navigating through notes using touchpad on Windows machines isn't su
 
 Note that this workaround doesn't break browser navigation with the gestures.
 
-### Set custom keyboard shorcuts
+### Set custom keyboard shortcuts
 
 You can [set custom keyboard shortcuts](/manual/customizing-keybindings) for navigation through the visited notes. The commands for the navigation are:
 

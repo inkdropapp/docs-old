@@ -428,7 +428,7 @@ Returns document by the specified `docid` of Note, Book, Tag, or File.
 
 All parameters are optional.
 
-- `rev` (string) – Fetch specific revision of a document. Defailts to the latest revision.
+- `rev` (string) – Fetch specific revision of a document. Defaults to the latest revision.
 - `attachments` (boolean) – Include attachment data. It should be `true` if you fetch a content of the file document.
 
 ##### Example

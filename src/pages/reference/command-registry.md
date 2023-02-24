@@ -74,4 +74,4 @@ Otherwise, the DOM node in question needs to be attached to the document so the 
 | :------------ | :--------------------------------------------------------- |
 | `target`      | The DOM node at which to start bubbling the command event. |
 | `commandName` | String indicating the name of the command to dispatch.     |
-| `detail`      | Object of parametrs to be passed                           |
+| `detail`      | Object of parameters to be passed                           |
