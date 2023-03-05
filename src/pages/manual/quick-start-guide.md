@@ -6,7 +6,7 @@ path: '/manual/'
 title: 'Quick start'
 ---
 
-Welcome to Inkdrop! Here's how to get started.
+Welcome to Inkdrop!
 To get started with Inkdrop, we'll need to get it on your system.
 
 ## Creating your Inkdrop account
@@ -21,7 +21,7 @@ After you set up an account and log in, you should see a download button as show
 
 ![Download](quick-start-guide_download.png)
 
-Desktop application is ready for macOS, Windows, and Linux, so choose one for your environment:
+Inkdrop is available for macOS, Windows, and Linux, so choose the appropriate download for your environment:
 
 ![Download](quick-start-guide_download2.png)
 
@@ -31,7 +31,7 @@ Inkdrop follows the standard Mac zip installation process. You can download the 
 
 ## Installing Inkdrop on Windows
 
-Inkdrop is both available with a Windows installer and zip archive. The installer is recommended because it can provide auto-update features that automatically update the Inkdrop app to the latest version.
+Inkdrop is available as a Windows installer or a zip archive. The installer is the recommended option because it can provide an auto-update feature that automatically updates the Inkdrop app to the latest version.
 
 ## Installing Inkdrop on Linux
 
@@ -44,7 +44,7 @@ If you don't have <code>snapd</code> yet, please <a href="https://snapcraft.io/d
 </div>
 
 The app is [available on Snap Store](https://snapcraft.io/inkdrop).
-You can install the app via Snap Store like the following:
+You can install the app from the Snap Store using the following commands:
 
 ```bash
 sudo snap install inkdrop
@@ -61,8 +61,8 @@ sudo snap refresh inkdrop
 ### via Package
 
 To install Inkdrop on Linux, you can download a Debian package, an RPM package, or a zip archive.
-The packages do not have auto-update features.
-So when you would like to upgrade to a new release of Inkdrop, you will have to repeat this installation process.
+These packages do not have an auto-update feature.
+To update to a new version, you will have to repeat the installation process.
 
 #### Debian, Ubuntu, or related systems
 
