@@ -93,7 +93,7 @@ To preview a note:
 
 There're 2 more ways to toggle preview. In the lower right corner of the editor:
 
-- Click ![ui-icon](/images/icons/view-1.svg) to swith between the note and its preview.
+- Click ![ui-icon](/images/icons/view-1.svg) to switch between the note and its preview.
 - Click ![ui-icon](/images/icons/layout-two-colums.svg) to toggle note and its preview side-by-side.
 
 ![Toggle buttons](./writing-note_toggle_buttons.png)

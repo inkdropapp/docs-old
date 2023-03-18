@@ -1,7 +1,7 @@
 ---
 index: 200
 category: 'usage'
-toc: false
+toc: true
 path: '/manual/troubleshooting'
 title: 'Troubleshooting'
 ---

@@ -5,7 +5,7 @@ path: /reference/state-query-context
 title: queryContext
 ---
 
-An [app state](/manual/flux-architecture) of query context which represents currenty used query for showing the content of note list.
+An [app state](/manual/flux-architecture) of query context which represents currently used query for showing the content of note list.
 To get the `queryContext` state:
 
 ```js
@@ -83,7 +83,7 @@ It is a mode to show notes that are in trash.
 | -------- | ----------------------------- |
 | `bookId` | String. The trash notebook ID |
 
-### `"search"`: Show notes that match keywords and consitions
+### `"search"`: Show notes that match keywords and conditions
 
 It is a mode to show notes that match given keywords and conditions.
 
