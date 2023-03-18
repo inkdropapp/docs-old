@@ -133,4 +133,4 @@ Make sure to enter a text to search for after the exclusion modifier. <br><br>
 
 ## Caveats
 
-Inkdrop uses SQLite full-text search engine to ensure high search performance. It's possible due to tokenizing text into words and ranking them based on [TF-IDF](https://sqlite.org/fts5.html). A downside of the technology is that it doesn't support partial-match keywords. For example, you can't find notes containing 'string' while searching for 'trin'.
+Inkdrop uses SQLite full-text search engine to look for notes in a most efficient way. It's achieved by tokenizing text into words and ranking them based on [TF-IDF](https://sqlite.org/fts5.html). A limitation of the technology is that it doesn't support partial-match keywords. For example, you can't find notes containing 'string' while searching for 'trin'.
