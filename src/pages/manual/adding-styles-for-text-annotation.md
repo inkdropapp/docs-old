@@ -31,7 +31,7 @@ Inkdrop lets you change styles of those emphasises that only apply to a particul
 For example, if you want to quote and highlight texts from books you read, you make a notebook named something like "Reading".
 And you can define stylesheets only applied to notes in this notebook.
 
-## Enable Developmet Mode
+## Enable Development Mode
 
 Let Inkdrop run in **Development Mode** by selecting the _Inkdrop > Preferences_ menu, clicking the _General_ tab on the left hand navigation, and check the "_Development Mode_", then reload the app by pressing `Alt+Cmd+Ctrl+L` / `Alt+Ctrl+L`
 

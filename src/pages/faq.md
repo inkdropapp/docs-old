@@ -1,6 +1,7 @@
 ---
 index: 10
 category: info
+toc: true
 path: /faq
 title: Frequently Asked Questions
 ---

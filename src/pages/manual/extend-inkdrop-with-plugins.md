@@ -14,7 +14,7 @@ Markdown is a very simple markup language with plain-text-formatting syntax.
 Because of its simplicity, people have been customizing it for their use-cases.
 So, there are a lot of 'flavors' of Markdown extended by the third parties such as GitHub.
 You may like one of the flavors already.
-For example, you may want to write math forumulas with LaTeX syntax, but Markdown itself does not support it by default.
+For example, you may want to write math formulas with LaTeX syntax, but Markdown itself does not support it by default.
 You can use [math](https://my.inkdrop.app/plugins/math) plugin to make Inkdrop support to render math.
 Those language extensions make Markdown incredibly powerful and help you write notes effectively.
 
@@ -32,7 +32,7 @@ You should see some default plugins are already installed.
 
 In order to install new plugin, you can use the Install tab in the Preferences window.
 
-![Instald plugins](./extend-inkdrop-with-plugins_install.png)
+![Installing plugins](./extend-inkdrop-with-plugins_install.png)
 
 Type your search query into the input box on the right hand of the pane.
 All of the plugins will come up with an "Install" button.

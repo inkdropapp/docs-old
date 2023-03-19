@@ -183,7 +183,7 @@ Duplicates notes currently selected on the note list
 
 - Selector: `.mde-cm-wrapper`
 
-Emphersize currently selected text
+Emphasize currently selected text
 
 ### core:empty-trash
 
@@ -233,7 +233,7 @@ Moves focus to the search bar and switch the [search scope to global](/manual/se
 
 - Selector: `body`
 
-Moves focus to the next focussable UI component
+Moves focus to the next focusable UI component
 
 ### core:focus-note-list-bar
 
@@ -245,7 +245,7 @@ Moves focus to the note list bar
 
 - Selector: `body`
 
-Moves focus to the previous focussable UI component
+Moves focus to the previous focusable UI component
 
 ### core:indent
 

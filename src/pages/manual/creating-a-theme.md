@@ -37,7 +37,7 @@ To create a syntax theme, do the following:
 1. fork the [Inkdrop's sample repository on GitHub](https://github.com/inkdropapp/inkdrop-default-light-syntax-theme)
 2. Clone the forked repository to the directory named `motif-syntax` in the local filesystem
 3. Open a terminal in the forked theme's directory
-4. Let Inkdrop run in **Development Mode** by selecting the menu _Inkdrop > Preferences_ on macOS or _File > Settings_ on Windos and Linux, clicking the _General_ tab on the left hand navigation, and check the "_Development Mode_", then reload the app by pressing `Alt+Cmd+Ctrl+L` / `Alt+Ctrl+L`
+4. Let Inkdrop run in **Development Mode** by selecting the menu _Inkdrop > Preferences_ on macOS or _File > Settings_ on Windows and Linux, clicking the _General_ tab on the left hand navigation, and check the "_Development Mode_", then reload the app by pressing `Alt+Cmd+Ctrl+L` / `Alt+Ctrl+L`
 5. Change the name of the theme in the theme's `package.json` file
 6. Run `ipm link --dev` to symlink your repository to `~/Library/Application Support/inkdrop/dev/packages`
 7. Reload Inkdrop using `Alt+Cmd+Ctrl+L` / `Alt+Ctrl+L`
@@ -67,7 +67,7 @@ To create a UI theme, do the following:
 1. fork the [Inkdrop's default UI theme repository on GitHub](https://github.com/inkdropapp/inkdrop-default-light-ui-theme)
 2. Clone the forked repository to the local filesystem
 3. Open a terminal in the forked theme's directory
-4. Let Inkdrop run in **Development Mode** by selecting the menu _Inkdrop > Preferences_ on macOS or _File > Settings_ on Windos and Linux, clicking the _General_ tab on the left hand navigation, and check the "_Development Mode_", then reload the app by pressing `Alt+Cmd+Ctrl+L` / `Alt+Ctrl+L`
+4. Let Inkdrop run in **Development Mode** by selecting the menu _Inkdrop > Preferences_ on macOS or _File > Settings_ on Windows and Linux, clicking the _General_ tab on the left hand navigation, and check the "_Development Mode_", then reload the app by pressing `Alt+Cmd+Ctrl+L` / `Alt+Ctrl+L`
 5. Change the name of the theme in the theme's `package.json` file
 6. Run `npm install` to install dependencies
 7. Run `gulp build` to build theme files
@@ -96,7 +96,7 @@ To create a preview theme, do the following:
 1. fork the [Inkdrop's sample repository on GitHub](https://github.com/inkdropapp/inkdrop-github-preview-theme)
 2. Clone the forked repository to the directory named `motif-preview` in the local filesystem
 3. Open a terminal in the forked theme's directory
-4. Let Inkdrop run in **Development Mode** by selecting the menu _Inkdrop > Preferences_ on macOS or _File > Settings_ on Windos and Linux, clicking the _General_ tab on the left hand navigation, and check the "_Development Mode_", then reload the app by pressing `Alt+Cmd+Ctrl+L` / `Alt+Ctrl+L`
+4. Let Inkdrop run in **Development Mode** by selecting the menu _Inkdrop > Preferences_ on macOS or _File > Settings_ on Windows and Linux, clicking the _General_ tab on the left hand navigation, and check the "_Development Mode_", then reload the app by pressing `Alt+Cmd+Ctrl+L` / `Alt+Ctrl+L`
 5. Change the name of the theme in the theme's `package.json` file
 6. Run `ipm link --dev` to symlink your repository to `~/Library/Application Support/inkdrop/dev/packages`
 7. Reload Inkdrop using `Alt+Cmd+Ctrl+L` / `Alt+Ctrl+L`
