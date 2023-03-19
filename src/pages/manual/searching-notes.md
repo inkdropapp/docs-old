@@ -30,7 +30,7 @@ The ![ui-icon](/images/icons/search.svg) icon in the search box means that Inkdr
 
 ![Inkdrop can search for notes globally](./searching-notes_search-bar-global.png)
 
-To search globally:
+To search globally, take the following steps:
 
 1. In the sidebar, go to **All Notes**.
 1. At the top of the note list, in the search box, enter a word or phrase.  
@@ -44,7 +44,7 @@ The ![ui-icon](/images/icons/filter-1.svg) icon in the search box means that Ink
 
 ![Inkdrop can search for notes globally](./searching-notes_search-bar-local.png)
 
-To search locally:
+To search locally, take the following steps:
 
 1. Select a notebook. 
 1. At the top of the note list, in the search box, enter a word or phrase.  
@@ -60,7 +60,7 @@ To search locally:
 | Focus the search box              | <kbd>Command</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>                    | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>                 |
 | Switch to global search | <kbd>Command</kbd> + <kbd>Option</kbd> +<kbd>Shift</kbd> + <kbd>F</kbd> | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> +<kbd>Shift</kbd> + <kbd>F</kbd>
 
-To clear the search box:
+Clear the search box:
 
 * Select <kbd>Esc</kbd>
 
