@@ -1,30 +1,21 @@
 ---
 index: 40
 category: 'usage'
-# toc: true
+toc: true
 path: '/manual/searching-notes'
 title: 'Search and filter notes'
 ---
 
 Inkdrop has a robust search to find the needed notes quickly. You can look for the content among all notes or narrow the search to a specific notebook. Inkdrop also supports special qualifiers for more accurate results.
 
-## Page overview
-
-This section lists topics you'll learn from the page.
-
-- Searching among all notes in your Inkdrop.
-- Filtering notes within a single notebook.
-- Specifal qualifiers to refine the search results.
-- Keyboard shortcuts essential for working with search.
-
-## Search vs. filter
+## Understand difference between searching and filtering
 
 First, let's define the difference between searching for and filtering notes. 
 
 - **Searching**: Inkdrop looks for notes among all the records in the database. You can think of it as a global search.
 - **Filtering**: Inkdrop looks for the notes only within a specific notebook. You can think of it as a local search.
 
-## Search for notes globally
+## Search for notes across all notebooks
 
 The ![ui-icon](/images/icons/search.svg) icon in the search box means that Inkdrop will search for the query through all your notes.
 
@@ -38,9 +29,9 @@ To search globally, take the following steps:
 1. Optional. Go to a matched note in the note list.  
    The matched words and phrases are highlighted. The color varies depending on your current theme.
 
-## Search for notes locally
+## Filter notes within specific notebook
 
-The ![ui-icon](/images/icons/filter-1.svg) icon in the search box means that Inkdrop will search only in the selected notebook.
+The ![ui-icon](/images/icons/filter-1.svg) icon in the search box means that Inkdrop will filter the current notebook.
 
 ![Inkdrop can search for notes globally](./searching-notes_search-bar-local.png)
 
@@ -91,7 +82,7 @@ You can use special qualifiers to get more accurate results. See the qualifiers 
 
 ### Combine qualifiers 
 
-You can combine the filter qualifiers. 
+You can combine the filter qualifiers to refine data even more.
 
 **Find notes that contain the word 'Hello' and have the 'Issue' tag.**
 
@@ -131,6 +122,6 @@ Make sure to enter a text to search for after the exclusion modifier. <br><br>
 <code>-book:Backend</code>. There's no query. Inkdrop doesn't understand what to search for.
 </div>
 
-## Caveats
+## Caveats: Limitations of Inkdrop's search engine
 
 Inkdrop uses SQLite full-text search engine to look for notes in a most efficient way. It's achieved by tokenizing text into words and ranking them based on [TF-IDF](https://sqlite.org/fts5.html). A limitation of the technology is that it doesn't support partial-match keywords. For example, you can't find notes containing 'string' while searching for 'trin'.
