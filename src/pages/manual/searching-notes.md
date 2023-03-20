@@ -31,7 +31,7 @@ To search globally, take the following steps:
 
 ## Filter notes within specific notebook
 
-The ![ui-icon](/images/icons/filter-1.svg) icon in the search box means that Inkdrop will filter the current notebook.
+The ![ui-icon](/images/icons/filter-1.svg) icon in the search box means that Inkdrop will filter notes of the current notebook.
 
 ![Inkdrop can search for notes globally](./searching-notes_search-bar-local.png)
 
