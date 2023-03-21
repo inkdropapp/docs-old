@@ -15,16 +15,14 @@ const { db } = inkdrop.store.getState()
 Or, to connect with your React component:
 
 ```js
-import { connect } from 'react-redux'
+import { useSelector } from 'react-redux'
 
-const connector = connect(
-  ({ db }) => ({ db }),
-  dispatch => ({ dispatch })
-)
+const selector = ({ db }) => db
 
-const MyComponent = connector(props => {
+const MyComponent = props => {
+  const db = useSelector(selector)
   // render
-})
+}
 ```
 
 ## Data Structure

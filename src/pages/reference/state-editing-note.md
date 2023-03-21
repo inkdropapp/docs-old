@@ -15,16 +15,14 @@ const { editingNote } = inkdrop.store.getState()
 Or, to connect with your React component:
 
 ```js
-import { connect } from 'react-redux'
+import { useSelector } from 'react-redux'
 
-const connector = connect(
-  ({ editingNote }) => ({ editingNote }),
-  dispatch => ({ dispatch })
-)
+const selector = ({ editingNote }) => editingNote
 
-const MyComponent = connector(props => {
+const MyComponent = props => {
+  const editingNote = useSelector(selector)
   // render
-})
+}
 ```
 
 ## Data Structure
