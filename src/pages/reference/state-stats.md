@@ -1,5 +1,5 @@
 ---
-index: 500
+index: 1700
 category: flux-state
 path: /reference/state-stats
 title: stats
