@@ -54,7 +54,7 @@ All available CodeMirror APIs are [documented here](https://codemirror.net/doc/m
 
 ### cm
 
-A [CodeMirror](http://codemirror.net/) instance
+An instance of [CodeMirror v5](https://codemirror.net/5/).
 
 ### wrapper
 
