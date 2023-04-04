@@ -39,7 +39,7 @@ For more information about accessing the editor, refer to [Environment](/referen
 
 ## Extending Inkdrop Editor
 
-Inkdrop's editor is built on top of [CodeMirror](http://codemirror.net/).
+Inkdrop's editor is built on top of [CodeMirror](https://codemirror.net/5/).
 You can access its instance via `mde.cm`.
 For example, you can change the editor option like so:
 
