@@ -15,16 +15,14 @@ const { preview } = inkdrop.store.getState()
 Or, to connect with your React component:
 
 ```js
-import { connect } from 'react-redux'
+import { useSelector } from 'react-redux'
 
-const connector = connect(
-  ({ preview }) => ({ preview }),
-  dispatch => ({ dispatch })
-)
+const selector = ({ preview }) => preview
 
-const MyComponent = connector(props => {
+const MyComponent = props => {
+  const preview = useSelector(selector)
   // render
-})
+}
 ```
 
 ## Data Structure

@@ -15,16 +15,14 @@ const { queryContext } = inkdrop.store.getState()
 Or, to connect with your React component:
 
 ```js
-import { connect } from 'react-redux'
+import { useSelector } from 'react-redux'
 
-const connector = connect(
-  ({ queryContext }) => ({ queryContext }),
-  dispatch => ({ dispatch })
-)
+const selector = ({ queryContext }) => queryContext
 
-const MyComponent = connector(props => {
+const MyComponent = props => {
+  const queryContext = useSelector(selector)
   // render
-})
+}
 ```
 
 ## Data Structure

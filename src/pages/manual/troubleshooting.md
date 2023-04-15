@@ -134,6 +134,15 @@ You have to reload the app so that it recognizes new plugins installed.
 If it's an official plugin, please create a topic on [our forum here](https://forum.inkdrop.app/).
 If a third-party plugin, please create an issue on its GitHub repository.
 
+### Uninstall the Plugin Manually
+
+If the app crashes immediately on launch, you have to uninstall the plugin manually.
+
+1. Quit Inkdrop
+2. Open [the user data directory](/manual/basic-usage#user-data-directory)
+3. Open `packages` folder
+4. Remove the plugin folder
+
 ## Payment failed
 
 ### My credit card was declined with error code `do_not_honor` / `generic_decline`
