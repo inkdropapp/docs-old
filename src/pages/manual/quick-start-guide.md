@@ -6,45 +6,74 @@ path: '/manual/'
 title: 'Quick start'
 ---
 
-Welcome to Inkdrop! Here's how to get started.
-To get started with Inkdrop, we'll need to get it on your system.
+Welcome to Inkdrop!
 
-## Creating your Inkdrop account
+On this page, you'll find all the necessary information to start crafting notes with Inkdrop. There're 3 steps to take:
 
-First, go to [Inkdrop website](https://inkdrop.app/) and sign up.
-Inkdrop will prepare a new database for storing your note data.
-Also, your account can be used for publishing your plugins and so on.
+1. Create an Inkdrop account.
+2. Download the app.
+3. Install the app on your device.
 
-## Downloading the app
+Let's get started.
 
-After you set up an account and log in, you should see a download button as shown here:
+## Create Inkdrop account
+
+First, you need to create an Inkdrop account. Your account serves many purposes and helps you to:
+
+* Manage your personal information, including account credentials.
+* Keep track of authenticated devices and IP addresses.
+* Manage payments.
+* Browse and publish plugins.
+
+To create an account, go to the [Inkdrop's sign-up](https://my.inkdrop.app/signup) page.
+
+## Download the app
+
+Once you've created an account, Inkdrop sends a verification link to the specified email. What you need to do:
+
+<div class="ui warning message">
+<b>For Windows users</b></br></br>
+There're 2 options for Windows users: installer and zip archive. Prefer the installer option as it automatically updates the app once the new versions are released.
+</div>
+
+1. Go to the link to verify the account.  
+   You're redirected to the Inkdrop website.
+2. Select **Download the client app**.
+3. Select an installer appropriate for your operating system.  
+   The download will start.
+
+Alternatively, you can sign in to your Inkdrop account and select **Download app** as shown in the image below:
 
 ![Download](quick-start-guide_download.png)
 
-Desktop application is ready for macOS, Windows, and Linux, so choose one for your environment:
+Then select an installer appropriate for your operating system.
 
 ![Download](quick-start-guide_download2.png)
 
-## Installing Inkdrop on macOS
+## Install Inkdrop 
 
-Inkdrop follows the standard Mac zip installation process. You can download the `Inkdrop-x.y.z-Mac.zip` file from the Inkdrop website. Once you have that file, you can double-click it to extract the application and drag the new Inkdrop application into your "Applications" folder.
+### macOS
 
-## Installing Inkdrop on Windows
+Once you downloaded the `Inkdrop-x.y.z-Mac.zip` file:
 
-Inkdrop is both available with a Windows installer and zip archive. The installer is recommended because it can provide auto-update features that automatically update the Inkdrop app to the latest version.
+1. Double-click the downloaded file to extract the application.  
+2. Drag extracted application into your **Applications** folder.
 
-## Installing Inkdrop on Linux
+### Windows
 
-You have two options to install it.
+Once you've downloaded the `Setup.exe` file, double-click it and follow the installation instruction.
 
-### via Snap
+### Linux
+
+You can install Inkdrop via Snap or package.
+
+#### via Snap
 
 <div class="ui info message">
 If you don't have <code>snapd</code> yet, please <a href="https://snapcraft.io/docs/core/install" target="_blank">install it</a> beforehand.
 </div>
 
-The app is [available on Snap Store](https://snapcraft.io/inkdrop).
-You can install the app via Snap Store like the following:
+The app is available in [Snap Store](https://snapcraft.io/inkdrop). To install Inkdrop using snap, run the following command in the terminal:
 
 ```bash
 sudo snap install inkdrop
@@ -58,13 +87,15 @@ You can easily update the app by running the command below:
 sudo snap refresh inkdrop
 ```
 
-### via Package
+#### via Package
 
 To install Inkdrop on Linux, you can download a Debian package, an RPM package, or a zip archive.
-The packages do not have auto-update features.
-So when you would like to upgrade to a new release of Inkdrop, you will have to repeat this installation process.
 
-#### Debian, Ubuntu, or related systems
+<div class="ui warning message">
+These packages don't support auto-updates! You'll need to repeat the installation process to update to the latest version. Visit the <a href="https://forum.inkdrop.app/c/announcements"><b>What's new page</b></a> to keep up with the latest bug fixes and improvements.
+</div>
+
+##### Debian, Ubuntu, or related systems
 
 ```bash
 wget https://api.inkdrop.app/download/linux/deb -O /tmp/inkdrop.deb && sudo dpkg -i /tmp/inkdrop.deb && rm /tmp/inkdrop.deb
@@ -73,16 +104,17 @@ wget https://api.inkdrop.app/download/linux/deb -O /tmp/inkdrop.deb && sudo dpkg
 sudo apt-get -f install
 ```
 
-#### RedHat, Fedora, or related systems
+##### RedHat, Fedora, or related systems
 
 ```bash
 wget https://api.inkdrop.app/download/linux/rpm -O /tmp/inkdrop.rpm && sudo yum install /tmp/inkdrop.rpm && rm /tmp/inkdrop.rpm
 ```
 
-## Log in
+## Sign in to your account
 
-When you first open Inkdrop, you should see a Log-in screen like this:
+Once you've installed Inkdrop, sign in to your account. To do that:
+
+1. Open the app. You'll see a login screen.
+2. Enter your credentials and select **LOG IN**.
 
 ![Login](quick-start-guide_login.png)
-
-Enter your email address and password to get started.
