@@ -22,6 +22,11 @@
       "source": "/manual/navigating-notes",
       "destination": "/manual/organize-notebooks",
       "permanent": true
+    },
+    {
+      "source": "/manual/writing-note",
+      "destination": "/manual/write-notes",
+      "permanent": true
     }
   ]
 }
