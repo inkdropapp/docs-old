@@ -32,7 +32,7 @@ const Footer = () => (
             </li>
             <li>
               <a
-                href="https://blog.inkdrop.app"
+                href="https://www.devas.life/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -43,7 +43,7 @@ const Footer = () => (
         </div>
         <div className="three wide column text-left">
           <a
-            href="https://inkdrop.app/"
+            href="https://www.inkdrop.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
