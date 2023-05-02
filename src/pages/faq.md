@@ -115,6 +115,8 @@ You can cancel your subscription by deleting your account through [the Account p
 Please keep in mind that all created notes and uploaded images will be deleted forever.
 Since Inkdrop is not like a big company, we don't have a budget for keeping your data without your payments.
 
+If you purchased a subscription in the iOS app, please check out [the Apple documentation here](https://support.apple.com/en-us/HT202039).
+
 ### What happens if I change my plan before my next billing date?
 
 If you switch from a monthly plan to a yearly plan, the billing date becomes the date of the switch. By default, Inkdrop prorates subscription costs. Please read the [Stripe's documentation](https://stripe.com/docs/subscriptions/upgrading-downgrading) for more detail.
