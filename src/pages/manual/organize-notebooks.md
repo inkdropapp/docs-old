@@ -40,6 +40,7 @@ To display entities of a specific notebook:
 
 To display notebook-specific entities on a mobile device:
 
-- Select **Detail** next to the desired notebook.
+- Select the ![ui-icon](images/icons/arrow-circle-right.svg) icon next to the notebook.  
+  The sidebar shows entities specific to the selected notebook.
 
 ![Disclosure Button on Notebook List on Mobile](./navigating-notes_sidebar-mobile.png)
