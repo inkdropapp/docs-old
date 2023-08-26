@@ -5,10 +5,10 @@ path: /reference/data-models
 title: Data Models
 ---
 
-* [Book](#a-nameresource-bookbooka)
-* [File](#a-nameresource-filefilea)
-* [Note](#a-nameresource-notenotea)
-* [Tag](#a-nameresource-tagtaga)
+* [Book](#resource-book)
+* [File](#resource-file)
+* [Note](#resource-note)
+* [Tag](#resource-tag)
 
 <a name="#resource-book"></a>
 ## Book
