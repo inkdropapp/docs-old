@@ -8,10 +8,10 @@ title: 'Restore previous revisions of note'
 
 Inkdrop keeps a history of changes made in your notes. Whenever you stop writing a note, Inkdrop automatically creates a new revision. You can quickly restore any previous revision.
 
-<div class="ui warning message">
-Inkdrop synchronizes only the latest revision of a note across multiple devices. For example, if you have older revisions made in a mobile app, you can't access them in the desktop app. Only the latest revision is available in the desktop app. <br><br>
-Inkdrop's database deletes old revisions automatically to save the storage capacity.
-</div>
+
+## Which revisions can be restored
+
+Inkdrop synchronizes only the latest revision of a note across multiple devices. For example, if you have older revisions made in a mobile app, you can't access them in the desktop app. Only the latest revision is available in the desktop app. Inkdrop's database deletes old revisions automatically to save the storage capacity.
 
 ## Restore previous revisions of note
 
@@ -19,7 +19,7 @@ Inkdrop's database deletes old revisions automatically to save the storage capac
 
 1. Select a note.
 2. In the upper-right corner of the editor, click menu ![ui-icon](images/icons/navigation-menu-vertical.svg).  
-   Alternatively, you can select <kbd>Command+J</kbd> (or <kbd>Ctrl+J</kbd> on Windows/Linux).
+   Alternatively, select <kbd>Command+J</kbd> or <kbd>Ctrl+J</kbd> on Windows/Linux.
 3. Select ![ui-icon](images/icons/history.svg) **Revision History..**.  
 4. Select a revision you want to restore.
    <div class="ui info message">
