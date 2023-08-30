@@ -40,7 +40,7 @@ exports.onPreBootstrap = async () => {
       title: 'Data Models'
     },
     {
-      header: `* [Book](#a-nameresource-bookbooka)\n* [File](#a-nameresource-filefilea)\n* [Note](#a-nameresource-notenotea)\n* [Tag](#a-nameresource-tagtaga)\n`
+      header: `* [Book](#resource-book)\n* [File](#resource-file)\n* [Note](#resource-note)\n* [Tag](#resource-tag)\n`
     }
   )
 }
