@@ -1005,7 +1005,7 @@ Syncs the scroll position of the editor with the same position of the preview pa
 
 Syncs the scroll position of the preview pane with the same position of the editor
 
-### editor:title:focus
+### editor:focus-title
 
 Moves focus to the title input bar of the editor
 
