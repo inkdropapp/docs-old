@@ -391,7 +391,7 @@ The document ID `_id` is optional and will be automatically generated.
 Request:
 
 ```
-POST /tags/ HTTP/1.1
+POST /files HTTP/1.1
 Host: localhost:19840
 Content-Type: application/json
 Authorization: Basic Zm9vOmJhcg==
