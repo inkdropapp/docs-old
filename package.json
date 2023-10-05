@@ -21,7 +21,7 @@
     "gatsby-remark-images": "^6.9.1",
     "gatsby-remark-prismjs": "^6.9.0",
     "gatsby-source-filesystem": "^4.9.1",
-    "gatsby-transformer-remark": "^5.9.1",
+    "gatsby-transformer-remark": "^6.12.0",
     "gatsby-transformer-sharp": "^4.9.0",
     "less": "^4.1.2",
     "prismjs": "^1.25.0",
