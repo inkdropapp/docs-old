@@ -68,20 +68,26 @@ Use it only if [InkdropDatabase](/reference/inkdrop-database) does not provide w
 
 The Inkdrop client app can open a simple HTTP server so that you can access the data from an external program easily, which gives you a flexible ability to import/export your notes.
 
-You can configure the HTTP server settings by editing `config.cson` in [the user data directory](/manual/basic-usage/#user-data-directory).
+You can configure the HTTP server settings by editing `config.json` in [the user data directory](/manual/basic-usage/#user-data-directory).
 
 Quit Inkdrop, then edit it like so:
 
-```yaml
-'*':
-  core:
-    server:
-      enabled: true
-      port: 19840
-      bindAddress: '127.0.0.1'
-      auth:
-        username: 'foo'
-        password: 'bar'
+```json
+{
+  "*": {
+    "core": {
+      "server": {
+        "enabled": true,
+        "port": 19840,
+        "bindAddress": "127.0.0.1",
+        "auth": {
+          "username": "foo",
+          "password": "bar"
+        }
+      }
+    }
+  }
+}
 ```
 
 Now, launch the app.

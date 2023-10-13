@@ -110,25 +110,31 @@ Even if you stopped using Inkdrop, the blog posts stay in your git repository. N
 Let's learn how to use it.
 
 As I mentioned above, live-export access to your data via the local Inkdrop server.
-So, you first have to enable it by editing the `config.cson` file stored in [the user data directory](/manual/basic-usage#user-data-directory):
+So, you first have to enable it by editing the `config.json` file stored in [the user data directory](/manual/basic-usage#user-data-directory):
 
-- on macOS: `~/Library/Application Support/inkdrop/config.cson`
-- on Windows: `%APPDATA%\inkdrop\config.cson`
-- on Linux(deb/rpm): `~/.config/inkdrop/config.cson`
-- on Linux(Snap): `~/snap/inkdrop/current/.config/inkdrop/config.cson`
+- on macOS: `~/Library/Application Support/inkdrop/config.json`
+- on Windows: `%APPDATA%\inkdrop\config.json`
+- on Linux(deb/rpm): `~/.config/inkdrop/config.json`
+- on Linux(Snap): `~/snap/inkdrop/current/.config/inkdrop/config.json`
 
 Quit Inkdrop, and add the following lines like so:
 
-```yaml
-'*':
-  core:
-    server:
-      enabled: true
-      port: 19840
-      bindAddress: '127.0.0.1'
-      auth:
-        username: 'foo'
-        password: 'bar'
+```json
+{
+  "*": {
+    "core": {
+      "server": {
+        "enabled": true,
+        "port": 19840,
+        "bindAddress": "127.0.0.1",
+        "auth": {
+          "username": "foo",
+          "password": "bar"
+        }
+      }
+    }
+  }
+}
 ```
 
 Then, relaunch the app.

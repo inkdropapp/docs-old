@@ -156,9 +156,12 @@ Boom! You've got a new note with the template content!
 It would be more useful to associate the command with [keybinding](/manual/customizing-keybindings).
 Here is an example keybinding configuration:
 
-```yaml
-'body':
-  'cmd-shift-j': 'custom:new-journal'
+```json
+{
+  "body": {
+    "cmd-shift-j": "custom:new-journal"
+  }
+}
 ```
 
 So you can quickly create notes with the template!
@@ -253,18 +256,24 @@ Learn more about [getting & setting the app state](/manual/flux-architecture).
 
 </div>
 
-Now, let's associate the command with the keystroke in your [keymap.cson](/manual/customizing-keybindings/)! On macOS:
+Now, let's associate the command with the keystroke in your [keymap.json](/manual/customizing-keybindings/)! On macOS:
 
-```yaml
-'body':
-  'cmd-n': 'custom:new-note'
+```json
+{
+  "body": {
+    "cmd-n": "custom:new-note"
+  }
+}
 ```
 
 On Windows and Linux:
 
-```yaml
-'body':
-  'ctrl-n': 'custom:new-note'
+```json
+{
+  "body": {
+    "ctrl-n": "custom:new-note"
+  }
+}
 ```
 
 Now you don't have to remember the keystroke nor select the menu to invoke `custom:new-journal` command!

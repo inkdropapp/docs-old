@@ -10,19 +10,22 @@ Inkdrop keymaps work similarly to stylesheets.
 Just as stylesheets use selectors to apply styles to elements, Inkdrop keymaps use selectors to associate key combinations with events in specific contexts.
 Here's a small example, excerpted from Inkdrop's built-in keymap:
 
-```coffeescript
-'.CodeMirror textarea':
-  'enter': 'editor:new-line'
-
-'body .native-key-bindings':
-  'enter': 'native!'
+```json
+{
+  ".CodeMirror textarea": {
+    "enter": "editor:new-line"
+  },
+  "body .native-key-bindings": {
+    "enter": "native!"
+  }
+}
 ```
 
 This keymap defines the meaning of `Enter` in two different contexts.
 In a normal editor, pressing `Enter` triggers the `editor:new-line` command, which causes the editor to insert a newline.
 But if the same keystroke occurs outside the editor, it instead triggers the native behavior.
 
-By default, `keymap.cson` is loaded when Inkdrop is started.
+By default, `keymap.json` is loaded when Inkdrop is started.
 It will always be loaded last, giving you the chance to override bindings that are defined by Inkdrop's core keymaps or third-party packages.
 
 Available commands can be found [here](/manual/list-of-commands).
@@ -43,24 +46,33 @@ You can run a command when the app does not have keyboard focus.
 
 ![Bring window into focus](/customizing-keybindings_globalshortcuts.gif)
 
-```coffeescript
-'global':
-  'cmd-shift-x': 'application:show-and-focus-main-window'
-  'cmd-shift-c': 'application:quick-note'
+```json
+{
+  "global": {
+    "cmd-shift-x": "application:show-and-focus-main-window",
+    "cmd-shift-c": "application:quick-note"
+  }
+}
 ```
 
 ### Toggle Inkdrop main window
 
-```coffeescript
-'global':
-  'cmd-shift-x': 'application:toggle-main-window'
+```json
+{
+  "global": {
+    "cmd-shift-x": "application:toggle-main-window"
+  }
+}
 ```
 
 ### Create a note and show it in a separate window
 
 Quickly open up a new note with a shortcut:
 
-```coffeescript
-'global':
-  'cmd-shift-c': 'application:quick-note'
+```json
+{
+  "global": {
+    "cmd-shift-c": "application:quick-note"
+  }
+}
 ```

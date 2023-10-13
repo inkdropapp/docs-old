@@ -87,7 +87,7 @@ You have a local data stored in here:
 - on Windows: `%APPDATA%/inkdrop`
 - on Linux: `~/.config/inkdrop`
 
-The config file is `config.cson` in that directory.
+The config file is `config.json` in that directory.
 
 ## `Setup.exe` gets quarantined as a virus threat by Windows Defender
 

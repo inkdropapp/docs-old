@@ -9,20 +9,25 @@ title: 'Working Behind Web Proxy'
 If you are working behind a company proxy or you have a local proxy running, it's necessary to tell Inkdrop to go through it.
 Here is a quick tip for those dealing with a proxy.
 
-You can configure the web proxy settings by editing `config.cson`. This config file is in following directory:
+You can configure the web proxy settings by editing `config.json`. This config file is in following directory:
 
-- on macOS: `~/Library/Application Support/inkdrop/config.cson`
-- on Windows: `%APPDATA%\inkdrop\config.cson`
-- on Linux: `~/.config/inkdrop/config.cson`
+- on macOS: `~/Library/Application Support/inkdrop/config.json`
+- on Windows: `%APPDATA%\inkdrop\config.json`
+- on Linux: `~/.config/inkdrop/config.json`
 
 Quit Inkdrop before you edit it.
 
-```yaml
-'*':
-  core:
-    network:
-      http_proxy: 'http://webproxy:8080/'
-      https_proxy: 'http://webproxy:8080/'
+```json
+{
+  "*": {
+    "core": {
+      "network": {
+        "http_proxy": "http://webproxy:8080/",
+        "https_proxy": "http://webproxy:8080/"
+      }
+    }
+  }
+}
 ```
 
 If the web proxy requires BASIC auth, you can just specify a URL with username and password like so:
@@ -52,13 +57,18 @@ ipm config set https_proxy proxy "http://webproxy:8080"
 ## Allow Self-signed Certificates
 
 You have to disable SSL certificate validation if your proxy server is SSL-enabled but with a self-signed certificate.
-You can disable it by adding `strict_ssl: 0` in your `config.cson` like so:
+You can disable it by adding `strict_ssl: 0` in your `config.json` like so:
 
-```yaml
-'*':
-  core:
-    network:
-      strict_ssl: 0
+```json
+{
+  "*": {
+    "core": {
+      "network": {
+        "strict_ssl": 0
+      }
+    }
+  }
+}
 ```
 
 For `ipm`, run below command:
