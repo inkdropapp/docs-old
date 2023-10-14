@@ -110,7 +110,7 @@ You can provide key bindings for commonly used actions for your extension, espec
 }
 ```
 
-This means that if you press `Alt+Ctrl+O`, our package will run the `wordcount:toggle` command. We'll look at that code next, but if you want to change the default key mapping, you can do that in this file.
+This means that if you press <kbd>Alt+Ctrl+O</kbd>, our package will run the `wordcount:toggle` command. We'll look at that code next, but if you want to change the default key mapping, you can do that in this file.
 
 Keymaps are placed in the `keymaps` subdirectory. By default, all keymaps are loaded in alphabetical order. An optional `keymaps` array in your `package.json` can specify which keymaps to load and in what order.
 
@@ -217,7 +217,7 @@ You can install the plugin locally for development.
 
 Run `ipm link --dev` to symlink your repository to `/dev/packages` in [the user data directory](/manual/basic-usage#user-data-directory).
 
-Let Inkdrop run in **Development Mode** by selecting the menu _Inkdrop > Preferences_ on macOS or _File > Settings_ on Windows and Linux, clicking the _General_ tab on the left hand navigation, and check the "_Development Mode_", then reload the app by pressing `Alt+Cmd+Ctrl+L` / `Alt+Ctrl+L`.
+Let Inkdrop run in **Development Mode** by selecting the menu _Inkdrop > Preferences_ on macOS or _File > Settings_ on Windows and Linux, clicking the _General_ tab on the left hand navigation, and check the "_Development Mode_", then reload the app by pressing <kbd>Alt+Cmd+Ctrl+R</kbd> / <kbd>Alt+Ctrl+R</kbd>.
 
 ### Understanding the Generated Code
 
