@@ -148,7 +148,7 @@ To open it in a file manager, go to **Preferences** > **General** and select **O
 
 The config folder has the following files and folders:
 
-- `config.cson` — app config file in the [CSON format](https://github.com/bevry/cson#what-is-cson)
-- `keymap.cson` — keybindings config file in the [CSON format](https://github.com/bevry/cson#what-is-cson)
+- `config.json` — app config file in the [JSON format](https://www.json.org/)
+- `keymap.json` — keybindings config file in the [JSON format](https://www.json.org/)
 - `packages/` — installed plugins
 - `db/` — local database
