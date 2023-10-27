@@ -454,7 +454,13 @@ Opens up the settings window for the tag with specified ID.
 
 - Selector: `body`
 
-Pastes a text from clipboard
+Pastes a text from clipboard.
+
+### core:paste-as-plain-text
+
+- Selector: `body`
+
+Pastes a text from clipboard as plain text.
 
 ### core:redo
 
