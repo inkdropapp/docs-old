@@ -33,7 +33,7 @@ And you can define stylesheets only applied to notes in this notebook.
 
 ## Enable Development Mode
 
-Let Inkdrop run in **Development Mode** by selecting the _Inkdrop > Preferences_ menu, clicking the _General_ tab on the left hand navigation, and check the "_Development Mode_", then reload the app by pressing `Alt+Cmd+Ctrl+L` / `Alt+Ctrl+L`
+Let Inkdrop run in **Development Mode** by selecting the _Inkdrop > Preferences_ menu, clicking the _General_ tab on the left hand navigation, and check the "_Development Mode_", then reload the app by pressing <kbd>Alt+Cmd+Ctrl+R</kbd> / <kbd>Alt+Ctrl+R</kbd>
 
 ## Check the class name of the editor
 
@@ -83,7 +83,7 @@ Create a `styles.less` in [your data directory](/manual/basic-usage#user-data-di
 }
 ```
 
-Reload the app by selecting the _Developer -> Reload_ menu or by pressing `Alt+Cmd+Ctrl+L` / `Alt+Ctrl+L`.
+Reload the app by selecting the _Developer -> Reload_ menu or by pressing <kbd>Alt+Cmd+Ctrl+R</kbd> / <kbd>Alt+Ctrl+R</kbd>.
 Then, boom! You should see that your notes got special highlightings for italic and strong emphasises.
 
 ![Result](adding-styles-for-text-annotation_result.png)

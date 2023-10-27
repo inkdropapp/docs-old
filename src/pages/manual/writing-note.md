@@ -21,7 +21,7 @@ An untitled empty note is created. Name the note, so it'll be easier to look for
 
 ## Delete notes
 
-To delete a note, right-click the note and select the **Move to trash** option. Alternatively, you can select a note with a left-click and use the <kbd>Command+Del</kbd> / <kbd>Ctrl+Del</kbd> shortcut.
+To delete a note, right-click the note and select the **Move to trash** option. Alternatively, you can select a note with a left-click and use the <kbd>Command+Del</kbd> / <kbd>Ctrl+Backspace</kbd> shortcut.
 
 Inkdrop also lets you delete multiple notes at once. To do this:
 
