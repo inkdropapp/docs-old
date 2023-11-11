@@ -71,7 +71,7 @@ Yes, you can delete your account by receiving a link via email from [here](https
 
 ## Do you offer student/teacher discounts?
 
-Yes. See [this page](/student-discount) for requesting your discount.
+No.
 
 ## Any chance to get a lifetime license?
 
